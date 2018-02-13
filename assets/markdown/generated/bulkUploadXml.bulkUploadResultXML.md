@@ -314,6 +314,7 @@ table th {
       </xs:choice>
       <xs:element ref="subtitle-extension" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
+    <xs:attribute name="label" type="xs:string" use="optional"></xs:attribute>
     <xs:attribute name="captionParamsId" type="xs:int" use="optional"></xs:attribute>
     <xs:attribute name="captionParams" type="xs:string" use="optional"></xs:attribute>
     <xs:attribute name="captionAssetId" type="xs:string" use="optional"></xs:attribute>
@@ -1189,9 +1190,16 @@ table th {
       <xs:enumeration value="attUverseDistribution.ATT_UVERSE"></xs:enumeration>
       <xs:enumeration value="avnDistribution.AVN"></xs:enumeration>
       <xs:enumeration value="comcastMrssDistribution.COMCAST_MRSS"></xs:enumeration>
+      <xs:enumeration value="doubleClickDistribution.DOUBLECLICK"></xs:enumeration>
+      <xs:enumeration value="ndnDistribution.NDN"></xs:enumeration>
+      <xs:enumeration value="synacorHboDistribution.SYNACOR_HBO"></xs:enumeration>
+      <xs:enumeration value="tvComDistribution.TVCOM"></xs:enumeration>
+      <xs:enumeration value="timeWarnerDistribution.TIME_WARNER"></xs:enumeration>
+      <xs:enumeration value="uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER"></xs:enumeration>
+      <xs:enumeration value="uverseDistribution.UVERSE"></xs:enumeration>
+      <xs:enumeration value="unicornDistribution.UNICORN"></xs:enumeration>
       <xs:enumeration value="crossKalturaDistribution.CROSS_KALTURA"></xs:enumeration>
       <xs:enumeration value="dailymotionDistribution.DAILYMOTION"></xs:enumeration>
-      <xs:enumeration value="doubleClickDistribution.DOUBLECLICK"></xs:enumeration>
       <xs:enumeration value="freewheelDistribution.FREEWHEEL"></xs:enumeration>
       <xs:enumeration value="freewheelGenericDistribution.FREEWHEEL_GENERIC"></xs:enumeration>
       <xs:enumeration value="ftpDistribution.FTP"></xs:enumeration>
@@ -1200,20 +1208,13 @@ table th {
       <xs:enumeration value="ideticDistribution.IDETIC"></xs:enumeration>
       <xs:enumeration value="metroPcsDistribution.METRO_PCS"></xs:enumeration>
       <xs:enumeration value="msnDistribution.MSN"></xs:enumeration>
-      <xs:enumeration value="ndnDistribution.NDN"></xs:enumeration>
       <xs:enumeration value="podcastDistribution.PODCAST"></xs:enumeration>
       <xs:enumeration value="quickPlayDistribution.QUICKPLAY"></xs:enumeration>
-      <xs:enumeration value="synacorHboDistribution.SYNACOR_HBO"></xs:enumeration>
-      <xs:enumeration value="tvComDistribution.TVCOM"></xs:enumeration>
-      <xs:enumeration value="timeWarnerDistribution.TIME_WARNER"></xs:enumeration>
-      <xs:enumeration value="uverseClickToOrderDistribution.UVERSE_CLICK_TO_ORDER"></xs:enumeration>
-      <xs:enumeration value="uverseDistribution.UVERSE"></xs:enumeration>
       <xs:enumeration value="verizonVcastDistribution.VERIZON_VCAST"></xs:enumeration>
       <xs:enumeration value="yahooDistribution.YAHOO"></xs:enumeration>
       <xs:enumeration value="youTubeDistribution.YOUTUBE"></xs:enumeration>
       <xs:enumeration value="youtubeApiDistribution.YOUTUBE_API"></xs:enumeration>
       <xs:enumeration value="tvinciDistribution.TVINCI"></xs:enumeration>
-      <xs:enumeration value="unicornDistribution.UNICORN"></xs:enumeration>
       <xs:enumeration value="facebookDistribution.FACEBOOK"></xs:enumeration>
       <xs:enumeration value="pushToNewsDistribution.PUSH_TO_NEWS"></xs:enumeration>
     </xs:restriction>
@@ -3188,6 +3189,15 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
+<tr>
+<td>label</td>
+<td>
+<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specify label you want to set for the caption asset</xs:documentation></span><br>
+</td>
+<td>No</td>
+<td>string</td>
+<td></td>
+</tr>
 <tr>
 <td>captionParamsId</td>
 <td>
