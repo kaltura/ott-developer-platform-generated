@@ -7524,8 +7524,14 @@ var MenuService = /** @class */ (function () {
             chosen = this.expandWithCondition(function (i) { return i.operation; }, chosen ? chosen.children : null);
         }
         var curRoute = this.routes.getCurrentRoute();
-        if (curRoute.ui === 'documentation') {
-            chosen = chosen || this.items[0];
+        var defaultRoute = this.routes.getDefaultRoute();
+        if (!chosen) {
+            if (defaultRoute && path !== "/") {
+                this.routes.navigate([defaultRoute]);
+            }
+            else if (curRoute.ui === 'documentation') {
+                chosen = chosen || this.items[0];
+            }
         }
         this.setActiveItem(chosen);
     };
@@ -8346,6 +8352,9 @@ var RoutesService = /** @class */ (function () {
             }
         });
         return best;
+    };
+    RoutesService.prototype.getDefaultRoute = function () {
+        return window.config.routes.default;
     };
     RoutesService.prototype.getCurrentBasePath = function () {
         return this.getBasePath(this.router.url) || window.config.routes.default || Object.keys(window.config.routes)[0];
