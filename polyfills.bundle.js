@@ -35,6 +35,7 @@ module.exports = {
     "disabled": false,
     "templates": {
       "ajax": "<%- codegen.assignAllParameters(parameters, answers) -%>\n<% args = parameterNames.join(', ') -%>\n<%- service %>.<%- action %>(<%- args %>)\n  .execute(client, function(success, results) {\n    if (!success || (results && results.code && results.message)) {\n      console.log('Kaltura Error', success, results);\n    } else {\n      console.log('Kaltura Result', results);\n    }\n  });\n",
+      "angular": "<%- codegen.assignAllParameters(parameters, answers) -%>\nthis.kaltura.request(new <%- service %><%- action %>Action({<%- parameterNames.join(', ') %>}))\n    .map(result => {\n      console.log(result);\n    },\n    error => {\n      throw error;\n    })\n",
       "csharp": "<%- codegen.assignAllParameters(parameters, answers) -%>\n<% var handlerType = null;\n   if (typeof responseListType !== 'undefined') {\n     handlerType = 'ListResponse<' + responseListType + '>';\n   } else if (typeof responseType !== 'undefined') {\n     handlerType = responseType\n   } -%>\n<% if (handlerType) { -%>\nOnCompletedHandler<<%- handlerType %>> handler = new OnCompletedHandler<<%- handlerType %>>(\n      (<%- handlerType %> result, Exception e) =>\n      {\n        CodeExample.PrintObject(result);\n        done = true;\n      });\n<% } -%>\n<%- service %>.<%- action %>(<%- parameterNames.join(', ') %>)\n<% if (handlerType) { -%>\n   .SetCompletion(handler)\n<% } -%>\n   .Execute(client);\n",
       "curl": "<% var SESSION_VARS = noSession ? ['ks'] : ['secret', 'userId', 'sessionType', 'partnerId', 'expiry', 'ks'] -%>\n<% if (showSetup && !noSession) { -%>\nKALTURA_SESSION=`curl -X POST https://www.kaltura.com/api_v3/service/session/action/start \\\n    -d \"secret=<%- answers.secret %>\" \\\n    -d \"userId=<%- answers.userId %>\" \\\n    -d \"type=<%- answers.sessionType || 0 %>\" \\\n    -d \"partnerId=<%- answers.partnerId || 'YOUR_PARTNER_ID' %>\" \\\n    -d \"expiry=<%- answers.expiry || 86400 %>\" \\\n    -d \"format=1\" | sed 's@\"@@g'`\n<% } -%>\n<% var keys = Object.keys(answers).filter(function(k) {return SESSION_VARS.indexOf(k) === -1}) -%>\n<% keys = keys.filter(function(k) {return parameterNames.indexOf(k) !== -1 || parameterNames.indexOf(k.substring(0, k.indexOf('['))) !== -1}) -%>\ncurl -X POST https://www.kaltura.com/api_v3/service/<%- serviceID %>/action/<%- actionID %> \\\n<% if (!noSession) { -%>\n    -d \"ks=$KALTURA_SESSION\" \\\n<% } -%>\n<% for (var i = 0; i < keys.length; ++i) { -%>\n<%   var ans = keys[i].indexOf('password') === -1 && keys[i].indexOf('secret') === -1 ? answers[keys[i]] : '********' -%>\n    -d \"<%- keys[i] %>=<%- encodeURIComponent(ans) %>\"<%- i === keys.length - 1 ? '' : ' \\\\' %>\n<% } -%>\n",
       "java": "<% if (typeof responseListType !== 'undefined') responseType = 'ListResponse<' + responseListType + '>' -%>\n<% if (typeof responseType === 'undefined') responseType = 'Void' -%>\n<%- codegen.assignAllParameters(parameters, answers) -%>\n<%- action %><%- service %>Builder requestBuilder = <%- service %>Service.<%- action.toLowerCase() %>(<%- parameterNames.join(', ') %>)\n    .setCompletion(new OnCompletion<Response<<%- responseType %>>>() {\n        @Override\n        public void onComplete(Response<<%- responseType %>> result) {\n            System.out.println(result);\n        }\n    });\n",
@@ -47,6 +48,7 @@ module.exports = {
     },
     "setupTemplates": {
       "ajax": "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n<script src=\"/js/kaltura/KalturaFullClient.min.js\"></script>\n\n<script>\n  var config = new KalturaConfiguration(<%- answers.partnerId %>);\n  config.serviceUrl = 'https://www.kaltura.com';\n  var client = new KalturaClient(config);\n<% if (noSession) { -%>\n<%- codegen.indent(code, 2) %>\n<% } else { -%>\n  // Note: this is meant only as a sample.\n  // You should NEVER generate sessions on the client,\n  // as this exposes your Admin Secret to users.\n  // Instead, generate a session on the server and pass the\n  // KS to the client.\n  KalturaSessionService.start(\n        <%- codegen.constant(answers.secret) %>,\n        <%- codegen.constant(answers.userId) %>,\n        <%- answers.sessionType === undefined ? 2 : answers.sessionType %>,\n        <%- answers.partnerId || 'YOUR_PARTNER_ID' %>)\n  .execute(client, function(success, ks) {\n    if (!success || (ks.code && ks.message)) {\n      console.log('Error starting session', success, ks);\n    } else {\n      client.setKs(ks);\n<% if (serviceID !== 'session' && actionID !== 'start') { -%>\n<%- codegen.indent(code, 6) %>\n<% } -%>\n    }\n  });\n<% } -%>\n</script>\n",
+      "angular": "import {Component} from '@angular/core';\nimport 'rxjs/add/observable/throw';\n\nimport {KalturaClient} from \"kaltura-ngx-client\";\n// Be sure to add KalturaClient to your app's providers array,\n// and KalturaClientModule to your app's imports.\nimport {SessionStartAction} from \"kaltura-ngx-client/api/types/SessionStartAction\";\n<% if (service !== 'Session' && action !== 'Start') { -%>\nimport {<%- service %><%- action %>Action} from \"kaltura-ngx-client/api/types/<%- service %><%- action %>Action\";\n<% } -%>\n<% if (enums.indexOf('SessionType') === -1) { -%>\nimport {KalturaSessionType} from \"kaltura-ngx-client/api/types/KalturaSessionType\";\n<% } -%>\n<% for (var i = 0; i < enums.length; ++i) { -%>\nimport {<%- enums[i] %>} from \"kaltura-ngx-client/api/types/<%- enums[i] %>\";\n<% } -%>\n<% for (var i = 0; i < objects.length; ++i) { -%>\nimport {<%- objects[i] %>} from \"kaltura-ngx-client/api/types/<%- objects[i] %>\";\n<% } -%>\n\ndeclare let window:any;\n\n@Component({\n    selector: 'widget',\n    template: `<h1>Hello world</h1>`,\n})\nexport class WidgetComponent {\n  constructor(private kaltura:KalturaClient) {\n    window.widget = this;\n    this.kaltura.request(new SessionStartAction({\n        secret: <%- codegen.constant(answers.secret) %>,\n        userId: <%- codegen.constant(answers.userId) %>,\n        type: <%- answers.sessionType === 0 ? 'KalturaSessionType.user' : 'KalturaSessionType.admin' %>,\n        partnerId: <%- answers.partnerId || 'YOUR_PARTNER_ID' %>,\n    }))\n\t.map(ks => {\n\t\t  this.kaltura.setDefaultRequestOptions({ks});\n          this.runRequest();\n\t\t},\n\t\terror => {\n\t\t  console.error(`failed to create session with the following error \"SessionStartAction\"`);\n\t\t  throw error;\n\t\t})\n  }\n\n  runRequest() {\n<%- codegen.indent(code, 4) %>\n  }\n}\n",
       "csharp": "using System;\nusing System.Collections.Generic;\nusing System.Text;\nusing System.IO;\nusing Kaltura;\nusing Kaltura.Enums;\nusing Kaltura.Types;\nusing Kaltura.Request;\nusing Kaltura.Services;\nusing System.Threading;\n\nnamespace Kaltura {\n  class CodeExample {\n    static void Main(string[] args) {\n      Client client = CodeExample.createKalturaClient();\n      bool done = false;\n<%- codegen.indent(code, 6) %>\n\n      while (!done) {\n        Thread.Sleep(100);\n      }\n    }\n\n    static Client createKalturaClient() {\n      Configuration config = new Configuration();\n      config.ServiceUrl = \"https://www.kaltura.com/\";\n      Client client = new Client(config);\n<% if (!noSession) { -%>\n      int partnerId = <%- answers.partnerId || 'YOUR_PARTNER_ID' %>;\n      string secret = \"<% answers.secret %>\";\n      string userId = \"<% answers.userId %>\";\n      SessionType type = <%- answers.sessionType === 0 ? 'SessionType.USER' : 'SessionType.ADMIN' %>;\n      int expiry = 86400;\n      string privileges = \"\";\n      client.KS = client.GenerateSession(partnerId, secret, userId, type, expiry, privileges);\n<% } -%>\n      return client;\n    }\n\n    public static void PrintObject<T>(T obj) {\n        var t = typeof(T);\n        var props = t.GetProperties();\n        StringBuilder sb = new StringBuilder();\n        foreach (var item in props)\n        {\n            try {\n              sb.Append(item.Name+ \": \" +item.GetValue(obj,null)+\"\\n\");\n            } catch (Exception ex) {\n              Console.WriteLine(ex.ToString());\n            }\n        }\n        sb.AppendLine();\n        Console.WriteLine(sb.ToString());\n    }\n  }\n}\n",
       "java": "package com.kaltura.code.example;\nimport java.util.ArrayList;\nimport java.util.List;\nimport com.kaltura.client.enums.*;\nimport com.kaltura.client.types.*;\nimport com.kaltura.client.services.*;\nimport com.kaltura.client.APIOkRequestsExecutor;\nimport com.kaltura.client.Client;\nimport com.kaltura.client.Configuration;\nimport com.kaltura.client.services.<%- service %>Service;\nimport com.kaltura.client.services.<%- service %>Service.<%- action %><%- service %>Builder;\nimport com.kaltura.client.types.ListResponse;\nimport com.kaltura.client.utils.response.OnCompletion;\nimport com.kaltura.client.utils.response.base.Response;\n\nclass CodeExample {\n    public static void main(String[] args) {\n        Client client = CodeExample.generateKalturaClient();\n<%- codegen.indent(code, 8) %>\n        APIOkRequestsExecutor.getExecutor().queue(requestBuilder.build(client));\n    }\n\n    public static Client generateKalturaClient() {\n        Configuration config = new Configuration();\n        config.setEndpoint(\"https://www.kaltura.com/\");\n        Client client = new Client(config);\n<% if (!noSession) { -%>\n        try {\n            String session = client.generateSessionV2(\n                  \"<%- answers.secret %>\",\n                  \"<%- answers.userId %>\",\n                  SessionType.ADMIN,\n                  <%- answers.partnerId || '0' %>,\n                  86400, \"\");\n            client.setSessionId(session);\n        } catch (Exception e) {\n            System.out.println(\"Failed to start Kaltura session\");\n            System.exit(1);\n        }\n<% } -%>\n        return client;\n    }\n}\n",
       "javascript": "<script src=\"/js/kaltura/ox.ajast.js\"></script>\n<script src=\"/js/kaltura/webtoolkit.md5.js\"></script>\n<script src=\"/js/kaltura/KalturaClientBase.js\"></script>\n<script src=\"/js/kaltura/KalturaTypes.js\"></script>\n<script src=\"/js/kaltura/KalturaVO.js\"></script>\n<script src=\"/js/kaltura/KalturaServices.js\"></script>\n<script src=\"/js/kaltura/KalturaClient.js\"></script>\n\n<script>\n  var config = new KalturaConfiguration(<%- answers.partnerId %>);\n  config.serviceUrl = 'https://www.kaltura.com';\n  var client = new KalturaClient(config);\n  client.session.start(function(success, ks) {\n    if (!success || (ks.code && ks.message)) {\n      console.log('Error starting session', success, ks);\n      $('#ErrorMessage').text(ks.message || 'Unknown Error').show();\n    } else {\n      window.ks = ks;\n      client.setKs(ks);\n<% if (serviceID !== 'session' && actionID !== 'start') { -%>\n<%- codegen.indent(code, 6) %>\n<% } -%>\n    }\n    // Note: this is meant only as a sample.\n    // You should NEVER generate sessions on the client,\n    // as this exposes your Admin Secret to users.\n    // Instead, generate a session on the server and pass the\n    // KS to the client.\n  }, <%- codegen.constant(answers.secret) %>,\n  <%- codegen.constant(answers.userId) %>,\n  <%- answers.sessionType === 0 ? 'KalturaSessionType.USER' : 'KalturaSessionType.ADMIN' %>,\n  <%- answers.partnerId || 'YOUR_PARTNER_ID' %>)\n</script>\n",
@@ -5090,7 +5092,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 "use strict";
 
 
-var core = module.exports = { version: '2.5.5' };
+var core = module.exports = { version: '2.5.6' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 /***/ }),
@@ -6249,12 +6251,18 @@ module.exports = function (key) {
 "use strict";
 
 
+var core = __webpack_require__("./node_modules/core-js/modules/_core.js");
 var global = __webpack_require__("./node_modules/core-js/modules/_global.js");
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
-module.exports = function (key) {
-  return store[key] || (store[key] = {});
-};
+
+(module.exports = function (key, value) {
+  return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+  version: core.version,
+  mode: __webpack_require__("./node_modules/core-js/modules/_library.js") ? 'pure' : 'global',
+  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
+});
 
 /***/ }),
 
@@ -11666,7 +11674,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       var _DEFAULT_LOCALS_NAME = 'locals';
       var _NAME = 'ejs';
       var _REGEX_STRING = '(<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)';
-      var _OPTS_PASSABLE_WITH_DATA = ['delimiter', 'scope', 'context', 'debug', 'compileDebug', 'client', '_with', 'rmWhitespace', 'strict', 'filename'];
+      var _OPTS_PASSABLE_WITH_DATA = ['delimiter', 'scope', 'context', 'debug', 'compileDebug', 'client', '_with', 'rmWhitespace', 'strict', 'filename', 'async'];
       // We don't allow 'cache' option to be passed in the data obj for
       // the normal `render` call, but this is where Express 2 & 3 put it
       // so we make an exception for `renderFile`
@@ -11963,6 +11971,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
        *
        * @return {(TemplateFunction|ClientFunction)}
        * Depending on the value of `opts.client`, either type might be returned.
+       * Note that the return type of the function also depends on the value of `opts.async`.
        * @public
        */
 
@@ -11995,7 +12004,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
        * @param {String}   template EJS template
        * @param {Object}  [data={}] template data
        * @param {Options} [opts={}] compilation and rendering options
-       * @return {String}
+       * @return {(String|Promise<String>)}
+       * Return value type depends on `opts.async`.
        * @public
        */
 
@@ -12106,8 +12116,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         options.cache = opts.cache || false;
         options.rmWhitespace = opts.rmWhitespace;
         options.root = opts.root;
+        options.outputFunctionName = opts.outputFunctionName;
         options.localsName = opts.localsName || exports.localsName || _DEFAULT_LOCALS_NAME;
         options.views = opts.views;
+        options.async = opts.async;
 
         if (options.strict) {
           options._with = false;
@@ -12143,10 +12155,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           var prepended = '';
           var appended = '';
           var escapeFn = opts.escapeFunction;
+          var asyncCtor;
 
           if (!this.source) {
             this.generateSource();
             prepended += '  var __output = [], __append = __output.push.bind(__output);' + '\n';
+            if (opts.outputFunctionName) {
+              prepended += '  var ' + opts.outputFunctionName + ' = __append;' + '\n';
+            }
             if (opts._with !== false) {
               prepended += '  with (' + opts.localsName + ' || {}) {' + '\n';
               appended += '  }' + '\n';
@@ -12176,7 +12192,22 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           }
 
           try {
-            fn = new Function(opts.localsName + ', escapeFn, include, rethrow', src);
+            if (opts.async) {
+              // Have to use generated function for this, since in envs without support,
+              // it breaks in parsing
+              try {
+                asyncCtor = new Function('return (async function(){}).constructor;')();
+              } catch (e) {
+                if (e instanceof SyntaxError) {
+                  throw new Error('This environment does not support async/await');
+                } else {
+                  throw e;
+                }
+              }
+            } else {
+              asyncCtor = Function;
+            }
+            fn = new asyncCtor(opts.localsName + ', escapeFn, include, rethrow', src);
           } catch (e) {
             // istanbul ignore else
             if (e instanceof SyntaxError) {
@@ -12186,6 +12217,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
               e.message += ' while compiling ejs\n\n';
               e.message += 'If the above error is not helpful, you may want to try EJS-Lint:\n';
               e.message += 'https://github.com/RyanZim/EJS-Lint';
+              if (!e.async) {
+                e.message += '\n';
+                e.message += 'Or, if you meant to create an async function, pass async: true as an option.';
+              }
             }
             throw e;
           }
@@ -13042,7 +13077,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         "name": "ejs",
         "description": "Embedded JavaScript templates",
         "keywords": ["template", "engine", "ejs"],
-        "version": "2.5.8",
+        "version": "2.6.0",
         "author": "Matthew Eernisse <mde@fleegix.org> (http://fleegix.org)",
         "contributors": ["Timothy Gu <timothygu99@gmail.com> (https://timothygu.github.io)"],
         "license": "Apache-2.0",
