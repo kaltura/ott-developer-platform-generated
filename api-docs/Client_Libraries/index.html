@@ -204,21 +204,22 @@ if (!keepSidebar) {
   width: 71px;
   height: 81px;
   overflow: hidden;
-  margin-top: 30px;
-  margin-right: 50px;
+  margin-top: 12px;
+  margin-right: 12px;
   display: inline-block;
   background-image: url(assets/img/client-libs.png);
   background-position: -70px;
 }
 </style>
 
-<p><a class="client-lib-link php5" data-language="php5" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php5_26-02-2017.tar.gz" style="background-position: 0px"></a><a class="client-lib-link php53" data-language="php53" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php53_26-02-2017.tar.gz" style="background-position: -71px"></a><a class="client-lib-link php5Zend" data-language="php5Zend" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php5Zend_26-02-2017.tar.gz" style="background-position: -142px"></a><a class="client-lib-link java" data-language="java" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/java_22-03-2017.tar.gz" style="background-position: -213px"></a><a class="client-lib-link csharp" data-language="csharp" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/csharp_26-02-2017.tar.gz" style="background-position: -284px"></a><a class="client-lib-link ruby" data-language="ruby" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/ruby_26-02-2017.tar.gz" style="background-position: -355px"></a><a class="client-lib-link python" data-language="python" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/python_26-02-2017.tar.gz" style="background-position: -426px"></a><a class="client-lib-link nodejs" data-language="nodejs" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/node_22-03-2017.tar.gz" style="background-position: -497px"></a><a class="client-lib-link ajax" data-language="ajax" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/ajax_22-03-2017.tar.gz" style="background-position: -568px"></a><a class="client-lib-link cli" data-language="cli" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/cli_26-02-2017.tar.gz" style="background-position: -639px"></a><a class="client-lib-link objc" data-language="objc" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/objc_26-02-2017.tar.gz" style="background-position: -710px"></a><a class="client-lib-link android" data-language="android" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/android_26-02-2017.tar.gz" style="background-position: -781px"></a></p>
+<p><a class="client-lib-link php5" data-language="php5" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php5_26-02-2017.tar.gz" style="background-position: 0px"></a><a class="client-lib-link php53" data-language="php53" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php53_26-02-2017.tar.gz" style="background-position: -71px"></a><a class="client-lib-link php5Zend" data-language="php5Zend" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/php5Zend_26-02-2017.tar.gz" style="background-position: -142px"></a><a class="client-lib-link java" data-language="java" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/java_26-02-2017.tar.gz" style="background-position: -213px"></a><a class="client-lib-link csharp" data-language="csharp" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/csharp_26-02-2017.tar.gz" style="background-position: -284px"></a><a class="client-lib-link ruby" data-language="ruby" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/ruby_26-02-2017.tar.gz" style="background-position: -355px"></a><a class="client-lib-link python" data-language="python" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/python_26-02-2017.tar.gz" style="background-position: -426px"></a><a class="client-lib-link nodejs" data-language="nodejs" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/node_26-02-2017.tar.gz" style="background-position: -497px"></a><a class="client-lib-link ajax" data-language="ajax" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/ajax_26-02-2017.tar.gz" style="background-position: -568px"></a><a class="client-lib-link cli" data-language="cli" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/cli_26-02-2017.tar.gz" style="background-position: -639px"></a><a class="client-lib-link objc" data-language="objc" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/objc_26-02-2017.tar.gz" style="background-position: -710px"></a><a class="client-lib-link android" data-language="android" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/android_26-02-2017.tar.gz" style="background-position: -781px"></a><a class="client-lib-link swift" data-language="swift" href="https://tvpapi-us-preprod.ott.kaltura.com/v4_1/clientlibs/swift_26-02-2017.tar.gz" style="background-position: -852px"></a></p>
 <script>
   window.jquery('.client-lib-link').click(function() {
     var lang = $(this).attr('data-language');
     mixpanel.track('client_library', {language: lang});
   })
 </script>
+
 
 
 <h2 id="missing-a-language-">Missing a Language?</h2>
