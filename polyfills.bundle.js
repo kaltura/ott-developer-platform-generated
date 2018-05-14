@@ -22,7 +22,7 @@ module.exports = {
   "embedParameters": {
     "format": 1
   },
-  "javascript": ["assets/KalturaClient.min.js", "assets/KalturaSessionService.min.js", "assets/KalturaPartnerService.min.js", "assets/KalturaUiConfService.min.js", "assets/js/highlight.pack.js", "assets/js/modernizr.js"],
+  "javascript": ["assets/KalturaClient.min.js", "assets/KalturaSessionService.min.js", "assets/KalturaPartnerService.min.js", "assets/KalturaUiConfService.min.js", "assets/js/highlight.pack.js", "assets/js/modernizr.js", "assets/js/auth.js", "assets/js/check-response.js", "assets/js/jekyll-code-example-buttons.js", "assets/js/jquery.exLink.js", "assets/js/kc-setup.js", "assets/js/lity.min.js", "assets/js/misc.js", "assets/js/opentip-jquery.js", "assets/js/search.js", "assets/js/sidebar.js", "assets/js/webflow.js"],
   "codegen": {
     "languages": [{
       "id": "curl",
@@ -3444,9 +3444,16 @@ module.exports = {
         "parameters": [],
         "codeSnippet": {
           "ajax": "$('input[name=\"fileData\"]').fileupload({\n      apiURL:'https://www.kaltura.com/api_v3/',\n      url: 'https://www.kaltura.com/api_v3/?service=uploadToken&action=upload&format=1',\n      ks: client.ks,\n      singleFileUploads: true,\n      dataType: 'json',\n      autoUpload: true,\n      submit: function(e, data) {\n        console.log('uploading...')\n      },\n      done: function(e, data) {\n        console.log('upload done.')\n      },\n});",
+          "angular": "auto",
+          "csharp": "auto",
+          "curl": "auto",
+          "java": "auto",
           "node": "auto",
           "php": "auto",
-          "ruby": "auto"
+          "php53": "auto",
+          "python": "auto",
+          "ruby": "auto",
+          "swift": "auto"
         }
       }, {
         "title": "Uploading Files - Send the Data",
@@ -3962,7 +3969,6 @@ module.exports = {
       "label": "3.6.287.20720"
     }]
   },
-  "externalJS": true,
   "externalCSS": true
 };
 
