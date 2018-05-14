@@ -3484,9 +3484,16 @@ module.exports = {
         }],
         "codeSnippet": {
           "ajax": "$('input[name=\"fileData\"]').fileupload({\n      apiURL:'https://www.kaltura.com/api_v3/',\n      url: 'https://www.kaltura.com/api_v3/?service=uploadToken&action=upload&format=1',\n      ks: client.ks,\n      singleFileUploads: true,\n      dataType: 'json',\n      autoUpload: true,\n      submit: function(e, data) {\n        console.log('uploading...')\n      },\n      done: function(e, data) {\n        console.log('upload done.')\n      },\n});",
+          "angular": "auto",
+          "csharp": "auto",
+          "curl": "auto",
+          "java": "auto",
           "node": "auto",
           "php": "auto",
-          "ruby": "auto"
+          "php53": "auto",
+          "python": "auto",
+          "ruby": "auto",
+          "swift": "auto"
         }
       }, {
         "title": "Creating a Media Entry",
