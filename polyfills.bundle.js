@@ -1956,7 +1956,7 @@ module.exports = {
       "title": "Authentication",
       "description": "This recipe will guide you through the steps necessary to create a Kaltura Session (ks), a temporary authentication token that can provide either user-level or admin-level access to your Kaltura account.,,",
       "steps": [{
-        "title": "Starting a KalturaSession",
+        "title": "Starting a Kaltura Session",
         "description": "This recipe shows how to work with Kaltura Sessions (aka `KS`).  To generate a KS, you will need your API secret keys.\n\nTo retrieve these secret keys, visit the \"Integration Settings\" tab inside the [Kaltura Management Console](http://kmc.kaltura.com/index.php/kmc/kmc4#account|integration).\n\nTo sign up for a Kaltura VPaaS account, visit [vpaas.kaltura.com](https://vpaas.kaltura.com)",
         "apiCall": {
           "method": "post",
