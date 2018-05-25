@@ -1822,8 +1822,7 @@ module.exports = {
         "description": "Start an unprivileged session by calling `session.startWidgetSession`. Once the call completes, use client.setKs() to set the returned `ks` value as the KS (Kaltura Session) of the client object.\n\nThe widgetId should be a partnerId, with an underscore at the beginning, e.g. `_1234567`.\n\nDo not set a KS on the client before making this call.",
         "apiCall": {
           "method": "post",
-          "path": "/service/session/action/startWidgetSession",
-          "disableSetupCode": true
+          "path": "/service/session/action/startWidgetSession"
         },
         "parameters": [{
           "name": "body",
@@ -1855,8 +1854,7 @@ module.exports = {
         "description": "You will now call `appToken.startSession` to obtain a privileged Kaltura Session (KS). \n\nFirst, ensure that your client's KS is set to the unprivileged KS returned in Step 1.  Next, pass the following parameters into the `appToken.startSession` call:\n* `id`: The ID of the Application Token with which you are authenticating.\n* `tokenHash`: The hash value of the unprivileged KS and the Application Token value. Use the output of Step 2 of this recipe.\n* `userId`: The ID of the user whose permissions will be used to access content. **Note that some Application Tokens already have a fixed User ID, in which case you do not need to pass this value.*\n\nExecuting the call returns a new, privileged KS for your application. Set the returned value as the client's KS.\n\nYou are now ready to make other API calls!",
         "apiCall": {
           "method": "post",
-          "path": "/service/apptoken/action/startSession",
-          "disableSetupCode": true
+          "path": "/service/apptoken/action/startSession"
         },
         "parameters": [{
           "name": "ks",
