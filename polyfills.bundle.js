@@ -15,7 +15,8 @@ module.exports = {
     "embedConsoleInDocumentation": true,
     "messages": {
       "beta": "Please note: this action is experimental.",
-      "deprecated": "This API action has been deprecated. If you’re building a new app integration,\nplease consult the usage guides or forums for the more recent API actions to use.\n"
+      "deprecated": "This API action has been deprecated. If you’re building a new app integration,\nplease consult the usage guides or forums for the more recent API actions to use.\n",
+      "console": "This is the interactive Kaltura API Console. Here you can experiment and play with our API, as well as\nget tested code examples for using the Kaltura Video API in native programming languages using the Kaltura API Client Libraries and Video SDKs.\n\nTo get started, please log in to your Kaltura account (or [sign up for a new account](https://vpaas.kaltura.com/register)),\nclick on an API action on the left menu, fill the fields and click the \"execute\" button to get a real response from the Kaltura service.\n"
     },
     "optionalizeHost": false
   },
