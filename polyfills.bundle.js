@@ -80,6 +80,7 @@ module.exports = {
     "redirect_uri": "",
     "workflowDirectory": "workflows"
   },
+  "basePath": "/@VERSION@/doc/",
   "specifications": {
     "ott": [{
       "openapi": "./ott.openapi.json",
@@ -1530,7 +1531,6 @@ module.exports = {
   "env": {
     "target_api": "ott"
   },
-  "basePath": "/",
   "sitemap": false,
   "oauth": false,
   "workflows": {
