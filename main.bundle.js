@@ -8163,7 +8163,7 @@ var OpenAPIService = /** @class */ (function () {
         if (cache === void 0) { cache = {}; }
         if (base === void 0) { base = null; }
         if (seen === void 0) { seen = []; }
-        if (typeof obj !== 'object')
+        if (typeof obj !== 'object' || obj === null)
             return obj;
         base = base || obj;
         if (seen.indexOf(obj) === -1) {

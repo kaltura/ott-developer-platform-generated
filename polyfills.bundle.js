@@ -83,7 +83,7 @@ module.exports = {
   "specifications": {
     "ott": [{
       "openapi": "./ott.openapi.json",
-      "label": "4.82.4.29971"
+      "label": "3.6.287.20720"
     }]
   },
   "css": ["assets/ott.css"],
@@ -163,7 +163,7 @@ module.exports = {
     "title": "Client Libraries",
     "markdownFile": "./markdown/generated/client_libraries.md",
     "discussionURL": null,
-    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v4_8_2 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n## Download Client Archives\n<style>\n.client-lib-link {\n  width: 71px;\n  height: 81px;\n  overflow: hidden;\n  margin-top: 12px;\n  margin-right: 12px;\n  display: inline-block;\n  background-image: url(assets/img/client-libs.png);\n  background-position: -70px;\n}\n</style>\n\n<a class=\"client-lib-link php5\" data-language=\"php5\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPHP/archive/v4_8_2.tar.gz\" style=\"background-position: 0px\"></a><a class=\"client-lib-link php53\" data-language=\"php53\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPHP53/archive/v4_8_2.tar.gz\" style=\"background-position: -71px\"></a><a class=\"client-lib-link php5Zend\" data-language=\"php5Zend\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsZF/archive/v4_8_2.tar.gz\" style=\"background-position: -142px\"></a><a class=\"client-lib-link java\" data-language=\"java\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsJava/archive/v4_8_2.tar.gz\" style=\"background-position: -213px\"></a><a class=\"client-lib-link csharp\" data-language=\"csharp\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp/archive/v4_8_2.tar.gz\" style=\"background-position: -284px\"></a><a class=\"client-lib-link ruby\" data-language=\"ruby\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsRuby/archive/v4_8_2.tar.gz\" style=\"background-position: -355px\"></a><a class=\"client-lib-link python\" data-language=\"python\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPython/archive/v4_8_2.tar.gz\" style=\"background-position: -426px\"></a><a class=\"client-lib-link nodejs\" data-language=\"nodejs\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsNodeJS/archive/v4_8_2.tar.gz\" style=\"background-position: -497px\"></a><a class=\"client-lib-link ajax\" data-language=\"ajax\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAJAX/archive/v4_8_2.tar.gz\" style=\"background-position: -568px\"></a><a class=\"client-lib-link cli\" data-language=\"cli\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsCLI/archive/v4_8_2.tar.gz\" style=\"background-position: -639px\"></a><a class=\"client-lib-link objc\" data-language=\"objc\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsObjectiveC/archive/v4_8_2.tar.gz\" style=\"background-position: -710px\"></a><a class=\"client-lib-link android\" data-language=\"android\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAndroid/archive/v4_8_2.tar.gz\" style=\"background-position: -781px\"></a><a class=\"client-lib-link swift\" data-language=\"swift\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsSwift/archive/v4_8_2.tar.gz\" style=\"background-position: -852px\"></a><a class=\"client-lib-link angular\" data-language=\"angular\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAngular/archive/v4_8_2.tar.gz\" style=\"background-position: -923px\"></a><a class=\"client-lib-link typescript\" data-language=\"typescript\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript/archive/v4_8_2.tar.gz\" style=\"background-position: -994px\"></a>\n\n<script>\n  window.jquery('.client-lib-link').click(function() {\n    var lang = $(this).attr('data-language');\n    mixpanel.track('client_library', {language: lang});\n  })\n</script>\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](http://www.kaltura.org/api-client-library-generator-guide)\n\n"
+    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v13.20.0 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n## Download Client Archives\n<style>\n.client-lib-link {\n  width: 71px;\n  height: 81px;\n  overflow: hidden;\n  margin-top: 12px;\n  margin-right: 12px;\n  display: inline-block;\n  background-image: url(assets/img/client-libs.png);\n  background-position: -70px;\n}\n</style>\n\n<a class=\"client-lib-link php5\" data-language=\"php5\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPHP/archive/v13.20.0.tar.gz\" style=\"background-position: 0px\"></a><a class=\"client-lib-link php53\" data-language=\"php53\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPHP53/archive/v13.20.0.tar.gz\" style=\"background-position: -71px\"></a><a class=\"client-lib-link php5Zend\" data-language=\"php5Zend\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsZF/archive/v13.20.0.tar.gz\" style=\"background-position: -142px\"></a><a class=\"client-lib-link java\" data-language=\"java\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsJava/archive/v13.20.0.tar.gz\" style=\"background-position: -213px\"></a><a class=\"client-lib-link csharp\" data-language=\"csharp\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp/archive/v13.20.0.tar.gz\" style=\"background-position: -284px\"></a><a class=\"client-lib-link ruby\" data-language=\"ruby\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsRuby/archive/v13.20.0.tar.gz\" style=\"background-position: -355px\"></a><a class=\"client-lib-link python\" data-language=\"python\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsPython/archive/v13.20.0.tar.gz\" style=\"background-position: -426px\"></a><a class=\"client-lib-link nodejs\" data-language=\"nodejs\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsNodeJS/archive/v13.20.0.tar.gz\" style=\"background-position: -497px\"></a><a class=\"client-lib-link ajax\" data-language=\"ajax\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAJAX/archive/v13.20.0.tar.gz\" style=\"background-position: -568px\"></a><a class=\"client-lib-link cli\" data-language=\"cli\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsCLI/archive/v13.20.0.tar.gz\" style=\"background-position: -639px\"></a><a class=\"client-lib-link objc\" data-language=\"objc\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsObjectiveC/archive/v13.20.0.tar.gz\" style=\"background-position: -710px\"></a><a class=\"client-lib-link android\" data-language=\"android\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAndroid/archive/v13.20.0.tar.gz\" style=\"background-position: -781px\"></a><a class=\"client-lib-link swift\" data-language=\"swift\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsSwift/archive/v13.20.0.tar.gz\" style=\"background-position: -852px\"></a><a class=\"client-lib-link angular\" data-language=\"angular\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsAngular/archive/v13.20.0.tar.gz\" style=\"background-position: -923px\"></a><a class=\"client-lib-link typescript\" data-language=\"typescript\" href=\"https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript/archive/v13.20.0.tar.gz\" style=\"background-position: -994px\"></a>\n\n<script>\n  window.jquery('.client-lib-link').click(function() {\n    var lang = $(this).attr('data-language');\n    mixpanel.track('client_library', {language: lang});\n  })\n</script>\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](http://www.kaltura.org/api-client-library-generator-guide)\n\n"
   }, {
     "children": [{
       "tag": "announcement"
@@ -178,19 +178,17 @@ module.exports = {
     }, {
       "tag": "assetHistory"
     }, {
-      "tag": "assetRule"
-    }, {
       "tag": "assetStatistics"
     }, {
-      "tag": "assetUserRule"
+      "tag": "assetStruct"
     }, {
       "tag": "bookmark"
+    }, {
+      "tag": "cDVRAdapterProfile"
     }, {
       "tag": "cdnAdapterProfile"
     }, {
       "tag": "cdnPartnerSettings"
-    }, {
-      "tag": "cDVRAdapterProfile"
     }, {
       "tag": "channel"
     }, {
@@ -210,15 +208,13 @@ module.exports = {
     }, {
       "tag": "coupon"
     }, {
-      "tag": "couponsGroup"
-    }, {
       "tag": "currency"
     }, {
       "tag": "deviceBrand"
     }, {
       "tag": "deviceFamily"
     }, {
-      "tag": "discountDetails"
+      "tag": "drmProfile"
     }, {
       "tag": "email"
     }, {
@@ -254,11 +250,19 @@ module.exports = {
     }, {
       "tag": "householdUser"
     }, {
+      "tag": "image"
+    }, {
+      "tag": "imageType"
+    }, {
       "tag": "inboxMessage"
     }, {
       "tag": "language"
     }, {
       "tag": "licensedUrl"
+    }, {
+      "tag": "mediaFile"
+    }, {
+      "tag": "mediaFileType"
     }, {
       "tag": "messageTemplate"
     }, {
@@ -298,6 +302,8 @@ module.exports = {
     }, {
       "tag": "purchaseSettings"
     }, {
+      "tag": "ratio"
+    }, {
       "tag": "recommendationProfile"
     }, {
       "tag": "recording"
@@ -330,6 +336,8 @@ module.exports = {
     }, {
       "tag": "system"
     }, {
+      "tag": "tag"
+    }, {
       "tag": "timeShiftedTvPartnerSettings"
     }, {
       "tag": "topic"
@@ -339,6 +347,8 @@ module.exports = {
       "tag": "transactionHistory"
     }, {
       "tag": "unifiedPayment"
+    }, {
+      "tag": "uploadToken"
     }, {
       "tag": "userAssetRule"
     }, {
@@ -386,15 +396,11 @@ module.exports = {
       }, {
         "definition": "KalturaAssetCommentListResponse"
       }, {
-        "definition": "KalturaAssetCondition"
-      }, {
         "definition": "KalturaAssetCount"
       }, {
         "definition": "KalturaAssetCountListResponse"
       }, {
         "definition": "KalturaAssetFieldGroupBy"
-      }, {
-        "definition": "KalturaAssetFile"
       }, {
         "definition": "KalturaAssetFileContext"
       }, {
@@ -410,27 +416,15 @@ module.exports = {
       }, {
         "definition": "KalturaAssetReminder"
       }, {
-        "definition": "KalturaAssetRule"
-      }, {
-        "definition": "KalturaAssetRuleAction"
-      }, {
-        "definition": "KalturaAssetRuleBase"
-      }, {
-        "definition": "KalturaAssetRuleListResponse"
-      }, {
         "definition": "KalturaAssetStatistics"
       }, {
         "definition": "KalturaAssetStatisticsListResponse"
       }, {
         "definition": "KalturaAssetStatisticsQuery"
       }, {
-        "definition": "KalturaAssetUserRule"
+        "definition": "KalturaAssetStruct"
       }, {
-        "definition": "KalturaAssetUserRuleAction"
-      }, {
-        "definition": "KalturaAssetUserRuleBlockAction"
-      }, {
-        "definition": "KalturaAssetUserRuleListResponse"
+        "definition": "KalturaAssetStructListResponse"
       }, {
         "definition": "KalturaAssetsCount"
       }, {
@@ -472,6 +466,10 @@ module.exports = {
       }, {
         "definition": "KalturaChannelEnrichmentHolder"
       }, {
+        "definition": "KalturaChannelListResponse"
+      }, {
+        "definition": "KalturaChannelOrder"
+      }, {
         "definition": "KalturaClientConfiguration"
       }, {
         "definition": "KalturaCollection"
@@ -483,8 +481,6 @@ module.exports = {
         "definition": "KalturaCollectionPrice"
       }, {
         "definition": "KalturaCompensation"
-      }, {
-        "definition": "KalturaCondition"
       }, {
         "definition": "KalturaConfigurationGroup"
       }, {
@@ -504,19 +500,15 @@ module.exports = {
       }, {
         "definition": "KalturaConfigurationsListResponse"
       }, {
-        "definition": "KalturaCountry"
+        "definition": "KalturaContentResource"
       }, {
-        "definition": "KalturaCountryCondition"
+        "definition": "KalturaCountry"
       }, {
         "definition": "KalturaCountryListResponse"
       }, {
         "definition": "KalturaCoupon"
       }, {
-        "definition": "KalturaCouponGenerationOptions"
-      }, {
         "definition": "KalturaCouponsGroup"
-      }, {
-        "definition": "KalturaCouponsGroupListResponse"
       }, {
         "definition": "KalturaCurrency"
       }, {
@@ -542,23 +534,21 @@ module.exports = {
       }, {
         "definition": "KalturaDeviceReport"
       }, {
-        "definition": "KalturaDiscount"
-      }, {
-        "definition": "KalturaDiscountDetails"
-      }, {
-        "definition": "KalturaDiscountDetailsListResponse"
-      }, {
         "definition": "KalturaDiscountModule"
       }, {
         "definition": "KalturaDoubleValue"
       }, {
         "definition": "KalturaDrmPlaybackPluginData"
       }, {
+        "definition": "KalturaDrmProfile"
+      }, {
+        "definition": "KalturaDrmProfileListResponse"
+      }, {
+        "definition": "KalturaDynamicChannel"
+      }, {
         "definition": "KalturaDynamicOrderBy"
       }, {
         "definition": "KalturaEmailMessage"
-      }, {
-        "definition": "KalturaEndDateOffsetRuleAction"
       }, {
         "definition": "KalturaEngagement"
       }, {
@@ -606,8 +596,6 @@ module.exports = {
       }, {
         "definition": "KalturaFollowTvSeriesListResponse"
       }, {
-        "definition": "KalturaGenericListResponse"
-      }, {
         "definition": "KalturaGroupPermission"
       }, {
         "definition": "KalturaHomeNetwork"
@@ -642,6 +630,14 @@ module.exports = {
       }, {
         "definition": "KalturaHouseholdUserListResponse"
       }, {
+        "definition": "KalturaImage"
+      }, {
+        "definition": "KalturaImageListResponse"
+      }, {
+        "definition": "KalturaImageType"
+      }, {
+        "definition": "KalturaImageTypeListResponse"
+      }, {
         "definition": "KalturaInboxMessage"
       }, {
         "definition": "KalturaInboxMessageListResponse"
@@ -666,6 +662,8 @@ module.exports = {
       }, {
         "definition": "KalturaLicensedUrlRecordingRequest"
       }, {
+        "definition": "KalturaLinearMediaAsset"
+      }, {
         "definition": "KalturaListResponse"
       }, {
         "definition": "KalturaLoginResponse"
@@ -674,9 +672,17 @@ module.exports = {
       }, {
         "definition": "KalturaLongValue"
       }, {
+        "definition": "KalturaManualChannel"
+      }, {
         "definition": "KalturaMediaAsset"
       }, {
         "definition": "KalturaMediaFile"
+      }, {
+        "definition": "KalturaMediaFileListResponse"
+      }, {
+        "definition": "KalturaMediaFileType"
+      }, {
+        "definition": "KalturaMediaFileTypeListResponse"
       }, {
         "definition": "KalturaMediaImage"
       }, {
@@ -792,8 +798,6 @@ module.exports = {
       }, {
         "definition": "KalturaProgramAsset"
       }, {
-        "definition": "KalturaPublicCouponGenerationOptions"
-      }, {
         "definition": "KalturaPurchase"
       }, {
         "definition": "KalturaPurchaseBase"
@@ -806,7 +810,9 @@ module.exports = {
       }, {
         "definition": "KalturaPushParams"
       }, {
-        "definition": "KalturaRandomCouponGenerationOptions"
+        "definition": "KalturaRatio"
+      }, {
+        "definition": "KalturaRatioListResponse"
       }, {
         "definition": "KalturaRecommendationProfile"
       }, {
@@ -886,8 +892,6 @@ module.exports = {
       }, {
         "definition": "KalturaSocialUserConfig"
       }, {
-        "definition": "KalturaStartDateOffsetRuleAction"
-      }, {
         "definition": "KalturaStringValue"
       }, {
         "definition": "KalturaStringValueArray"
@@ -908,9 +912,9 @@ module.exports = {
       }, {
         "definition": "KalturaSubscriptionSwitchSet"
       }, {
-        "definition": "KalturaT"
+        "definition": "KalturaTag"
       }, {
-        "definition": "KalturaTimeOffsetRuleAction"
+        "definition": "KalturaTagListResponse"
       }, {
         "definition": "KalturaTimeShiftedTvPartnerSettings"
       }, {
@@ -927,6 +931,12 @@ module.exports = {
         "definition": "KalturaTwitterTwit"
       }, {
         "definition": "KalturaUnifiedPaymentRenewal"
+      }, {
+        "definition": "KalturaUploadToken"
+      }, {
+        "definition": "KalturaUploadedFileTokenResource"
+      }, {
+        "definition": "KalturaUrlResource"
       }, {
         "definition": "KalturaUsageModule"
       }, {
@@ -985,7 +995,7 @@ module.exports = {
         "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
       }, {
         "title": "KalturaAssetOrderBy",
-        "contents": "| Name | Value |\n|------|-------|\n| RELEVANCY_DESC | \"RELEVANCY_DESC\" |\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| VIEWS_DESC | \"VIEWS_DESC\" |\n| RATINGS_DESC | \"RATINGS_DESC\" |\n| VOTES_DESC | \"VOTES_DESC\" |\n| START_DATE_DESC | \"START_DATE_DESC\" |\n| START_DATE_ASC | \"START_DATE_ASC\" |\n| LIKES_DESC | \"LIKES_DESC\" |"
+        "contents": "| Name | Value |\n|------|-------|\n| RELEVANCY_DESC | \"RELEVANCY_DESC\" |\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| VIEWS_DESC | \"VIEWS_DESC\" |\n| RATINGS_DESC | \"RATINGS_DESC\" |\n| VOTES_DESC | \"VOTES_DESC\" |\n| START_DATE_DESC | \"START_DATE_DESC\" |\n| START_DATE_ASC | \"START_DATE_ASC\" |\n| LIKES_DESC | \"LIKES_DESC\" |\n| CREATE_DATE_ASC | \"CREATE_DATE_ASC\" |\n| CREATE_DATE_DESC | \"CREATE_DATE_DESC\" |"
       }, {
         "title": "KalturaAssetReferenceType",
         "contents": "| Name | Value |\n|------|-------|\n| MEDIA | \"media\" |\n| EPG_INTERNAL | \"epg_internal\" |\n| EPG_EXTERNAL | \"epg_external\" |"
@@ -993,11 +1003,11 @@ module.exports = {
         "title": "KalturaAssetReminderOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| RELEVANCY_DESC | \"RELEVANCY_DESC\" |\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| VIEWS_DESC | \"VIEWS_DESC\" |\n| RATINGS_DESC | \"RATINGS_DESC\" |\n| VOTES_DESC | \"VOTES_DESC\" |\n| START_DATE_DESC | \"START_DATE_DESC\" |\n| START_DATE_ASC | \"START_DATE_ASC\" |\n| LIKES_DESC | \"LIKES_DESC\" |"
       }, {
+        "title": "KalturaAssetStructOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| SYSTEM_NAME_ASC | \"SYSTEM_NAME_ASC\" |\n| SYSTEM_NAME_DESC | \"SYSTEM_NAME_DESC\" |\n| CREATE_DATE_ASC | \"CREATE_DATE_ASC\" |\n| CREATE_DATE_DESC | \"CREATE_DATE_DESC\" |\n| UPDATE_DATE_ASC | \"UPDATE_DATE_ASC\" |\n| UPDATE_DATE_DESC | \"UPDATE_DATE_DESC\" |"
+      }, {
         "title": "KalturaAssetType",
         "contents": "| Name | Value |\n|------|-------|\n| MEDIA | \"media\" |\n| RECORDING | \"recording\" |\n| EPG | \"epg\" |"
-      }, {
-        "title": "KalturaAssetUserRuleOrderBy",
-        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
       }, {
         "title": "KalturaBillingAction",
         "contents": "| Name | Value |\n|------|-------|\n| UNKNOWN | \"unknown\" |\n| PURCHASE | \"purchase\" |\n| RENEW_PAYMENT | \"renew_payment\" |\n| RENEW_CANCELED_SUBSCRIPTION | \"renew_canceled_subscription\" |\n| CANCEL_SUBSCRIPTION_ORDER | \"cancel_subscription_order\" |\n| SUBSCRIPTION_DATE_CHANGED | \"subscription_date_changed\" |"
@@ -1025,6 +1035,12 @@ module.exports = {
       }, {
         "title": "KalturaChannelEnrichment",
         "contents": "| Name | Value |\n|------|-------|\n| CLIENTLOCATION | \"ClientLocation\" |\n| USERID | \"UserId\" |\n| HOUSEHOLDID | \"HouseholdId\" |\n| DEVICEID | \"DeviceId\" |\n| DEVICETYPE | \"DeviceType\" |\n| UTCOFFSET | \"UTCOffset\" |\n| LANGUAGE | \"Language\" |\n| NPVRSUPPORT | \"NPVRSupport\" |\n| CATCHUP | \"Catchup\" |\n| PARENTAL | \"Parental\" |\n| DTTREGION | \"DTTRegion\" |\n| ATHOME | \"AtHome\" |"
+      }, {
+        "title": "KalturaChannelOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| ORDER_NUM | \"ORDER_NUM\" |\n| RELEVANCY_DESC | \"RELEVANCY_DESC\" |\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| VIEWS_DESC | \"VIEWS_DESC\" |\n| RATINGS_DESC | \"RATINGS_DESC\" |\n| VOTES_DESC | \"VOTES_DESC\" |\n| START_DATE_DESC | \"START_DATE_DESC\" |\n| START_DATE_ASC | \"START_DATE_ASC\" |\n| LIKES_DESC | \"LIKES_DESC\" |\n| CREATE_DATE_ASC | \"CREATE_DATE_ASC\" |\n| CREATE_DATE_DESC | \"CREATE_DATE_DESC\" |"
+      }, {
+        "title": "KalturaChannelsOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| CREATE_DATE_ASC | \"CREATE_DATE_ASC\" |\n| CREATE_DATE_DESC | \"CREATE_DATE_DESC\" |"
       }, {
         "title": "KalturaCollectionOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
@@ -1064,9 +1080,6 @@ module.exports = {
       }, {
         "title": "KalturaDeviceStatus",
         "contents": "| Name | Value |\n|------|-------|\n| PENDING | \"PENDING\" |\n| ACTIVATED | \"ACTIVATED\" |\n| NOT_ACTIVATED | \"NOT_ACTIVATED\" |"
-      }, {
-        "title": "KalturaDiscountFilterOrderBy",
-        "contents": "| Name | Value |\n|------|-------|\n| CODE_ASC | \"CODE_ASC\" |"
       }, {
         "title": "KalturaDrmSchemeName",
         "contents": "| Name | Value |\n|------|-------|\n| PLAYREADY_CENC | \"PLAYREADY_CENC\" |\n| WIDEVINE_CENC | \"WIDEVINE_CENC\" |\n| FAIRPLAY | \"FAIRPLAY\" |\n| WIDEVINE | \"WIDEVINE\" |\n| PLAYREADY | \"PLAYREADY\" |\n| CUSTOM_DRM | \"CUSTOM_DRM\" |"
@@ -1134,6 +1147,18 @@ module.exports = {
         "title": "KalturaIdentifierTypeBy",
         "contents": "| Name | Value |\n|------|-------|\n| INTERNAL_ID | \"internal_id\" |\n| EXTERNAL_ID | \"external_id\" |"
       }, {
+        "title": "KalturaImageObjectType",
+        "contents": "| Name | Value |\n|------|-------|\n| MEDIA_ASSET | \"MEDIA_ASSET\" |\n| PROGRAM_ASSET | \"PROGRAM_ASSET\" |\n| CHANNEL | \"CHANNEL\" |\n| CATEGORY | \"CATEGORY\" |\n| PARTNER | \"PARTNER\" |\n| IMAGE_TYPE | \"IMAGE_TYPE\" |"
+      }, {
+        "title": "KalturaImageOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
+      }, {
+        "title": "KalturaImageStatus",
+        "contents": "| Name | Value |\n|------|-------|\n| PENDING | \"PENDING\" |\n| READY | \"READY\" |\n| FAILED | \"FAILED\" |"
+      }, {
+        "title": "KalturaImageTypeOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
+      }, {
         "title": "KalturaInboxMessageOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
       }, {
@@ -1146,14 +1171,26 @@ module.exports = {
         "title": "KalturaLanguageOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| SYSTEM_NAME_ASC | \"SYSTEM_NAME_ASC\" |\n| SYSTEM_NAME_DESC | \"SYSTEM_NAME_DESC\" |\n| CODE_ASC | \"CODE_ASC\" |\n| CODE_DESC | \"CODE_DESC\" |"
       }, {
+        "title": "KalturaMediaFileOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
+      }, {
+        "title": "KalturaMediaFileStreamerType",
+        "contents": "| Name | Value |\n|------|-------|\n| APPLE_HTTP | \"APPLE_HTTP\" |\n| MPEG_DASH | \"MPEG_DASH\" |\n| URL | \"URL\" |\n| SMOOTH_STREAMING | \"SMOOTH_STREAMING\" |"
+      }, {
+        "title": "KalturaMediaFileTypeQuality",
+        "contents": "| Name | Value |\n|------|-------|\n| ADAPTIVE | \"ADAPTIVE\" |\n| SD | \"SD\" |\n| HD_720 | \"HD_720\" |\n| HD_1080 | \"HD_1080\" |\n| UHD_4K | \"UHD_4K\" |"
+      }, {
         "title": "KalturaMessageTemplateType",
         "contents": "| Name | Value |\n|------|-------|\n| SERIES | \"Series\" |\n| REMINDER | \"Reminder\" |\n| CHURN | \"Churn\" |\n| SERIESREMINDER | \"SeriesReminder\" |\n| INTERESTVOD | \"InterestVod\" |\n| INTERESTEPG | \"InterestEPG\" |"
+      }, {
+        "title": "KalturaMetaDataType",
+        "contents": "| Name | Value |\n|------|-------|\n| STRING | \"STRING\" |\n| MULTILINGUAL_STRING | \"MULTILINGUAL_STRING\" |\n| NUMBER | \"NUMBER\" |\n| BOOLEAN | \"BOOLEAN\" |\n| DATE | \"DATE\" |"
       }, {
         "title": "KalturaMetaFieldName",
         "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |\n| SERIES_ID | \"SERIES_ID\" |\n| SEASON_NUMBER | \"SEASON_NUMBER\" |\n| EPISODE_NUMBER | \"EPISODE_NUMBER\" |"
       }, {
         "title": "KalturaMetaOrderBy",
-        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
+        "contents": "| Name | Value |\n|------|-------|\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |\n| SYSTEM_NAME_ASC | \"SYSTEM_NAME_ASC\" |\n| SYSTEM_NAME_DESC | \"SYSTEM_NAME_DESC\" |\n| CREATE_DATE_ASC | \"CREATE_DATE_ASC\" |\n| CREATE_DATE_DESC | \"CREATE_DATE_DESC\" |\n| UPDATE_DATE_ASC | \"UPDATE_DATE_ASC\" |\n| UPDATE_DATE_DESC | \"UPDATE_DATE_DESC\" |"
       }, {
         "title": "KalturaMetaTagOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| META_ASC | \"META_ASC\" |\n| META_DESC | \"META_DESC\" |"
@@ -1240,13 +1277,13 @@ module.exports = {
         "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
       }, {
         "title": "KalturaRuleActionType",
-        "contents": "| Name | Value |\n|------|-------|\n| BLOCK | \"BLOCK\" |\n| START_DATE_OFFSET | \"START_DATE_OFFSET\" |\n| END_DATE_OFFSET | \"END_DATE_OFFSET\" |\n| USER_BLOCK | \"USER_BLOCK\" |"
+        "contents": "| Name | Value |\n|------|-------|\n| BLOCK | \"BLOCK\" |"
       }, {
         "title": "KalturaRuleLevel",
         "contents": "| Name | Value |\n|------|-------|\n| INVALID | \"invalid\" |\n| USER | \"user\" |\n| HOUSEHOLD | \"household\" |\n| ACCOUNT | \"account\" |"
       }, {
         "title": "KalturaRuleType",
-        "contents": "| Name | Value |\n|------|-------|\n| PARENTAL | \"parental\" |\n| GEO | \"geo\" |\n| USER_TYPE | \"user_type\" |\n| DEVICE | \"device\" |\n| ASSETUSER | \"assetUser\" |"
+        "contents": "| Name | Value |\n|------|-------|\n| PARENTAL | \"parental\" |\n| GEO | \"geo\" |\n| USER_TYPE | \"user_type\" |\n| DEVICE | \"device\" |"
       }, {
         "title": "KalturaScheduledRecordingAssetType",
         "contents": "| Name | Value |\n|------|-------|\n| SINGLE | \"single\" |\n| SERIES | \"series\" |\n| ALL | \"all\" |"
@@ -1302,6 +1339,9 @@ module.exports = {
         "title": "KalturaSubscriptionSetType",
         "contents": "| Name | Value |\n|------|-------|\n| SWITCH | \"SWITCH\" |\n| DEPENDENCY | \"DEPENDENCY\" |"
       }, {
+        "title": "KalturaTagOrderBy",
+        "contents": "| Name | Value |\n|------|-------|\n| NONE | \"NONE\" |"
+      }, {
         "title": "KalturaTopicAutomaticIssueNotification",
         "contents": "| Name | Value |\n|------|-------|\n| INHERIT | \"Inherit\" |\n| YES | \"Yes\" |\n| NO | \"No\" |"
       }, {
@@ -1316,6 +1356,9 @@ module.exports = {
       }, {
         "title": "KalturaTransactionType",
         "contents": "| Name | Value |\n|------|-------|\n| PPV | \"ppv\" |\n| SUBSCRIPTION | \"subscription\" |\n| COLLECTION | \"collection\" |"
+      }, {
+        "title": "KalturaUploadTokenStatus",
+        "contents": "| Name | Value |\n|------|-------|\n| PENDING | \"PENDING\" |\n| FULL_UPLOAD | \"FULL_UPLOAD\" |\n| CLOSED | \"CLOSED\" |"
       }, {
         "title": "KalturaUserAssetRuleOrderBy",
         "contents": "| Name | Value |\n|------|-------|\n| NAME_ASC | \"NAME_ASC\" |\n| NAME_DESC | \"NAME_DESC\" |"
@@ -1350,7 +1393,7 @@ module.exports = {
       }, {
         "definition": "KalturaAssetReminderFilter"
       }, {
-        "definition": "KalturaAssetUserRuleFilter"
+        "definition": "KalturaAssetStructFilter"
       }, {
         "definition": "KalturaBaseSearchAssetFilter"
       }, {
@@ -1361,6 +1404,8 @@ module.exports = {
         "definition": "KalturaChannelExternalFilter"
       }, {
         "definition": "KalturaChannelFilter"
+      }, {
+        "definition": "KalturaChannelsFilter"
       }, {
         "definition": "KalturaCollectionFilter"
       }, {
@@ -1375,8 +1420,6 @@ module.exports = {
         "definition": "KalturaCurrencyFilter"
       }, {
         "definition": "KalturaDeviceReportFilter"
-      }, {
-        "definition": "KalturaDiscountDetailsFilter"
       }, {
         "definition": "KalturaEngagementFilter"
       }, {
@@ -1396,9 +1439,15 @@ module.exports = {
       }, {
         "definition": "KalturaHouseholdUserFilter"
       }, {
+        "definition": "KalturaImageFilter"
+      }, {
+        "definition": "KalturaImageTypeFilter"
+      }, {
         "definition": "KalturaInboxMessageFilter"
       }, {
         "definition": "KalturaLanguageFilter"
+      }, {
+        "definition": "KalturaMediaFileFilter"
       }, {
         "definition": "KalturaMetaFilter"
       }, {
@@ -1438,8 +1487,6 @@ module.exports = {
       }, {
         "definition": "KalturaSearchAssetFilter"
       }, {
-        "definition": "KalturaSearchAssetListFilter"
-      }, {
         "definition": "KalturaSearchExternalFilter"
       }, {
         "definition": "KalturaSearchHistoryFilter"
@@ -1462,6 +1509,8 @@ module.exports = {
       }, {
         "definition": "KalturaSubscriptionSetFilter"
       }, {
+        "definition": "KalturaTagFilter"
+      }, {
         "definition": "KalturaTopicFilter"
       }, {
         "definition": "KalturaTransactionHistoryFilter"
@@ -1475,8 +1524,8 @@ module.exports = {
   }, {
     "title": "Error Codes",
     "prerender": false,
-    "markdown": "# Error Codes\n\n* `DomainAlreadyExists` (code: 1000)\n* `ExceededLimit` (code: 1001)\n* `DeviceTypeNotAllowed` (code: 1002)\n* `DeviceNotInDomain` (code: 1003)\n* `MasterEmailAlreadyExists` (code: 1004)\n* `UserNotInDomain` (code: 1005)\n* `DomainNotExists` (code: 1006)\n* `HouseholdUserFailed` (code: 1007)\n* `DomainCreatedWithoutNPVRAccount` (code: 1008)\n* `DomainSuspended` (code: 1009)\n* `DlmNotExist` (code: 1010)\n* `WrongPasswordOrUserName` (code: 1011)\n* `DomainAlreadySuspended` (code: 1012)\n* `DomainAlreadyActive` (code: 1013)\n* `LimitationPeriod` (code: 1014)\n* `DeviceAlreadyExists` (code: 1015)\n* `DeviceExistsInOtherDomains` (code: 1016)\n* `NoUsersInDomain` (code: 1017)\n* `UserExistsInOtherDomains` (code: 1018)\n* `DeviceNotExists` (code: 1019)\n* `UserNotExistsInDomain` (code: 1020)\n* `ActionUserNotMaster` (code: 1021)\n* `ExceededUserLimit` (code: 1022)\n* `DomainNotInitialized` (code: 1023)\n* `DeviceNotConfirmed` (code: 1024)\n* `RequestFailed` (code: 1025)\n* `InvalidUser` (code: 1026)\n* `UserNotAllowed` (code: 1027)\n* `DuplicatePin` (code: 1028)\n* `UserAlreadyInDomain` (code: 1029)\n* `NotAllowedToDelete` (code: 1030)\n* `HomeNetworkAlreadyExists` (code: 1031)\n* `HomeNetworkLimitation` (code: 1032)\n* `HomeNetworkDoesNotExist` (code: 1033)\n* `HomeNetworkFrequency` (code: 1034)\n* `UserDoesNotExist` (code: 2000)\n* `UserSuspended` (code: 2001)\n* `PinNotExists` (code: 2003)\n* `PinExpired` (code: 2004)\n* `NoValidPin` (code: 2006)\n* `MissingSecurityParameter` (code: 2007)\n* `SecretIsWrong` (code: 2008)\n* `LoginViaPinNotAllowed` (code: 2009)\n* `PinNotInTheRightLength` (code: 2010)\n* `PinAlreadyExists` (code: 2011)\n* `UserExists` (code: 2014)\n* `InsideLockTime` (code: 2015)\n* `UserNotActivated` (code: 2016)\n* `UserAllreadyLoggedIn` (code: 2017)\n* `UserDoubleLogIn` (code: 2018)\n* `DeviceNotRegistered` (code: 2019)\n* `ErrorOnInitUser` (code: 2021)\n* `UserNotMasterApproved` (code: 2023)\n* `UserWithNoDomain` (code: 2024)\n* `UserTypeDoesNotExist` (code: 2025)\n* `ActivationTokenNotFound` (code: 2026)\n* `UserAlreadyMasterApproved` (code: 2027)\n* `LoginServerDown` (code: 2028)\n* `RoleAlreadyAssignedToUser` (code: 2029)\n* `DefaultUserCannotBeDeleted` (code: 2030)\n* `ExclusiveMasterUserCannotBeDeleted` (code: 2031)\n* `ItemNotFound` (code: 2032)\n* `ExternalIdAlreadyExists` (code: 2054)\n* `ExternalError` (code: 500063) - externalCode: [@externalCode@], externalMessage: [@externalMessage@]\n* `InvalidPurchase` (code: 3000)\n* `CancelationWindowPeriodExpired` (code: 3001)\n* `SubscriptionNotRenewable` (code: 3002)\n* `ServiceNotAllowed` (code: 3003)\n* `InvalidBaseLink` (code: 3004)\n* `ContentAlreadyConsumed` (code: 3005)\n* `ReasonUnknown` (code: 3011)\n* `ChargeStatusUnknown` (code: 3015)\n* `ContentIDMissing` (code: 3016)\n* `NoMediaRelatedToFile` (code: 3017)\n* `NoContentID` (code: 3018)\n* `NoProductID` (code: 3019)\n* `CouponNotValid` (code: 3020)\n* `UnableToPurchasePPVPurchased` (code: 3021)\n* `UnableToPurchaseFree` (code: 3022)\n* `UnableToPurchaseForPurchaseSubscriptionOnly` (code: 3023)\n* `UnableToPurchaseSubscriptionPurchased` (code: 3024)\n* `NotForPurchase` (code: 3025)\n* `Fail` (code: 3026)\n* `UnableToPurchaseCollectionPurchased` (code: 3027)\n* `FileToMediaMismatch` (code: 3028)\n* `ReconciliationFrequencyLimitation` (code: 3029)\n* `InvalidCustomDataIdentifier` (code: 3030)\n* `InvalidFileType` (code: 3031)\n* `NotEntitled` (code: 3032)\n* `AccountCdvrNotEnabled` (code: 3033)\n* `AccountCatchUpNotEnabled` (code: 3034)\n* `ProgramCdvrNotEnabled` (code: 3035)\n* `ProgramCatchUpNotEnabled` (code: 3036)\n* `CatchUpBufferLimitation` (code: 3037)\n* `ProgramNotInRecordingScheduleWindow` (code: 3038)\n* `RecordingNotFound` (code: 3039)\n* `RecordingFailed` (code: 3040)\n* `PaymentMethodIsUsedByHousehold` (code: 3041)\n* `ExceededQuota` (code: 3042)\n* `RecordingStatusNotValid` (code: 3043)\n* `ExceededProtectionQuota` (code: 3044)\n* `AccountProtectRecordNotEnabled` (code: 3045)\n* `AccountSeriesRecordingNotEnabled` (code: 3046)\n* `AlreadyRecordedAsSeriesOrSeason` (code: 3047)\n* `SeriesRecordingNotFound` (code: 3048)\n* `EpgIdNotPartOfSeries` (code: 3049)\n* `RecordingPlaybackNotAllowedForNonExistingEpgChannel` (code: 3050)\n* `RecordingPlaybackNotAllowedForNotEntitledEpgChannel` (code: 3051)\n* `SeasonNumberNotMatch` (code: 3052)\n* `SubscriptionCancellationIsBlocked` (code: 3074)\n* `MediaConcurrencyLimitation` (code: 4000)\n* `ConcurrencyLimitation` (code: 4001)\n* `BadSearchRequest` (code: 4002)\n* `IndexMissing` (code: 4003)\n* `SyntaxError` (code: 4004)\n* `InvalidSearchField` (code: 4005)\n* `NoRecommendationEngineToInsert` (code: 4006)\n* `RecommendationEngineNotExist` (code: 4007)\n* `RecommendationEngineIdentifierRequired` (code: 4008)\n* `RecommendationEngineParamsRequired` (code: 4009)\n* `NoExternalChannelToInsert` (code: 4010)\n* `ExternalChannelNotExist` (code: 4011)\n* `NoExternalChannelToUpdate` (code: 4012)\n* `ExternalChannelIdentifierRequired` (code: 4013)\n* `ExternalChannelHasNoRecommendationEngine` (code: 4014)\n* `NoRecommendationEngineToUpdate` (code: 4015)\n* `InactiveExternalChannelEnrichment` (code: 4016)\n* `IdentifierRequired` (code: 4017)\n* `ObjectNotExist` (code: 4018)\n* `NoObjectToInsert` (code: 4019)\n* `InvalidMediaType` (code: 4020)\n* `InvalidAssetType` (code: 4021)\n* `ProgramDoesntExist` (code: 4022)\n* `ActionNotRecognized` (code: 4023)\n* `InvalidAssetId` (code: 4024)\n* `CountryNotFound` (code: 4025)\n* `NoPinDefined` (code: 5001)\n* `PinMismatch` (code: 5002)\n* `RuleNotExists` (code: 5003)\n* `NoOSSAdapterToInsert` (code: 5004)\n* `NameRequired` (code: 5005)\n* `SharedSecretRequired` (code: 5006)\n* `OSSAdapterIdentifierRequired` (code: 5007)\n* `OSSAdapterNotExist` (code: 5008)\n* `OSSAdapterParamsRequired` (code: 5009)\n* `UnknownOSSAdapterState` (code: 5010)\n* `ActionIsNotAllowed` (code: 5011)\n* `NoOSSAdapterToUpdate` (code: 5012)\n* `AdapterUrlRequired` (code: 5013)\n* `ConflictedParams` (code: 5014)\n* `PurchaseSettingsTypeInvalid` (code: 5015)\n* `ExportTaskNotFound` (code: 5016)\n* `ExportNotificationUrlRequired` (code: 5017)\n* `ExportFrequencyMinValue` (code: 5018)\n* `AliasMustBeUnique` (code: 5019)\n* `AliasRequired` (code: 5020)\n* `UserParentalRuleNotExists` (code: 5021)\n* `TimeShiftedTvPartnerSettingsNotFound` (code: 5022)\n* `TimeShiftedTvPartnerSettingsNotSent` (code: 5023)\n* `TimeShiftedTvPartnerSettingsNegativeBufferSent` (code: 5024)\n* `CDNPartnerSettingsNotFound` (code: 5025)\n* `IncorrectPrice` (code: 6000)\n* `UnKnownPPVModule` (code: 6001)\n* `ExpiredCard` (code: 6002)\n* `CellularPermissionsError` (code: 6003)\n* `UnKnownBillingProvider` (code: 6004)\n* `PaymentGatewayIdRequired` (code: 6005)\n* `PaymentGatewayParamsRequired` (code: 6006)\n* `PaymentGatewayNotSetForHousehold` (code: 6007)\n* `PaymentGatewayNotExist` (code: 6008)\n* `PaymentGatewayChargeIdRequired` (code: 6009)\n* `NoConfigurationFound` (code: 6011)\n* `AdapterAppFailure` (code: 6012)\n* `SignatureMismatch` (code: 6013)\n* `ErrorSavingPaymentGatewayTransaction` (code: 6014)\n* `ErrorSavingPaymentGatewayPending` (code: 6015)\n* `ExternalIdentifierRequired` (code: 6016)\n* `ErrorSavingPaymentGatewayHousehold` (code: 6017)\n* `NoPaymentGateway` (code: 6018)\n* `PaymentGatewayNameRequired` (code: 6020)\n* `PaymentGatewaySharedSecretRequired` (code: 6021)\n* `HouseholdAlreadySetToPaymentGateway` (code: 6024)\n* `ChargeIdAlreadySetToHouseholdPaymentGateway` (code: 6025)\n* `ChargeIdNotSetToHousehold` (code: 6026)\n* `HouseholdNotSetToPaymentGateway` (code: 6027)\n* `PaymentGatewaySelectionIsDisabled` (code: 6028)\n* `NoResponseFromPaymentGateway` (code: 6030)\n* `InvalidAccount` (code: 6031)\n* `InsufficientFunds` (code: 6032)\n* `UnknownPaymentGatewayResponse` (code: 6033)\n* `PaymentGatewayAdapterUserKnown` (code: 6034)\n* `PaymentGatewayAdapterReasonUnknown` (code: 6035)\n* `SignatureDoesNotMatch` (code: 6036)\n* `ErrorUpdatingPendingTransaction` (code: 6037)\n* `PaymentGatewayTransactionNotFound` (code: 6038)\n* `PaymentGatewayTransactionIsNotPending` (code: 6039)\n* `ExternalIdentifierMustBeUnique` (code: 6040)\n* `NoPaymentGatewayToInsert` (code: 6041)\n* `UnknownTransactionState` (code: 6042)\n* `PaymentGatewayNotValid` (code: 6043)\n* `HouseholdRequired` (code: 6044)\n* `PaymentGatewayAdapterFailReasonUnknown` (code: 6045)\n* `NoPartnerConfigurationToUpdate` (code: 6046)\n* `NoConfigurationValueToUpdate` (code: 6047)\n* `PaymentMethodNotSetForHousehold` (code: 6048)\n* `PaymentMethodNotExist` (code: 6049)\n* `PaymentMethodIdRequired` (code: 6050)\n* `PaymentGatewaySuspended` (code: 6051)\n* `ErrorSavingPaymentGatewayHouseholdPaymentMethod` (code: 6052)\n* `PaymentMethodAlreadySetToHouseholdPaymentGateway` (code: 6054)\n* `PaymentMethodNameRequired` (code: 6055)\n* `PaymentGatewayNotSupportPaymentMethod` (code: 6056)\n* `Conflict` (code: 7000)\n* `MinFriendsLimitation` (code: 7001)\n* `NoNotificationSettingsSent` (code: 8000)\n* `PushNotificationFalse` (code: 8001)\n* `NoNotificationPartnerSettings` (code: 8002)\n* `NoNotificationSettings` (code: 8003)\n* `AnnouncementMessageIsEmpty` (code: 8004)\n* `AnnouncementInvalidStartTime` (code: 8005)\n* `AnnouncementNotFound` (code: 8006)\n* `AnnouncementUpdateNotAllowed` (code: 8007)\n* `AnnouncementInvalidTimezone` (code: 8008)\n* `FeatureDisabled` (code: 8009)\n* `AnnouncementMessageTooLong` (code: 8010)\n* `FailCreateAnnouncement` (code: 8011)\n* `UserNotFollowing` (code: 8012)\n* `UserAlreadyFollowing` (code: 8013)\n* `MessagePlaceholdersInvalid` (code: 8014)\n* `DatetimeFormatIsInvalid` (code: 8015)\n* `MessageTemplateNotFound` (code: 8016)\n* `URLPlaceholdersInvalid` (code: 8017)\n* `InvalidMessageTTL` (code: 8018)\n* `MessageIdentifierRequired` (code: 8019)\n* `UserInboxMessagesNotExist` (code: 8020)\n* `InvalidPriceCode` (code: 9000)\n* `InvalidValue` (code: 9001)\n* `InvalidDiscountCode` (code: 9002)\n* `InvalidPricePlan` (code: 9003)\n* `CodeMustBeUnique` (code: 9004)\n* `CodeNotExist` (code: 9005)\n* `InvalidCodeNotExist` (code: 9006)\n* `InvalidChannels` (code: 9008)\n* `InvalidFileTypes` (code: 9009)\n* `InvalidPreviewModule` (code: 9010)\n* `MandatoryField` (code: 9011)\n* `UniqueFiled` (code: 9012)\n* `InvalidUsageModule` (code: 9013)\n* `InvalidCouponGroup` (code: 9014)\n* `InvalidCurrency` (code: 9015)\n* `ModuleNotExists` (code: 9016)\n* `PricePlanDoesNotExist` (code: 9017)\n* `PriceDetailsDoesNotExist` (code: 9018)\n* `AdapterNotExists` (code: 10000)\n* `AdapterIdentifierRequired` (code: 10001)\n* `AdapterIsRequired` (code: 10002)\n* `NoAdapterToInsert` (code: 10003)\n* `IllegalXml` (code: 11000)\n* `MissingExternalIdentifier` (code: 11001)\n* `UnknownIngestType` (code: 11002)\n* `EPGSProgramDatesError` (code: 11003)\n* `BadRequest` (code: 500003) - Bad request\n* `InvalidVersion` (code: 500057) - Invalid version [@version@]\n* `ServiceForbidden` (code: 500004) - Service Forbidden\n* `PropertyActionForbidden` (code: 500051) - Action [@action@] is forbidden for property [@type@].[@property@]\n* `ActionArgumentForbidden` (code: 500052) - Argument [@argument@] in action [@service@].[@action@] is forbidden\n* `InvalidKS` (code: 500015) - Invalid KS format\n* `ExpiredKS` (code: 500016) - KS expired\n* `PartnerInvalid` (code: 500008) - Partner invalid\n* `InvalidRefreshToken` (code: 500017) - Invalid refresh token\n* `RefreshTokenFailed` (code: 500034) - Refresh token failed\n* `UnauthorizedUser` (code: 500035) - Invalid user [@id@]\n* `InvalidUdid` (code: 500060) - Invalid UDID [@id@]\n* `InvalidService` (code: 500011) - Service [@service@] not found\n* `InvalidAction` (code: 500012) - Action [@service@.@action@] not found\n* `ActionNotSpecified` (code: 500033) - Action not specified\n* `InvalidActionParameter` (code: 500054) - Invalid action parameter [@parameter@]\n* `InvalidActionParameters` (code: 500013) - Invalid action parameters\n* `InvalidArgument` (code: 50026) - Argument [@argument@] is invalid\n* `ArgumentMustBeNumeric` (code: 500031) - Argument [@argument@] must be numeric\n* `ArgumentCannotBeEmpty` (code: 50027) - Argument [@argument@] cannot be empty\n* `ArgumentReadonly` (code: 500036) - Argument [@argument@] is not writeable\n* `ArgumentInsertonly` (code: 500037) - Argument [@argument@] is not updateable\n* `EnumValueNotSupported` (code: 500041) - Enumerator value [@value@] is not supported for argument [@argument@]\n* `ArgumentShouldBeEnum` (code: 500044) - Argument [@argument@] values must be of type [@enum@]\n* `ArgumentShouldContainMinValueCrossed` (code: 500058) - Argument [@argument@] values must have minimum value of [@value@]\n* `ArgumentShouldContainMaxValueCrossed` (code: 500059) - Argument [@argument@] values must have max value of [@value@]\n* `ArgumentsCannotBeEmpty` (code: 500056) - One of the arguments [@arguments@] must have a value\n* `ArgumentsConflictsEachOther` (code: 500038) - Only one of @argument1@ or @argument2@ can be used, not both of them\n* `TimeInPast` (code: 500039) - Argument [@argument@] time have passed\n* `ArgumentMaxLengthCrossed` (code: 500045) - Argument [@argument@] maximum length is [@value@]\n* `ArgumentMinLengthCrossed` (code: 500046) - Argument [@argument@] minimum length is [@value@]\n* `ArgumentMaxValueCrossed` (code: 500047) - Argument [@argument@] maximum value is [@value@]\n* `ArgumentMinValueCrossed` (code: 500048) - Argument [@argument@] minimum value is [@value@]\n* `ArgumentsConflictEachOther` (code: 500061) - Argument [@argument1@] value conflicts Argument [@argument2@] value\n* `ArgumentsDuplicate` (code: 500066) - Argument [@argument@] can not appear twice\n* `MediaIdsMustBeNumeric` (code: 500029) - Media ids must be numeric\n* `EpgInternalIdsMustBeNumeric` (code: 500030) - EPG internal ids must be numeric\n* `ListTypeCannotBeEmptyOrAll` (code: 500032) - Argument [@argument@] cannot be empty or all\n* `DuplicateAsset` (code: 500049) - Duplicate asset: id [@id@] type = [@type@]\n* `DuplicateFile` (code: 500050) - Duplicate file: id [@id@]\n* `UnableToCreateHouseholdForRole` (code: 500062) - Unable to create household for role\n* `HttpMethodNotSupported` (code: 500065) - HTTP [@argument@] method not supported\n* `HouseholdForbidden` (code: 500028) - Household [@household@] forbidden\n* `SwitchingUsersIsNotAllowedForPartner` (code: 50024) - Switching users is not allowed for partner\n* `NotActiveAppToken` (code: 50023) - Application-token [@id@] is not active\n* `InvalidAppTokenHash` (code: 50022) - Invalid application-token hash\n* `ExpiredAppToken` (code: 50021) - Application-token is expired\n* `NotAllowed` (code: 7013) - Action not allowed due to roleId [@roleId@]\n* `Error` (code: 1) - error\n* `MissingConfiguration` (code: 500006) - Missing configuration [@configuration@]\n* `NotFound` (code: 500007) - @objectType@ not found\n* `ObjectIdNotFound` (code: 500055) - @objectType@ id [@id@] not found\n* `InvalidMultirequestToken` (code: 50025) - Invalid multirequest token\n* `AbstractParameter` (code: 500018) - Abstract parameter type [@type@]\n* `MissingParameter` (code: 500053) - Missing parameter [@parameter@]\n* `MultirequestIndexNotZeroBased` (code: 500042) - Invalid multirequest token, response index is not zero based\n* `MultirequestInvalidIndex` (code: 500043) - Invalid multirequest token, invalid response index\n* `MultirequestGenericMethod` (code: 500064) - Invalid multirequest service, invalid service: [@service@], action: [@action@]",
-    "contents": "# Error Codes\n\n* `DomainAlreadyExists` (code: 1000)\n* `ExceededLimit` (code: 1001)\n* `DeviceTypeNotAllowed` (code: 1002)\n* `DeviceNotInDomain` (code: 1003)\n* `MasterEmailAlreadyExists` (code: 1004)\n* `UserNotInDomain` (code: 1005)\n* `DomainNotExists` (code: 1006)\n* `HouseholdUserFailed` (code: 1007)\n* `DomainCreatedWithoutNPVRAccount` (code: 1008)\n* `DomainSuspended` (code: 1009)\n* `DlmNotExist` (code: 1010)\n* `WrongPasswordOrUserName` (code: 1011)\n* `DomainAlreadySuspended` (code: 1012)\n* `DomainAlreadyActive` (code: 1013)\n* `LimitationPeriod` (code: 1014)\n* `DeviceAlreadyExists` (code: 1015)\n* `DeviceExistsInOtherDomains` (code: 1016)\n* `NoUsersInDomain` (code: 1017)\n* `UserExistsInOtherDomains` (code: 1018)\n* `DeviceNotExists` (code: 1019)\n* `UserNotExistsInDomain` (code: 1020)\n* `ActionUserNotMaster` (code: 1021)\n* `ExceededUserLimit` (code: 1022)\n* `DomainNotInitialized` (code: 1023)\n* `DeviceNotConfirmed` (code: 1024)\n* `RequestFailed` (code: 1025)\n* `InvalidUser` (code: 1026)\n* `UserNotAllowed` (code: 1027)\n* `DuplicatePin` (code: 1028)\n* `UserAlreadyInDomain` (code: 1029)\n* `NotAllowedToDelete` (code: 1030)\n* `HomeNetworkAlreadyExists` (code: 1031)\n* `HomeNetworkLimitation` (code: 1032)\n* `HomeNetworkDoesNotExist` (code: 1033)\n* `HomeNetworkFrequency` (code: 1034)\n* `UserDoesNotExist` (code: 2000)\n* `UserSuspended` (code: 2001)\n* `PinNotExists` (code: 2003)\n* `PinExpired` (code: 2004)\n* `NoValidPin` (code: 2006)\n* `MissingSecurityParameter` (code: 2007)\n* `SecretIsWrong` (code: 2008)\n* `LoginViaPinNotAllowed` (code: 2009)\n* `PinNotInTheRightLength` (code: 2010)\n* `PinAlreadyExists` (code: 2011)\n* `UserExists` (code: 2014)\n* `InsideLockTime` (code: 2015)\n* `UserNotActivated` (code: 2016)\n* `UserAllreadyLoggedIn` (code: 2017)\n* `UserDoubleLogIn` (code: 2018)\n* `DeviceNotRegistered` (code: 2019)\n* `ErrorOnInitUser` (code: 2021)\n* `UserNotMasterApproved` (code: 2023)\n* `UserWithNoDomain` (code: 2024)\n* `UserTypeDoesNotExist` (code: 2025)\n* `ActivationTokenNotFound` (code: 2026)\n* `UserAlreadyMasterApproved` (code: 2027)\n* `LoginServerDown` (code: 2028)\n* `RoleAlreadyAssignedToUser` (code: 2029)\n* `DefaultUserCannotBeDeleted` (code: 2030)\n* `ExclusiveMasterUserCannotBeDeleted` (code: 2031)\n* `ItemNotFound` (code: 2032)\n* `ExternalIdAlreadyExists` (code: 2054)\n* `ExternalError` (code: 500063) - externalCode: [@externalCode@], externalMessage: [@externalMessage@]\n* `InvalidPurchase` (code: 3000)\n* `CancelationWindowPeriodExpired` (code: 3001)\n* `SubscriptionNotRenewable` (code: 3002)\n* `ServiceNotAllowed` (code: 3003)\n* `InvalidBaseLink` (code: 3004)\n* `ContentAlreadyConsumed` (code: 3005)\n* `ReasonUnknown` (code: 3011)\n* `ChargeStatusUnknown` (code: 3015)\n* `ContentIDMissing` (code: 3016)\n* `NoMediaRelatedToFile` (code: 3017)\n* `NoContentID` (code: 3018)\n* `NoProductID` (code: 3019)\n* `CouponNotValid` (code: 3020)\n* `UnableToPurchasePPVPurchased` (code: 3021)\n* `UnableToPurchaseFree` (code: 3022)\n* `UnableToPurchaseForPurchaseSubscriptionOnly` (code: 3023)\n* `UnableToPurchaseSubscriptionPurchased` (code: 3024)\n* `NotForPurchase` (code: 3025)\n* `Fail` (code: 3026)\n* `UnableToPurchaseCollectionPurchased` (code: 3027)\n* `FileToMediaMismatch` (code: 3028)\n* `ReconciliationFrequencyLimitation` (code: 3029)\n* `InvalidCustomDataIdentifier` (code: 3030)\n* `InvalidFileType` (code: 3031)\n* `NotEntitled` (code: 3032)\n* `AccountCdvrNotEnabled` (code: 3033)\n* `AccountCatchUpNotEnabled` (code: 3034)\n* `ProgramCdvrNotEnabled` (code: 3035)\n* `ProgramCatchUpNotEnabled` (code: 3036)\n* `CatchUpBufferLimitation` (code: 3037)\n* `ProgramNotInRecordingScheduleWindow` (code: 3038)\n* `RecordingNotFound` (code: 3039)\n* `RecordingFailed` (code: 3040)\n* `PaymentMethodIsUsedByHousehold` (code: 3041)\n* `ExceededQuota` (code: 3042)\n* `RecordingStatusNotValid` (code: 3043)\n* `ExceededProtectionQuota` (code: 3044)\n* `AccountProtectRecordNotEnabled` (code: 3045)\n* `AccountSeriesRecordingNotEnabled` (code: 3046)\n* `AlreadyRecordedAsSeriesOrSeason` (code: 3047)\n* `SeriesRecordingNotFound` (code: 3048)\n* `EpgIdNotPartOfSeries` (code: 3049)\n* `RecordingPlaybackNotAllowedForNonExistingEpgChannel` (code: 3050)\n* `RecordingPlaybackNotAllowedForNotEntitledEpgChannel` (code: 3051)\n* `SeasonNumberNotMatch` (code: 3052)\n* `SubscriptionCancellationIsBlocked` (code: 3074)\n* `MediaConcurrencyLimitation` (code: 4000)\n* `ConcurrencyLimitation` (code: 4001)\n* `BadSearchRequest` (code: 4002)\n* `IndexMissing` (code: 4003)\n* `SyntaxError` (code: 4004)\n* `InvalidSearchField` (code: 4005)\n* `NoRecommendationEngineToInsert` (code: 4006)\n* `RecommendationEngineNotExist` (code: 4007)\n* `RecommendationEngineIdentifierRequired` (code: 4008)\n* `RecommendationEngineParamsRequired` (code: 4009)\n* `NoExternalChannelToInsert` (code: 4010)\n* `ExternalChannelNotExist` (code: 4011)\n* `NoExternalChannelToUpdate` (code: 4012)\n* `ExternalChannelIdentifierRequired` (code: 4013)\n* `ExternalChannelHasNoRecommendationEngine` (code: 4014)\n* `NoRecommendationEngineToUpdate` (code: 4015)\n* `InactiveExternalChannelEnrichment` (code: 4016)\n* `IdentifierRequired` (code: 4017)\n* `ObjectNotExist` (code: 4018)\n* `NoObjectToInsert` (code: 4019)\n* `InvalidMediaType` (code: 4020)\n* `InvalidAssetType` (code: 4021)\n* `ProgramDoesntExist` (code: 4022)\n* `ActionNotRecognized` (code: 4023)\n* `InvalidAssetId` (code: 4024)\n* `CountryNotFound` (code: 4025)\n* `NoPinDefined` (code: 5001)\n* `PinMismatch` (code: 5002)\n* `RuleNotExists` (code: 5003)\n* `NoOSSAdapterToInsert` (code: 5004)\n* `NameRequired` (code: 5005)\n* `SharedSecretRequired` (code: 5006)\n* `OSSAdapterIdentifierRequired` (code: 5007)\n* `OSSAdapterNotExist` (code: 5008)\n* `OSSAdapterParamsRequired` (code: 5009)\n* `UnknownOSSAdapterState` (code: 5010)\n* `ActionIsNotAllowed` (code: 5011)\n* `NoOSSAdapterToUpdate` (code: 5012)\n* `AdapterUrlRequired` (code: 5013)\n* `ConflictedParams` (code: 5014)\n* `PurchaseSettingsTypeInvalid` (code: 5015)\n* `ExportTaskNotFound` (code: 5016)\n* `ExportNotificationUrlRequired` (code: 5017)\n* `ExportFrequencyMinValue` (code: 5018)\n* `AliasMustBeUnique` (code: 5019)\n* `AliasRequired` (code: 5020)\n* `UserParentalRuleNotExists` (code: 5021)\n* `TimeShiftedTvPartnerSettingsNotFound` (code: 5022)\n* `TimeShiftedTvPartnerSettingsNotSent` (code: 5023)\n* `TimeShiftedTvPartnerSettingsNegativeBufferSent` (code: 5024)\n* `CDNPartnerSettingsNotFound` (code: 5025)\n* `IncorrectPrice` (code: 6000)\n* `UnKnownPPVModule` (code: 6001)\n* `ExpiredCard` (code: 6002)\n* `CellularPermissionsError` (code: 6003)\n* `UnKnownBillingProvider` (code: 6004)\n* `PaymentGatewayIdRequired` (code: 6005)\n* `PaymentGatewayParamsRequired` (code: 6006)\n* `PaymentGatewayNotSetForHousehold` (code: 6007)\n* `PaymentGatewayNotExist` (code: 6008)\n* `PaymentGatewayChargeIdRequired` (code: 6009)\n* `NoConfigurationFound` (code: 6011)\n* `AdapterAppFailure` (code: 6012)\n* `SignatureMismatch` (code: 6013)\n* `ErrorSavingPaymentGatewayTransaction` (code: 6014)\n* `ErrorSavingPaymentGatewayPending` (code: 6015)\n* `ExternalIdentifierRequired` (code: 6016)\n* `ErrorSavingPaymentGatewayHousehold` (code: 6017)\n* `NoPaymentGateway` (code: 6018)\n* `PaymentGatewayNameRequired` (code: 6020)\n* `PaymentGatewaySharedSecretRequired` (code: 6021)\n* `HouseholdAlreadySetToPaymentGateway` (code: 6024)\n* `ChargeIdAlreadySetToHouseholdPaymentGateway` (code: 6025)\n* `ChargeIdNotSetToHousehold` (code: 6026)\n* `HouseholdNotSetToPaymentGateway` (code: 6027)\n* `PaymentGatewaySelectionIsDisabled` (code: 6028)\n* `NoResponseFromPaymentGateway` (code: 6030)\n* `InvalidAccount` (code: 6031)\n* `InsufficientFunds` (code: 6032)\n* `UnknownPaymentGatewayResponse` (code: 6033)\n* `PaymentGatewayAdapterUserKnown` (code: 6034)\n* `PaymentGatewayAdapterReasonUnknown` (code: 6035)\n* `SignatureDoesNotMatch` (code: 6036)\n* `ErrorUpdatingPendingTransaction` (code: 6037)\n* `PaymentGatewayTransactionNotFound` (code: 6038)\n* `PaymentGatewayTransactionIsNotPending` (code: 6039)\n* `ExternalIdentifierMustBeUnique` (code: 6040)\n* `NoPaymentGatewayToInsert` (code: 6041)\n* `UnknownTransactionState` (code: 6042)\n* `PaymentGatewayNotValid` (code: 6043)\n* `HouseholdRequired` (code: 6044)\n* `PaymentGatewayAdapterFailReasonUnknown` (code: 6045)\n* `NoPartnerConfigurationToUpdate` (code: 6046)\n* `NoConfigurationValueToUpdate` (code: 6047)\n* `PaymentMethodNotSetForHousehold` (code: 6048)\n* `PaymentMethodNotExist` (code: 6049)\n* `PaymentMethodIdRequired` (code: 6050)\n* `PaymentGatewaySuspended` (code: 6051)\n* `ErrorSavingPaymentGatewayHouseholdPaymentMethod` (code: 6052)\n* `PaymentMethodAlreadySetToHouseholdPaymentGateway` (code: 6054)\n* `PaymentMethodNameRequired` (code: 6055)\n* `PaymentGatewayNotSupportPaymentMethod` (code: 6056)\n* `Conflict` (code: 7000)\n* `MinFriendsLimitation` (code: 7001)\n* `NoNotificationSettingsSent` (code: 8000)\n* `PushNotificationFalse` (code: 8001)\n* `NoNotificationPartnerSettings` (code: 8002)\n* `NoNotificationSettings` (code: 8003)\n* `AnnouncementMessageIsEmpty` (code: 8004)\n* `AnnouncementInvalidStartTime` (code: 8005)\n* `AnnouncementNotFound` (code: 8006)\n* `AnnouncementUpdateNotAllowed` (code: 8007)\n* `AnnouncementInvalidTimezone` (code: 8008)\n* `FeatureDisabled` (code: 8009)\n* `AnnouncementMessageTooLong` (code: 8010)\n* `FailCreateAnnouncement` (code: 8011)\n* `UserNotFollowing` (code: 8012)\n* `UserAlreadyFollowing` (code: 8013)\n* `MessagePlaceholdersInvalid` (code: 8014)\n* `DatetimeFormatIsInvalid` (code: 8015)\n* `MessageTemplateNotFound` (code: 8016)\n* `URLPlaceholdersInvalid` (code: 8017)\n* `InvalidMessageTTL` (code: 8018)\n* `MessageIdentifierRequired` (code: 8019)\n* `UserInboxMessagesNotExist` (code: 8020)\n* `InvalidPriceCode` (code: 9000)\n* `InvalidValue` (code: 9001)\n* `InvalidDiscountCode` (code: 9002)\n* `InvalidPricePlan` (code: 9003)\n* `CodeMustBeUnique` (code: 9004)\n* `CodeNotExist` (code: 9005)\n* `InvalidCodeNotExist` (code: 9006)\n* `InvalidChannels` (code: 9008)\n* `InvalidFileTypes` (code: 9009)\n* `InvalidPreviewModule` (code: 9010)\n* `MandatoryField` (code: 9011)\n* `UniqueFiled` (code: 9012)\n* `InvalidUsageModule` (code: 9013)\n* `InvalidCouponGroup` (code: 9014)\n* `InvalidCurrency` (code: 9015)\n* `ModuleNotExists` (code: 9016)\n* `PricePlanDoesNotExist` (code: 9017)\n* `PriceDetailsDoesNotExist` (code: 9018)\n* `AdapterNotExists` (code: 10000)\n* `AdapterIdentifierRequired` (code: 10001)\n* `AdapterIsRequired` (code: 10002)\n* `NoAdapterToInsert` (code: 10003)\n* `IllegalXml` (code: 11000)\n* `MissingExternalIdentifier` (code: 11001)\n* `UnknownIngestType` (code: 11002)\n* `EPGSProgramDatesError` (code: 11003)\n* `BadRequest` (code: 500003) - Bad request\n* `InvalidVersion` (code: 500057) - Invalid version [@version@]\n* `ServiceForbidden` (code: 500004) - Service Forbidden\n* `PropertyActionForbidden` (code: 500051) - Action [@action@] is forbidden for property [@type@].[@property@]\n* `ActionArgumentForbidden` (code: 500052) - Argument [@argument@] in action [@service@].[@action@] is forbidden\n* `InvalidKS` (code: 500015) - Invalid KS format\n* `ExpiredKS` (code: 500016) - KS expired\n* `PartnerInvalid` (code: 500008) - Partner invalid\n* `InvalidRefreshToken` (code: 500017) - Invalid refresh token\n* `RefreshTokenFailed` (code: 500034) - Refresh token failed\n* `UnauthorizedUser` (code: 500035) - Invalid user [@id@]\n* `InvalidUdid` (code: 500060) - Invalid UDID [@id@]\n* `InvalidService` (code: 500011) - Service [@service@] not found\n* `InvalidAction` (code: 500012) - Action [@service@.@action@] not found\n* `ActionNotSpecified` (code: 500033) - Action not specified\n* `InvalidActionParameter` (code: 500054) - Invalid action parameter [@parameter@]\n* `InvalidActionParameters` (code: 500013) - Invalid action parameters\n* `InvalidArgument` (code: 50026) - Argument [@argument@] is invalid\n* `ArgumentMustBeNumeric` (code: 500031) - Argument [@argument@] must be numeric\n* `ArgumentCannotBeEmpty` (code: 50027) - Argument [@argument@] cannot be empty\n* `ArgumentReadonly` (code: 500036) - Argument [@argument@] is not writeable\n* `ArgumentInsertonly` (code: 500037) - Argument [@argument@] is not updateable\n* `EnumValueNotSupported` (code: 500041) - Enumerator value [@value@] is not supported for argument [@argument@]\n* `ArgumentShouldBeEnum` (code: 500044) - Argument [@argument@] values must be of type [@enum@]\n* `ArgumentShouldContainMinValueCrossed` (code: 500058) - Argument [@argument@] values must have minimum value of [@value@]\n* `ArgumentShouldContainMaxValueCrossed` (code: 500059) - Argument [@argument@] values must have max value of [@value@]\n* `ArgumentsCannotBeEmpty` (code: 500056) - One of the arguments [@arguments@] must have a value\n* `ArgumentsConflictsEachOther` (code: 500038) - Only one of @argument1@ or @argument2@ can be used, not both of them\n* `TimeInPast` (code: 500039) - Argument [@argument@] time have passed\n* `ArgumentMaxLengthCrossed` (code: 500045) - Argument [@argument@] maximum length is [@value@]\n* `ArgumentMinLengthCrossed` (code: 500046) - Argument [@argument@] minimum length is [@value@]\n* `ArgumentMaxValueCrossed` (code: 500047) - Argument [@argument@] maximum value is [@value@]\n* `ArgumentMinValueCrossed` (code: 500048) - Argument [@argument@] minimum value is [@value@]\n* `ArgumentsConflictEachOther` (code: 500061) - Argument [@argument1@] value conflicts Argument [@argument2@] value\n* `ArgumentsDuplicate` (code: 500066) - Argument [@argument@] can not appear twice\n* `MediaIdsMustBeNumeric` (code: 500029) - Media ids must be numeric\n* `EpgInternalIdsMustBeNumeric` (code: 500030) - EPG internal ids must be numeric\n* `ListTypeCannotBeEmptyOrAll` (code: 500032) - Argument [@argument@] cannot be empty or all\n* `DuplicateAsset` (code: 500049) - Duplicate asset: id [@id@] type = [@type@]\n* `DuplicateFile` (code: 500050) - Duplicate file: id [@id@]\n* `UnableToCreateHouseholdForRole` (code: 500062) - Unable to create household for role\n* `HttpMethodNotSupported` (code: 500065) - HTTP [@argument@] method not supported\n* `HouseholdForbidden` (code: 500028) - Household [@household@] forbidden\n* `SwitchingUsersIsNotAllowedForPartner` (code: 50024) - Switching users is not allowed for partner\n* `NotActiveAppToken` (code: 50023) - Application-token [@id@] is not active\n* `InvalidAppTokenHash` (code: 50022) - Invalid application-token hash\n* `ExpiredAppToken` (code: 50021) - Application-token is expired\n* `NotAllowed` (code: 7013) - Action not allowed due to roleId [@roleId@]\n* `Error` (code: 1) - error\n* `MissingConfiguration` (code: 500006) - Missing configuration [@configuration@]\n* `NotFound` (code: 500007) - @objectType@ not found\n* `ObjectIdNotFound` (code: 500055) - @objectType@ id [@id@] not found\n* `InvalidMultirequestToken` (code: 50025) - Invalid multirequest token\n* `AbstractParameter` (code: 500018) - Abstract parameter type [@type@]\n* `MissingParameter` (code: 500053) - Missing parameter [@parameter@]\n* `MultirequestIndexNotZeroBased` (code: 500042) - Invalid multirequest token, response index is not zero based\n* `MultirequestInvalidIndex` (code: 500043) - Invalid multirequest token, invalid response index\n* `MultirequestGenericMethod` (code: 500064) - Invalid multirequest service, invalid service: [@service@], action: [@action@]"
+    "markdown": "# Error Codes\n\n* `DomainAlreadyExists` (code: 1000)\n* `ExceededLimit` (code: 1001)\n* `DeviceTypeNotAllowed` (code: 1002)\n* `DeviceNotInDomain` (code: 1003)\n* `MasterEmailAlreadyExists` (code: 1004)\n* `UserNotInDomain` (code: 1005)\n* `DomainNotExists` (code: 1006)\n* `HouseholdUserFailed` (code: 1007)\n* `DomainCreatedWithoutNPVRAccount` (code: 1008)\n* `DomainSuspended` (code: 1009)\n* `DlmNotExist` (code: 1010)\n* `WrongPasswordOrUserName` (code: 1011)\n* `DomainAlreadySuspended` (code: 1012)\n* `DomainAlreadyActive` (code: 1013)\n* `LimitationPeriod` (code: 1014)\n* `DeviceAlreadyExists` (code: 1015)\n* `DeviceExistsInOtherDomains` (code: 1016)\n* `NoUsersInDomain` (code: 1017)\n* `UserExistsInOtherDomains` (code: 1018)\n* `DeviceNotExists` (code: 1019)\n* `UserNotExistsInDomain` (code: 1020)\n* `ActionUserNotMaster` (code: 1021)\n* `ExceededUserLimit` (code: 1022)\n* `DomainNotInitialized` (code: 1023)\n* `DeviceNotConfirmed` (code: 1024)\n* `RequestFailed` (code: 1025)\n* `InvalidUser` (code: 1026)\n* `UserNotAllowed` (code: 1027)\n* `DuplicatePin` (code: 1028)\n* `UserAlreadyInDomain` (code: 1029)\n* `NotAllowedToDelete` (code: 1030)\n* `HomeNetworkAlreadyExists` (code: 1031)\n* `HomeNetworkLimitation` (code: 1032)\n* `HomeNetworkDoesNotExist` (code: 1033)\n* `HomeNetworkFrequency` (code: 1034)\n* `UserDoesNotExist` (code: 2000)\n* `UserSuspended` (code: 2001)\n* `PinNotExists` (code: 2003)\n* `PinExpired` (code: 2004)\n* `NoValidPin` (code: 2006)\n* `MissingSecurityParameter` (code: 2007)\n* `SecretIsWrong` (code: 2008)\n* `LoginViaPinNotAllowed` (code: 2009)\n* `PinNotInTheRightLength` (code: 2010)\n* `PinAlreadyExists` (code: 2011)\n* `UserExists` (code: 2014)\n* `InsideLockTime` (code: 2015)\n* `UserNotActivated` (code: 2016)\n* `UserAllreadyLoggedIn` (code: 2017)\n* `UserDoubleLogIn` (code: 2018)\n* `DeviceNotRegistered` (code: 2019)\n* `ErrorOnInitUser` (code: 2021)\n* `UserNotMasterApproved` (code: 2023)\n* `UserWithNoDomain` (code: 2024)\n* `UserTypeDoesNotExist` (code: 2025)\n* `ActivationTokenNotFound` (code: 2026)\n* `UserAlreadyMasterApproved` (code: 2027)\n* `LoginServerDown` (code: 2028)\n* `RoleAlreadyAssignedToUser` (code: 2029)\n* `DefaultUserCannotBeDeleted` (code: 2030)\n* `ExclusiveMasterUserCannotBeDeleted` (code: 2031)\n* `ItemNotFound` (code: 2032)\n* `ExternalIdAlreadyExists` (code: 2054)\n* `ExternalError` (code: 500063) - externalCode: [@externalCode@], externalMessage: [@externalMessage@]\n* `InvalidPurchase` (code: 3000)\n* `CancelationWindowPeriodExpired` (code: 3001)\n* `SubscriptionNotRenewable` (code: 3002)\n* `ServiceNotAllowed` (code: 3003)\n* `InvalidBaseLink` (code: 3004)\n* `ContentAlreadyConsumed` (code: 3005)\n* `ReasonUnknown` (code: 3011)\n* `ChargeStatusUnknown` (code: 3015)\n* `ContentIDMissing` (code: 3016)\n* `NoMediaRelatedToFile` (code: 3017)\n* `NoContentID` (code: 3018)\n* `NoProductID` (code: 3019)\n* `CouponNotValid` (code: 3020)\n* `UnableToPurchasePPVPurchased` (code: 3021)\n* `UnableToPurchaseFree` (code: 3022)\n* `UnableToPurchaseForPurchaseSubscriptionOnly` (code: 3023)\n* `UnableToPurchaseSubscriptionPurchased` (code: 3024)\n* `NotForPurchase` (code: 3025)\n* `Fail` (code: 3026)\n* `UnableToPurchaseCollectionPurchased` (code: 3027)\n* `FileToMediaMismatch` (code: 3028)\n* `ReconciliationFrequencyLimitation` (code: 3029)\n* `InvalidCustomDataIdentifier` (code: 3030)\n* `InvalidFileType` (code: 3031)\n* `NotEntitled` (code: 3032)\n* `AccountCdvrNotEnabled` (code: 3033)\n* `AccountCatchUpNotEnabled` (code: 3034)\n* `ProgramCdvrNotEnabled` (code: 3035)\n* `ProgramCatchUpNotEnabled` (code: 3036)\n* `CatchUpBufferLimitation` (code: 3037)\n* `ProgramNotInRecordingScheduleWindow` (code: 3038)\n* `RecordingNotFound` (code: 3039)\n* `RecordingFailed` (code: 3040)\n* `PaymentMethodIsUsedByHousehold` (code: 3041)\n* `ExceededQuota` (code: 3042)\n* `RecordingStatusNotValid` (code: 3043)\n* `ExceededProtectionQuota` (code: 3044)\n* `AccountProtectRecordNotEnabled` (code: 3045)\n* `AccountSeriesRecordingNotEnabled` (code: 3046)\n* `AlreadyRecordedAsSeriesOrSeason` (code: 3047)\n* `SeriesRecordingNotFound` (code: 3048)\n* `EpgIdNotPartOfSeries` (code: 3049)\n* `RecordingPlaybackNotAllowedForNonExistingEpgChannel` (code: 3050)\n* `RecordingPlaybackNotAllowedForNotEntitledEpgChannel` (code: 3051)\n* `SeasonNumberNotMatch` (code: 3052)\n* `SubscriptionCancellationIsBlocked` (code: 3074)\n* `MediaConcurrencyLimitation` (code: 4000)\n* `ConcurrencyLimitation` (code: 4001)\n* `BadSearchRequest` (code: 4002)\n* `IndexMissing` (code: 4003)\n* `SyntaxError` (code: 4004)\n* `InvalidSearchField` (code: 4005)\n* `NoRecommendationEngineToInsert` (code: 4006)\n* `RecommendationEngineNotExist` (code: 4007)\n* `RecommendationEngineIdentifierRequired` (code: 4008)\n* `RecommendationEngineParamsRequired` (code: 4009)\n* `NoExternalChannelToInsert` (code: 4010)\n* `ExternalChannelNotExist` (code: 4011)\n* `NoExternalChannelToUpdate` (code: 4012)\n* `ExternalChannelIdentifierRequired` (code: 4013)\n* `ExternalChannelHasNoRecommendationEngine` (code: 4014)\n* `NoRecommendationEngineToUpdate` (code: 4015)\n* `InactiveExternalChannelEnrichment` (code: 4016)\n* `IdentifierRequired` (code: 4017)\n* `ObjectNotExist` (code: 4018)\n* `NoObjectToInsert` (code: 4019)\n* `InvalidMediaType` (code: 4020)\n* `InvalidAssetType` (code: 4021)\n* `ProgramDoesntExist` (code: 4022)\n* `ActionNotRecognized` (code: 4023)\n* `InvalidAssetId` (code: 4024)\n* `CountryNotFound` (code: 4025)\n* `AssetStructNameAlreadyInUse` (code: 4026)\n* `AssetStructSystemNameAlreadyInUse` (code: 4027)\n* `MetaIdsDoesNotExist` (code: 4031)\n* `AssetStructDoesNotExist` (code: 4028)\n* `CanNotChangePredefinedAssetStructSystemName` (code: 4029)\n* `CanNotDeletePredefinedAssetStruct` (code: 4030)\n* `MetaSystemNameAlreadyInUse` (code: 4032)\n* `InvalidMutlipleValueForMetaType` (code: 4036)\n* `MetaDoesNotExist` (code: 4033)\n* `CanNotChangePredefinedMetaSystemName` (code: 4034)\n* `CanNotDeletePredefinedMeta` (code: 4035)\n* `AssetStructMissingBasicMetaIds` (code: 4037)\n* `AssetExternalIdMustBeUnique` (code: 4038)\n* `InvalidMetaType` (code: 4040)\n* `InvalidValueSentForMeta` (code: 4041)\n* `DeviceRuleDoesNotExistForGroup` (code: 4042)\n* `GeoBlockRuleDoesNotExistForGroup` (code: 4043)\n* `AssetDoesNotExist` (code: 4039)\n* `MetaIdsDoesNotExistOnAsset` (code: 4050)\n* `MediaFileTypeNameAlreadyInUse` (code: 4051)\n* `MediaFileTypeDoesNotExist` (code: 4052)\n* `CanNotRemoveBasicMetaIds` (code: 4055)\n* `RatioAlreadyExist` (code: 4049)\n* `DuplicateLanguageSent` (code: 500064) - languageCode: @lngCode@ has been sent more than once\n* `InvalidValueForFeature` (code: 500065) - Invalid value for feature: @feature@. feature can only contain alphanumeric values and/or underscore up until 64 characters\n* `DefaultLanguageMustBeSent` (code: 500066) - Default language must be one of the values sent for @object@\n* `GroupDoesNotContainLanguage` (code: 500067) - language: @lng@ is not part of group supported languages\n* `GlobalLanguageParameterMustBeAsterisk` (code: 500068) - Global language parameter must be asterisk for write actions of multilingualName\n* `MultiValueWasNotSentForMetaDataTypeString` (code: 500069) - multipleValue property must have a value when KalturaMetaDataType equals STRING\n* `TagTranslationNotAllowed` (code: 500070) - Tag translations are not allowed using asset contoller, please use tag controller\n* `ChannelSystemNameAlreadyInUse` (code: 4060)\n* `NoPinDefined` (code: 5001)\n* `PinMismatch` (code: 5002)\n* `RuleNotExists` (code: 5003)\n* `NoOSSAdapterToInsert` (code: 5004)\n* `NameRequired` (code: 5005)\n* `SharedSecretRequired` (code: 5006)\n* `OSSAdapterIdentifierRequired` (code: 5007)\n* `OSSAdapterNotExist` (code: 5008)\n* `OSSAdapterParamsRequired` (code: 5009)\n* `UnknownOSSAdapterState` (code: 5010)\n* `ActionIsNotAllowed` (code: 5011)\n* `NoOSSAdapterToUpdate` (code: 5012)\n* `AdapterUrlRequired` (code: 5013)\n* `ConflictedParams` (code: 5014)\n* `PurchaseSettingsTypeInvalid` (code: 5015)\n* `ExportTaskNotFound` (code: 5016)\n* `ExportNotificationUrlRequired` (code: 5017)\n* `ExportFrequencyMinValue` (code: 5018)\n* `AliasMustBeUnique` (code: 5019)\n* `AliasRequired` (code: 5020)\n* `UserParentalRuleNotExists` (code: 5021)\n* `TimeShiftedTvPartnerSettingsNotFound` (code: 5022)\n* `TimeShiftedTvPartnerSettingsNotSent` (code: 5023)\n* `TimeShiftedTvPartnerSettingsNegativeBufferSent` (code: 5024)\n* `CDNPartnerSettingsNotFound` (code: 5025)\n* `IncorrectPrice` (code: 6000)\n* `UnKnownPPVModule` (code: 6001)\n* `ExpiredCard` (code: 6002)\n* `CellularPermissionsError` (code: 6003)\n* `UnKnownBillingProvider` (code: 6004)\n* `PaymentGatewayIdRequired` (code: 6005)\n* `PaymentGatewayParamsRequired` (code: 6006)\n* `PaymentGatewayNotSetForHousehold` (code: 6007)\n* `PaymentGatewayNotExist` (code: 6008)\n* `PaymentGatewayChargeIdRequired` (code: 6009)\n* `NoConfigurationFound` (code: 6011)\n* `AdapterAppFailure` (code: 6012)\n* `SignatureMismatch` (code: 6013)\n* `ErrorSavingPaymentGatewayTransaction` (code: 6014)\n* `ErrorSavingPaymentGatewayPending` (code: 6015)\n* `ExternalIdentifierRequired` (code: 6016)\n* `ErrorSavingPaymentGatewayHousehold` (code: 6017)\n* `NoPaymentGateway` (code: 6018)\n* `PaymentGatewayNameRequired` (code: 6020)\n* `PaymentGatewaySharedSecretRequired` (code: 6021)\n* `HouseholdAlreadySetToPaymentGateway` (code: 6024)\n* `ChargeIdAlreadySetToHouseholdPaymentGateway` (code: 6025)\n* `ChargeIdNotSetToHousehold` (code: 6026)\n* `HouseholdNotSetToPaymentGateway` (code: 6027)\n* `PaymentGatewaySelectionIsDisabled` (code: 6028)\n* `NoResponseFromPaymentGateway` (code: 6030)\n* `InvalidAccount` (code: 6031)\n* `InsufficientFunds` (code: 6032)\n* `UnknownPaymentGatewayResponse` (code: 6033)\n* `PaymentGatewayAdapterUserKnown` (code: 6034)\n* `PaymentGatewayAdapterReasonUnknown` (code: 6035)\n* `SignatureDoesNotMatch` (code: 6036)\n* `ErrorUpdatingPendingTransaction` (code: 6037)\n* `PaymentGatewayTransactionNotFound` (code: 6038)\n* `PaymentGatewayTransactionIsNotPending` (code: 6039)\n* `ExternalIdentifierMustBeUnique` (code: 6040)\n* `NoPaymentGatewayToInsert` (code: 6041)\n* `UnknownTransactionState` (code: 6042)\n* `PaymentGatewayNotValid` (code: 6043)\n* `HouseholdRequired` (code: 6044)\n* `PaymentGatewayAdapterFailReasonUnknown` (code: 6045)\n* `NoPartnerConfigurationToUpdate` (code: 6046)\n* `NoConfigurationValueToUpdate` (code: 6047)\n* `PaymentMethodNotSetForHousehold` (code: 6048)\n* `PaymentMethodNotExist` (code: 6049)\n* `PaymentMethodIdRequired` (code: 6050)\n* `PaymentMethodExternalIdRequired` (code: 6051)\n* `ErrorSavingPaymentGatewayHouseholdPaymentMethod` (code: 6052)\n* `PaymentMethodAlreadySetToHouseholdPaymentGateway` (code: 6054)\n* `PaymentMethodNameRequired` (code: 6055)\n* `PaymentGatewayNotSupportPaymentMethod` (code: 6056)\n* `Conflict` (code: 7000)\n* `MinFriendsLimitation` (code: 7001)\n* `NoNotificationSettingsSent` (code: 8000)\n* `PushNotificationFalse` (code: 8001)\n* `NoNotificationPartnerSettings` (code: 8002)\n* `NoNotificationSettings` (code: 8003)\n* `AnnouncementMessageIsEmpty` (code: 8004)\n* `AnnouncementInvalidStartTime` (code: 8005)\n* `AnnouncementNotFound` (code: 8006)\n* `AnnouncementUpdateNotAllowed` (code: 8007)\n* `AnnouncementInvalidTimezone` (code: 8008)\n* `FeatureDisabled` (code: 8009)\n* `AnnouncementMessageTooLong` (code: 8010)\n* `FailCreateAnnouncement` (code: 8011)\n* `UserNotFollowing` (code: 8012)\n* `UserAlreadyFollowing` (code: 8013)\n* `MessagePlaceholdersInvalid` (code: 8014)\n* `DatetimeFormatIsInvalid` (code: 8015)\n* `MessageTemplateNotFound` (code: 8016)\n* `URLPlaceholdersInvalid` (code: 8017)\n* `InvalidMessageTTL` (code: 8018)\n* `MessageIdentifierRequired` (code: 8019)\n* `UserInboxMessagesNotExist` (code: 8020)\n* `InvalidPriceCode` (code: 9000)\n* `InvalidValue` (code: 9001)\n* `InvalidDiscountCode` (code: 9002)\n* `InvalidPricePlan` (code: 9003)\n* `CodeMustBeUnique` (code: 9004)\n* `CodeNotExist` (code: 9005)\n* `InvalidCodeNotExist` (code: 9006)\n* `InvalidChannels` (code: 9008)\n* `InvalidFileTypes` (code: 9009)\n* `InvalidPreviewModule` (code: 9010)\n* `MandatoryField` (code: 9011)\n* `UniqueFiled` (code: 9012)\n* `InvalidUsageModule` (code: 9013)\n* `InvalidCouponGroup` (code: 9014)\n* `InvalidCurrency` (code: 9015)\n* `ModuleNotExists` (code: 9016)\n* `PricePlanDoesNotExist` (code: 9017)\n* `PriceDetailsDoesNotExist` (code: 9018)\n* `AdapterNotExists` (code: 10000)\n* `AdapterIdentifierRequired` (code: 10001)\n* `AdapterIsRequired` (code: 10002)\n* `NoAdapterToInsert` (code: 10003)\n* `IllegalXml` (code: 11000)\n* `MissingExternalIdentifier` (code: 11001)\n* `UnknownIngestType` (code: 11002)\n* `EPGSProgramDatesError` (code: 11003)\n* `BadRequest` (code: 500003) - Bad request\n* `InvalidVersion` (code: 500057) - Invalid version [@version@]\n* `ServiceForbidden` (code: 500004) - Service Forbidden\n* `PropertyActionForbidden` (code: 500051) - Action [@action@] is forbidden for property [@type@].[@property@]\n* `ActionArgumentForbidden` (code: 500052) - Argument [@argument@] in action [@service@].[@action@] is forbidden\n* `InvalidKS` (code: 500015) - Invalid KS format\n* `ExpiredKS` (code: 500016) - KS expired\n* `PartnerInvalid` (code: 500008) - Partner invalid\n* `InvalidRefreshToken` (code: 500017) - Invalid refresh token\n* `RefreshTokenFailed` (code: 500034) - Refresh token failed\n* `UnauthorizedUser` (code: 500035) - Invalid user [@id@]\n* `InvalidUdid` (code: 500060) - Invalid UDID [@id@]\n* `InvalidService` (code: 500011) - Service [@service@] not found\n* `InvalidAction` (code: 500012) - Action [@service@.@action@] not found\n* `ActionNotSpecified` (code: 500033) - Action not specified\n* `InvalidActionParameter` (code: 500054) - Invalid action parameter [@parameter@]\n* `InvalidActionParameters` (code: 500013) - Invalid action parameters\n* `InvalidArgument` (code: 50026) - Argument [@argument@] is invalid\n* `ArgumentMustBeNumeric` (code: 500031) - Argument [@argument@] must be numeric\n* `ArgumentCannotBeEmpty` (code: 50027) - Argument [@argument@] cannot be empty\n* `ArgumentReadonly` (code: 500036) - Argument [@argument@] is not writeable\n* `ArgumentInsertonly` (code: 500037) - Argument [@argument@] is not updateable\n* `EnumValueNotSupported` (code: 500041) - Enumerator value [@value@] is not supported for argument [@argument@]\n* `ArgumentShouldBeEnum` (code: 500044) - Argument [@argument@] values must be of type [@enum@]\n* `ArgumentShouldContainMinValueCrossed` (code: 500058) - Argument [@argument@] values must have minimum value of [@value@]\n* `ArgumentShouldContainMaxValueCrossed` (code: 500059) - Argument [@argument@] values must have max value of [@value@]\n* `ArgumentsCannotBeEmpty` (code: 500056) - One of the arguments [@arguments@] must have a value\n* `ArgumentsConflictsEachOther` (code: 500038) - Only one of @argument1@ or @argument2@ can be used, not both of them\n* `TimeInPast` (code: 500039) - Argument [@argument@] time have passed\n* `ArgumentMaxLengthCrossed` (code: 500045) - Argument [@argument@] maximum length is [@value@]\n* `ArgumentMinLengthCrossed` (code: 500046) - Argument [@argument@] minimum length is [@value@]\n* `ArgumentMaxValueCrossed` (code: 500047) - Argument [@argument@] maximum value is [@value@]\n* `ArgumentMinValueCrossed` (code: 500048) - Argument [@argument@] minimum value is [@value@]\n* `ArgumentsConflictEachOther` (code: 500061) - Argument [@argument1@] value conflicts Argument [@argument2@] value\n* `MediaIdsMustBeNumeric` (code: 500029) - Media ids must be numeric\n* `EpgInternalIdsMustBeNumeric` (code: 500030) - EPG internal ids must be numeric\n* `ListTypeCannotBeEmptyOrAll` (code: 500032) - Argument [@argument@] cannot be empty or all\n* `DuplicateAsset` (code: 500049) - Duplicate asset: id [@id@] type = [@type@]\n* `DuplicateFile` (code: 500050) - Duplicate file: id [@id@]\n* `UnableToCreateHouseholdForRole` (code: 500062) - Unable to create household for role\n* `HouseholdForbidden` (code: 500028) - Household [@household@] forbidden\n* `SwitchingUsersIsNotAllowedForPartner` (code: 50024) - Switching users is not allowed for partner\n* `NotActiveAppToken` (code: 50023) - Application-token [@id@] is not active\n* `InvalidAppTokenHash` (code: 50022) - Invalid application-token hash\n* `ExpiredAppToken` (code: 50021) - Application-token is expired\n* `NotAllowed` (code: 7013) - Action not allowed due to roleId [@roleId@]\n* `Error` (code: 1) - error\n* `MissingConfiguration` (code: 500006) - Missing configuration [@configuration@]\n* `NotFound` (code: 500007) - @objectType@ not found\n* `ObjectIdNotFound` (code: 500055) - @objectType@ id [@id@] not found\n* `InvalidMultirequestToken` (code: 50025) - Invalid multirequest token\n* `AbstractParameter` (code: 500018) - Abstract parameter type [@type@]\n* `MissingParameter` (code: 500053) - Missing parameter [@parameter@]\n* `MultirequestIndexNotZeroBased` (code: 500042) - Invalid multirequest token, response index is not zero based\n* `MultirequestInvalidIndex` (code: 500043) - Invalid multirequest token, invalid response index",
+    "contents": "# Error Codes\n\n* `DomainAlreadyExists` (code: 1000)\n* `ExceededLimit` (code: 1001)\n* `DeviceTypeNotAllowed` (code: 1002)\n* `DeviceNotInDomain` (code: 1003)\n* `MasterEmailAlreadyExists` (code: 1004)\n* `UserNotInDomain` (code: 1005)\n* `DomainNotExists` (code: 1006)\n* `HouseholdUserFailed` (code: 1007)\n* `DomainCreatedWithoutNPVRAccount` (code: 1008)\n* `DomainSuspended` (code: 1009)\n* `DlmNotExist` (code: 1010)\n* `WrongPasswordOrUserName` (code: 1011)\n* `DomainAlreadySuspended` (code: 1012)\n* `DomainAlreadyActive` (code: 1013)\n* `LimitationPeriod` (code: 1014)\n* `DeviceAlreadyExists` (code: 1015)\n* `DeviceExistsInOtherDomains` (code: 1016)\n* `NoUsersInDomain` (code: 1017)\n* `UserExistsInOtherDomains` (code: 1018)\n* `DeviceNotExists` (code: 1019)\n* `UserNotExistsInDomain` (code: 1020)\n* `ActionUserNotMaster` (code: 1021)\n* `ExceededUserLimit` (code: 1022)\n* `DomainNotInitialized` (code: 1023)\n* `DeviceNotConfirmed` (code: 1024)\n* `RequestFailed` (code: 1025)\n* `InvalidUser` (code: 1026)\n* `UserNotAllowed` (code: 1027)\n* `DuplicatePin` (code: 1028)\n* `UserAlreadyInDomain` (code: 1029)\n* `NotAllowedToDelete` (code: 1030)\n* `HomeNetworkAlreadyExists` (code: 1031)\n* `HomeNetworkLimitation` (code: 1032)\n* `HomeNetworkDoesNotExist` (code: 1033)\n* `HomeNetworkFrequency` (code: 1034)\n* `UserDoesNotExist` (code: 2000)\n* `UserSuspended` (code: 2001)\n* `PinNotExists` (code: 2003)\n* `PinExpired` (code: 2004)\n* `NoValidPin` (code: 2006)\n* `MissingSecurityParameter` (code: 2007)\n* `SecretIsWrong` (code: 2008)\n* `LoginViaPinNotAllowed` (code: 2009)\n* `PinNotInTheRightLength` (code: 2010)\n* `PinAlreadyExists` (code: 2011)\n* `UserExists` (code: 2014)\n* `InsideLockTime` (code: 2015)\n* `UserNotActivated` (code: 2016)\n* `UserAllreadyLoggedIn` (code: 2017)\n* `UserDoubleLogIn` (code: 2018)\n* `DeviceNotRegistered` (code: 2019)\n* `ErrorOnInitUser` (code: 2021)\n* `UserNotMasterApproved` (code: 2023)\n* `UserWithNoDomain` (code: 2024)\n* `UserTypeDoesNotExist` (code: 2025)\n* `ActivationTokenNotFound` (code: 2026)\n* `UserAlreadyMasterApproved` (code: 2027)\n* `LoginServerDown` (code: 2028)\n* `RoleAlreadyAssignedToUser` (code: 2029)\n* `DefaultUserCannotBeDeleted` (code: 2030)\n* `ExclusiveMasterUserCannotBeDeleted` (code: 2031)\n* `ItemNotFound` (code: 2032)\n* `ExternalIdAlreadyExists` (code: 2054)\n* `ExternalError` (code: 500063) - externalCode: [@externalCode@], externalMessage: [@externalMessage@]\n* `InvalidPurchase` (code: 3000)\n* `CancelationWindowPeriodExpired` (code: 3001)\n* `SubscriptionNotRenewable` (code: 3002)\n* `ServiceNotAllowed` (code: 3003)\n* `InvalidBaseLink` (code: 3004)\n* `ContentAlreadyConsumed` (code: 3005)\n* `ReasonUnknown` (code: 3011)\n* `ChargeStatusUnknown` (code: 3015)\n* `ContentIDMissing` (code: 3016)\n* `NoMediaRelatedToFile` (code: 3017)\n* `NoContentID` (code: 3018)\n* `NoProductID` (code: 3019)\n* `CouponNotValid` (code: 3020)\n* `UnableToPurchasePPVPurchased` (code: 3021)\n* `UnableToPurchaseFree` (code: 3022)\n* `UnableToPurchaseForPurchaseSubscriptionOnly` (code: 3023)\n* `UnableToPurchaseSubscriptionPurchased` (code: 3024)\n* `NotForPurchase` (code: 3025)\n* `Fail` (code: 3026)\n* `UnableToPurchaseCollectionPurchased` (code: 3027)\n* `FileToMediaMismatch` (code: 3028)\n* `ReconciliationFrequencyLimitation` (code: 3029)\n* `InvalidCustomDataIdentifier` (code: 3030)\n* `InvalidFileType` (code: 3031)\n* `NotEntitled` (code: 3032)\n* `AccountCdvrNotEnabled` (code: 3033)\n* `AccountCatchUpNotEnabled` (code: 3034)\n* `ProgramCdvrNotEnabled` (code: 3035)\n* `ProgramCatchUpNotEnabled` (code: 3036)\n* `CatchUpBufferLimitation` (code: 3037)\n* `ProgramNotInRecordingScheduleWindow` (code: 3038)\n* `RecordingNotFound` (code: 3039)\n* `RecordingFailed` (code: 3040)\n* `PaymentMethodIsUsedByHousehold` (code: 3041)\n* `ExceededQuota` (code: 3042)\n* `RecordingStatusNotValid` (code: 3043)\n* `ExceededProtectionQuota` (code: 3044)\n* `AccountProtectRecordNotEnabled` (code: 3045)\n* `AccountSeriesRecordingNotEnabled` (code: 3046)\n* `AlreadyRecordedAsSeriesOrSeason` (code: 3047)\n* `SeriesRecordingNotFound` (code: 3048)\n* `EpgIdNotPartOfSeries` (code: 3049)\n* `RecordingPlaybackNotAllowedForNonExistingEpgChannel` (code: 3050)\n* `RecordingPlaybackNotAllowedForNotEntitledEpgChannel` (code: 3051)\n* `SeasonNumberNotMatch` (code: 3052)\n* `SubscriptionCancellationIsBlocked` (code: 3074)\n* `MediaConcurrencyLimitation` (code: 4000)\n* `ConcurrencyLimitation` (code: 4001)\n* `BadSearchRequest` (code: 4002)\n* `IndexMissing` (code: 4003)\n* `SyntaxError` (code: 4004)\n* `InvalidSearchField` (code: 4005)\n* `NoRecommendationEngineToInsert` (code: 4006)\n* `RecommendationEngineNotExist` (code: 4007)\n* `RecommendationEngineIdentifierRequired` (code: 4008)\n* `RecommendationEngineParamsRequired` (code: 4009)\n* `NoExternalChannelToInsert` (code: 4010)\n* `ExternalChannelNotExist` (code: 4011)\n* `NoExternalChannelToUpdate` (code: 4012)\n* `ExternalChannelIdentifierRequired` (code: 4013)\n* `ExternalChannelHasNoRecommendationEngine` (code: 4014)\n* `NoRecommendationEngineToUpdate` (code: 4015)\n* `InactiveExternalChannelEnrichment` (code: 4016)\n* `IdentifierRequired` (code: 4017)\n* `ObjectNotExist` (code: 4018)\n* `NoObjectToInsert` (code: 4019)\n* `InvalidMediaType` (code: 4020)\n* `InvalidAssetType` (code: 4021)\n* `ProgramDoesntExist` (code: 4022)\n* `ActionNotRecognized` (code: 4023)\n* `InvalidAssetId` (code: 4024)\n* `CountryNotFound` (code: 4025)\n* `AssetStructNameAlreadyInUse` (code: 4026)\n* `AssetStructSystemNameAlreadyInUse` (code: 4027)\n* `MetaIdsDoesNotExist` (code: 4031)\n* `AssetStructDoesNotExist` (code: 4028)\n* `CanNotChangePredefinedAssetStructSystemName` (code: 4029)\n* `CanNotDeletePredefinedAssetStruct` (code: 4030)\n* `MetaSystemNameAlreadyInUse` (code: 4032)\n* `InvalidMutlipleValueForMetaType` (code: 4036)\n* `MetaDoesNotExist` (code: 4033)\n* `CanNotChangePredefinedMetaSystemName` (code: 4034)\n* `CanNotDeletePredefinedMeta` (code: 4035)\n* `AssetStructMissingBasicMetaIds` (code: 4037)\n* `AssetExternalIdMustBeUnique` (code: 4038)\n* `InvalidMetaType` (code: 4040)\n* `InvalidValueSentForMeta` (code: 4041)\n* `DeviceRuleDoesNotExistForGroup` (code: 4042)\n* `GeoBlockRuleDoesNotExistForGroup` (code: 4043)\n* `AssetDoesNotExist` (code: 4039)\n* `MetaIdsDoesNotExistOnAsset` (code: 4050)\n* `MediaFileTypeNameAlreadyInUse` (code: 4051)\n* `MediaFileTypeDoesNotExist` (code: 4052)\n* `CanNotRemoveBasicMetaIds` (code: 4055)\n* `RatioAlreadyExist` (code: 4049)\n* `DuplicateLanguageSent` (code: 500064) - languageCode: @lngCode@ has been sent more than once\n* `InvalidValueForFeature` (code: 500065) - Invalid value for feature: @feature@. feature can only contain alphanumeric values and/or underscore up until 64 characters\n* `DefaultLanguageMustBeSent` (code: 500066) - Default language must be one of the values sent for @object@\n* `GroupDoesNotContainLanguage` (code: 500067) - language: @lng@ is not part of group supported languages\n* `GlobalLanguageParameterMustBeAsterisk` (code: 500068) - Global language parameter must be asterisk for write actions of multilingualName\n* `MultiValueWasNotSentForMetaDataTypeString` (code: 500069) - multipleValue property must have a value when KalturaMetaDataType equals STRING\n* `TagTranslationNotAllowed` (code: 500070) - Tag translations are not allowed using asset contoller, please use tag controller\n* `ChannelSystemNameAlreadyInUse` (code: 4060)\n* `NoPinDefined` (code: 5001)\n* `PinMismatch` (code: 5002)\n* `RuleNotExists` (code: 5003)\n* `NoOSSAdapterToInsert` (code: 5004)\n* `NameRequired` (code: 5005)\n* `SharedSecretRequired` (code: 5006)\n* `OSSAdapterIdentifierRequired` (code: 5007)\n* `OSSAdapterNotExist` (code: 5008)\n* `OSSAdapterParamsRequired` (code: 5009)\n* `UnknownOSSAdapterState` (code: 5010)\n* `ActionIsNotAllowed` (code: 5011)\n* `NoOSSAdapterToUpdate` (code: 5012)\n* `AdapterUrlRequired` (code: 5013)\n* `ConflictedParams` (code: 5014)\n* `PurchaseSettingsTypeInvalid` (code: 5015)\n* `ExportTaskNotFound` (code: 5016)\n* `ExportNotificationUrlRequired` (code: 5017)\n* `ExportFrequencyMinValue` (code: 5018)\n* `AliasMustBeUnique` (code: 5019)\n* `AliasRequired` (code: 5020)\n* `UserParentalRuleNotExists` (code: 5021)\n* `TimeShiftedTvPartnerSettingsNotFound` (code: 5022)\n* `TimeShiftedTvPartnerSettingsNotSent` (code: 5023)\n* `TimeShiftedTvPartnerSettingsNegativeBufferSent` (code: 5024)\n* `CDNPartnerSettingsNotFound` (code: 5025)\n* `IncorrectPrice` (code: 6000)\n* `UnKnownPPVModule` (code: 6001)\n* `ExpiredCard` (code: 6002)\n* `CellularPermissionsError` (code: 6003)\n* `UnKnownBillingProvider` (code: 6004)\n* `PaymentGatewayIdRequired` (code: 6005)\n* `PaymentGatewayParamsRequired` (code: 6006)\n* `PaymentGatewayNotSetForHousehold` (code: 6007)\n* `PaymentGatewayNotExist` (code: 6008)\n* `PaymentGatewayChargeIdRequired` (code: 6009)\n* `NoConfigurationFound` (code: 6011)\n* `AdapterAppFailure` (code: 6012)\n* `SignatureMismatch` (code: 6013)\n* `ErrorSavingPaymentGatewayTransaction` (code: 6014)\n* `ErrorSavingPaymentGatewayPending` (code: 6015)\n* `ExternalIdentifierRequired` (code: 6016)\n* `ErrorSavingPaymentGatewayHousehold` (code: 6017)\n* `NoPaymentGateway` (code: 6018)\n* `PaymentGatewayNameRequired` (code: 6020)\n* `PaymentGatewaySharedSecretRequired` (code: 6021)\n* `HouseholdAlreadySetToPaymentGateway` (code: 6024)\n* `ChargeIdAlreadySetToHouseholdPaymentGateway` (code: 6025)\n* `ChargeIdNotSetToHousehold` (code: 6026)\n* `HouseholdNotSetToPaymentGateway` (code: 6027)\n* `PaymentGatewaySelectionIsDisabled` (code: 6028)\n* `NoResponseFromPaymentGateway` (code: 6030)\n* `InvalidAccount` (code: 6031)\n* `InsufficientFunds` (code: 6032)\n* `UnknownPaymentGatewayResponse` (code: 6033)\n* `PaymentGatewayAdapterUserKnown` (code: 6034)\n* `PaymentGatewayAdapterReasonUnknown` (code: 6035)\n* `SignatureDoesNotMatch` (code: 6036)\n* `ErrorUpdatingPendingTransaction` (code: 6037)\n* `PaymentGatewayTransactionNotFound` (code: 6038)\n* `PaymentGatewayTransactionIsNotPending` (code: 6039)\n* `ExternalIdentifierMustBeUnique` (code: 6040)\n* `NoPaymentGatewayToInsert` (code: 6041)\n* `UnknownTransactionState` (code: 6042)\n* `PaymentGatewayNotValid` (code: 6043)\n* `HouseholdRequired` (code: 6044)\n* `PaymentGatewayAdapterFailReasonUnknown` (code: 6045)\n* `NoPartnerConfigurationToUpdate` (code: 6046)\n* `NoConfigurationValueToUpdate` (code: 6047)\n* `PaymentMethodNotSetForHousehold` (code: 6048)\n* `PaymentMethodNotExist` (code: 6049)\n* `PaymentMethodIdRequired` (code: 6050)\n* `PaymentMethodExternalIdRequired` (code: 6051)\n* `ErrorSavingPaymentGatewayHouseholdPaymentMethod` (code: 6052)\n* `PaymentMethodAlreadySetToHouseholdPaymentGateway` (code: 6054)\n* `PaymentMethodNameRequired` (code: 6055)\n* `PaymentGatewayNotSupportPaymentMethod` (code: 6056)\n* `Conflict` (code: 7000)\n* `MinFriendsLimitation` (code: 7001)\n* `NoNotificationSettingsSent` (code: 8000)\n* `PushNotificationFalse` (code: 8001)\n* `NoNotificationPartnerSettings` (code: 8002)\n* `NoNotificationSettings` (code: 8003)\n* `AnnouncementMessageIsEmpty` (code: 8004)\n* `AnnouncementInvalidStartTime` (code: 8005)\n* `AnnouncementNotFound` (code: 8006)\n* `AnnouncementUpdateNotAllowed` (code: 8007)\n* `AnnouncementInvalidTimezone` (code: 8008)\n* `FeatureDisabled` (code: 8009)\n* `AnnouncementMessageTooLong` (code: 8010)\n* `FailCreateAnnouncement` (code: 8011)\n* `UserNotFollowing` (code: 8012)\n* `UserAlreadyFollowing` (code: 8013)\n* `MessagePlaceholdersInvalid` (code: 8014)\n* `DatetimeFormatIsInvalid` (code: 8015)\n* `MessageTemplateNotFound` (code: 8016)\n* `URLPlaceholdersInvalid` (code: 8017)\n* `InvalidMessageTTL` (code: 8018)\n* `MessageIdentifierRequired` (code: 8019)\n* `UserInboxMessagesNotExist` (code: 8020)\n* `InvalidPriceCode` (code: 9000)\n* `InvalidValue` (code: 9001)\n* `InvalidDiscountCode` (code: 9002)\n* `InvalidPricePlan` (code: 9003)\n* `CodeMustBeUnique` (code: 9004)\n* `CodeNotExist` (code: 9005)\n* `InvalidCodeNotExist` (code: 9006)\n* `InvalidChannels` (code: 9008)\n* `InvalidFileTypes` (code: 9009)\n* `InvalidPreviewModule` (code: 9010)\n* `MandatoryField` (code: 9011)\n* `UniqueFiled` (code: 9012)\n* `InvalidUsageModule` (code: 9013)\n* `InvalidCouponGroup` (code: 9014)\n* `InvalidCurrency` (code: 9015)\n* `ModuleNotExists` (code: 9016)\n* `PricePlanDoesNotExist` (code: 9017)\n* `PriceDetailsDoesNotExist` (code: 9018)\n* `AdapterNotExists` (code: 10000)\n* `AdapterIdentifierRequired` (code: 10001)\n* `AdapterIsRequired` (code: 10002)\n* `NoAdapterToInsert` (code: 10003)\n* `IllegalXml` (code: 11000)\n* `MissingExternalIdentifier` (code: 11001)\n* `UnknownIngestType` (code: 11002)\n* `EPGSProgramDatesError` (code: 11003)\n* `BadRequest` (code: 500003) - Bad request\n* `InvalidVersion` (code: 500057) - Invalid version [@version@]\n* `ServiceForbidden` (code: 500004) - Service Forbidden\n* `PropertyActionForbidden` (code: 500051) - Action [@action@] is forbidden for property [@type@].[@property@]\n* `ActionArgumentForbidden` (code: 500052) - Argument [@argument@] in action [@service@].[@action@] is forbidden\n* `InvalidKS` (code: 500015) - Invalid KS format\n* `ExpiredKS` (code: 500016) - KS expired\n* `PartnerInvalid` (code: 500008) - Partner invalid\n* `InvalidRefreshToken` (code: 500017) - Invalid refresh token\n* `RefreshTokenFailed` (code: 500034) - Refresh token failed\n* `UnauthorizedUser` (code: 500035) - Invalid user [@id@]\n* `InvalidUdid` (code: 500060) - Invalid UDID [@id@]\n* `InvalidService` (code: 500011) - Service [@service@] not found\n* `InvalidAction` (code: 500012) - Action [@service@.@action@] not found\n* `ActionNotSpecified` (code: 500033) - Action not specified\n* `InvalidActionParameter` (code: 500054) - Invalid action parameter [@parameter@]\n* `InvalidActionParameters` (code: 500013) - Invalid action parameters\n* `InvalidArgument` (code: 50026) - Argument [@argument@] is invalid\n* `ArgumentMustBeNumeric` (code: 500031) - Argument [@argument@] must be numeric\n* `ArgumentCannotBeEmpty` (code: 50027) - Argument [@argument@] cannot be empty\n* `ArgumentReadonly` (code: 500036) - Argument [@argument@] is not writeable\n* `ArgumentInsertonly` (code: 500037) - Argument [@argument@] is not updateable\n* `EnumValueNotSupported` (code: 500041) - Enumerator value [@value@] is not supported for argument [@argument@]\n* `ArgumentShouldBeEnum` (code: 500044) - Argument [@argument@] values must be of type [@enum@]\n* `ArgumentShouldContainMinValueCrossed` (code: 500058) - Argument [@argument@] values must have minimum value of [@value@]\n* `ArgumentShouldContainMaxValueCrossed` (code: 500059) - Argument [@argument@] values must have max value of [@value@]\n* `ArgumentsCannotBeEmpty` (code: 500056) - One of the arguments [@arguments@] must have a value\n* `ArgumentsConflictsEachOther` (code: 500038) - Only one of @argument1@ or @argument2@ can be used, not both of them\n* `TimeInPast` (code: 500039) - Argument [@argument@] time have passed\n* `ArgumentMaxLengthCrossed` (code: 500045) - Argument [@argument@] maximum length is [@value@]\n* `ArgumentMinLengthCrossed` (code: 500046) - Argument [@argument@] minimum length is [@value@]\n* `ArgumentMaxValueCrossed` (code: 500047) - Argument [@argument@] maximum value is [@value@]\n* `ArgumentMinValueCrossed` (code: 500048) - Argument [@argument@] minimum value is [@value@]\n* `ArgumentsConflictEachOther` (code: 500061) - Argument [@argument1@] value conflicts Argument [@argument2@] value\n* `MediaIdsMustBeNumeric` (code: 500029) - Media ids must be numeric\n* `EpgInternalIdsMustBeNumeric` (code: 500030) - EPG internal ids must be numeric\n* `ListTypeCannotBeEmptyOrAll` (code: 500032) - Argument [@argument@] cannot be empty or all\n* `DuplicateAsset` (code: 500049) - Duplicate asset: id [@id@] type = [@type@]\n* `DuplicateFile` (code: 500050) - Duplicate file: id [@id@]\n* `UnableToCreateHouseholdForRole` (code: 500062) - Unable to create household for role\n* `HouseholdForbidden` (code: 500028) - Household [@household@] forbidden\n* `SwitchingUsersIsNotAllowedForPartner` (code: 50024) - Switching users is not allowed for partner\n* `NotActiveAppToken` (code: 50023) - Application-token [@id@] is not active\n* `InvalidAppTokenHash` (code: 50022) - Invalid application-token hash\n* `ExpiredAppToken` (code: 50021) - Application-token is expired\n* `NotAllowed` (code: 7013) - Action not allowed due to roleId [@roleId@]\n* `Error` (code: 1) - error\n* `MissingConfiguration` (code: 500006) - Missing configuration [@configuration@]\n* `NotFound` (code: 500007) - @objectType@ not found\n* `ObjectIdNotFound` (code: 500055) - @objectType@ id [@id@] not found\n* `InvalidMultirequestToken` (code: 50025) - Invalid multirequest token\n* `AbstractParameter` (code: 500018) - Abstract parameter type [@type@]\n* `MissingParameter` (code: 500053) - Missing parameter [@parameter@]\n* `MultirequestIndexNotZeroBased` (code: 500042) - Invalid multirequest token, response index is not zero based\n* `MultirequestInvalidIndex` (code: 500043) - Invalid multirequest token, invalid response index"
   }],
   "env": {
     "target_api": "ott"
@@ -3939,7 +3988,7 @@ module.exports = {
   "openapi": {
     "ott": [{
       "openapi": "./ott.openapi.json",
-      "label": "4.82.4.29971"
+      "label": "3.6.287.20720"
     }]
   },
   "externalCSS": true
