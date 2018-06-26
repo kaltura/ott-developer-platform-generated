@@ -83,7 +83,7 @@ module.exports = {
   "specifications": {
     "ott": [{
       "openapi": "./ott.openapi.json",
-      "label": "4.82.4.14239"
+      "label": "4.82.4.29971"
     }]
   },
   "css": ["assets/ott.css"],
@@ -3939,7 +3939,7 @@ module.exports = {
   "openapi": {
     "ott": [{
       "openapi": "./ott.openapi.json",
-      "label": "4.82.4.14239"
+      "label": "4.82.4.29971"
     }]
   },
   "externalCSS": true
