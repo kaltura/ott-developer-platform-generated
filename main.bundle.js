@@ -9969,7 +9969,7 @@ CodeTemplate.prototype.gatherAnswersForPost = function (input) {
   var body = JSON.parse(input.answers.body || '{}');
   delete input.answers.body;
   var bodyParam = input.operation.parameters.filter(function (p) {
-    return p.in === 'body';
+    return p.in === 'body' && p.name === 'body';
   })[0];
   input.objects = [];
   input.enums = [];
