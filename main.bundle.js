@@ -6629,7 +6629,7 @@ function View_JSONSchemaFormComponent_8(_l) {
 }
 function View_JSONSchemaFormComponent_6(_l) {
     return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, 0, null, null, 7, "div", [["class", "nested-editor"]], null, null, null, null, null)), (_l()(), i0.ɵted(-1, null, ["\n        "])), (_l()(), i0.ɵand(16777216, null, null, 1, null, View_JSONSchemaFormComponent_7)), i0.ɵdid(3, 802816, null, 0, i6.NgForOf, [i0.ViewContainerRef, i0.TemplateRef, i0.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i0.ɵted(-1, null, ["\n        "])), (_l()(), i0.ɵand(16777216, null, null, 1, null, View_JSONSchemaFormComponent_8)), i0.ɵdid(6, 16384, null, 0, i6.NgIf, [i0.ViewContainerRef, i0.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i0.ɵted(-1, null, ["\n      "]))], function (_ck, _v) {
-        var _co = _v.component;var currVal_0 = _co.allProperties;_ck(_v, 3, 0, currVal_0);var currVal_1 = _co.schema.additionalProperties || _co.allProperties.length === _co.removableProperties.length;_ck(_v, 6, 0, currVal_1);
+        var _co = _v.component;var currVal_0 = _co.allProperties;_ck(_v, 3, 0, currVal_0);var currVal_1 = _co.schema.additionalProperties || _co.allProperties.length === _co.removableProperties.length && !_co.schema["x-abstract"];_ck(_v, 6, 0, currVal_1);
     }, null);
 }
 function View_JSONSchemaFormComponent_11(_l) {
@@ -6751,12 +6751,17 @@ var JSONSchemaFormComponent = /** @class */ (function () {
         }
         this.subschema = schema;
         this.setProperties();
-        if (this.schema.discriminator) {
+        if (schema && this.schema.discriminator) {
             this.value[this.schema.discriminator] = schema.title;
         }
         this.valueChange.emit(this.value);
     };
     JSONSchemaFormComponent.prototype.setProperties = function () {
+        if (this.schema['x-abstract'] && !this.subschema) {
+            this.allProperties = [];
+            this.removableProperties = [];
+            return;
+        }
         this.allProperties = Object(__WEBPACK_IMPORTED_MODULE_1__util__["e" /* getSchemaProperties */])(this.schema || {}, this.refBase, this.value, this.subschema);
         var nonRemovable = Object(__WEBPACK_IMPORTED_MODULE_1__util__["e" /* getSchemaProperties */])(this.schema || {}, this.refBase, undefined, this.subschema);
         this.removableProperties = this.allProperties.filter(function (p) { return nonRemovable.indexOf(p) === -1; });
@@ -7029,6 +7034,10 @@ var SchemaLabelComponent = /** @class */ (function () {
     SchemaLabelComponent.prototype.toggleExpand = function () {
         this.expand = !this.expand;
         this.maybeResolveRef();
+        if (!this.expand) {
+            this.subtype = null;
+            this.subtypeChange.emit(null);
+        }
         this.expandChange.emit(this.expand);
     };
     SchemaLabelComponent.prototype.maybeResolveRef = function () {
@@ -9562,7 +9571,11 @@ var language_opts = {
     enumPrefix: '',
     enumAccessor: '',
     declarationPrefix: '',
+    nullKeyword: 'null',
     constant: JSON.stringify,
+    comment: function comment(str) {
+      return '/* ' + str + ' */';
+    },
     assign: function assign(lval, rval) {
       return lval + ' = ' + rval;
     },
@@ -9677,6 +9690,7 @@ var language_opts = {
     objPrefix: 'new ',
     objSuffix: '()',
     enumAccessor: '::',
+    nullKeyword: 'NULL',
     rewriteAction: function rewriteAction(s) {
       return addActionSuffixIfReserved('php', s);
     },
@@ -9694,6 +9708,7 @@ var language_opts = {
     objPrefix: 'new ',
     objSuffix: '()',
     enumAccessor: '::',
+    nullKeyword: 'NULL',
     rewriteAction: function rewriteAction(s) {
       return addActionSuffixIfReserved('php', s);
     },
@@ -9723,6 +9738,10 @@ var language_opts = {
     ext: 'rb',
     enumAccessor: '::',
     objSuffix: '.new()',
+    nullKeyword: 'nil',
+    comment: function comment(str) {
+      return "";
+    },
     rewriteVariable: function rewriteVariable(s) {
       return camelCaseToUnderscore(s);
     },
@@ -9818,6 +9837,10 @@ var language_opts = {
   python: {
     ext: 'py',
     objSuffix: '()',
+    nullKeyword: 'None',
+    comment: function comment(str) {
+      return "";
+    },
     constant: function constant(val) {
       var c = JSON.stringify(val);
       if (typeof val === 'boolean') {
@@ -9963,8 +9986,12 @@ CodeTemplate.prototype.gatherAnswersForPost = function (input) {
         addAnswer(key + '[' + subkey + ']', answer[subkey], findSubschema(schema, subkey));
       }
       var objectKey = key + '[objectType]';
-      input.answers[objectKey] = input.answers[objectKey] || schema.title;
-      addSchema(_this2.swagger.definitions[input.answers[objectKey]]);
+      if (!schema['x-abstract']) {
+        input.answers[objectKey] = input.answers[objectKey] || schema.title;
+      }
+      if (input.answers[objectKey]) {
+        addSchema(_this2.swagger.definitions[input.answers[objectKey]]);
+      }
     } else {
       input.answers[key] = answer;
     }
@@ -10263,7 +10290,11 @@ CodeTemplate.prototype.rvalue = function (param, answers, parent) {
   }
 
   if (schema.type === 'object') {
-    return self.objPrefix + self.rewriteType(schema.title, itemSchema && (itemSchema.title || itemSchema.type)) + self.objSuffix;
+    if (schema['x-abstract'] && !answers[param.name + '[objectType]']) {
+      return self.nullKeyword + ' ' + self.comment(schema.title + " is an abstract class, please select an implementation");
+    } else {
+      return self.objPrefix + self.rewriteType(schema.title, itemSchema && (itemSchema.title || itemSchema.type)) + self.objSuffix;
+    }
   } else if (schema.type === 'array') {
     return self.emptyArray(this.rewriteType(itemSchema.title || itemSchema.type), 0);
   } else {
