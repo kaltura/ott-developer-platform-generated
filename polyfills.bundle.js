@@ -3573,7 +3573,7 @@ module.exports = {
         }]
       }, {
         "title": "Viewing your Video",
-        "description": "You can use kWidget to embed your video in HTML. The video may not be ready for a minute, so you can poll its status with `media.get` by hitting 'Send Request'.",
+        "description": "You can use kWidget to embed your video in HTML. </br>\nDepending on your source, transcoding may take a while, so you can poll the entry's status with `media.get` by hitting 'Send Request'. For a list of entry status codes, please see: https://developer.kaltura.com/api-docs/General_Objects/Enums/KalturaEntryStatus",
         "apiCall": {
           "method": "post",
           "path": "/service/media/action/get"
