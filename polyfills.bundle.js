@@ -7283,8 +7283,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * https://github.com/paulmillr/es6-shim
  * @license es6-shim Copyright 2013-2016 by Paul Miller (http://paulmillr.com)
  *   and contributors,  MIT License
- * es6-shim: v0.35.1
- * see https://github.com/paulmillr/es6-shim/blob/0.35.1/LICENSE
+ * es6-shim: v0.35.4
+ * see https://github.com/paulmillr/es6-shim/blob/0.35.3/LICENSE
  * Details and documentation:
  * https://github.com/paulmillr/es6-shim/
  */
@@ -7342,7 +7342,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   var arePropertyDescriptorsSupported = function arePropertyDescriptorsSupported() {
     // if Object.defineProperty exists but throws, it's IE 8
     return !throwsError(function () {
-      Object.defineProperty({}, 'x', { get: function get() {} });
+      return Object.defineProperty({}, 'x', { get: function get() {} }); // eslint-disable-line getter-return
     });
   };
   var supportsDescriptors = !!Object.defineProperty && arePropertyDescriptorsSupported();
@@ -7535,6 +7535,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       return number;
     }
     return number < 0 ? -1 : 1;
+  };
+  var _log1p = function log1p(value) {
+    var x = Number(value);
+    if (x < -1 || numberIsNaN(x)) {
+      return NaN;
+    }
+    if (x === 0 || x === Infinity) {
+      return x;
+    }
+    if (x === -1) {
+      return -Infinity;
+    }
+
+    return 1 + x - 1 === 0 ? x : x * (_log(1 + x) / (1 + x - 1));
   };
 
   // taken directly from https://github.com/ljharb/is-arguments/blob/master/index.js
@@ -8190,7 +8204,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   if (String.prototype.startsWith && String.prototype.endsWith) {
     var startsWithRejectsRegex = throwsError(function () {
       /* throws if spec-compliant */
-      '/a/'.startsWith(/a/);
+      return '/a/'.startsWith(/a/);
     });
     var startsWithHandlesInfinity = valueOrFalseIfThrows(function () {
       return 'abc'.startsWith('a', Infinity) === false;
@@ -8398,33 +8412,30 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   addIterator(ArrayIterator.prototype);
 
   /*
-    var orderKeys = function orderKeys(a, b) {
-      var aNumeric = String(ES.ToInteger(a)) === a;
-      var bNumeric = String(ES.ToInteger(b)) === b;
-      if (aNumeric && bNumeric) {
-        return b - a;
-      } else if (aNumeric && !bNumeric) {
-        return -1;
-      } else if (!aNumeric && bNumeric) {
-        return 1;
-      } else {
-        return a.localeCompare(b);
-      }
-    };
-  
-    var getAllKeys = function getAllKeys(object) {
-      var ownKeys = [];
-      var keys = [];
-  
-      for (var key in object) {
-        _push(_hasOwnProperty(object, key) ? ownKeys : keys, key);
-      }
-      _sort(ownKeys, orderKeys);
-      _sort(keys, orderKeys);
-  
-      return _concat(ownKeys, keys);
-    };
-    */
+  var orderKeys = function orderKeys(a, b) {
+    var aNumeric = String(ES.ToInteger(a)) === a;
+    var bNumeric = String(ES.ToInteger(b)) === b;
+    if (aNumeric && bNumeric) {
+      return b - a;
+    } else if (aNumeric && !bNumeric) {
+      return -1;
+    } else if (!aNumeric && bNumeric) {
+      return 1;
+    } else {
+      return a.localeCompare(b);
+    }
+  };
+   var getAllKeys = function getAllKeys(object) {
+    var ownKeys = [];
+    var keys = [];
+     for (var key in object) {
+      _push(_hasOwnProperty(object, key) ? ownKeys : keys, key);
+    }
+    _sort(ownKeys, orderKeys);
+    _sort(keys, orderKeys);
+     return _concat(ownKeys, keys);
+  };
+  */
 
   // note: this is positioned here because it depends on ArrayIterator
   var arrayOfSupportsSubclassing = Array.of === ArrayShims.of || function () {
@@ -8948,7 +8959,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
 
   var objectKeysAcceptsPrimitives = !throwsError(function () {
-    Object.keys('foo');
+    return Object.keys('foo');
   });
   if (!objectKeysAcceptsPrimitives) {
     var originalObjectKeys = Object.keys;
@@ -8958,7 +8969,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     keys = Object.keys;
   }
   var objectKeysRejectsRegex = throwsError(function () {
-    Object.keys(/a/g);
+    return Object.keys(/a/g);
   });
   if (objectKeysRejectsRegex) {
     var regexRejectingObjectKeys = Object.keys;
@@ -8979,7 +8990,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   if (Object.getOwnPropertyNames) {
     var objectGOPNAcceptsPrimitives = !throwsError(function () {
-      Object.getOwnPropertyNames('foo');
+      return Object.getOwnPropertyNames('foo');
     });
     if (!objectGOPNAcceptsPrimitives) {
       var cachedWindowNames = (typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object' ? Object.getOwnPropertyNames(window) : [];
@@ -9000,7 +9011,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.getOwnPropertyDescriptor) {
     var objectGOPDAcceptsPrimitives = !throwsError(function () {
-      Object.getOwnPropertyDescriptor('foo', 'bar');
+      return Object.getOwnPropertyDescriptor('foo', 'bar');
     });
     if (!objectGOPDAcceptsPrimitives) {
       var originalObjectGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
@@ -9011,7 +9022,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.seal) {
     var objectSealAcceptsPrimitives = !throwsError(function () {
-      Object.seal('foo');
+      return Object.seal('foo');
     });
     if (!objectSealAcceptsPrimitives) {
       var originalObjectSeal = Object.seal;
@@ -9025,7 +9036,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.isSealed) {
     var objectIsSealedAcceptsPrimitives = !throwsError(function () {
-      Object.isSealed('foo');
+      return Object.isSealed('foo');
     });
     if (!objectIsSealedAcceptsPrimitives) {
       var originalObjectIsSealed = Object.isSealed;
@@ -9039,7 +9050,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.freeze) {
     var objectFreezeAcceptsPrimitives = !throwsError(function () {
-      Object.freeze('foo');
+      return Object.freeze('foo');
     });
     if (!objectFreezeAcceptsPrimitives) {
       var originalObjectFreeze = Object.freeze;
@@ -9053,7 +9064,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.isFrozen) {
     var objectIsFrozenAcceptsPrimitives = !throwsError(function () {
-      Object.isFrozen('foo');
+      return Object.isFrozen('foo');
     });
     if (!objectIsFrozenAcceptsPrimitives) {
       var originalObjectIsFrozen = Object.isFrozen;
@@ -9067,7 +9078,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.preventExtensions) {
     var objectPreventExtensionsAcceptsPrimitives = !throwsError(function () {
-      Object.preventExtensions('foo');
+      return Object.preventExtensions('foo');
     });
     if (!objectPreventExtensionsAcceptsPrimitives) {
       var originalObjectPreventExtensions = Object.preventExtensions;
@@ -9081,7 +9092,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.isExtensible) {
     var objectIsExtensibleAcceptsPrimitives = !throwsError(function () {
-      Object.isExtensible('foo');
+      return Object.isExtensible('foo');
     });
     if (!objectIsExtensibleAcceptsPrimitives) {
       var originalObjectIsExtensible = Object.isExtensible;
@@ -9095,7 +9106,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
   if (Object.getPrototypeOf) {
     var objectGetProtoAcceptsPrimitives = !throwsError(function () {
-      Object.getPrototypeOf('foo');
+      return Object.getPrototypeOf('foo');
     });
     if (!objectGetProtoAcceptsPrimitives) {
       var originalGetProto = Object.getPrototypeOf;
@@ -9254,7 +9265,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (x === Infinity) {
         return x;
       }
-      return _log(x / E + _sqrt(x + 1) * _sqrt(x - 1) / E) + 1;
+
+      var xInvSquared = 1 / (x * x);
+      if (x < 2) {
+        return _log1p(x - 1 + _sqrt(1 - xInvSquared) * x);
+      }
+      var halfX = x / 2;
+      return _log1p(halfX + _sqrt(1 - xInvSquared) * halfX - 1) + 1 / LOG2E;
     },
 
     asinh: function asinh(value) {
@@ -9262,13 +9279,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (x === 0 || !globalIsFinite(x)) {
         return x;
       }
-      return x < 0 ? -asinh(-x) : _log(x + _sqrt(x * x + 1));
+
+      var a = _abs(x);
+      var aSquared = a * a;
+      var s = _sign(x);
+      if (a < 1) {
+        return s * _log1p(a + aSquared / (_sqrt(aSquared + 1) + 1));
+      }
+      return s * (_log1p(a / 2 + _sqrt(1 + 1 / aSquared) * a / 2 - 1) + 1 / LOG2E);
     },
 
     atanh: function atanh(value) {
       var x = Number(value);
-      if (numberIsNaN(x) || x < -1 || x > 1) {
-        return NaN;
+
+      if (x === 0) {
+        return x;
       }
       if (x === -1) {
         return -Infinity;
@@ -9276,10 +9301,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (x === 1) {
         return Infinity;
       }
-      if (x === 0) {
-        return x;
+      if (numberIsNaN(x) || x < -1 || x > 1) {
+        return NaN;
       }
-      return 0.5 * _log((1 + x) / (1 - x));
+
+      var a = _abs(x);
+      return _sign(x) * _log1p(2 * a / (1 - a)) / 2;
     },
 
     cbrt: function cbrt(value) {
@@ -9323,13 +9350,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (!globalIsFinite(x)) {
         return Infinity;
       }
-      if (x < 0) {
-        x = -x;
-      }
-      if (x > 21) {
-        return _exp(x) / 2;
-      }
-      return (_exp(x) + _exp(-x)) / 2;
+
+      var t = _exp(_abs(x) - 1);
+      return (t + 1 / (t * E * E)) * (E / 2);
     },
 
     expm1: function expm1(value) {
@@ -9380,20 +9403,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       return _log(value) * LOG10E;
     },
 
-    log1p: function log1p(value) {
-      var x = Number(value);
-      if (x < -1 || numberIsNaN(x)) {
-        return NaN;
-      }
-      if (x === 0 || x === Infinity) {
-        return x;
-      }
-      if (x === -1) {
-        return -Infinity;
-      }
-
-      return 1 + x - 1 === 0 ? x : x * (_log(1 + x) / (1 + x - 1));
-    },
+    log1p: _log1p,
 
     sign: _sign,
 
@@ -9403,10 +9413,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return x;
       }
 
-      if (_abs(x) < 1) {
-        return (Math.expm1(x) - Math.expm1(-x)) / 2;
+      var a = _abs(x);
+      if (a < 1) {
+        var u = Math.expm1(a);
+        return _sign(x) * u * (1 + 1 / (u + 1)) / 2;
       }
-      return (_exp(x - 1) - _exp(-x - 1)) * E / 2;
+      var t = _exp(a - 1);
+      return _sign(x) * (t - 1 / (t * E * E)) * (E / 2);
     },
 
     tanh: function tanh(value) {
@@ -9462,17 +9475,32 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       return sign * result;
     }
   };
+
+  var withinULPDistance = function withinULPDistance(result, expected, distance) {
+    return _abs(1 - result / expected) / Number.EPSILON < (distance || 8);
+  };
+
   defineProperties(Math, MathShims);
+  // Chrome < 40 sinh returns ∞ for large numbers
+  defineProperty(Math, 'sinh', MathShims.sinh, Math.sinh(710) === Infinity);
+  // Chrome < 40 cosh returns ∞ for large numbers
+  defineProperty(Math, 'cosh', MathShims.cosh, Math.cosh(710) === Infinity);
   // IE 11 TP has an imprecise log1p: reports Math.log1p(-1e-17) as 0
   defineProperty(Math, 'log1p', MathShims.log1p, Math.log1p(-1e-17) !== -1e-17);
   // IE 11 TP has an imprecise asinh: reports Math.asinh(-1e7) as not exactly equal to -Math.asinh(1e7)
   defineProperty(Math, 'asinh', MathShims.asinh, Math.asinh(-1e7) !== -Math.asinh(1e7));
+  // Chrome < 54 asinh returns ∞ for large numbers and should not
+  defineProperty(Math, 'asinh', MathShims.asinh, Math.asinh(1e+300) === Infinity);
+  // Chrome < 54 atanh incorrectly returns 0 for large numbers
+  defineProperty(Math, 'atanh', MathShims.atanh, Math.atanh(1e-300) === 0);
   // Chrome 40 has an imprecise Math.tanh with very small numbers
   defineProperty(Math, 'tanh', MathShims.tanh, Math.tanh(-2e-17) !== -2e-17);
   // Chrome 40 loses Math.acosh precision with high numbers
   defineProperty(Math, 'acosh', MathShims.acosh, Math.acosh(Number.MAX_VALUE) === Infinity);
+  // Chrome < 54 has an inaccurate acosh for EPSILON deltas
+  defineProperty(Math, 'acosh', MathShims.acosh, !withinULPDistance(Math.acosh(1 + Number.EPSILON), Math.sqrt(2 * Number.EPSILON)));
   // Firefox 38 on Windows
-  defineProperty(Math, 'cbrt', MathShims.cbrt, Math.abs(1 - Math.cbrt(1e-300) / 1e-100) / Number.EPSILON > 8);
+  defineProperty(Math, 'cbrt', MathShims.cbrt, !withinULPDistance(Math.cbrt(1e-300), 1e-100));
   // node 0.11 has an imprecise Math.sinh with very small numbers
   defineProperty(Math, 'sinh', MathShims.sinh, Math.sinh(-2e-17) !== -2e-17);
   // FF 35 on Linux reports 22025.465794806725 for Math.expm1(10)
@@ -10013,10 +10041,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       return S.resolve(42).then(function () {}) instanceof S;
     });
     var promiseIgnoresNonFunctionThenCallbacks = !throwsError(function () {
-      globals.Promise.reject(42).then(null, 5).then(null, noop);
+      return globals.Promise.reject(42).then(null, 5).then(null, noop);
     });
     var promiseRequiresObjectContext = throwsError(function () {
-      globals.Promise.call(3, noop);
+      return globals.Promise.call(3, noop);
     });
     // Promise.resolve() was errata'ed late in the ES6 process.
     // See: https://bugzilla.mozilla.org/show_bug.cgi?id=1170742
@@ -10038,6 +10066,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     // Chrome 46 (probably older too) does not retrieve a thenable's .then synchronously
     var getsThenSynchronously = supportsDescriptors && function () {
       var count = 0;
+      // eslint-disable-next-line getter-return
       var thenable = Object.defineProperty({}, 'then', { get: function get() {
           count += 1;
         } });
@@ -10251,7 +10280,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         };
 
         MapIterator.prototype = {
+          isMapIterator: true,
           next: function next() {
+            if (!this.isMapIterator) {
+              throw new TypeError('Not a MapIterator');
+            }
             var i = this.i;
             var kind = this.kind;
             var head = this.head;
@@ -10634,13 +10667,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           values: function values() {
             requireSetSlot(this, 'values');
             ensureMap(this);
-            return this['[[SetData]]'].values();
+            return new SetIterator(this['[[SetData]]'].values());
           },
 
           entries: function entries() {
             requireSetSlot(this, 'entries');
             ensureMap(this);
-            return this['[[SetData]]'].entries();
+            return new SetIterator(this['[[SetData]]'].entries());
           },
 
           forEach: function forEach(callback) {
@@ -10660,10 +10693,30 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         defineProperty(SetShim.prototype, 'keys', SetShim.prototype.values, true);
         addIterator(SetShim.prototype, SetShim.prototype.values);
 
+        var SetIterator = function SetIterator(it) {
+          this.it = it;
+        };
+        SetIterator.prototype = {
+          isSetIterator: true,
+          next: function next() {
+            if (!this.isSetIterator) {
+              throw new TypeError('Not a SetIterator');
+            }
+            return this.it.next();
+          }
+        };
+        addIterator(SetIterator.prototype);
+
         return SetShim;
       }()
     };
 
+    var isGoogleTranslate = globals.Set && !Set.prototype['delete'] && Set.prototype.remove && Set.prototype.items && Set.prototype.map && Array.isArray(new Set().keys);
+    if (isGoogleTranslate) {
+      // special-case force removal of wildly invalid Set implementation in Google Translate iframes
+      // see https://github.com/paulmillr/es6-shim/issues/438 / https://twitter.com/ljharb/status/849335573114363904
+      globals.Set = collectionShims.Set;
+    }
     if (globals.Map || globals.Set) {
       // Safari 8, for example, doesn't accept an iterable.
       var mapAcceptsArguments = valueOrFalseIfThrows(function () {
@@ -10713,7 +10766,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         Value.preserveToString(Map.prototype.has, origMapHas);
       }
       var testSet = new Set();
-      var setUsesSameValueZero = function (s) {
+      var setUsesSameValueZero = Set.prototype['delete'] && Set.prototype.add && Set.prototype.has && function (s) {
         s['delete'](0);
         s.add(-0);
         return !s.has(0);
@@ -10931,7 +10984,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       preventExtensions: function preventExtensions(target) {
         throwUnlessTargetIsObject(target);
         return callAndCatchException(function () {
-          Object.preventExtensions(target);
+          return Object.preventExtensions(target);
         });
       }
     });
@@ -11017,7 +11070,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       defineProperty: function defineProperty(target, propertyKey, attributes) {
         throwUnlessTargetIsObject(target);
         return callAndCatchException(function () {
-          Object.defineProperty(target, propertyKey, attributes);
+          return Object.defineProperty(target, propertyKey, attributes);
         });
       },
 
