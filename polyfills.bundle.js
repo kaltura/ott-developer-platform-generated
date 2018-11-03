@@ -2133,6 +2133,14 @@ module.exports = {
           }
         }]
       }, {
+        "title": "Updating your cloned notification",
+        "description": "Use ```eventNotificationTemplate.update``` to edit the properties of your newly cloned event notification.",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/eventnotification_eventnotificationtemplate/action/update",
+          "ignoreParameters": ["format"]
+        }
+      }, {
         "title": "Viewing your Notification Templates",
         "description": "Use ```eventNotificationTemplate.list``` to get a list of your templates.",
         "apiCall": {
