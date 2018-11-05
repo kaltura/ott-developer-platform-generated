@@ -2160,9 +2160,24 @@ module.exports = {
         "description": "Use ```eventNotificationTemplate.updateStatus``` to control your notification status.",
         "apiCall": {
           "method": "post",
-          "path": "/service/eventnotification_eventnotificationtemplate/action/updateStatus",
-          "ignoreParameters": ["format"]
-        }
+          "path": "/service/eventnotification_eventnotificationtemplate/action/updateStatus"
+        },
+        "parameters": [{
+          "name": "body",
+          "in": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "dynamicValue": {
+                  "fromStep": 2,
+                  "answer": "body.id"
+                }
+              },
+              "eventNotificationTemplate": {}
+            }
+          }
+        }]
       }, {
         "title": "Viewing your Notification Templates",
         "description": "Use ```eventNotificationTemplate.list``` to get a list of your templates.",
