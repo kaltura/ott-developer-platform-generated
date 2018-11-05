@@ -23,7 +23,7 @@ module.exports = {
   "embedParameters": {
     "format": 1
   },
-  "javascript": ["assets/KalturaClient.min.js", "assets/KalturaSessionService.min.js", "assets/KalturaPartnerService.min.js", "assets/KalturaUiConfService.min.js", "assets/js/highlight.pack.js", "assets/js/modernizr.js", "assets/js/auth.js", "assets/js/check-response.js", "assets/js/jekyll-code-example-buttons.js", "assets/js/jquery.exLink.js", "assets/js/kc-setup.js", "assets/js/lity.min.js", "assets/js/misc.js", "assets/js/opentip-jquery.js", "assets/js/search.js", "assets/js/sidebar.js", "assets/js/webflow.js"],
+  "javascript": ["assets/google-analytics.js", "assets/KalturaClient.min.js", "assets/KalturaSessionService.min.js", "assets/KalturaPartnerService.min.js", "assets/KalturaUiConfService.min.js", "assets/js/highlight.pack.js", "assets/js/modernizr.js", "assets/js/auth.js", "assets/js/check-response.js", "assets/js/jekyll-code-example-buttons.js", "assets/js/jquery.exLink.js", "assets/js/kc-setup.js", "assets/js/lity.min.js", "assets/js/misc.js", "assets/js/opentip-jquery.js", "assets/js/search.js", "assets/js/sidebar.js", "assets/js/webflow.js"],
   "codegen": {
     "languages": [{
       "id": "curl",
