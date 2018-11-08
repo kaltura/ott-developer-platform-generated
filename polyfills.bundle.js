@@ -2174,7 +2174,7 @@ module.exports = {
                   "answer": "body.id"
                 }
               },
-              "eventNotificationTemplate": {}
+              "status": {}
             }
           }
         }]
