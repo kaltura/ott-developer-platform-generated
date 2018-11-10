@@ -2152,19 +2152,10 @@ module.exports = {
                   "array": "objects",
                   "label": "name",
                   "value": "id"
-                },
-                "filter": {
-                  "properties": {
-                    "typeEqual": {
-                      "enum": ["httpNotification.Http"],
-                      "x-enumLabels": ["HTTP Template"]
-                    }
-                  },
-                  "type": "object"
                 }
-              }
-            },
-            "eventNotificationTemplate": {}
+              },
+              "eventNotificationTemplate": {}
+            }
           }
         }]
       }, {
@@ -2187,19 +2178,10 @@ module.exports = {
                   "array": "objects",
                   "label": "name",
                   "value": "id"
-                },
-                "filter": {
-                  "properties": {
-                    "typeEqual": {
-                      "enum": ["httpNotification.Http"],
-                      "x-enumLabels": ["HTTP Template"]
-                    }
-                  },
-                  "type": "object"
                 }
-              }
-            },
-            "status": {}
+              },
+              "status": {}
+            }
           }
         }]
       }, {
