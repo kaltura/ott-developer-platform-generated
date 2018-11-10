@@ -2178,9 +2178,9 @@ module.exports = {
                   "array": "objects",
                   "label": "name",
                   "value": "id"
-                }
-              },
-              "status": {}
+                },
+                "status": {}
+              }
             }
           }
         }]
