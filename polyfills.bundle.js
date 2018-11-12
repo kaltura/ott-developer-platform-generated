@@ -2146,11 +2146,8 @@ module.exports = {
             "type": "object",
             "properties": {
               "id": {
-                "dynamicEnum": {
-                  "path": "/service/eventnotification_eventnotificationtemplate/action/list",
-                  "method": "post",
-                  "array": "objects",
-                  "label": "name",
+                "dynamicValue": {
+                  "fromStep": 2,
                   "value": "id"
                 }
               },
@@ -2172,15 +2169,12 @@ module.exports = {
             "type": "object",
             "properties": {
               "id": {
-                "dynamicEnum": {
-                  "path": "/service/eventnotification_eventnotificationtemplate/action/list",
-                  "method": "post",
-                  "array": "objects",
-                  "label": "name",
+                "dynamicValue": {
+                  "fromStep": 2,
                   "value": "id"
-                },
-                "status": {}
-              }
+                }
+              },
+              "status": {}
             }
           }
         }]
