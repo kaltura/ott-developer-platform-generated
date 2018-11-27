@@ -10249,6 +10249,7 @@ ul.code-tab li a {
 /*ul.code-tab li a:focus, .active {background-color: #ccc;}*/
 
 
+nav li.workflows-link,
 nav li.vpaas-link {
   display: none;
 }
