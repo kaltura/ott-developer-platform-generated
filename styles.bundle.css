@@ -10249,11 +10249,12 @@ ul.code-tab li a {
 /*ul.code-tab li a:focus, .active {background-color: #ccc;}*/
 
 
-nav li.workflows-link,
 nav li.vpaas-link {
   display: none;
 }
-/**
+sample-code .show-setup-checkbox {
+  display: none !important;
+}/**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
