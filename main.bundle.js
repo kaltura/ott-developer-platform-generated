@@ -328,7 +328,7 @@ var AppModuleNgFactory = i0.ɵcmf(i1.AppModule, [i2.AppComponent], function (_l)
   }, []), i0.ɵmpd(256, i0.APP_ID, "lucybot-doc-app", []), i0.ɵmpd(2048, i12.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i19.ɵg, i19.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p1_0, p1_1, p1_2, p2_0) {
     return [i12.ɵh(p0_0), i12.ɵf(p1_0, p1_1, p1_2), i19.ɵh(p2_0)];
   }, [[2, i0.NgProbeToken], i12.ɵTRANSITION_ID, i11.DOCUMENT, i0.Injector, i19.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ApplicationRef, i0.ApplicationRef, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i12.BrowserModule, i12.BrowserModule, [[3, i12.BrowserModule]]), i0.ɵmpd(512, i12.BrowserTransferStateModule, i12.BrowserTransferStateModule, []), i0.ɵmpd(512, i13.TransferHttpCacheModule, i13.TransferHttpCacheModule, []), i0.ɵmpd(512, i16.BrowserAnimationsModule, i16.BrowserAnimationsModule, []), i0.ɵmpd(1024, i19.ɵa, i19.ɵd, [[3, i19.Router]]), i0.ɵmpd(512, i19.UrlSerializer, i19.DefaultUrlSerializer, []), i0.ɵmpd(512, i19.ChildrenOutletContexts, i19.ChildrenOutletContexts, []), i0.ɵmpd(256, i11.APP_BASE_HREF, i1.ɵ0, []), i0.ɵmpd(256, i19.ROUTER_CONFIGURATION, { useHash: false }, []), i0.ɵmpd(1024, i11.LocationStrategy, i19.ɵc, [i11.PlatformLocation, [2, i11.APP_BASE_HREF], i19.ROUTER_CONFIGURATION]), i0.ɵmpd(512, i11.Location, i11.Location, [i11.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]), i0.ɵmpd(1024, i19.ROUTES, function () {
-    return [[{ path: "", redirectTo: "/api-docs", pathMatch: "full" }, { path: "api-docs", component: i30.DocumentationComponent }, { path: "api-docs/:item0", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2/:item3", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2/:item3/:item4", component: i30.DocumentationComponent }, { path: "console", component: i31.ConsoleComponent }, { path: "console/:item0", component: i31.ConsoleComponent }, { path: "console/:item0/:item1", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2/:item3", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2/:item3/:item4", component: i31.ConsoleComponent }, { path: "workflows", component: i32.GalleryComponent }, { path: "workflows/:item0", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2/:item3", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2/:item3/:item4", component: i32.GalleryComponent }, { path: "new-workflow", component: i33.RecipeComponent }, { path: "new-workflow/:item0", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2/:item3", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2/:item3/:item4", component: i33.RecipeComponent }, { path: "preview-workflow", component: i33.RecipeComponent }, { path: "preview-workflow/:item0", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2/:item3", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2/:item3/:item4", component: i33.RecipeComponent }, { path: "**", redirectTo: "api-docs", pathMatch: "full" }]];
+    return [[{ path: "api-docs", component: i30.DocumentationComponent }, { path: "api-docs/:item0", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2/:item3", component: i30.DocumentationComponent }, { path: "api-docs/:item0/:item1/:item2/:item3/:item4", component: i30.DocumentationComponent }, { path: "console", component: i31.ConsoleComponent }, { path: "console/:item0", component: i31.ConsoleComponent }, { path: "console/:item0/:item1", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2/:item3", component: i31.ConsoleComponent }, { path: "console/:item0/:item1/:item2/:item3/:item4", component: i31.ConsoleComponent }, { path: "workflows", component: i32.GalleryComponent }, { path: "workflows/:item0", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2/:item3", component: i32.GalleryComponent }, { path: "workflows/:item0/:item1/:item2/:item3/:item4", component: i32.GalleryComponent }, { path: "new-workflow", component: i33.RecipeComponent }, { path: "new-workflow/:item0", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2/:item3", component: i33.RecipeComponent }, { path: "new-workflow/:item0/:item1/:item2/:item3/:item4", component: i33.RecipeComponent }, { path: "preview-workflow", component: i33.RecipeComponent }, { path: "preview-workflow/:item0", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2/:item3", component: i33.RecipeComponent }, { path: "preview-workflow/:item0/:item1/:item2/:item3/:item4", component: i33.RecipeComponent }, { path: "", redirectTo: "/api-docs", pathMatch: "full" }, { path: "**", redirectTo: "api-docs", pathMatch: "full" }]];
   }, []), i0.ɵmpd(1024, i19.Router, i19.ɵe, [i0.ApplicationRef, i19.UrlSerializer, i19.ChildrenOutletContexts, i11.Location, i0.Injector, i0.NgModuleFactoryLoader, i0.Compiler, i19.ROUTES, i19.ROUTER_CONFIGURATION, [2, i19.UrlHandlingStrategy], [2, i19.RouteReuseStrategy]]), i0.ɵmpd(512, i19.RouterModule, i19.RouterModule, [[2, i19.ɵa], [2, i19.Router]]), i0.ɵmpd(512, i34.TooltipModule, i34.TooltipModule, []), i0.ɵmpd(512, i35.Ng2DatetimePickerModule, i35.Ng2DatetimePickerModule, []), i0.ɵmpd(512, i1.AppModule, i1.AppModule, []), i0.ɵmpd(256, i10.ɵf, "XSRF-TOKEN", []), i0.ɵmpd(256, i10.ɵg, "X-XSRF-TOKEN", []), i0.ɵmpd(256, "ORIGIN_URL", "", [])]);
 });
 exports.AppModuleNgFactory = AppModuleNgFactory;
@@ -5811,19 +5811,21 @@ var SchemaComponent = /** @class */ (function () {
         this.showing = 'schema';
     }
     SchemaComponent.prototype.ngOnChanges = function () {
-        var example = null;
-        if (this.examples && Object.keys(this.examples).length) {
-            var keys = Object.keys(this.examples);
-            // FIXME: have a dropdown for different content types.
-            if (keys.indexOf('application/json') !== -1) {
-                example = this.examples['application/json'];
+        var example = this.schema.example;
+        if (!example) {
+            if (this.examples && Object.keys(this.examples).length) {
+                var keys = Object.keys(this.examples);
+                // FIXME: have a dropdown for different content types.
+                if (keys.indexOf('application/json') !== -1) {
+                    example = this.examples['application/json'];
+                }
+                else {
+                    example = this.examples[keys[0]];
+                }
             }
             else {
-                example = this.examples[keys[0]];
+                example = this.getExample(this.schema);
             }
-        }
-        else {
-            example = this.getExample(this.schema);
         }
         var exampleStr = JSON.stringify(example, null, 2) || '';
         if (window.Prism !== null) {
@@ -8329,11 +8331,13 @@ var OpenAPIService = /** @class */ (function () {
                 if (__WEBPACK_IMPORTED_MODULE_5__utils__["METHODS"].indexOf(method_1.toUpperCase()) === -1)
                     continue;
                 var operation = this.parsed.paths[path_1][method_1];
+                var id = operation.operationId || method_1.toUpperCase() + ' ' + path_1;
                 var apiCall = {
+                    id: id,
                     path: path_1,
                     method: method_1,
                     operation: operation,
-                    title: operation.operationId || method_1.toUpperCase() + ' ' + path_1,
+                    title: id,
                 };
                 this.apiCalls.push(apiCall);
             }
@@ -8571,7 +8575,7 @@ var RoutesService = /** @class */ (function () {
                 return;
             for (var i = 0; i < items.length; ++i) {
                 var item = items[i];
-                if (item.operation === apiCall.operation.operationId)
+                if (item.operation === apiCall.id)
                     return item;
                 var child = getLink(item.children);
                 if (child)
@@ -9133,8 +9137,6 @@ var initializeNavigation = module.exports = function (nav, config, openapi) {
         })
       });
     }
-  } else {
-    nav = JSON.parse(JSON.stringify(nav));
   }
   nav.forEach(function (navItem) {
     return initializeNavigationItem(navItem, config, openapi);

@@ -17984,7 +17984,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /**
  * marked - a markdown parser
- * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
+ * Copyright (c) 2011-2018, Christopher Jeffrey. (MIT Licensed)
  * https://github.com/markedjs/marked
  */
 
@@ -18000,20 +18000,29 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     code: /^( {4}[^\n]+\n*)+/,
     fences: noop,
     hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
-    heading: /^ *(#{1,6}) *([^\n]+?) *#* *(?:\n+|$)/,
+    heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
     nptable: noop,
     blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
     list: /^( *)(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
-    html: /^ *(?:comment *(?:\n|\s*$)|closed *(?:\n{2,}|\s*$)|closing *(?:\n{2,}|\s*$))/,
+    html: '^ {0,3}(?:' // optional indentation
+    + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
+    + '|comment[^\\n]*(\\n+|$)' // (2)
+    + '|<\\?[\\s\\S]*?\\?>\\n*' // (3)
+    + '|<![A-Z][\\s\\S]*?>\\n*' // (4)
+    + '|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\\n*' // (5)
+    + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
+    + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=\\h*\\n)[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
+    + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=\\h*\\n)[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
+    + ')',
     def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
     table: noop,
     lheading: /^([^\n]+)\n *(=|-){2,} *(?:\n+|$)/,
-    paragraph: /^([^\n]+(?:\n?(?!hr|heading|lheading| {0,3}>|tag)[^\n]+)+)/,
+    paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading| {0,3}>|<\/?(?:tag)(?: +|\n|\/?>)|<(?:script|pre|style|!--))[^\n]+)*)/,
     text: /^[^\n]+/
   };
 
-  block._label = /(?:\\[\[\]]|[^\[\]])+/;
-  block._title = /(?:"(?:\\"|[^"]|"[^"\n]*")*"|'\n?(?:[^'\n]+\n?)*'|\([^()]*\))/;
+  block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
+  block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
   block.def = edit(block.def).replace('label', block._label).replace('title', block._title).getRegex();
 
   block.bullet = /(?:[*+-]|\d+\.)/;
@@ -18022,11 +18031,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   block.list = edit(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
 
-  block._tag = '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code' + '|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo' + '|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b';
+  block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
+  block._comment = /<!--(?!-?>)[\s\S]*?-->/;
+  block.html = edit(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
 
-  block.html = edit(block.html).replace('comment', /<!--[\s\S]*?-->/).replace('closed', /<(tag)[\s\S]+?<\/\1>/).replace('closing', /<tag(?:"[^"]*"|'[^']*'|\s[^'"\/>\s]*)*?\/?>/).replace(/tag/g, block._tag).getRegex();
-
-  block.paragraph = edit(block.paragraph).replace('hr', block.hr).replace('heading', block.heading).replace('lheading', block.lheading).replace('tag', '<' + block._tag).getRegex();
+  block.paragraph = edit(block.paragraph).replace('hr', block.hr).replace('heading', block.heading).replace('lheading', block.lheading).replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
+  .getRegex();
 
   block.blockquote = edit(block.blockquote).replace('paragraph', block.paragraph).getRegex();
 
@@ -18053,8 +18063,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   block.tables = merge({}, block.gfm, {
-    nptable: /^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/,
-    table: /^ *\|(.+)\n *\|( *[-:]+[-| :]*)\n((?: *\|.*(?:\n|$))*)\n*/
+    nptable: /^ *([^|\n ].*\|.*)\n *([-:]+ *\|[-| :]*)(?:\n((?:.*[^>\n ].*(?:\n|$))*)\n*|$)/,
+    table: /^ *\|(.+)\n *\|?( *[-:]+[-| :]*)(?:\n((?: *[^>\n ].*(?:\n|$))*)\n*|$)/
+  });
+
+  /**
+   * Pedantic grammar
+   */
+
+  block.pedantic = merge({}, block.normal, {
+    html: edit('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
+    + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
+    def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/
   });
 
   /**
@@ -18063,11 +18083,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   function Lexer(options) {
     this.tokens = [];
-    this.tokens.links = {};
+    this.tokens.links = Object.create(null);
     this.options = options || marked.defaults;
     this.rules = block.normal;
 
-    if (this.options.gfm) {
+    if (this.options.pedantic) {
+      this.rules = block.pedantic;
+    } else if (this.options.gfm) {
       if (this.options.tables) {
         this.rules = block.tables;
       } else {
@@ -18107,7 +18129,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   Lexer.prototype.token = function (src, top) {
     src = src.replace(/^ +$/gm, '');
-    var next, loose, cap, bull, b, item, space, i, tag, l, isordered;
+    var next, loose, cap, bull, b, item, listStart, listItems, t, space, i, tag, l, isordered, istask, ischecked;
 
     while (src) {
       // newline
@@ -18126,7 +18148,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         cap = cap[0].replace(/^ {4}/gm, '');
         this.tokens.push({
           type: 'code',
-          text: !this.options.pedantic ? cap.replace(/\n+$/, '') : cap
+          text: !this.options.pedantic ? rtrim(cap, '\n') : cap
         });
         continue;
       }
@@ -18155,34 +18177,36 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
       // table no leading pipe (gfm)
       if (top && (cap = this.rules.nptable.exec(src))) {
-        src = src.substring(cap[0].length);
-
         item = {
           type: 'table',
-          header: cap[1].replace(/^ *| *\| *$/g, '').split(/ *\| */),
+          header: splitCells(cap[1].replace(/^ *| *\| *$/g, '')),
           align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
-          cells: cap[3].replace(/\n$/, '').split('\n')
+          cells: cap[3] ? cap[3].replace(/\n$/, '').split('\n') : []
         };
 
-        for (i = 0; i < item.align.length; i++) {
-          if (/^ *-+: *$/.test(item.align[i])) {
-            item.align[i] = 'right';
-          } else if (/^ *:-+: *$/.test(item.align[i])) {
-            item.align[i] = 'center';
-          } else if (/^ *:-+ *$/.test(item.align[i])) {
-            item.align[i] = 'left';
-          } else {
-            item.align[i] = null;
+        if (item.header.length === item.align.length) {
+          src = src.substring(cap[0].length);
+
+          for (i = 0; i < item.align.length; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
           }
+
+          for (i = 0; i < item.cells.length; i++) {
+            item.cells[i] = splitCells(item.cells[i], item.header.length);
+          }
+
+          this.tokens.push(item);
+
+          continue;
         }
-
-        for (i = 0; i < item.cells.length; i++) {
-          item.cells[i] = item.cells[i].split(/ *\| */);
-        }
-
-        this.tokens.push(item);
-
-        continue;
       }
 
       // hr
@@ -18222,15 +18246,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         bull = cap[2];
         isordered = bull.length > 1;
 
-        this.tokens.push({
+        listStart = {
           type: 'list_start',
           ordered: isordered,
-          start: isordered ? +bull : ''
-        });
+          start: isordered ? +bull : '',
+          loose: false
+        };
+
+        this.tokens.push(listStart);
 
         // Get each top-level item.
         cap = cap[0].match(this.rules.item);
 
+        listItems = [];
         next = false;
         l = cap.length;
         i = 0;
@@ -18269,9 +18297,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             if (!loose) loose = next;
           }
 
-          this.tokens.push({
-            type: loose ? 'loose_item_start' : 'list_item_start'
-          });
+          if (loose) {
+            listStart.loose = true;
+          }
+
+          // Check for task list items
+          istask = /^\[[ xX]\] /.test(item);
+          ischecked = undefined;
+          if (istask) {
+            ischecked = item[1] !== ' ';
+            item = item.replace(/^\[[ xX]\] +/, '');
+          }
+
+          t = {
+            type: 'list_item_start',
+            task: istask,
+            checked: ischecked,
+            loose: loose
+          };
+
+          listItems.push(t);
+          this.tokens.push(t);
 
           // Recurse.
           this.token(item, false);
@@ -18279,6 +18325,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           this.tokens.push({
             type: 'list_item_end'
           });
+        }
+
+        if (listStart.loose) {
+          l = listItems.length;
+          i = 0;
+          for (; i < l; i++) {
+            listItems[i].loose = true;
+          }
         }
 
         this.tokens.push({
@@ -18303,7 +18357,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (top && (cap = this.rules.def.exec(src))) {
         src = src.substring(cap[0].length);
         if (cap[3]) cap[3] = cap[3].substring(1, cap[3].length - 1);
-        tag = cap[1].toLowerCase();
+        tag = cap[1].toLowerCase().replace(/\s+/g, ' ');
         if (!this.tokens.links[tag]) {
           this.tokens.links[tag] = {
             href: cap[2],
@@ -18315,34 +18369,36 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
       // table (gfm)
       if (top && (cap = this.rules.table.exec(src))) {
-        src = src.substring(cap[0].length);
-
         item = {
           type: 'table',
-          header: cap[1].replace(/^ *| *\| *$/g, '').split(/ *\| */),
+          header: splitCells(cap[1].replace(/^ *| *\| *$/g, '')),
           align: cap[2].replace(/^ *|\| *$/g, '').split(/ *\| */),
-          cells: cap[3].replace(/(?: *\| *)?\n$/, '').split('\n')
+          cells: cap[3] ? cap[3].replace(/(?: *\| *)?\n$/, '').split('\n') : []
         };
 
-        for (i = 0; i < item.align.length; i++) {
-          if (/^ *-+: *$/.test(item.align[i])) {
-            item.align[i] = 'right';
-          } else if (/^ *:-+: *$/.test(item.align[i])) {
-            item.align[i] = 'center';
-          } else if (/^ *:-+ *$/.test(item.align[i])) {
-            item.align[i] = 'left';
-          } else {
-            item.align[i] = null;
+        if (item.header.length === item.align.length) {
+          src = src.substring(cap[0].length);
+
+          for (i = 0; i < item.align.length; i++) {
+            if (/^ *-+: *$/.test(item.align[i])) {
+              item.align[i] = 'right';
+            } else if (/^ *:-+: *$/.test(item.align[i])) {
+              item.align[i] = 'center';
+            } else if (/^ *:-+ *$/.test(item.align[i])) {
+              item.align[i] = 'left';
+            } else {
+              item.align[i] = null;
+            }
           }
+
+          for (i = 0; i < item.cells.length; i++) {
+            item.cells[i] = splitCells(item.cells[i].replace(/^ *\| *| *\| *$/g, ''), item.header.length);
+          }
+
+          this.tokens.push(item);
+
+          continue;
         }
-
-        for (i = 0; i < item.cells.length; i++) {
-          item.cells[i] = item.cells[i].replace(/^ *\| *| *\| *$/g, '').split(/ *\| */);
-        }
-
-        this.tokens.push(item);
-
-        continue;
       }
 
       // lheading
@@ -18390,32 +18446,42 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   var inline = {
-    escape: /^\\([\\`*{}\[\]()#+\-.!_>])/,
+    escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
     autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
     url: noop,
-    tag: /^<!--[\s\S]*?-->|^<\/?[a-zA-Z0-9\-]+(?:"[^"]*"|'[^']*'|\s[^<'">\/\s]*)*?\/?>/,
-    link: /^!?\[(inside)\]\(href\)/,
-    reflink: /^!?\[(inside)\]\s*\[([^\]]*)\]/,
-    nolink: /^!?\[((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\]/,
-    strong: /^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,
-    em: /^_([^\s_](?:[^_]|__)+?[^\s_])_\b|^\*((?:\*\*|[^*])+?)\*(?!\*)/,
-    code: /^(`+)\s*([\s\S]*?[^`]?)\s*\1(?!`)/,
-    br: /^ {2,}\n(?!\s*$)/,
+    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
+    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
+    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
+    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
+    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>', // CDATA section
+    link: /^!?\[(label)\]\(href(?:\s+(title))?\s*\)/,
+    reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
+    nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
+    strong: /^__([^\s])__(?!_)|^\*\*([^\s])\*\*(?!\*)|^__([^\s][\s\S]*?[^\s])__(?!_)|^\*\*([^\s][\s\S]*?[^\s])\*\*(?!\*)/,
+    em: /^_([^\s_])_(?!_)|^\*([^\s*"<\[])\*(?!\*)|^_([^\s][\s\S]*?[^\s_])_(?!_|[^\s.])|^_([^\s_][\s\S]*?[^\s])_(?!_|[^\s.])|^\*([^\s"<\[][\s\S]*?[^\s*])\*(?!\*)|^\*([^\s*"<\[][\s\S]*?[^\s])\*(?!\*)/,
+    code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
+    br: /^( {2,}|\\)\n(?!\s*$)/,
     del: noop,
-    text: /^[\s\S]+?(?=[\\<!\[`*]|\b_| {2,}\n|$)/
+    text: /^(`+|[^`])[\s\S]*?(?=[\\<!\[`*]|\b_| {2,}\n|$)/
   };
+
+  inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
 
   inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
   inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
-
   inline.autolink = edit(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
 
-  inline._inside = /(?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]]|\](?=[^\[]*\]))*/;
-  inline._href = /\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;
+  inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
 
-  inline.link = edit(inline.link).replace('inside', inline._inside).replace('href', inline._href).getRegex();
+  inline.tag = edit(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
 
-  inline.reflink = edit(inline.reflink).replace('inside', inline._inside).getRegex();
+  inline._label = /(?:\[[^\[\]]*\]|\\[\[\]]?|`[^`]*`|[^\[\]\\])*?/;
+  inline._href = /\s*(<(?:\\[<>]?|[^\s<>\\])*>|(?:\\[()]?|\([^\s\x00-\x1f\\]*\)|[^\s\x00-\x1f()\\])*?)/;
+  inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
+
+  inline.link = edit(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
+
+  inline.reflink = edit(inline.reflink).replace('label', inline._label).getRegex();
 
   /**
    * Normal Inline Grammar
@@ -18429,7 +18495,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   inline.pedantic = merge({}, inline.normal, {
     strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
-    em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/
+    em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/,
+    link: edit(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
+    reflink: edit(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
   });
 
   /**
@@ -18438,12 +18506,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   inline.gfm = merge({}, inline.normal, {
     escape: edit(inline.escape).replace('])', '~|])').getRegex(),
-    url: edit(/^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace('email', inline._email).getRegex(),
+    _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
+    url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
     _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
-    del: /^~~(?=\S)([\s\S]*?\S)~~/,
-    text: edit(inline.text).replace(']|', '~]|').replace('|', '|https?://|ftp://|www\\.|[a-zA-Z0-9.!#$%&\'*+/=?^_`{\\|}~-]+@|').getRegex()
+    del: /^~+(?=\S)([\s\S]*?\S)~+/,
+    text: edit(inline.text).replace(']|', '~]|').replace('|$', '|https?://|ftp://|www\\.|[a-zA-Z0-9.!#$%&\'*+/=?^_`{\\|}~-]+@|$').getRegex()
   });
 
+  inline.gfm.url = edit(inline.gfm.url).replace('email', inline.gfm._extended_email).getRegex();
   /**
    * GFM + Line Breaks Inline Grammar
    */
@@ -18468,14 +18538,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       throw new Error('Tokens array requires a `links` property.');
     }
 
-    if (this.options.gfm) {
+    if (this.options.pedantic) {
+      this.rules = inline.pedantic;
+    } else if (this.options.gfm) {
       if (this.options.breaks) {
         this.rules = inline.breaks;
       } else {
         this.rules = inline.gfm;
       }
-    } else if (this.options.pedantic) {
-      this.rules = inline.pedantic;
     }
   }
 
@@ -18503,7 +18573,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         link,
         text,
         href,
-        cap;
+        title,
+        cap,
+        prevCapZero;
 
     while (src) {
       // escape
@@ -18529,12 +18601,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
       // url (gfm)
       if (!this.inLink && (cap = this.rules.url.exec(src))) {
-        cap[0] = this.rules._backpedal.exec(cap[0])[0];
-        src = src.substring(cap[0].length);
         if (cap[2] === '@') {
           text = escape(cap[0]);
           href = 'mailto:' + text;
         } else {
+          // do extended autolink path validation
+          do {
+            prevCapZero = cap[0];
+            cap[0] = this.rules._backpedal.exec(cap[0])[0];
+          } while (prevCapZero !== cap[0]);
           text = escape(cap[0]);
           if (cap[1] === 'www.') {
             href = 'http://' + text;
@@ -18542,6 +18617,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             href = text;
           }
         }
+        src = src.substring(cap[0].length);
         out += this.renderer.link(href, null, text);
         continue;
       }
@@ -18553,6 +18629,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         } else if (this.inLink && /^<\/a>/i.test(cap[0])) {
           this.inLink = false;
         }
+        if (!this.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          this.inRawBlock = true;
+        } else if (this.inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          this.inRawBlock = false;
+        }
+
         src = src.substring(cap[0].length);
         out += this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : escape(cap[0]) : cap[0];
         continue;
@@ -18562,9 +18644,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (cap = this.rules.link.exec(src)) {
         src = src.substring(cap[0].length);
         this.inLink = true;
+        href = cap[2];
+        if (this.options.pedantic) {
+          link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
+
+          if (link) {
+            href = link[1];
+            title = link[3];
+          } else {
+            title = '';
+          }
+        } else {
+          title = cap[3] ? cap[3].slice(1, -1) : '';
+        }
+        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
         out += this.outputLink(cap, {
-          href: cap[2],
-          title: cap[3]
+          href: InlineLexer.escapes(href),
+          title: InlineLexer.escapes(title)
         });
         this.inLink = false;
         continue;
@@ -18589,14 +18685,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       // strong
       if (cap = this.rules.strong.exec(src)) {
         src = src.substring(cap[0].length);
-        out += this.renderer.strong(this.output(cap[2] || cap[1]));
+        out += this.renderer.strong(this.output(cap[4] || cap[3] || cap[2] || cap[1]));
         continue;
       }
 
       // em
       if (cap = this.rules.em.exec(src)) {
         src = src.substring(cap[0].length);
-        out += this.renderer.em(this.output(cap[2] || cap[1]));
+        out += this.renderer.em(this.output(cap[6] || cap[5] || cap[4] || cap[3] || cap[2] || cap[1]));
         continue;
       }
 
@@ -18624,7 +18720,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       // text
       if (cap = this.rules.text.exec(src)) {
         src = src.substring(cap[0].length);
-        out += this.renderer.text(escape(this.smartypants(cap[0])));
+        if (this.inRawBlock) {
+          out += this.renderer.text(cap[0]);
+        } else {
+          out += this.renderer.text(escape(this.smartypants(cap[0])));
+        }
         continue;
       }
 
@@ -18636,12 +18736,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return out;
   };
 
+  InlineLexer.escapes = function (text) {
+    return text ? text.replace(InlineLexer.rules._escapes, '$1') : text;
+  };
+
   /**
    * Compile Link
    */
 
   InlineLexer.prototype.outputLink = function (cap, link) {
-    var href = escape(link.href),
+    var href = link.href,
         title = link.title ? escape(link.title) : null;
 
     return cap[0].charAt(0) !== '!' ? this.renderer.link(href, title, this.output(cap[1])) : this.renderer.image(href, title, escape(cap[1]));
@@ -18697,7 +18801,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   function Renderer(options) {
-    this.options = options || {};
+    this.options = options || marked.defaults;
   }
 
   Renderer.prototype.code = function (code, lang, escaped) {
@@ -18710,10 +18814,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     if (!lang) {
-      return '<pre><code>' + (escaped ? code : escape(code, true)) + '\n</code></pre>';
+      return '<pre><code>' + (escaped ? code : escape(code, true)) + '</code></pre>';
     }
 
-    return '<pre><code class="' + this.options.langPrefix + escape(lang, true) + '">' + (escaped ? code : escape(code, true)) + '\n</code></pre>\n';
+    return '<pre><code class="' + this.options.langPrefix + escape(lang, true) + '">' + (escaped ? code : escape(code, true)) + '</code></pre>\n';
   };
 
   Renderer.prototype.blockquote = function (quote) {
@@ -18725,7 +18829,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   };
 
   Renderer.prototype.heading = function (text, level, raw) {
-    return '<h' + level + ' id="' + this.options.headerPrefix + raw.toLowerCase().replace(/[^\w]+/g, '-') + '">' + text + '</h' + level + '>\n';
+    if (this.options.headerIds) {
+      return '<h' + level + ' id="' + this.options.headerPrefix + raw.toLowerCase().replace(/[^\w]+/g, '-') + '">' + text + '</h' + level + '>\n';
+    }
+    // ignore IDs
+    return '<h' + level + '>' + text + '</h' + level + '>\n';
   };
 
   Renderer.prototype.hr = function () {
@@ -18742,12 +18850,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return '<li>' + text + '</li>\n';
   };
 
+  Renderer.prototype.checkbox = function (checked) {
+    return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
+  };
+
   Renderer.prototype.paragraph = function (text) {
     return '<p>' + text + '</p>\n';
   };
 
   Renderer.prototype.table = function (header, body) {
-    return '<table>\n' + '<thead>\n' + header + '</thead>\n' + '<tbody>\n' + body + '</tbody>\n' + '</table>\n';
+    if (body) body = '<tbody>' + body + '</tbody>';
+
+    return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
   };
 
   Renderer.prototype.tablerow = function (content) {
@@ -18756,7 +18870,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   Renderer.prototype.tablecell = function (content, flags) {
     var type = flags.header ? 'th' : 'td';
-    var tag = flags.align ? '<' + type + ' style="text-align:' + flags.align + '">' : '<' + type + '>';
+    var tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
     return tag + content + '</' + type + '>\n';
   };
 
@@ -18782,20 +18896,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   };
 
   Renderer.prototype.link = function (href, title, text) {
-    if (this.options.sanitize) {
-      try {
-        var prot = decodeURIComponent(unescape(href)).replace(/[^\w:]/g, '').toLowerCase();
-      } catch (e) {
-        return text;
-      }
-      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
-        return text;
-      }
+    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
+    if (href === null) {
+      return text;
     }
-    if (this.options.baseUrl && !originIndependentUrl.test(href)) {
-      href = resolveUrl(this.options.baseUrl, href);
-    }
-    var out = '<a href="' + href + '"';
+    var out = '<a href="' + escape(href) + '"';
     if (title) {
       out += ' title="' + title + '"';
     }
@@ -18804,9 +18909,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   };
 
   Renderer.prototype.image = function (href, title, text) {
-    if (this.options.baseUrl && !originIndependentUrl.test(href)) {
-      href = resolveUrl(this.options.baseUrl, href);
+    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
+    if (href === null) {
+      return text;
     }
+
     var out = '<img src="' + href + '" alt="' + text + '"';
     if (title) {
       out += ' title="' + title + '"';
@@ -18985,27 +19092,22 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       case 'list_item_start':
         {
           body = '';
+          var loose = this.token.loose;
 
-          while (this.next().type !== 'list_item_end') {
-            body += this.token.type === 'text' ? this.parseText() : this.tok();
+          if (this.token.task) {
+            body += this.renderer.checkbox(this.token.checked);
           }
 
-          return this.renderer.listitem(body);
-        }
-      case 'loose_item_start':
-        {
-          body = '';
-
           while (this.next().type !== 'list_item_end') {
-            body += this.tok();
+            body += !loose && this.token.type === 'text' ? this.parseText() : this.tok();
           }
 
           return this.renderer.listitem(body);
         }
       case 'html':
         {
-          var html = !this.token.pre && !this.options.pedantic ? this.inline.output(this.token.text) : this.token.text;
-          return this.renderer.html(html);
+          // TODO parse inline content if parameter markdown=1
+          return this.renderer.html(this.token.text);
         }
       case 'paragraph':
         {
@@ -19023,8 +19125,35 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   function escape(html, encode) {
-    return html.replace(!encode ? /&(?!#?\w+;)/g : /&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    if (encode) {
+      if (escape.escapeTest.test(html)) {
+        return html.replace(escape.escapeReplace, function (ch) {
+          return escape.replacements[ch];
+        });
+      }
+    } else {
+      if (escape.escapeTestNoEncode.test(html)) {
+        return html.replace(escape.escapeReplaceNoEncode, function (ch) {
+          return escape.replacements[ch];
+        });
+      }
+    }
+
+    return html;
   }
+
+  escape.escapeTest = /[&<>"']/;
+  escape.escapeReplace = /[&<>"']/g;
+  escape.replacements = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  escape.escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
+  escape.escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
 
   function unescape(html) {
     // explicitly match decimal, hex, and named HTML entities
@@ -19039,7 +19168,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
 
   function edit(regex, opt) {
-    regex = regex.source;
+    regex = regex.source || regex;
     opt = opt || '';
     return {
       replace: function replace(name, val) {
@@ -19054,6 +19183,28 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     };
   }
 
+  function cleanUrl(sanitize, base, href) {
+    if (sanitize) {
+      try {
+        var prot = decodeURIComponent(unescape(href)).replace(/[^\w:]/g, '').toLowerCase();
+      } catch (e) {
+        return null;
+      }
+      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
+        return null;
+      }
+    }
+    if (base && !originIndependentUrl.test(href)) {
+      href = resolveUrl(base, href);
+    }
+    try {
+      href = encodeURI(href).replace(/%25/g, '%');
+    } catch (e) {
+      return null;
+    }
+    return href;
+  }
+
   function resolveUrl(base, href) {
     if (!baseUrls[' ' + base]) {
       // we can ignore everything in base after the last slash of its path component,
@@ -19062,7 +19213,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       if (/^[^:]+:\/*[^/]*$/.test(base)) {
         baseUrls[' ' + base] = base + '/';
       } else {
-        baseUrls[' ' + base] = base.replace(/[^/]*$/, '');
+        baseUrls[' ' + base] = rtrim(base, '/', true);
       }
     }
     base = baseUrls[' ' + base];
@@ -19096,6 +19247,67 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     return obj;
+  }
+
+  function splitCells(tableRow, count) {
+    // ensure that every cell-delimiting pipe has a space
+    // before it to distinguish it from an escaped pipe
+    var row = tableRow.replace(/\|/g, function (match, offset, str) {
+      var escaped = false,
+          curr = offset;
+      while (--curr >= 0 && str[curr] === '\\') {
+        escaped = !escaped;
+      }if (escaped) {
+        // odd number of slashes means | is escaped
+        // so we leave it alone
+        return '|';
+      } else {
+        // add space before unescaped |
+        return ' |';
+      }
+    }),
+        cells = row.split(/ \|/),
+        i = 0;
+
+    if (cells.length > count) {
+      cells.splice(count);
+    } else {
+      while (cells.length < count) {
+        cells.push('');
+      }
+    }
+
+    for (; i < cells.length; i++) {
+      // leading or trailing whitespace is ignored per the gfm spec
+      cells[i] = cells[i].trim().replace(/\\\|/g, '|');
+    }
+    return cells;
+  }
+
+  // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
+  // /c*$/ is vulnerable to REDOS.
+  // invert: Remove suffix of non-c chars instead. Default falsey.
+  function rtrim(str, c, invert) {
+    if (str.length === 0) {
+      return '';
+    }
+
+    // Length of suffix matching the invert condition.
+    var suffLen = 0;
+
+    // Step left until we fail to match the invert condition.
+    while (suffLen < str.length) {
+      var currChar = str.charAt(str.length - suffLen - 1);
+      if (currChar === c && !invert) {
+        suffLen++;
+      } else if (currChar !== c && invert) {
+        suffLen++;
+      } else {
+        break;
+      }
+    }
+
+    return str.substr(0, str.length - suffLen);
   }
 
   /**
@@ -19199,24 +19411,29 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return marked;
   };
 
-  marked.defaults = {
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: false,
-    sanitizer: null,
-    mangle: true,
-    smartLists: false,
-    silent: false,
-    highlight: null,
-    langPrefix: 'lang-',
-    smartypants: false,
-    headerPrefix: '',
-    renderer: new Renderer(),
-    xhtml: false,
-    baseUrl: null
+  marked.getDefaults = function () {
+    return {
+      baseUrl: null,
+      breaks: false,
+      gfm: true,
+      headerIds: true,
+      headerPrefix: '',
+      highlight: null,
+      langPrefix: 'language-',
+      mangle: true,
+      pedantic: false,
+      renderer: new Renderer(),
+      sanitize: false,
+      sanitizer: null,
+      silent: false,
+      smartLists: false,
+      smartypants: false,
+      tables: true,
+      xhtml: false
+    };
   };
+
+  marked.defaults = marked.getDefaults();
 
   /**
    * Expose
