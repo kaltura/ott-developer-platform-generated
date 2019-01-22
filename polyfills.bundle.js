@@ -38742,7 +38742,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                         if (descriptor && descriptor.value) {
                             descriptor.value = wrapWithCurrentZone(descriptor.value, source);
                             _redefineProperty(opts.prototype, callback, descriptor);
-                        } else {
+                        } else if (prototype[callback]) {
                             prototype[callback] = wrapWithCurrentZone(prototype[callback], source);
                         }
                     } else if (prototype[callback]) {
