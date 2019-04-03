@@ -8688,6 +8688,8 @@ var RoutesService = /** @class */ (function () {
         return paramObs.getValue();
     };
     RoutesService.prototype.getBasePath = function (longPath) {
+        if (Array.isArray(longPath))
+            longPath = longPath.join('/');
         var best = '';
         Object.keys(window.config.routes).forEach(function (path) {
             if (path.length > best.length && longPath.indexOf(path) === 0) {
@@ -8745,8 +8747,12 @@ var RoutesService = /** @class */ (function () {
         var link = this.getLink(docsOrConsole);
         var base = this.getBasePath(link);
         var route = window.config.routes[base];
-        if (typeof route.navigation === 'string') {
-            route.navigation = window.config[route.navigation];
+        var navigation = route.navigation;
+        if (typeof navigation === 'string') {
+            navigation = window.config[navigation];
+        }
+        else if (!route.navigation) {
+            navigation = this.getCurrentRoute().navigation;
         }
         function getLink(items) {
             if (!items)
@@ -8760,7 +8766,7 @@ var RoutesService = /** @class */ (function () {
                     return child;
             }
         }
-        var sublink = getLink(route.navigation);
+        var sublink = getLink(navigation);
         if (!sublink)
             throw new Error("nav not found for " + apiCall.method + ' ' + apiCall.path);
         return link.concat(sublink.path.substring(1).split('/'));
@@ -9256,7 +9262,7 @@ var getOperationTitle = function getOperationTitle(op, method, path) {
 var METHOD_ORDER = ["HEAD", "OPTIONS", "DELETE", "PATCH", "PUT", "POST", "GET"];
 
 var getPathNavItem = function getPathNavItem(path, ops, tag) {
-  var pathItem = { children: [], autoselect: true, operations: path, hasOperationIds: true };
+  var pathItem = { children: [], autoselect: false, operations: path, hasOperationIds: true };
   for (var method in ops) {
     if (method === 'parameters') continue;
     var op = ops[method];
@@ -9420,7 +9426,6 @@ var setSummaryAndTitle = function setSummaryAndTitle(item, config, openapi) {
     if (tag) {
       item.summary = item.contents = tag.description;
     }
-    if (!item.contents) item.autoselect = true;
   } else if (item.workflow) {
     item.type = 'workflow';
     var workflow = config.workflows[item.workflow];
@@ -9444,18 +9449,15 @@ var populateChildren = function populateChildren(item, openapi) {
     item.children = Object.keys(openapi.paths).map(function (p) {
       return { operations: p };
     });
-    if (item.autoselect !== false) item.autoselect = true;
   } else if (item.operations) {
     var pathItem = getPathNavItem(item.operations, openapi.paths[item.operations]);
     if (pathItem) {
       item.children = pathItem.children;
-      if (item.autoselect !== false) item.autoselect = true;
     }
   } else if (item.definitions) {
     item.children = Object.keys(openapi.definitions).map(function (d) {
       return { definition: d };
     });
-    if (item.autoselect !== false) item.autoselect = true;
   } else if (item.tags) {
     item.children = openapi.tags.map(function (t) {
       return { tag: t.name };
