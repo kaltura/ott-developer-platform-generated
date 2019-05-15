@@ -75,7 +75,7 @@ module.exports = {
   },
   "github": {
     "repo": "kaltura/developer-platform",
-    "client_id": "a5dc854e03c060741218",
+    "client_id": "dd75e59ddbcbea0ea46f",
     "access_token_url": "/github/access_token",
     "redirect_uri": "",
     "workflowDirectory": "workflows"
