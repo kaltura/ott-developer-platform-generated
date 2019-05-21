@@ -76,7 +76,7 @@ module.exports = {
   "github": {
     "repo": "kaltura/developer-platform",
     "client_id": "dd75e59ddbcbea0ea46f",
-    "access_token_url": "/github/access_token",
+    "access_token_url": "/doc/github/access_token",
     "redirect_uri": "",
     "workflowDirectory": "workflows"
   },
@@ -5283,7 +5283,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 "use strict";
 
 
-var core = module.exports = { version: '2.6.5' };
+var core = module.exports = { version: '2.6.7' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 /***/ }),
@@ -6001,6 +6001,7 @@ module.exports = {
 
 // 19.1.2.1 Object.assign(target, source, ...)
 
+var DESCRIPTORS = __webpack_require__("./node_modules/core-js/modules/_descriptors.js");
 var getKeys = __webpack_require__("./node_modules/core-js/modules/_object-keys.js");
 var gOPS = __webpack_require__("./node_modules/core-js/modules/_object-gops.js");
 var pIE = __webpack_require__("./node_modules/core-js/modules/_object-pie.js");
@@ -6034,7 +6035,8 @@ module.exports = !$assign || __webpack_require__("./node_modules/core-js/modules
     var j = 0;
     var key;
     while (length > j) {
-      if (isEnum.call(S, key = keys[j++])) T[key] = S[key];
+      key = keys[j++];
+      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
     }
   }return T;
 } : $assign;
