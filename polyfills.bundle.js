@@ -1560,7 +1560,7 @@ module.exports = {
     "title": "Client Libraries",
     "markdownFile": "./markdown/generated/client_libraries.md",
     "discussionURL": null,
-    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v15.0.0 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n\n\n## Install Via Package Managers\nIn programming languages that use package managers, Kaltura also provides\nclient libraries as packages that can be installed via the respective package manager.\n\n[![NPM](https://nodei.co/npm/kaltura-ott-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/kaltura-ott-client/)\n\n* [Node](https://nodei.co/npm/kaltura-ott-client/) `npm install kaltura-ott-client`\n* [PHP](https://packagist.org/packages/kaltura/ott-api-client-library) `composer require kaltura/ott-api-client-library`\n* [Python](https://pypi.python.org/pypi/KalturaOttApiClient) `pip install KalturaOttApiClient`\n* [Swift](http://cocoapods.org/pods/KalturaOttClient) `pod \"KalturaOttClient\"`\n* [Java](https://mvnrepository.com/artifact/com.kaltura/KalturaOttApiClient) (via Maven)\n* [Typescript](https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript)\n* [CSharp](https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp)\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](https://knowledge.kaltura.com/introduction-kaltura-client-libraries#GeneratingaKalturaClientLibrary)\n"
+    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v15.1.0 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n\n\n## Install Via Package Managers\nIn programming languages that use package managers, Kaltura also provides\nclient libraries as packages that can be installed via the respective package manager.\n\n[![NPM](https://nodei.co/npm/kaltura-ott-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/kaltura-ott-client/)\n\n* [Node](https://nodei.co/npm/kaltura-ott-client/) `npm install kaltura-ott-client`\n* [PHP](https://packagist.org/packages/kaltura/ott-api-client-library) `composer require kaltura/ott-api-client-library`\n* [Python](https://pypi.python.org/pypi/KalturaOttApiClient) `pip install KalturaOttApiClient`\n* [Swift](http://cocoapods.org/pods/KalturaOttClient) `pod \"KalturaOttClient\"`\n* [Java](https://mvnrepository.com/artifact/com.kaltura/KalturaOttApiClient) (via Maven)\n* [Typescript](https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript)\n* [CSharp](https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp)\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](https://knowledge.kaltura.com/introduction-kaltura-client-libraries#GeneratingaKalturaClientLibrary)\n"
   }, {
     "children": [{
       "tag": "announcement",
@@ -11910,6 +11910,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
       var scopeOptionWarned = false;
       var _VERSION_STRING = require('../package.json').version;
+      var _DEFAULT_OPEN_DELIMITER = '<';
+      var _DEFAULT_CLOSE_DELIMITER = '>';
       var _DEFAULT_DELIMITER = '%';
       var _DEFAULT_LOCALS_NAME = 'locals';
       var _NAME = 'ejs';
@@ -11994,9 +11996,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var includePath;
         var filePath;
         var views = options.views;
+        var match = /^[A-Za-z]+:\\|^\//.exec(path);
 
         // Abs path
-        if (path.charAt(0) == '/') {
+        if (match && match.length) {
           includePath = exports.resolveInclude(path.replace(/^\/*/, ''), options.root || '/', true);
         }
         // Relative paths
@@ -12332,6 +12335,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
        * @public
        */
 
+      /**
+       * EJS template class
+       * @public
+       */
+      exports.Template = Template;
+
       exports.clearCache = function () {
         exports.cache.reset();
       };
@@ -12346,10 +12355,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         this.source = '';
         this.dependencies = [];
         options.client = opts.client || false;
-        options.escapeFunction = opts.escape || utils.escapeXML;
+        options.escapeFunction = opts.escape || opts.escapeFunction || utils.escapeXML;
         options.compileDebug = opts.compileDebug !== false;
         options.debug = !!opts.debug;
         options.filename = opts.filename;
+        options.openDelimiter = opts.openDelimiter || exports.openDelimiter || _DEFAULT_OPEN_DELIMITER;
+        options.closeDelimiter = opts.closeDelimiter || exports.closeDelimiter || _DEFAULT_CLOSE_DELIMITER;
         options.delimiter = opts.delimiter || exports.delimiter || _DEFAULT_DELIMITER;
         options.strict = opts.strict || false;
         options.context = opts.context;
@@ -12384,7 +12395,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         createRegex: function createRegex() {
           var str = _REGEX_STRING;
           var delim = utils.escapeRegExpChars(this.opts.delimiter);
-          str = str.replace(/%/g, delim);
+          var open = utils.escapeRegExpChars(this.opts.openDelimiter);
+          var close = utils.escapeRegExpChars(this.opts.closeDelimiter);
+          str = str.replace(/%/g, delim).replace(/</g, open).replace(/>/g, close);
           return new RegExp(str);
         },
 
@@ -12395,7 +12408,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           var prepended = '';
           var appended = '';
           var escapeFn = opts.escapeFunction;
-          var asyncCtor;
+          var ctor;
 
           if (!this.source) {
             this.generateSource();
@@ -12436,7 +12449,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
               // Have to use generated function for this, since in envs without support,
               // it breaks in parsing
               try {
-                asyncCtor = new Function('return (async function(){}).constructor;')();
+                ctor = new Function('return (async function(){}).constructor;')();
               } catch (e) {
                 if (e instanceof SyntaxError) {
                   throw new Error('This environment does not support async/await');
@@ -12445,9 +12458,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 }
               }
             } else {
-              asyncCtor = Function;
+              ctor = Function;
             }
-            fn = new asyncCtor(opts.localsName + ', escapeFn, include, rethrow', src);
+            fn = new ctor(opts.localsName + ', escapeFn, include, rethrow', src);
           } catch (e) {
             // istanbul ignore else
             if (e instanceof SyntaxError) {
@@ -12492,8 +12505,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
           if (opts.rmWhitespace) {
             // Have to use two separate replace here as `^` and `$` operators don't
-            // work well with `\r`.
-            this.templateText = this.templateText.replace(/\r/g, '').replace(/^\s+|\s+$/gm, '');
+            // work well with `\r` and empty lines don't work well with the `m` flag.
+            this.templateText = this.templateText.replace(/[\r\n]+/g, '\n').replace(/^\s+|\s+$/gm, '');
           }
 
           // Slurp spaces and tabs before <%_ and after _%>
@@ -12502,6 +12515,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           var self = this;
           var matches = this.parseTemplateText();
           var d = this.opts.delimiter;
+          var o = this.opts.openDelimiter;
+          var c = this.opts.closeDelimiter;
 
           if (matches && matches.length) {
             matches.forEach(function (line, index) {
@@ -12513,13 +12528,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
               var includeSrc;
               // If this is an opening tag, check for closing tags
               // FIXME: May end up with some false positives here
-              // Better to store modes as k/v with '<' + delimiter as key
+              // Better to store modes as k/v with openDelimiter + delimiter as key
               // Then this can simply check against the map
-              if (line.indexOf('<' + d) === 0 // If it is a tag
-              && line.indexOf('<' + d + d) !== 0) {
+              if (line.indexOf(o + d) === 0 // If it is a tag
+              && line.indexOf(o + d + d) !== 0) {
                 // and is not escaped
                 closing = matches[index + 2];
-                if (!(closing == d + '>' || closing == '-' + d + '>' || closing == '_' + d + '>')) {
+                if (!(closing == d + c || closing == '-' + d + c || closing == '_' + d + c)) {
                   throw new Error('Could not find matching close tag for "' + line + '".');
                 }
               }
@@ -12527,7 +12542,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
               if (include = line.match(/^\s*include\s+(\S+)/)) {
                 opening = matches[index - 1];
                 // Must be in EVAL or RAW mode
-                if (opening && (opening == '<' + d || opening == '<' + d + '-' || opening == '<' + d + '_')) {
+                if (opening && (opening == o + d || opening == o + d + '-' || opening == o + d + '_')) {
                   includeOpts = utils.shallowCopy({}, self.opts);
                   includeObj = includeSource(include[1], includeOpts);
                   if (self.opts.compileDebug) {
@@ -12581,10 +12596,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             // combo first in the regex-or
             line = line.replace(/^(?:\r\n|\r|\n)/, '');
             this.truncate = false;
-          } else if (this.opts.rmWhitespace) {
-            // rmWhitespace has already removed trailing spaces, just need
-            // to remove linebreaks
-            line = line.replace(/^\n/, '');
           }
           if (!line) {
             return line;
@@ -12606,35 +12617,37 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         scanLine: function scanLine(line) {
           var self = this;
           var d = this.opts.delimiter;
+          var o = this.opts.openDelimiter;
+          var c = this.opts.closeDelimiter;
           var newLineCount = 0;
 
           newLineCount = line.split('\n').length - 1;
 
           switch (line) {
-            case '<' + d:
-            case '<' + d + '_':
+            case o + d:
+            case o + d + '_':
               this.mode = Template.modes.EVAL;
               break;
-            case '<' + d + '=':
+            case o + d + '=':
               this.mode = Template.modes.ESCAPED;
               break;
-            case '<' + d + '-':
+            case o + d + '-':
               this.mode = Template.modes.RAW;
               break;
-            case '<' + d + '#':
+            case o + d + '#':
               this.mode = Template.modes.COMMENT;
               break;
-            case '<' + d + d:
+            case o + d + d:
               this.mode = Template.modes.LITERAL;
-              this.source += '    ; __append("' + line.replace('<' + d + d, '<' + d) + '")' + '\n';
+              this.source += '    ; __append("' + line.replace(o + d + d, o + d) + '")' + '\n';
               break;
-            case d + d + '>':
+            case d + d + c:
               this.mode = Template.modes.LITERAL;
-              this.source += '    ; __append("' + line.replace(d + d + '>', d + '>') + '")' + '\n';
+              this.source += '    ; __append("' + line.replace(d + d + c, d + c) + '")' + '\n';
               break;
-            case d + '>':
-            case '-' + d + '>':
-            case '_' + d + '>':
+            case d + c:
+            case '-' + d + c:
+            case '_' + d + c:
               if (this.mode == Template.modes.LITERAL) {
                 this._addOutput(line);
               }
@@ -12899,6 +12912,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         },
         get: function get(key) {
           return this._data[key];
+        },
+        remove: function remove(key) {
+          delete this._data[key];
         },
         reset: function reset() {
           this._data = {};
@@ -13317,7 +13333,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         "name": "ejs",
         "description": "Embedded JavaScript templates",
         "keywords": ["template", "engine", "ejs"],
-        "version": "2.6.0",
+        "version": "2.6.1",
         "author": "Matthew Eernisse <mde@fleegix.org> (http://fleegix.org)",
         "contributors": ["Timothy Gu <timothygu99@gmail.com> (https://timothygu.github.io)"],
         "license": "Apache-2.0",
