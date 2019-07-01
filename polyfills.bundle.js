@@ -4132,7 +4132,36 @@ module.exports = {
   "basePath": "/",
   "sitemap": false,
   "oauth": false,
-  "workflows": {},
+  "workflows": {
+    "authentication": {
+      "summary": "This recipe will guide you through the steps necessary to create a Kaltura Session (ks)",
+      "title": "Authentication",
+      "description": "Use the text editor to write a description of what your workflow\nwill cover. You can use\n[markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)\n\nTo add the first step, click the  <i class=\"fa fa-plus\"></i>  icon in the progress bar above.\n\nIf you want to see how your workflow looks, open the menu\n<code><i class=\"fa fa-caret-down\"></i></code>\nabove the progress bar (next to the title) and click `Preview`.\nTo come back to the editor, click `Edit` in the same menu.\n\nOnce you're done, open the menu\nabove the progress bar and click `Save`. We'll open a pull request in\n[kaltura/developer-platform](https://github.com/kaltura/developer-platform)\nwhich adds the new workflow. It will go live shortly after being merged.\n\nOnce it's saved to GitHub, you can always come back to your workflow by clicking the\n`Load` button in the same menu. You can get the URL for your saved workflow\nby going to the pull request you generated, choosing the recipe's `readme.md`\nfile, and clicking 'Raw'.",
+      "steps": [{
+        "title": "Starting a Kaltura Session",
+        "description": "To generate a KS, you will need to login to the account using the user name and password used to register.",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/ottuser/action/login"
+        },
+        "parameters": []
+      }, {
+        "title": "Checking the KS",
+        "description": "You can validate your Kaltura session by calling session/action/get. you can use the session parameter if you wish to parse additional KS. if no KS value was provided for this field, the user ks will be parsed.",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/session/action/get"
+        },
+        "parameters": []
+      }],
+      "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
+    },
+    "only_test": {
+      "title": "Only test",
+      "description": "Use the text editor to write a description of what your workflow\nwill cover. You can use\n[markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)\n\nTo add the first step, click the  <i class=\"fa fa-plus\"></i>  icon in the progress bar above.\n\nIf you want to see how your workflow looks, open the menu\n<code><i class=\"fa fa-caret-down\"></i></code>\nabove the progress bar (next to the title) and click `Preview`.\nTo come back to the editor, click `Edit` in the same menu.\n\nOnce you're done, open the menu\nabove the progress bar and click `Save`. We'll open a pull request in\n[kaltura/developer-platform](https://github.com/kaltura/developer-platform)\nwhich adds the new workflow. It will go live shortly after being merged.\n\nOnce it's saved to GitHub, you can always come back to your workflow by clicking the\n`Load` button in the same menu. You can get the URL for your saved workflow\nby going to the pull request you generated, choosing the recipe's `readme.md`\nfile, and clicking 'Raw'.",
+      "steps": []
+    }
+  },
   "bootstrap": {
     "bootstrapVersion": 3,
     "styleLoaders": ["style-loader", "css-loader", "sass-loader"],
