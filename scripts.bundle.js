@@ -5033,7 +5033,8 @@ Modernizr.addTest('ios', /(ipod|iphone|ipad)/i.test(navigator.userAgent));
         data: JSON.stringify({
           partnerId: creds.partnerId,
           username: creds.email,
-          password: creds.password
+          password: creds.password,
+          otp: creds.otp
         })
       })
       .done(function(response) {
@@ -5090,7 +5091,7 @@ Modernizr.addTest('ios', /(ipod|iphone|ipad)/i.test(navigator.userAgent));
     window.jquery.ajax({
       url: '/auth/login',
       method: 'POST',
-      data: JSON.stringify({email: creds.email, password: creds.password, partnerId: creds.partnerId}),
+      data: JSON.stringify({email: creds.email, password: creds.password, partnerId: creds.partnerId, otp: creds.otp}),
       headers: {'Content-Type': 'application/json'},
     })
     .done(function(response) {
@@ -5142,6 +5143,7 @@ Modernizr.addTest('ios', /(ipod|iphone|ipad)/i.test(navigator.userAgent));
         email: user.email,
         partnerId: user.partnerId,
         password: user.password,
+        otp: user.otp,
       }),
       headers: {'Content-Type': 'application/json'},
     })
