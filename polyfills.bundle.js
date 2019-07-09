@@ -1524,6 +1524,10 @@ module.exports = {
         "title": "Contact Us",
         "icon": "assets/img/icons/contact.png",
         "isContact": true
+      }, {
+        "title": "Authentication",
+        "icon": "assets/img/icons/contact.png",
+        "workflow": "authentication"
       }],
       "intro": "Interactive workflows on this page will help you dive straight\ninto coding the various building blocks of your application.\n\nHere you will find working code workflows together with detailed\nexplanations and documentation references.\n\n#### What do you want to do today?\n",
       "title": "Workflows",
