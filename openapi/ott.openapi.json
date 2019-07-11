@@ -17110,7 +17110,7 @@
           "type": "string"
         },
         "version": {
-          "default": "5.2.4.43067",
+          "default": "5.2.4.18144",
           "type": "string"
         }
       },
@@ -17121,7 +17121,7 @@
   "info": {
     "description": "The Kaltura OTT API",
     "title": "Kaltura OTT",
-    "version": "5.2.4.43067"
+    "version": "5.2.4.18144"
   },
   "parameters": {
     "KalturaBulkUploadAssetData:bulkUploadAssetData[objectType]": {
