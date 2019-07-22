@@ -176,15 +176,6 @@ table th {
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="scene-thumb-cue-point" type="T_scene_thumbCuePoint" substitutionGroup="scene"></xs:element>
-  <xs:complexType name="T_customData">
-    <xs:sequence>
-      <xs:any namespace="##local" processContents="skip" minOccurs="1" maxOccurs="1"></xs:any>
-    </xs:sequence>
-    <xs:attribute name="metadataId" use="optional" type="xs:int"></xs:attribute>
-    <xs:attribute name="metadataProfile" use="optional" type="xs:string"></xs:attribute>
-    <xs:attribute name="metadataProfileId" use="optional" type="xs:int"></xs:attribute>
-  </xs:complexType>
-  <xs:element name="scene-customData" type="T_customData" substitutionGroup="scene-extension"></xs:element>
   <xs:complexType name="T_scene_questionCuePoint">
     <xs:complexContent>
       <xs:extension base="T_scene">
@@ -192,12 +183,26 @@ table th {
           <xs:element name="question" minOccurs="1" maxOccurs="1" type="xs:string"></xs:element>
           <xs:element name="hint" minOccurs="0" maxOccurs="1" type="xs:string"></xs:element>
           <xs:element name="explanation" minOccurs="0" maxOccurs="1" type="xs:string"></xs:element>
-          <xs:element name="optionalAnswers" minOccurs="0" maxOccurs="1" type="KalturaOptionalAnswersArray"></xs:element>
-          <xs:element name="correctAnswerKeys" minOccurs="0" maxOccurs="1" type="KalturaStringArray"></xs:element>
+          <xs:element name="optionalAnswers" minOccurs="0" maxOccurs="unbounded" type="T_optionalAnswers"></xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="T_optionalAnswers">
+    <xs:sequence>
+      <xs:element ref="optionalAnswer" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="T_optionalAnswer">
+    <xs:sequence>
+      <xs:element name="key" maxOccurs="1" minOccurs="0" type="xs:string"></xs:element>
+      <xs:element name="text" maxOccurs="1" minOccurs="0" type="xs:string"></xs:element>
+      <xs:element name="weight" maxOccurs="1" minOccurs="0" type="xs:float"></xs:element>
+      <xs:element name="isCorrect" maxOccurs="1" minOccurs="0" type="xs:int"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="optionalAnswers" type="T_optionalAnswers"></xs:element>
+  <xs:element name="optionalAnswer" type="T_optionalAnswer"></xs:element>
   <xs:element name="scene-question-cue-point" type="T_scene_questionCuePoint" substitutionGroup="scene"></xs:element>
   <xs:complexType name="T_scene_answerCuePoint">
     <xs:complexContent>
@@ -211,6 +216,15 @@ table th {
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="scene-answer-cue-point" type="T_scene_answerCuePoint" substitutionGroup="scene"></xs:element>
+  <xs:complexType name="T_customData">
+    <xs:sequence>
+      <xs:any namespace="##local" processContents="skip" minOccurs="1" maxOccurs="1"></xs:any>
+    </xs:sequence>
+    <xs:attribute name="metadataId" use="optional" type="xs:int"></xs:attribute>
+    <xs:attribute name="metadataProfile" use="optional" type="xs:string"></xs:attribute>
+    <xs:attribute name="metadataProfileId" use="optional" type="xs:int"></xs:attribute>
+  </xs:complexType>
+  <xs:element name="scene-customData" type="T_customData" substitutionGroup="scene-extension"></xs:element>
   <xs:simpleType name="KalturaAdType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="1"></xs:enumeration>
@@ -978,60 +992,15 @@ table th {
 
 
 
-<span class="k-et">scene-customData element</span>
+<span class="k-et">optionalAnswers element</span>
 
 
 
 
 
-<span class="element-description">XML for custom metadata</span>
+<span class="element-description">Wrapper element holding multiple answer elements</span>
 
 
-
-
-
-##### Attributes
-
-
-
-<table>
-<thead><tr>
-<th>Attribute Name</th>
-<th>Description</th>
-<th>Required</th>
-<th>Type</th>
-<th>Restrictions</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>metadataId</td>
-<td>
-<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Id of the custom metadata object</xs:documentation></span><br>
-</td>
-<td>No</td>
-<td>int</td>
-<td></td>
-</tr>
-<tr>
-<td>metadataProfile</td>
-<td>
-<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata schema profile system name</xs:documentation></span><br>
-</td>
-<td>No</td>
-<td>string</td>
-<td></td>
-</tr>
-<tr>
-<td>metadataProfileId</td>
-<td>
-<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata schema profile id</xs:documentation></span><br>
-</td>
-<td>No</td>
-<td>int</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1049,13 +1018,13 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody><tr class="">
-<td class="first" colspan="2">[Any element]</td>
+<td class="first" colspan="2"><span>optionalAnswer</span></td>
 <td>
-<span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata XML according to schema profile</xs:documentation></span><br>
+<span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Single optional answer element</xs:documentation></span><br>
 </td>
-<td>Yes</td>
-<td>1</td>
-<td>any type</td>
+<td>No</td>
+<td>Unbounded</td>
+<td></td>
 <td class="last"></td>
 </tr></tbody>
 </table>
@@ -1067,18 +1036,92 @@ table th {
 
 
 ```xml
-<scene-ad-cue-point entryId="{entry id}">
-  <sceneStartTime>00:00:05</sceneStartTime>
-  <sceneTitle>my ad title</sceneTitle>
-  <sourceUrl>http://source.to.my/ad.xml</sourceUrl>
-  <adType>1</adType>
-  <protocolType>1</protocolType>
-  <scene-customData metadataProfile="MY_AD_METADATA_PROFILE_SYSTEM_NAME">
-    <metadata>
-      <adData>my ad custom data</adData>
-    </metadata>
-  </scene-customData>
-</scene-ad-cue-point>
+<optionalAnswers>
+  <optionalAnswer>...</optionalAnswer>
+  <optionalAnswer>...</optionalAnswer>
+  <optionalAnswer>...</optionalAnswer>
+</optionalAnswers>
+```
+
+--------
+
+
+
+
+
+<span class="k-et">optionalAnswer element</span>
+
+
+
+
+
+<span class="element-description">Single wrapper element for optional answer</span>
+
+
+
+
+
+##### Sub-Elements
+
+
+
+<table>
+<thead><tr>
+<th colspan="2">Element Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Maximum Appearances</th>
+<th>Type</th>
+<th>Restrictions</th>
+</tr></thead>
+<tbody>
+<tr class="">
+<td class="first" colspan="2">key</td>
+<td></td>
+<td>No</td>
+<td>1</td>
+<td>string</td>
+<td class="last"></td>
+</tr>
+<tr class="">
+<td class="first" colspan="2">text</td>
+<td></td>
+<td>No</td>
+<td>1</td>
+<td>string</td>
+<td class="last"></td>
+</tr>
+<tr class="">
+<td class="first" colspan="2">weight</td>
+<td></td>
+<td>No</td>
+<td>1</td>
+<td>float</td>
+<td class="last"></td>
+</tr>
+<tr class="">
+<td class="first" colspan="2">isCorrect</td>
+<td></td>
+<td>No</td>
+<td>1</td>
+<td>int</td>
+<td class="last"></td>
+</tr>
+</tbody>
+</table>
+
+
+
+##### XML Example
+
+
+
+```xml
+<optionalAnswer>
+  <text>tesAnswer1</text>
+  <weight>1</weight>
+  <isCorrect>1</isCorrect>
+</optionalAnswer>
 ```
 
 --------
@@ -1164,16 +1207,8 @@ table th {
 <td class="first" colspan="2">optionalAnswers</td>
 <td></td>
 <td>No</td>
-<td>1</td>
-<td><a href="/api-docs/General_Objects/Enums/KalturaOptionalAnswersArray">KalturaOptionalAnswersArray</a></td>
-<td class="last"></td>
-</tr>
-<tr class="">
-<td class="first" colspan="2">correctAnswerKeys</td>
+<td>Unbounded</td>
 <td></td>
-<td>No</td>
-<td>1</td>
-<td><a href="/api-docs/General_Objects/Enums/KalturaStringArray">KalturaStringArray</a></td>
 <td class="last"></td>
 </tr>
 </tbody>
@@ -1291,6 +1326,115 @@ table th {
     <tag>my_tag</tag>
   </tags>
 </scene-answer-cue-point>
+```
+
+--------
+
+
+
+
+
+<span class="k-et">scene-customData element</span>
+
+
+
+
+
+<span class="element-description">XML for custom metadata</span>
+
+
+
+
+
+##### Attributes
+
+
+
+<table>
+<thead><tr>
+<th>Attribute Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+<th>Restrictions</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>metadataId</td>
+<td>
+<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Id of the custom metadata object</xs:documentation></span><br>
+</td>
+<td>No</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>metadataProfile</td>
+<td>
+<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata schema profile system name</xs:documentation></span><br>
+</td>
+<td>No</td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>metadataProfileId</td>
+<td>
+<span class="child-attribute-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata schema profile id</xs:documentation></span><br>
+</td>
+<td>No</td>
+<td>int</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+##### Sub-Elements
+
+
+
+<table>
+<thead><tr>
+<th colspan="2">Element Name</th>
+<th>Description</th>
+<th>Required</th>
+<th>Maximum Appearances</th>
+<th>Type</th>
+<th>Restrictions</th>
+</tr></thead>
+<tbody><tr class="">
+<td class="first" colspan="2">[Any element]</td>
+<td>
+<span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Custom metadata XML according to schema profile</xs:documentation></span><br>
+</td>
+<td>Yes</td>
+<td>1</td>
+<td>any type</td>
+<td class="last"></td>
+</tr></tbody>
+</table>
+
+
+
+##### XML Example
+
+
+
+```xml
+<scene-ad-cue-point entryId="{entry id}">
+  <sceneStartTime>00:00:05</sceneStartTime>
+  <sceneTitle>my ad title</sceneTitle>
+  <sourceUrl>http://source.to.my/ad.xml</sourceUrl>
+  <adType>1</adType>
+  <protocolType>1</protocolType>
+  <scene-customData metadataProfile="MY_AD_METADATA_PROFILE_SYSTEM_NAME">
+    <metadata>
+      <adData>my ad custom data</adData>
+    </metadata>
+  </scene-customData>
+</scene-ad-cue-point>
 ```
 
 
