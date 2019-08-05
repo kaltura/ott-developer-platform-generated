@@ -685,6 +685,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaAssetCondition",
             "KalturaConcurrencyCondition"
           ],
           "type": "string"
@@ -776,6 +777,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaAssetFile",
             "KalturaMediaFile",
             "KalturaPlaybackSource"
           ],
@@ -936,6 +938,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaAssetFilter",
             "KalturaScheduledRecordingProgramFilter",
             "KalturaBundleFilter",
             "KalturaChannelExternalFilter",
@@ -2039,6 +2042,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaBaseChannel",
             "KalturaChannel",
             "KalturaDynamicChannel",
             "KalturaManualChannel"
@@ -2076,6 +2080,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaBaseOTTUser",
             "KalturaOTTUser"
           ],
           "type": "string"
@@ -2194,6 +2199,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaBaseSegmentCondition",
             "KalturaMonetizationCondition",
             "KalturaContentScoreCondition",
             "KalturaUserDataCondition"
@@ -2227,6 +2233,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaBaseSegmentValue",
             "KalturaSingleSegmentValue",
             "KalturaSegmentValues",
             "KalturaSegmentRanges",
@@ -3590,6 +3597,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaChannel",
             "KalturaDynamicChannel",
             "KalturaManualChannel"
           ],
@@ -4846,6 +4854,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaCouponGenerationOptions",
             "KalturaPublicCouponGenerationOptions",
             "KalturaRandomCouponGenerationOptions"
           ],
@@ -5160,6 +5169,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaDeviceFamilyBase",
             "KalturaHouseholdDeviceFamilyLimitations",
             "KalturaDeviceFamily"
           ],
@@ -5427,6 +5437,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaDispatcher",
             "KalturaSmsDispatcher",
             "KalturaMailDispatcher"
           ],
@@ -5477,6 +5488,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaDrmPlaybackPluginData",
             "KalturaFairPlayPlaybackPluginData",
             "KalturaCustomDrmPlaybackPluginData"
           ],
@@ -5774,6 +5786,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaEngagementAdapterBase",
             "KalturaEngagementAdapter"
           ],
           "type": "string"
@@ -5920,6 +5933,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaEntitlement",
             "KalturaCollectionEntitlement",
             "KalturaPpvEntitlement",
             "KalturaSubscriptionEntitlement"
@@ -6348,6 +6362,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaExternalRecordingFilter",
             "KalturaCloudRecordingFilter"
           ],
           "type": "string"
@@ -6495,6 +6510,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaFeed",
             "KalturaPersonalFeed"
           ],
           "type": "string"
@@ -8297,6 +8313,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaLicensedUrlBaseRequest",
             "KalturaLicensedUrlMediaRequest",
             "KalturaLicensedUrlRecordingRequest",
             "KalturaLicensedUrlEpgRequest"
@@ -8364,6 +8381,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaLicensedUrlMediaRequest",
             "KalturaLicensedUrlEpgRequest"
           ],
           "type": "string"
@@ -8683,6 +8701,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaListResponse",
             "KalturaSocialCommentListResponse",
             "KalturaSocialFriendActivityListResponse",
             "KalturaSocialActionListResponse",
@@ -9069,6 +9088,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaMediaAsset",
             "KalturaLiveAsset"
           ],
           "type": "string"
@@ -9212,6 +9232,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaMediaFile",
             "KalturaPlaybackSource"
           ],
           "type": "string"
@@ -10060,6 +10081,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaOSSAdapterBaseProfile",
             "KalturaOSSAdapterProfile"
           ],
           "type": "string"
@@ -10172,6 +10194,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaOTTObjectSupportNullable",
             "KalturaAssetFilePpv"
           ],
           "type": "string"
@@ -10812,6 +10835,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPaymentGatewayBaseProfile",
             "KalturaPaymentGatewayProfile"
           ],
           "type": "string"
@@ -11028,6 +11052,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPermission",
             "KalturaGroupPermission"
           ],
           "type": "string"
@@ -11334,6 +11359,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaPin",
             "KalturaPurchaseSettings"
           ],
           "type": "string"
@@ -11522,6 +11548,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaPlaybackPluginData",
             "KalturaBumpersPlaybackPluginData"
           ],
           "type": "string"
@@ -11685,6 +11712,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaPluginData",
             "KalturaDrmPlaybackPluginData",
             "KalturaFairPlayPlaybackPluginData",
             "KalturaCustomDrmPlaybackPluginData"
@@ -11926,6 +11954,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPremiumService",
             "KalturaNpvrPremiumService",
             "KalturaHouseholdPremiumService"
           ],
@@ -11989,6 +12018,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPrice",
             "KalturaDiscount"
           ],
           "type": "string"
@@ -12379,6 +12409,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaProgramAsset",
             "KalturaRecordingAsset"
           ],
           "type": "string"
@@ -12410,6 +12441,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaPropertySkipCondition",
             "KalturaAggregatedPropertySkipCondition"
           ],
           "type": "string"
@@ -12484,6 +12516,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPurchase",
             "KalturaPurchaseSession"
           ],
           "type": "string"
@@ -12531,6 +12564,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaPurchaseBase",
             "KalturaPurchase",
             "KalturaExternalReceipt",
             "KalturaPurchaseSession"
@@ -12798,6 +12832,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaRecording",
             "KalturaExternalRecording"
           ],
           "type": "string"
@@ -12941,6 +12976,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaRecordingFilter",
             "KalturaExternalRecordingFilter",
             "KalturaCloudRecordingFilter"
           ],
@@ -13265,6 +13301,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaReminder",
             "KalturaSeriesReminder",
             "KalturaAssetReminder"
           ],
@@ -13351,6 +13388,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaReport",
             "KalturaDeviceReport"
           ],
           "type": "string"
@@ -13718,6 +13756,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSearchAssetFilter",
             "KalturaSearchAssetListFilter"
           ],
           "type": "string"
@@ -13974,6 +14013,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSegmentSource",
             "KalturaMonetizationSource",
             "KalturaContentSource",
             "KalturaUserDynamicDataSource"
@@ -14027,6 +14067,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSegmentValues",
             "KalturaSegmentAllValues"
           ],
           "type": "string"
@@ -14213,6 +14254,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSeriesRecordingFilter",
             "KalturaCloudSeriesRecordingFilter"
           ],
           "type": "string"
@@ -14338,6 +14380,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSession",
             "KalturaSessionInfo"
           ],
           "type": "string"
@@ -14467,6 +14510,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSlimAsset",
             "KalturaBookmark"
           ],
           "type": "string"
@@ -14617,6 +14661,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSocialAction",
             "KalturaSocialActionRate"
           ],
           "type": "string"
@@ -14740,6 +14785,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSocialComment",
             "KalturaSocialNetworkComment",
             "KalturaAssetComment",
             "KalturaTwitterTwit",
@@ -14854,6 +14900,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSocialConfig",
             "KalturaSocialFacebookConfig",
             "KalturaSocialUserConfig"
           ],
@@ -14992,6 +15039,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSocialNetworkComment",
             "KalturaTwitterTwit",
             "KalturaFacebookPost"
           ],
@@ -15149,6 +15197,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaSubscribeReference",
             "KalturaSubscriptionSubscribeReference"
           ],
           "type": "string"
@@ -15584,6 +15633,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaSubscriptionSetFilter",
             "KalturaSubscriptionDependencySetFilter"
           ],
           "type": "string"
@@ -16306,6 +16356,7 @@
       "properties": {
         "objectType": {
           "enum": [
+            "KalturaTrigger",
             "KalturaDateTrigger",
             "KalturaSubscriptionTrigger"
           ],
@@ -16632,6 +16683,7 @@
         },
         "objectType": {
           "enum": [
+            "KalturaUsageModule",
             "KalturaPricePlan"
           ],
           "type": "string"
