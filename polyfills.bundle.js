@@ -5230,13 +5230,12 @@ module.exports = {
           "schema": {
             "type": "object",
             "properties": {
-              "ks": {},
               "username": {},
               "password": {},
               "udid": {}
             }
           },
-          "consoleDefault": "{\"version\":\"5.2.4.43067\"}"
+          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
         }]
       }, {
         "title": "Checking the KS",
