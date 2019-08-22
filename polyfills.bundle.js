@@ -5259,6 +5259,50 @@ module.exports = {
       }],
       "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
     },
+    "create_an_household": {
+      "summary": "Create household with 2 users and 1 device",
+      "title": "Create an household",
+      "description": "In this flow, we'll create a household with 2 users (master user and regular user) and we'll add a device",
+      "steps": [{
+        "title": "Register user",
+        "description": "We'll start by creating a user that later will be the master user in the household"
+      }, {
+        "title": "Login user",
+        "description": "User will log in to the account in order to retrieve a ks (we will use it in the next step)",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/ottuser/action/login"
+        }
+      }, {
+        "title": "Create household",
+        "description": "We'll use the master user ks (from the previous step) to create a new household",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/household/action/add"
+        }
+      }, {
+        "title": "Register regular user",
+        "description": "we'll create an additional user that will be added to the household (see upcoming steps)",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/ottuser/action/register"
+        }
+      }, {
+        "title": "Add user to household",
+        "description": "We'll use the user id (generated when we've registered the user) to add the user to the household",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/householduser/action/add"
+        }
+      }, {
+        "title": "Add device to household",
+        "description": "We'll add a new device to the household.",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/householddevice/action/add"
+        }
+      }]
+    },
     "get_asset_data": {
       "summary": "Get asset data",
       "title": "Get asset data",
@@ -5285,11 +5329,6 @@ module.exports = {
           "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
         }]
       }]
-    },
-    "test_123": {
-      "title": "Test 124",
-      "description": "Use the text editor to write a description of what your workflow\nwill cover. You can use\n[markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)\n\nTo add the first step, click the  <i class=\"fa fa-plus\"></i>  icon in the progress bar above.\n\nIf you want to see how your workflow looks, open the menu\n<code><i class=\"fa fa-caret-down\"></i></code>\nabove the progress bar (next to the title) and click `Preview`.\nTo come back to the editor, click `Edit` in the same menu.\n\nOnce you're done, open the menu\nabove the progress bar and click `Save`. We'll open a pull request in\n[kaltura/developer-platform](https://github.com/kaltura/developer-platform)\nwhich adds the new workflow. It will go live shortly after being merged.\n\nOnce it's saved to GitHub, you can always come back to your workflow by clicking the\n`Load` button in the same menu. You can get the URL for your saved workflow\nby going to the pull request you generated, choosing the recipe's `readme.md`\nfile, and clicking 'Raw'.",
-      "steps": []
     }
   },
   "bootstrap": {
