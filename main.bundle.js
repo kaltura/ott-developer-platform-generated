@@ -1975,13 +1975,10 @@ var DocumentationComponent = /** @class */ (function () {
                     .toPromise()
                     .then(function (md) {
                     item.contents = md;
-                })
-                    .then(function () {
                     _this.setActiveItemHTML(item.contents, !item.isHTML);
                 })
                     .catch(function (e) {
                     _this.error = (e.error && e.error.message) || "Unknown error.";
-                    return Promise.reject(e);
                 });
             }
             else {
@@ -2005,7 +2002,6 @@ var DocumentationComponent = /** @class */ (function () {
         }
     };
     DocumentationComponent.prototype.setActiveItemHTML = function (html, renderMarkdown) {
-        var _this = this;
         if (renderMarkdown === void 0) { renderMarkdown = true; }
         if (renderMarkdown) {
             var title = this.activeItem.title.replace(/\W/g, '.');
@@ -2026,17 +2022,6 @@ var DocumentationComponent = /** @class */ (function () {
             }
             else {
                 window.jQuery(this.htmlContents.nativeElement).html(newElem.innerHTML);
-            }
-            if (this.platformService.isBrowser) {
-                var frag = window.location.href.match(/#(.*)$/);
-                var isFirefox = window.navigator.userAgent.indexOf("Firefox") !== -1;
-                if (frag && !isFirefox) {
-                    var anchor_1 = window.jquery('#' + frag[1]);
-                    if (anchor_1.length) {
-                        this.utils.scrollToSelection(anchor_1);
-                        setTimeout(function () { return _this.utils.scrollToSelection(anchor_1, true, true); }, 1500);
-                    }
-                }
             }
         }
     };
@@ -6367,10 +6352,10 @@ function View_SideMenuComponent_8(_l) {
     }, null, null)), (_l()(), i0.ɵeld(1, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i0.ɵted(-1, null, ["\xA0"])), (_l()(), i0.ɵeld(3, 0, null, null, 0, "i", [["class", "fa fa-times"]], null, null, null, null, null)), (_l()(), i0.ɵeld(4, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i0.ɵted(-1, null, ["\xA0"]))], null, null);
 }
 function View_SideMenuComponent_9(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, 0, null, null, 1, "side-menu-item", [], [[2, "hidden-xs", null], [8, "hidden", 0]], null, null, View_SideMenuItemComponent_0, RenderType_SideMenuItemComponent)), i0.ɵdid(1, 4243456, null, 0, i2.SideMenuItemComponent, [i3.UtilsService, i4.SearchService, i5.RoutesService], { item: [0, "item"], basePage: [1, "basePage"] }, null)], function (_ck, _v) {
-        var _co = _v.component;var currVal_2 = _v.context.$implicit;var currVal_3 = _co.basePage;_ck(_v, 1, 0, currVal_2, currVal_3);
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, 0, null, null, 1, "side-menu-item", [], [[8, "hidden", 0]], null, null, View_SideMenuItemComponent_0, RenderType_SideMenuItemComponent)), i0.ɵdid(1, 4243456, null, 0, i2.SideMenuItemComponent, [i3.UtilsService, i4.SearchService, i5.RoutesService], { item: [0, "item"], basePage: [1, "basePage"] }, null)], function (_ck, _v) {
+        var _co = _v.component;var currVal_1 = _v.context.$implicit;var currVal_2 = _co.basePage;_ck(_v, 1, 0, currVal_1, currVal_2);
     }, function (_ck, _v) {
-        var _co = _v.component;var currVal_0 = _co.basePage === "documentation" && _co.search.query;var currVal_1 = _v.context.$implicit.hidden && !_v.context.$implicit.active && !_v.context.$implicit.expanded;_ck(_v, 0, 0, currVal_0, currVal_1);
+        var currVal_0 = _v.context.$implicit.hidden && !_v.context.$implicit.active && !_v.context.$implicit.expanded;_ck(_v, 0, 0, currVal_0);
     });
 }
 function View_SideMenuComponent_0(_l) {
@@ -8507,8 +8492,6 @@ var OpenAPIService = /** @class */ (function () {
         var _this = this;
         if (checked === void 0) { checked = []; }
         if (recursive === void 0) { recursive = true; }
-        if (smaller.$ref)
-            return;
         if (schema.$ref)
             schema = this.resolveReference(schema.$ref);
         if (!smaller.properties)
@@ -8539,8 +8522,6 @@ var OpenAPIService = /** @class */ (function () {
             checked.push(sub);
         }
         for (var key in smaller.properties) {
-            if (smaller.properties[key].$ref)
-                continue;
             var subschema = schema.properties[key];
             if (!subschema)
                 continue;
@@ -9221,18 +9202,16 @@ var UtilsService = /** @class */ (function () {
             return e;
         }
     };
-    UtilsService.prototype.scrollToSelection = function (sel, ignoreNav, putElementAtTop) {
-        if (ignoreNav === void 0) { ignoreNav = false; }
-        if (putElementAtTop === void 0) { putElementAtTop = false; }
+    UtilsService.prototype.scrollToSelection = function (sel) {
         var OFFSET = 10;
         var navHeight = window.jQuery('nav').height();
         var visibleHeight = window.innerHeight - navHeight;
-        var targetTop = sel.offset().top - (ignoreNav ? 0 : navHeight); // puts elem at top of visible area
+        var targetTop = sel.offset().top - navHeight; // puts elem at top of visible area
         var curScrollTop = window.jQuery('body').scrollTop();
         var movement = curScrollTop - targetTop;
         if (Math.abs(movement) > (window.innerHeight / 2)) {
             var diffFromWindow = visibleHeight - sel.height();
-            if (diffFromWindow > 0 && !putElementAtTop) {
+            if (diffFromWindow > 0) {
                 targetTop -= diffFromWindow - OFFSET; // Only scroll far enough to make entire elem visible
             }
             else {
