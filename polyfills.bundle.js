@@ -1847,10 +1847,6 @@ module.exports = {
         "title": "Authentication",
         "icon": "assets/img/icons/contact.png",
         "workflow": "authentication"
-      }, {
-        "title": "Get asset data",
-        "icon": "assets/img/icons/contact.png",
-        "workflow": "get_asset_data"
       }],
       "intro": "Interactive workflows on this page will help you dive straight\ninto coding the various building blocks of your application.\n\nHere you will find working code workflows together with detailed\nexplanations and documentation references.\n\n#### What do you want to do today?\n",
       "title": "Workflows",
@@ -5288,33 +5284,6 @@ module.exports = {
           },
           "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
         }]
-      }]
-    },
-    "new_workflow": {
-      "summary": "Purchase PPV",
-      "title": "New Workflow",
-      "description": "",
-      "steps": [{
-        "title": "Get asset data",
-        "description": "Get asset data. fetch the required asset file id to purchase (use it in step 2)",
-        "apiCall": {
-          "method": "post",
-          "path": "/service/asset/action/get"
-        }
-      }, {
-        "title": "Get the file price details",
-        "description": "Invoke productPrice/action/list to retrieve the file price details. the relevant parameters are:\n* amount\n* currency\n* ppvModuleId - the PPV module id\n\nYou'll use these parameters in the next step (purchase the file)",
-        "apiCall": {
-          "method": "post",
-          "path": "/service/productprice/action/list"
-        }
-      }, {
-        "title": "Purchase the file",
-        "description": "Purchase the file. if the purchase was successful, the backend will return te transaction details.",
-        "apiCall": {
-          "method": "post",
-          "path": "/service/transaction/action/purchase"
-        }
       }]
     },
     "only_test": {
