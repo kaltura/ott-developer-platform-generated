@@ -5269,7 +5269,7 @@ module.exports = {
       "description": "In this flow, we'll create a household with 2 users (master user and regular user) and we'll add a device",
       "steps": [{
         "title": "Register user",
-        "description": "We'll start by creating a user that later will be the master user in the household"
+        "description": "We'll start by creating a user that later will be the master user in the household\n\n```json\n{\n  \"method\": \"post\",\n  \"path\": \"/service/ottuser/action/register\"\n}\n```"
       }, {
         "title": "Login user",
         "description": "User will log in to the account in order to retrieve a ks (we will use it in the next step)",
@@ -5305,7 +5305,8 @@ module.exports = {
           "method": "post",
           "path": "/service/householddevice/action/add"
         }
-      }]
+      }],
+      "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
     },
     "get_asset_data": {
       "summary": "Get asset data",
