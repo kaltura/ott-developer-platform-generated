@@ -4194,7 +4194,7 @@ module.exports = {
     "create_an_household": {
       "summary": "Create household with 2 users and 1 device",
       "title": "Create an household",
-      "description": "In this flow, we'll create a household with 2 users (master user and regular user) and we'll add a device",
+      "description": "In this flow, we'll create a household with 2 users (master user and regular user) and we'll add a device.",
       "steps": [{
         "title": "Register user",
         "description": "We'll start by creating a user that later will be the master user in the household",
