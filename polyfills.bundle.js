@@ -4218,6 +4218,25 @@ module.exports = {
           },
           "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
         }]
+      }, {
+        "title": "Create household",
+        "description": "Create household",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/household/action/add"
+        },
+        "parameters": [{
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "name": {},
+              "description": {},
+              "externalId": {}
+            }
+          },
+          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
+        }]
       }],
       "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
     },
