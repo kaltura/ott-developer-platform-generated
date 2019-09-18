@@ -4197,7 +4197,27 @@ module.exports = {
       "description": "In this flow, we'll create a household with 2 users (master user and regular user) and we'll add a device",
       "steps": [{
         "title": "Register user",
-        "description": "We'll start by creating a user that later will be the master user in the household\n\n```json\n{\n  \"method\": \"post\",\n  \"path\": \"/service/ottuser/action/register\",\n  \"parameters\": [\n    {\n      \"name\": \"body\",\n      \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"partnerId\": {},\n          \"user\": {\n            \"username\": {},\n            \"firstName\": {},\n            \"lastName\": {}\n          },\n          \"password\": {}\n        }\n      },\n      \"consoleDefault\": \"{\\\"version\\\":\\\"5.2.5.17649\\\"}\"\n    }\n  ]\n}\n```"
+        "description": "We'll start by creating a user that later will be the master user in the household",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/ottuser/action/register"
+        },
+        "parameters": [{
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "partnerId": {},
+              "user": {
+                "username": {},
+                "firstName": {},
+                "lastName": {}
+              },
+              "password": {}
+            }
+          },
+          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
+        }]
       }],
       "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
     },
