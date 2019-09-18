@@ -4200,16 +4200,20 @@ module.exports = {
         "description": "We'll start by creating a user that later will be the master user in the household",
         "apiCall": {
           "method": "post",
-          "path": "/service/household/action/add"
+          "path": "/service/ottuser/action/register"
         },
         "parameters": [{
           "name": "body",
           "schema": {
             "type": "object",
             "properties": {
-              "name": {},
-              "description": {},
-              "externalId": {}
+              "partnerId": {},
+              "user": {
+                "username": {},
+                "firstName": {},
+                "lastName": {}
+              },
+              "password": {}
             }
           },
           "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
