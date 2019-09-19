@@ -4240,7 +4240,27 @@ module.exports = {
               }
             }
           },
-          "consoleDefault": "{\"version\":\"3.6.287.20720\"}"
+          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
+        }]
+      }, {
+        "title": "Login user",
+        "description": "Login user (created in the previous step) to receive a valid session ks",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/ottuser/action/login"
+        },
+        "parameters": [{
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "partnerId": {},
+              "password": {},
+              "udid": {},
+              "extraParams": {}
+            }
+          },
+          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
         }]
       }],
       "finishText": "You can learn more about the operations used in this workflow by visiting the API Console and Documentation\n"
