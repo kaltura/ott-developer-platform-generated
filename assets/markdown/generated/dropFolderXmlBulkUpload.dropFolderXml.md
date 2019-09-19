@@ -792,7 +792,6 @@ table th {
       <xs:enumeration value="10"></xs:enumeration>
       <xs:enumeration value="externalMedia.externalMedia"></xs:enumeration>
       <xs:enumeration value="conference.CONFERENCE_ENTRY_SERVER"></xs:enumeration>
-      <xs:enumeration value="sip.SIP_ENTRY_SERVER"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="KalturaDynamicEnum">
@@ -858,7 +857,6 @@ table th {
       <xs:enumeration value="2"></xs:enumeration>
       <xs:enumeration value="3"></xs:enumeration>
       <xs:enumeration value="4"></xs:enumeration>
-      <xs:enumeration value="5"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="KalturaLanguage">
@@ -887,7 +885,6 @@ table th {
       <xs:enumeration value="Catalan"></xs:enumeration>
       <xs:enumeration value="Chinese"></xs:enumeration>
       <xs:enumeration value="Corsican"></xs:enumeration>
-      <xs:enumeration value="Cree"></xs:enumeration>
       <xs:enumeration value="Croatian"></xs:enumeration>
       <xs:enumeration value="Czech"></xs:enumeration>
       <xs:enumeration value="Danish"></xs:enumeration>
@@ -922,7 +919,6 @@ table th {
       <xs:enumeration value="Indonesian"></xs:enumeration>
       <xs:enumeration value="Interlingua"></xs:enumeration>
       <xs:enumeration value="Interlingue"></xs:enumeration>
-      <xs:enumeration value="Inuinnaqtun"></xs:enumeration>
       <xs:enumeration value="Inuktitut"></xs:enumeration>
       <xs:enumeration value="Inupiak"></xs:enumeration>
       <xs:enumeration value="Irish"></xs:enumeration>
@@ -939,7 +935,6 @@ table th {
       <xs:enumeration value="Kurdish"></xs:enumeration>
       <xs:enumeration value="Laothian"></xs:enumeration>
       <xs:enumeration value="Latin"></xs:enumeration>
-      <xs:enumeration value="Luxembourgish (Letzeburgesch)"></xs:enumeration>
       <xs:enumeration value="Latvian (Lettish)"></xs:enumeration>
       <xs:enumeration value="Limburgish ( Limburger)"></xs:enumeration>
       <xs:enumeration value="Lingala"></xs:enumeration>
@@ -957,7 +952,6 @@ table th {
       <xs:enumeration value="Nepali"></xs:enumeration>
       <xs:enumeration value="Norwegian"></xs:enumeration>
       <xs:enumeration value="Occitan"></xs:enumeration>
-      <xs:enumeration value="Ojibwe, Ojibwa"></xs:enumeration>
       <xs:enumeration value="Oriya"></xs:enumeration>
       <xs:enumeration value="Oromo (Afan, Galla)"></xs:enumeration>
       <xs:enumeration value="Pashto (Pushto)"></xs:enumeration>
@@ -1012,7 +1006,6 @@ table th {
       <xs:enumeration value="Yiddish"></xs:enumeration>
       <xs:enumeration value="Yoruba"></xs:enumeration>
       <xs:enumeration value="Zulu"></xs:enumeration>
-      <xs:enumeration value="No linguistic content"></xs:enumeration>
       <xs:enumeration value="Multilingual"></xs:enumeration>
       <xs:enumeration value="Afade"></xs:enumeration>
       <xs:enumeration value="Abnaki Western"></xs:enumeration>
@@ -1038,7 +1031,6 @@ table th {
       <xs:enumeration value="Alabama"></xs:enumeration>
       <xs:enumeration value="Qawasqar"></xs:enumeration>
       <xs:enumeration value="Aleut"></xs:enumeration>
-      <xs:enumeration value="Algonquian languages"></xs:enumeration>
       <xs:enumeration value="Albanian (Gheg)"></xs:enumeration>
       <xs:enumeration value="Algonquin"></xs:enumeration>
       <xs:enumeration value="Albanian (Tosk)"></xs:enumeration>
@@ -1055,7 +1047,6 @@ table th {
       <xs:enumeration value="Arapaho"></xs:enumeration>
       <xs:enumeration value="Assiniboine"></xs:enumeration>
       <xs:enumeration value="Asturian"></xs:enumeration>
-      <xs:enumeration value="Athapascan languages"></xs:enumeration>
       <xs:enumeration value="Atikamekw"></xs:enumeration>
       <xs:enumeration value="Waorani"></xs:enumeration>
       <xs:enumeration value="Kotava"></xs:enumeration>
@@ -1175,7 +1166,6 @@ table th {
       <xs:enumeration value="Halkomelem"></xs:enumeration>
       <xs:enumeration value="Iloko"></xs:enumeration>
       <xs:enumeration value="Ingush"></xs:enumeration>
-      <xs:enumeration value="Iroquoian languages"></xs:enumeration>
       <xs:enumeration value="Itelmen"></xs:enumeration>
       <xs:enumeration value="Ingrian"></xs:enumeration>
       <xs:enumeration value="Lojban"></xs:enumeration>
@@ -1255,7 +1245,6 @@ table th {
       <xs:enumeration value="Min Bei Chinese"></xs:enumeration>
       <xs:enumeration value="Mansi"></xs:enumeration>
       <xs:enumeration value="Mon"></xs:enumeration>
-      <xs:enumeration value="Montagnais"></xs:enumeration>
       <xs:enumeration value="Mohawk"></xs:enumeration>
       <xs:enumeration value="Mossi"></xs:enumeration>
       <xs:enumeration value="Maranao"></xs:enumeration>
@@ -1330,7 +1319,6 @@ table th {
       <xs:enumeration value="Romanian Megleno"></xs:enumeration>
       <xs:enumeration value="Okinawan Central"></xs:enumeration>
       <xs:enumeration value="Sakha"></xs:enumeration>
-      <xs:enumeration value="Salishan languages"></xs:enumeration>
       <xs:enumeration value="Aramaic Samaritan"></xs:enumeration>
       <xs:enumeration value="Santali"></xs:enumeration>
       <xs:enumeration value="Sicilian"></xs:enumeration>
@@ -1351,7 +1339,6 @@ table th {
       <xs:enumeration value="Shawnee"></xs:enumeration>
       <xs:enumeration value="Salar"></xs:enumeration>
       <xs:enumeration value="Southern Sami"></xs:enumeration>
-      <xs:enumeration value="Sami languages"></xs:enumeration>
       <xs:enumeration value="Lule Sami"></xs:enumeration>
       <xs:enumeration value="Inari Sami"></xs:enumeration>
       <xs:enumeration value="Skolt Sami"></xs:enumeration>
@@ -1373,7 +1360,6 @@ table th {
       <xs:enumeration value="Tamasheq"></xs:enumeration>
       <xs:enumeration value="Tarahumara Central"></xs:enumeration>
       <xs:enumeration value="Tagbanwa"></xs:enumeration>
-      <xs:enumeration value="Southern Tutchone"></xs:enumeration>
       <xs:enumeration value="Toda"></xs:enumeration>
       <xs:enumeration value="Tulu"></xs:enumeration>
       <xs:enumeration value="Tai Na"></xs:enumeration>
@@ -1422,10 +1408,7 @@ table th {
       <xs:enumeration value="Teo Chew"></xs:enumeration>
       <xs:enumeration value="Hainanese"></xs:enumeration>
       <xs:enumeration value="Hakka"></xs:enumeration>
-      <xs:enumeration value="Michif"></xs:enumeration>
       <xs:enumeration value="Undefined"></xs:enumeration>
-      <xs:enumeration value="Siksika"></xs:enumeration>
-      <xs:enumeration value="Okanagan"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="KalturaThumbCuePointSubType">
@@ -1532,7 +1515,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">ks</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">KS of the user ingesting the content</xs:documentation></span><br>
@@ -1542,7 +1525,7 @@ table th {
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>channel</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A single entry wrapper element</xs:documentation></span><br>
@@ -1602,7 +1585,7 @@ table th {
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2"><span>item</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">holding entry element</xs:documentation></span><br>
@@ -1662,7 +1645,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -1775,7 +1758,7 @@ table th {
 					 Maximum length: 100 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">userId</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The user identifier of the content creator/owner</xs:documentation></span><br>
@@ -1787,7 +1770,7 @@ table th {
 					 Maximum length: 100 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>entitledUsersEdit</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Comma-separated list of entry&apos;s co-editors</xs:documentation></span><br>
@@ -1797,7 +1780,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>entitledUsersPublish</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Comma-separated list of entry&apos;s co-publishers</xs:documentation></span><br>
@@ -1807,7 +1790,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">name</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The title of the entry</xs:documentation></span><br>
@@ -1819,7 +1802,7 @@ table th {
 					 Maximum length: 256 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">description</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Text that describes the entry</xs:documentation></span><br>
@@ -1829,7 +1812,7 @@ table th {
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">keepManualThumbnails</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">flag to keep original thumbnails</xs:documentation></span><br>
@@ -1839,7 +1822,7 @@ table th {
 <td>boolean</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Tags associated with the entry</xs:documentation></span><br>
@@ -1849,7 +1832,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>categories</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The categories assigned to the entry</xs:documentation></span><br>
@@ -1859,7 +1842,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">partnerData</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -1874,7 +1857,7 @@ table th {
 					 Maximum length: 4000 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">partnerSortData</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -1964,7 +1947,7 @@ table th {
 					 Maximum length: 120 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">startDate</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -1977,7 +1960,7 @@ table th {
 <td>dateTime</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">endDate</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2053,7 +2036,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">msDuration</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2065,7 +2048,7 @@ table th {
 <td>int</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>contentAssets</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2077,7 +2060,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>thumbnails</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2089,7 +2072,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td colspan="2" class="first extensions-title">Extensions:</td>
 <td colspan="5" class="last extensions-title"></td>
 </tr>
@@ -2336,7 +2319,7 @@ table th {
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2">mediaType</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2399,7 +2382,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2419,7 +2402,7 @@ table th {
 </ul>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>content</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All Content Assets</xs:documentation></span><br>
@@ -2610,7 +2593,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2756,7 +2739,7 @@ table th {
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>streams</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -2825,7 +2808,7 @@ table th {
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2"><span>stream</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">streams composed of 1..n stream elements</xs:documentation></span><br>
@@ -2997,7 +2980,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -3017,7 +3000,7 @@ table th {
 </ul>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>thumbnail</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All Thumbnails Assets</xs:documentation></span><br>
@@ -3144,7 +3127,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -3571,7 +3554,7 @@ table th {
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">privateKey</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The SSH private key string</xs:documentation></span><br>
@@ -3581,7 +3564,7 @@ table th {
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">publicKey</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The SSH public key string</xs:documentation></span><br>
@@ -3789,7 +3772,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2"><span>remoteStorageContentResource</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -4036,7 +4019,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2">user</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specifies a single user to set for an entry&apos;s co-publishers</xs:documentation></span><br>
@@ -4097,7 +4080,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2">user</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specifies a single user to set for an entry&apos;s co-publishers</xs:documentation></span><br>
@@ -4158,7 +4141,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2">tag</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specifies a single tag to set for a related object</xs:documentation></span><br>
@@ -4481,7 +4464,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <tbody>
 <tr class="extends-title"><td colspan="7">Extended from <span>T_scene</span>
 </td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneStartTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the start time</xs:documentation></span><br>
@@ -4491,7 +4474,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Searchable keywords associated with a cue point</xs:documentation></span><br>
@@ -4502,7 +4485,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td class="last"></td>
 </tr>
 <tr class="extends-title"><td colspan="7"></td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneEndTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the end time</xs:documentation></span><br>
@@ -4512,7 +4495,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneTitle</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Text that defines the title</xs:documentation></span><br>
@@ -4524,7 +4507,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 					 Maximum length: 250 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sourceUrl</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The URL of the ad XML</xs:documentation></span><br>
@@ -4534,7 +4517,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">adType</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Indicates the ad type</xs:documentation></span><br>
@@ -4544,7 +4527,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td><a href="/api-docs/General_Objects/Enums/KalturaAdType">KalturaAdType</a></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">protocolType</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Indicates the ad protocol type</xs:documentation></span><br>
@@ -4554,7 +4537,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td><a href="/api-docs/General_Objects/Enums/KalturaAdProtocolType">KalturaAdProtocolType</a></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td colspan="2" class="first extensions-title">Extensions:</td>
 <td colspan="5" class="last extensions-title"></td>
 </tr>
@@ -4625,7 +4608,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <tbody>
 <tr class="extends-title"><td colspan="7">Extended from <span>T_scene</span>
 </td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneStartTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the start time</xs:documentation></span><br>
@@ -4635,7 +4618,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Searchable keywords associated with a cue point</xs:documentation></span><br>
@@ -4646,7 +4629,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td class="last"></td>
 </tr>
 <tr class="extends-title"><td colspan="7"></td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneEndTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the end time</xs:documentation></span><br>
@@ -4656,7 +4639,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneText</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A free text description</xs:documentation></span><br>
@@ -4702,7 +4685,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 					 Maximum length: 250 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td colspan="2" class="first extensions-title">Extensions:</td>
 <td colspan="5" class="last extensions-title"></td>
 </tr>
@@ -4795,7 +4778,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -4808,7 +4791,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>attachment</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All attachment elements</xs:documentation></span><br>
@@ -4904,7 +4887,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">tags</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specifies specific tags you want to set for the flavor asset</xs:documentation></span><br>
@@ -5005,7 +4988,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">filename</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Attachment asset file name</xs:documentation></span><br>
@@ -5015,7 +4998,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">title</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Attachment asset title</xs:documentation></span><br>
@@ -5025,7 +5008,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">description</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Attachment asset free text description</xs:documentation></span><br>
@@ -5089,7 +5072,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -5102,7 +5085,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>subTitle</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All subTitles elements</xs:documentation></span><br>
@@ -5243,7 +5226,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">tags</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Specifies specific tags you want to set for the flavor asset</xs:documentation></span><br>
@@ -5397,7 +5380,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <tbody>
 <tr class="extends-title"><td colspan="7">Extended from <span>T_scene</span>
 </td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneStartTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the start time</xs:documentation></span><br>
@@ -5407,7 +5390,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Searchable keywords associated with a cue point</xs:documentation></span><br>
@@ -5418,7 +5401,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td class="last"></td>
 </tr>
 <tr class="extends-title"><td colspan="7"></td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneEndTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the end time</xs:documentation></span><br>
@@ -5428,7 +5411,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">code</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Textual code</xs:documentation></span><br>
@@ -5440,7 +5423,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 					 Maximum length: 250 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">description</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A free text description</xs:documentation></span><br>
@@ -5450,7 +5433,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td colspan="2" class="first extensions-title">Extensions:</td>
 <td colspan="5" class="last extensions-title"></td>
 </tr>
@@ -5519,7 +5502,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <tbody>
 <tr class="extends-title"><td colspan="7">Extended from <span>T_scene</span>
 </td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneStartTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the start time</xs:documentation></span><br>
@@ -5529,7 +5512,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Searchable keywords associated with a cue point</xs:documentation></span><br>
@@ -5540,7 +5523,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td class="last"></td>
 </tr>
 <tr class="extends-title"><td colspan="7"></td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">title</td>
 <td></td>
 <td>Yes</td>
@@ -5548,7 +5531,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">description</td>
 <td></td>
 <td>Yes</td>
@@ -5556,7 +5539,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">subType</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Indicates the thumb cue point sub type 1 = Slide 2 = Chapter, defaults to Slide</xs:documentation></span><br>
@@ -5566,7 +5549,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td><a href="/api-docs/General_Objects/Enums/KalturaThumbCuePointSubType">KalturaThumbCuePointSubType</a></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>slide</span></td>
 <td></td>
 <td>No</td>
@@ -5574,7 +5557,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td colspan="2" class="first extensions-title">Extensions:</td>
 <td colspan="5" class="last extensions-title"></td>
 </tr>
@@ -5772,7 +5755,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2"><span>distribution</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All distributions</xs:documentation></span><br>
@@ -5913,7 +5896,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 					 Maximum length: 120 characters<br>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sunrise</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -5926,7 +5909,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>dateTime</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sunset</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -5939,7 +5922,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>dateTime</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">flavorAssetIds</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -5952,7 +5935,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">thumbAssetIds</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6014,7 +5997,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6027,7 +6010,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>scene</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point element</xs:documentation></span><br>
@@ -6130,7 +6113,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">sceneStartTime</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">A cue point that marks the start time</xs:documentation></span><br>
@@ -6140,7 +6123,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>time</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>tags</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">Searchable keywords associated with a cue point</xs:documentation></span><br>
@@ -6245,7 +6228,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6264,7 +6247,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 </ul>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">xslt</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6276,7 +6259,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>xmlData</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">metadata xml Data</xs:documentation></span><br>
@@ -6342,7 +6325,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6355,7 +6338,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>customData</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All custom data elemets</xs:documentation></span><br>
@@ -6462,7 +6445,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6481,7 +6464,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 </ul>
 </td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">xslt</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6493,7 +6476,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td></td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>xmlData</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">metadata xml Data</xs:documentation></span><br>
@@ -6560,7 +6543,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Type</th>
 <th>Restrictions</th>
 </tr></thead>
-<tbody><tr class>
+<tbody><tr class="">
 <td class="first" colspan="2">[Any element]</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">The XML for custom metadata according to a schema profile</xs:documentation></span><br>
@@ -6622,7 +6605,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <tr class="extends-title"><td colspan="7">Extended from <span>T_pluginReplacementOptions</span>
 </td></tr>
 <tr class="extends-title"><td colspan="7"></td></tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">metadataReplacementOptionsItem</td>
 <td></td>
 <td>No</td>
@@ -6685,7 +6668,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">action</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6698,7 +6681,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>string</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2"><span>widevineAsset</span></td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">All widevine elements</xs:documentation></span><br>
@@ -6783,7 +6766,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <th>Restrictions</th>
 </tr></thead>
 <tbody>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">widevineAssetId</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">widevine asset id</xs:documentation></span><br>
@@ -6793,7 +6776,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>long</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">flavorParamsId</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">widevine asset flavor params Id</xs:documentation></span><br>
@@ -6803,7 +6786,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>long</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">widevineDistributionStartDate</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -6815,7 +6798,7 @@ tK1yWx3LOnxokoJUtNRSdEi</privateKey>
 <td>dateTime</td>
 <td class="last"></td>
 </tr>
-<tr class>
+<tr class="">
 <td class="first" colspan="2">widevineDistributionEndDate</td>
 <td>
 <span class="child-element-description"><xs:documentation xmlns:xs="http://www.w3.org/2001/XMLSchema">
