@@ -4230,10 +4230,6 @@ module.exports = {
           "schema": {
             "type": "object",
             "properties": {
-              "ks": {},
-              "version": {
-                "consoleDefault": "3.6.287.20720"
-              },
               "household": {
                 "type": "object",
                 "properties": {
