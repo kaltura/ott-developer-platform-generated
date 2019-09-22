@@ -5436,6 +5436,13 @@ module.exports = {
           },
           "consoleDefault": "{\"version\":\"3.6.287.20720\"}"
         }]
+      }, {
+        "title": "Validate parental PIN",
+        "description": "After the user enters the pin, the client will invoke pin/action/validate API request to validate the entered pin.\n\nIf the PIN is correct - the client will continue with the playback flow.\nIf not correct - depends on the specific client functionality ( i.e - prompt the user to enter the PIN again).",
+        "apiCall": {
+          "method": "post",
+          "path": "/service/pin/action/validate"
+        }
       }]
     },
     "search_assets": {
