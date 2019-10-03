@@ -1894,7 +1894,7 @@ module.exports = {
   }, {
     "title": "KnowledgeOwl",
     "markdownFile": "assets/documentation/OTT/knowledgeOwl/knowledgeOwl.md",
-    "contents": "knowledgeOwl link here: <https://kaltura.knowledgeowl.com>\n"
+    "contents": "**Kaltura knowledge center**\n\nThe knowledge Center contains in-depth articles and documentation about Cloud OTT product, infrastructure and capabilities.\n\nYou can reach the portal by clicking on the  [link]( <https://kaltura.knowledgeowl.com>)\n"
   }, {
     "title": "Client Libraries",
     "markdownFile": "./markdown/generated/client_libraries.md",
@@ -1906,9 +1906,9 @@ module.exports = {
       "title": "login",
       "tag": "login",
       "children": [{
+        "title": "Login API description",
         "markdownFile": "assets/documentation/OTT/authentication/login.md",
-        "contents": "Login user\n\n",
-        "title": "Untitled"
+        "contents": "Login user\n\n"
       }, {
         "operation": "ottUser.login",
         "path": "/service/ottUser/action/login"
