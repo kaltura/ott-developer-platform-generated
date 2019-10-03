@@ -106,6 +106,16 @@ module.exports = {
       "ui": "documentation",
       "openapi": "ott"
     },
+    "/player": {
+      "title": "Kaltura Player Documentation",
+      "documentation": "player",
+      "markdownFile": "assets/documentation/OTT/knowledgeOwl/knowledgeOwl.md",
+      "meta": {
+        "title": "API Documentation"
+      },
+      "ui": "documentation",
+      "markdown": "**Kaltura knowledge center**\n\nThe knowledge Center contains in-depth articles and documentation about Cloud OTT product, infrastructure and capabilities.\n\nYou can reach the portal by clicking on the  [link]( <https://kaltura.knowledgeowl.com>)\n"
+    },
     "/console": {
       "ui": "console",
       "for": "ott",
@@ -5322,14 +5332,16 @@ module.exports = {
             "properties": {
               "partnerId": {},
               "user": {
-                "username": {},
-                "firstName": {},
-                "lastName": {}
-              },
-              "password": {}
-            }
-          },
-          "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
+                "type": "object",
+                "properties": {
+                  "userName": {},
+                  "firstName": {}
+                },
+                "password": {}
+              }
+            },
+            "consoleDefault": "{\"version\":\"5.2.5.17649\"}"
+          }
         }]
       }, {
         "title": "Login user",
