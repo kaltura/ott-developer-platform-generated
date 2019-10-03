@@ -6866,6 +6866,9 @@ pre code {
 operation-documentation .input-output-box h4 {
   font-size: 21px;
 }
+img {
+  max-width:100%; 
+}
 ---
 layout: null
 sitemap: false
@@ -10240,7 +10243,9 @@ ul.code-tab li a {
 /*ul.code-tab li a:hover {background-color: #ddd;}*/
 /* Create an active/current tablink class */
 /*ul.code-tab li a:focus, .active {background-color: #ccc;}*/
-
+img {
+  max-width:100%; 
+}
 
 nav li.vpaas-link {
   display: none;
