@@ -468,8 +468,8 @@ table th {
       <xs:enumeration value="8"></xs:enumeration>
       <xs:enumeration value="10"></xs:enumeration>
       <xs:enumeration value="externalMedia.externalMedia"></xs:enumeration>
-      <xs:enumeration value="conference.CONFERENCE_ENTRY_SERVER"></xs:enumeration>
       <xs:enumeration value="sip.SIP_ENTRY_SERVER"></xs:enumeration>
+      <xs:enumeration value="conference.CONFERENCE_ENTRY_SERVER"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="KalturaDynamicEnum">
