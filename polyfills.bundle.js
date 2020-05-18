@@ -1586,7 +1586,7 @@ module.exports = {
     "title": "Client Libraries",
     "markdownFile": "./markdown/generated/client_libraries.md",
     "discussionURL": null,
-    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v16.0.0 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n\n\n## Install Via Package Managers\nIn programming languages that use package managers, Kaltura also provides\nclient libraries as packages that can be installed via the respective package manager.\n\n[![NPM](https://nodei.co/npm/kaltura-ott-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/kaltura-ott-client/)\n\n* [Node](https://nodei.co/npm/kaltura-ott-client/) `npm install kaltura-ott-client`\n* [PHP](https://packagist.org/packages/kaltura/ott-api-client-library) `composer require kaltura/ott-api-client-library`\n* [Python](https://pypi.python.org/pypi/KalturaOttApiClient) `pip install KalturaOttApiClient`\n* [Swift](http://cocoapods.org/pods/KalturaOttClient) `pod \"KalturaOttClient\"`\n* [Java](https://mvnrepository.com/artifact/com.kaltura/KalturaOttApiClient) (via Maven)\n* [Typescript](https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript)\n* [CSharp](https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp)\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](https://knowledge.kaltura.com/introduction-kaltura-client-libraries#GeneratingaKalturaClientLibrary)\n"
+    "contents": "# Kaltura API SDK - Native Client Libraries\n\nWhen developing applications that interact with the Kaltura API, it is best to use a native Client Library.\n\nBelow you can download the Client Library for the programming language of your choice.\n\nPlease note, the client libraries provided here have been generated for version v16.2.0 of the Kaltura OTT Platform API. Customers are encouraged to verify their platform API version and ensure the use of client libraries that match the version of their platform version for optimal compatibility. If you’re unsure which version to use, please contact your Kaltura Account Manager\n\n\n\n## Install Via Package Managers\nIn programming languages that use package managers, Kaltura also provides\nclient libraries as packages that can be installed via the respective package manager.\n\n[![NPM](https://nodei.co/npm/kaltura-ott-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/kaltura-ott-client/)\n\n* [Node](https://nodei.co/npm/kaltura-ott-client/) `npm install kaltura-ott-client`\n* [PHP](https://packagist.org/packages/kaltura/ott-api-client-library) `composer require kaltura/ott-api-client-library`\n* [Python](https://pypi.python.org/pypi/KalturaOttApiClient) `pip install KalturaOttApiClient`\n* [Swift](http://cocoapods.org/pods/KalturaOttClient) `pod \"KalturaOttClient\"`\n* [Java](https://mvnrepository.com/artifact/com.kaltura/KalturaOttApiClient) (via Maven)\n* [Typescript](https://github.com/kaltura/KalturaOttGeneratedAPIClientsTypescript)\n* [CSharp](https://github.com/kaltura/KalturaOttGeneratedAPIClientsCsharp)\n\n\n\n## Missing a Language?\nTweet [@Kaltura_API pls add sdk for: [lang]](http://twitter.com/?status=@Kaltura_API%20pls%20add%20sdk%20for%3A%20%5Bprogramming_language%5D)\n\nor [create your own Client Library Generator](https://knowledge.kaltura.com/introduction-kaltura-client-libraries#GeneratingaKalturaClientLibrary)\n"
   }, {
     "title": "Generate API Sessions",
     "children": [{
@@ -17424,8 +17424,6 @@ var map = {
 	"./dv.js": "./node_modules/moment/locale/dv.js",
 	"./el": "./node_modules/moment/locale/el.js",
 	"./el.js": "./node_modules/moment/locale/el.js",
-	"./en-SG": "./node_modules/moment/locale/en-SG.js",
-	"./en-SG.js": "./node_modules/moment/locale/en-SG.js",
 	"./en-au": "./node_modules/moment/locale/en-au.js",
 	"./en-au.js": "./node_modules/moment/locale/en-au.js",
 	"./en-ca": "./node_modules/moment/locale/en-ca.js",
@@ -17436,8 +17434,12 @@ var map = {
 	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
 	"./en-il": "./node_modules/moment/locale/en-il.js",
 	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-in": "./node_modules/moment/locale/en-in.js",
+	"./en-in.js": "./node_modules/moment/locale/en-in.js",
 	"./en-nz": "./node_modules/moment/locale/en-nz.js",
 	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./en-sg": "./node_modules/moment/locale/en-sg.js",
+	"./en-sg.js": "./node_modules/moment/locale/en-sg.js",
 	"./eo": "./node_modules/moment/locale/eo.js",
 	"./eo.js": "./node_modules/moment/locale/eo.js",
 	"./es": "./node_modules/moment/locale/es.js",
@@ -17454,6 +17456,8 @@ var map = {
 	"./fa.js": "./node_modules/moment/locale/fa.js",
 	"./fi": "./node_modules/moment/locale/fi.js",
 	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fil": "./node_modules/moment/locale/fil.js",
+	"./fil.js": "./node_modules/moment/locale/fil.js",
 	"./fo": "./node_modules/moment/locale/fo.js",
 	"./fo.js": "./node_modules/moment/locale/fo.js",
 	"./fr": "./node_modules/moment/locale/fr.js",
@@ -17470,6 +17474,8 @@ var map = {
 	"./gd.js": "./node_modules/moment/locale/gd.js",
 	"./gl": "./node_modules/moment/locale/gl.js",
 	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-deva": "./node_modules/moment/locale/gom-deva.js",
+	"./gom-deva.js": "./node_modules/moment/locale/gom-deva.js",
 	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
 	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
 	"./gu": "./node_modules/moment/locale/gu.js",
@@ -17548,6 +17554,8 @@ var map = {
 	"./nl.js": "./node_modules/moment/locale/nl.js",
 	"./nn": "./node_modules/moment/locale/nn.js",
 	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./oc-lnc": "./node_modules/moment/locale/oc-lnc.js",
+	"./oc-lnc.js": "./node_modules/moment/locale/oc-lnc.js",
 	"./pa-in": "./node_modules/moment/locale/pa-in.js",
 	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
 	"./pl": "./node_modules/moment/locale/pl.js",
@@ -17624,6 +17632,8 @@ var map = {
 	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
 	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
 	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-mo": "./node_modules/moment/locale/zh-mo.js",
+	"./zh-mo.js": "./node_modules/moment/locale/zh-mo.js",
 	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
 	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
 };
@@ -17654,6 +17664,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Afrikaans [af]
+//! author : Werner Mollentze : https://github.com/wernerm
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -17662,6 +17674,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var af = moment.defineLocale('af', {
         months: 'Januarie_Februarie_Maart_April_Mei_Junie_Julie_Augustus_September_Oktober_November_Desember'.split('_'),
@@ -17700,17 +17714,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         relativeTime: {
             future: 'oor %s',
             past: '%s gelede',
-            s: '\'n paar sekondes',
+            s: "'n paar sekondes",
             ss: '%d sekondes',
-            m: '\'n minuut',
+            m: "'n minuut",
             mm: '%d minute',
-            h: '\'n uur',
+            h: "'n uur",
             hh: '%d ure',
-            d: '\'n dag',
+            d: "'n dag",
             dd: '%d dae',
-            M: '\'n maand',
+            M: "'n maand",
             MM: '%d maande',
-            y: '\'n jaar',
+            y: "'n jaar",
             yy: '%d jaar'
         },
         dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
@@ -17737,6 +17751,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic (Algeria) [ar-dz]
+//! author : Noureddine LOUAHEDJ : https://github.com/noureddineme
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -17745,6 +17761,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var arDz = moment.defineLocale('ar-dz', {
         months: 'جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_'),
@@ -17805,6 +17823,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic (Kuwait) [ar-kw]
+//! author : Nusret Parlak: https://github.com/nusretparlak
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -17813,6 +17833,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var arKw = moment.defineLocale('ar-kw', {
         months: 'يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر'.split('_'),
@@ -17873,6 +17895,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic (Lybia) [ar-ly]
+//! author : Ali Hmer: https://github.com/kikoanis
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -17881,6 +17905,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '1',
@@ -17995,6 +18021,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic (Morocco) [ar-ma]
+//! author : ElFadili Yassine : https://github.com/ElFadiliY
+//! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18004,11 +18033,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var arMa = moment.defineLocale('ar-ma', {
         months: 'يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر'.split('_'),
         monthsShort: 'يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر'.split('_'),
-        weekdays: 'الأحد_الإتنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت'.split('_'),
-        weekdaysShort: 'احد_اتنين_ثلاثاء_اربعاء_خميس_جمعة_سبت'.split('_'),
+        weekdays: 'الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت'.split('_'),
+        weekdaysShort: 'احد_اثنين_ثلاثاء_اربعاء_خميس_جمعة_سبت'.split('_'),
         weekdaysMin: 'ح_ن_ث_ر_خ_ج_س'.split('_'),
         weekdaysParseExact: true,
         longDateFormat: {
@@ -18063,6 +18094,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic (Saudi Arabia) [ar-sa]
+//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18071,6 +18104,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '١',
@@ -18177,6 +18212,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale  :  Arabic (Tunisia) [ar-tn]
+//! author : Nader Toukabri : https://github.com/naderio
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18185,6 +18222,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var arTn = moment.defineLocale('ar-tn', {
         months: 'جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_'),
@@ -18245,6 +18284,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Arabic [ar]
+//! author : Abdel Said: https://github.com/abdelsaid
+//! author : Ahmed Elkhatib
+//! author : forabi https://github.com/forabi
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18253,6 +18296,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '١',
@@ -18381,6 +18426,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Azerbaijani [az]
+//! author : topchiyev : https://github.com/topchiyev
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18389,6 +18436,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var suffixes = {
         1: '-inci',
@@ -18497,6 +18546,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Belarusian [be]
+//! author : Dmitry Demidov : https://github.com/demidov91
+//! author: Praleska: http://praleska.pro/
+//! Author : Menelion Elensúle : https://github.com/Oire
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18506,18 +18559,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function plural(word, num) {
         var forms = word.split('_');
         return num % 10 === 1 && num % 100 !== 11 ? forms[0] : num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2];
     }
     function relativeTimeWithPlural(number, withoutSuffix, key) {
         var format = {
-            'ss': withoutSuffix ? 'секунда_секунды_секунд' : 'секунду_секунды_секунд',
-            'mm': withoutSuffix ? 'хвіліна_хвіліны_хвілін' : 'хвіліну_хвіліны_хвілін',
-            'hh': withoutSuffix ? 'гадзіна_гадзіны_гадзін' : 'гадзіну_гадзіны_гадзін',
-            'dd': 'дзень_дні_дзён',
-            'MM': 'месяц_месяцы_месяцаў',
-            'yy': 'год_гады_гадоў'
+            ss: withoutSuffix ? 'секунда_секунды_секунд' : 'секунду_секунды_секунд',
+            mm: withoutSuffix ? 'хвіліна_хвіліны_хвілін' : 'хвіліну_хвіліны_хвілін',
+            hh: withoutSuffix ? 'гадзіна_гадзіны_гадзін' : 'гадзіну_гадзіны_гадзін',
+            dd: 'дзень_дні_дзён',
+            MM: 'месяц_месяцы_месяцаў',
+            yy: 'год_гады_гадоў'
         };
         if (key === 'm') {
             return withoutSuffix ? 'хвіліна' : 'хвіліну';
@@ -18637,6 +18692,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Bulgarian [bg]
+//! author : Krasen Borisov : https://github.com/kraz
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18646,9 +18703,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var bg = moment.defineLocale('bg', {
         months: 'януари_февруари_март_април_май_юни_юли_август_септември_октомври_ноември_декември'.split('_'),
-        monthsShort: 'янр_фев_мар_апр_май_юни_юли_авг_сеп_окт_ное_дек'.split('_'),
+        monthsShort: 'яну_фев_мар_апр_май_юни_юли_авг_сеп_окт_ное_дек'.split('_'),
         weekdays: 'неделя_понеделник_вторник_сряда_четвъртък_петък_събота'.split('_'),
         weekdaysShort: 'нед_пон_вто_сря_чет_пет_съб'.split('_'),
         weekdaysMin: 'нд_пн_вт_ср_чт_пт_сб'.split('_'),
@@ -18670,12 +18729,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     case 0:
                     case 3:
                     case 6:
-                        return '[В изминалата] dddd [в] LT';
+                        return '[Миналата] dddd [в] LT';
                     case 1:
                     case 2:
                     case 4:
                     case 5:
-                        return '[В изминалия] dddd [в] LT';
+                        return '[Миналия] dddd [в] LT';
                 }
             },
             sameElse: 'L'
@@ -18690,7 +18749,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             h: 'час',
             hh: '%d часа',
             d: 'ден',
-            dd: '%d дни',
+            dd: '%d дена',
             M: 'месец',
             MM: '%d месеца',
             y: 'година',
@@ -18736,6 +18795,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Bambara [bm]
+//! author : Estelle Comment : https://github.com/estellecomment
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18744,6 +18805,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var bm = moment.defineLocale('bm', {
         months: 'Zanwuyekalo_Fewuruyekalo_Marisikalo_Awirilikalo_Mɛkalo_Zuwɛnkalo_Zuluyekalo_Utikalo_Sɛtanburukalo_ɔkutɔburukalo_Nowanburukalo_Desanburukalo'.split('_'),
@@ -18803,6 +18866,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Bengali [bn]
+//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18811,6 +18876,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '১',
@@ -18838,11 +18905,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     };
 
     var bn = moment.defineLocale('bn', {
-        months: 'জানুয়ারী_ফেব্রুয়ারি_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্টেম্বর_অক্টোবর_নভেম্বর_ডিসেম্বর'.split('_'),
-        monthsShort: 'জানু_ফেব_মার্চ_এপ্র_মে_জুন_জুল_আগ_সেপ্ট_অক্টো_নভে_ডিসে'.split('_'),
+        months: 'জানুয়ারি_ফেব্রুয়ারি_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্টেম্বর_অক্টোবর_নভেম্বর_ডিসেম্বর'.split('_'),
+        monthsShort: 'জানু_ফেব্রু_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্ট_অক্টো_নভে_ডিসে'.split('_'),
         weekdays: 'রবিবার_সোমবার_মঙ্গলবার_বুধবার_বৃহস্পতিবার_শুক্রবার_শনিবার'.split('_'),
         weekdaysShort: 'রবি_সোম_মঙ্গল_বুধ_বৃহস্পতি_শুক্র_শনি'.split('_'),
-        weekdaysMin: 'রবি_সোম_মঙ্গ_বুধ_বৃহঃ_শুক্র_শনি'.split('_'),
+        weekdaysMin: 'রবি_সোম_মঙ্গল_বুধ_বৃহ_শুক্র_শনি'.split('_'),
         longDateFormat: {
             LT: 'A h:mm সময়',
             LTS: 'A h:mm:ss সময়',
@@ -18929,6 +18996,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Tibetan [bo]
+//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -18937,6 +19006,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '༡',
@@ -18965,10 +19036,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     var bo = moment.defineLocale('bo', {
         months: 'ཟླ་བ་དང་པོ_ཟླ་བ་གཉིས་པ_ཟླ་བ་གསུམ་པ_ཟླ་བ་བཞི་པ_ཟླ་བ་ལྔ་པ_ཟླ་བ་དྲུག་པ_ཟླ་བ་བདུན་པ_ཟླ་བ་བརྒྱད་པ_ཟླ་བ་དགུ་པ_ཟླ་བ་བཅུ་པ_ཟླ་བ་བཅུ་གཅིག་པ_ཟླ་བ་བཅུ་གཉིས་པ'.split('_'),
-        monthsShort: 'ཟླ་བ་དང་པོ_ཟླ་བ་གཉིས་པ_ཟླ་བ་གསུམ་པ_ཟླ་བ་བཞི་པ_ཟླ་བ་ལྔ་པ_ཟླ་བ་དྲུག་པ_ཟླ་བ་བདུན་པ_ཟླ་བ་བརྒྱད་པ_ཟླ་བ་དགུ་པ_ཟླ་བ་བཅུ་པ_ཟླ་བ་བཅུ་གཅིག་པ_ཟླ་བ་བཅུ་གཉིས་པ'.split('_'),
+        monthsShort: 'ཟླ་1_ཟླ་2_ཟླ་3_ཟླ་4_ཟླ་5_ཟླ་6_ཟླ་7_ཟླ་8_ཟླ་9_ཟླ་10_ཟླ་11_ཟླ་12'.split('_'),
+        monthsShortRegex: /^(ཟླ་\d{1,2})/,
+        monthsParseExact: true,
         weekdays: 'གཟའ་ཉི་མ་_གཟའ་ཟླ་བ་_གཟའ་མིག་དམར་_གཟའ་ལྷག་པ་_གཟའ་ཕུར་བུ_གཟའ་པ་སངས་_གཟའ་སྤེན་པ་'.split('_'),
         weekdaysShort: 'ཉི་མ་_ཟླ་བ་_མིག་དམར་_ལྷག་པ་_ཕུར་བུ_པ་སངས་_སྤེན་པ་'.split('_'),
-        weekdaysMin: 'ཉི་མ་_ཟླ་བ་_མིག་དམར་_ལྷག་པ་_ཕུར་བུ_པ་སངས་_སྤེན་པ་'.split('_'),
+        weekdaysMin: 'ཉི_ཟླ_མིག_ལྷག_ཕུར_སངས_སྤེན'.split('_'),
         longDateFormat: {
             LT: 'A h:mm',
             LTS: 'A h:mm:ss',
@@ -19055,6 +19128,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Breton [br]
+//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19064,11 +19139,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function relativeTimeWithMutation(number, withoutSuffix, key) {
         var format = {
-            'mm': 'munutenn',
-            'MM': 'miz',
-            'dd': 'devezh'
+            mm: 'munutenn',
+            MM: 'miz',
+            dd: 'devezh'
         };
         return number + ' ' + mutation(format[key], number);
     }
@@ -19098,9 +19175,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     function softMutation(text) {
         var mutationTable = {
-            'm': 'v',
-            'b': 'v',
-            'd': 'z'
+            m: 'v',
+            b: 'v',
+            d: 'z'
         };
         if (mutationTable[text.charAt(0)] === undefined) {
             return text;
@@ -19109,31 +19186,31 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     var br = moment.defineLocale('br', {
-        months: 'Genver_C\'hwevrer_Meurzh_Ebrel_Mae_Mezheven_Gouere_Eost_Gwengolo_Here_Du_Kerzu'.split('_'),
-        monthsShort: 'Gen_C\'hwe_Meu_Ebr_Mae_Eve_Gou_Eos_Gwe_Her_Du_Ker'.split('_'),
-        weekdays: 'Sul_Lun_Meurzh_Merc\'her_Yaou_Gwener_Sadorn'.split('_'),
+        months: "Genver_C'hwevrer_Meurzh_Ebrel_Mae_Mezheven_Gouere_Eost_Gwengolo_Here_Du_Kerzu".split('_'),
+        monthsShort: "Gen_C'hwe_Meu_Ebr_Mae_Eve_Gou_Eos_Gwe_Her_Du_Ker".split('_'),
+        weekdays: "Sul_Lun_Meurzh_Merc'her_Yaou_Gwener_Sadorn".split('_'),
         weekdaysShort: 'Sul_Lun_Meu_Mer_Yao_Gwe_Sad'.split('_'),
         weekdaysMin: 'Su_Lu_Me_Mer_Ya_Gw_Sa'.split('_'),
         weekdaysParseExact: true,
         longDateFormat: {
-            LT: 'h[e]mm A',
-            LTS: 'h[e]mm:ss A',
+            LT: 'HH:mm',
+            LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
             LL: 'D [a viz] MMMM YYYY',
-            LLL: 'D [a viz] MMMM YYYY h[e]mm A',
-            LLLL: 'dddd, D [a viz] MMMM YYYY h[e]mm A'
+            LLL: 'D [a viz] MMMM YYYY HH:mm',
+            LLLL: 'dddd, D [a viz] MMMM YYYY HH:mm'
         },
         calendar: {
             sameDay: '[Hiziv da] LT',
-            nextDay: '[Warc\'hoazh da] LT',
+            nextDay: "[Warc'hoazh da] LT",
             nextWeek: 'dddd [da] LT',
-            lastDay: '[Dec\'h da] LT',
+            lastDay: "[Dec'h da] LT",
             lastWeek: 'dddd [paset da] LT',
             sameElse: 'L'
         },
         relativeTime: {
             future: 'a-benn %s',
-            past: '%s \'zo',
+            past: "%s 'zo",
             s: 'un nebeud segondennoù',
             ss: '%d eilenn',
             m: 'ur vunutenn',
@@ -19172,6 +19249,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Bosnian [bs]
+//! author : Nedim Cholich : https://github.com/frontyard
+//! based on (hr) translation by Bojan Marković
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19180,6 +19260,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     function translate(number, withoutSuffix, key) {
         var result = number + ' ';
@@ -19332,6 +19414,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Catalan [ca]
+//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19341,10 +19425,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var ca = moment.defineLocale('ca', {
         months: {
             standalone: 'gener_febrer_març_abril_maig_juny_juliol_agost_setembre_octubre_novembre_desembre'.split('_'),
-            format: 'de gener_de febrer_de març_d\'abril_de maig_de juny_de juliol_d\'agost_de setembre_d\'octubre_de novembre_de desembre'.split('_'),
+            format: "de gener_de febrer_de març_d'abril_de maig_de juny_de juliol_d'agost_de setembre_d'octubre_de novembre_de desembre".split('_'),
             isFormat: /D[oD]?(\s)+MMMM/
         },
         monthsShort: 'gen._febr._març_abr._maig_juny_jul._ag._set._oct._nov._des.'.split('_'),
@@ -19383,7 +19469,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             sameElse: 'L'
         },
         relativeTime: {
-            future: 'd\'aquí %s',
+            future: "d'aquí %s",
             past: 'fa %s',
             s: 'uns segons',
             ss: '%d segons',
@@ -19426,6 +19512,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Czech [cs]
+//! author : petrbela : https://github.com/petrbela
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19435,13 +19523,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var months = 'leden_únor_březen_duben_květen_červen_červenec_srpen_září_říjen_listopad_prosinec'.split('_'),
-        monthsShort = 'led_úno_bře_dub_kvě_čvn_čvc_srp_zář_říj_lis_pro'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^led/i, /^úno/i, /^bře/i, /^dub/i, /^kvě/i, /^(čvn|červen$|června)/i, /^(čvc|červenec|července)/i, /^srp/i, /^zář/i, /^říj/i, /^lis/i, /^pro/i];
+    var months = 'leden_únor_březen_duben_květen_červen_červenec_srpen_září_říjen_listopad_prosinec'.split('_'),
+        monthsShort = 'led_úno_bře_dub_kvě_čvn_čvc_srp_zář_říj_lis_pro'.split('_'),
+        monthsParse = [/^led/i, /^úno/i, /^bře/i, /^dub/i, /^kvě/i, /^(čvn|červen$|června)/i, /^(čvc|červenec|července)/i, /^srp/i, /^zář/i, /^říj/i, /^lis/i, /^pro/i],
+
     // NOTE: 'červen' is substring of 'červenec'; therefore 'červenec' must precede 'červen' in the regex to be fully matched.
     // Otherwise parser matches '1. červenec' as '1. červen' + 'ec'.
-    var monthsRegex = /^(leden|únor|březen|duben|květen|červenec|července|červen|června|srpen|září|říjen|listopad|prosinec|led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i;
+    monthsRegex = /^(leden|únor|březen|duben|květen|červenec|července|červen|června|srpen|září|říjen|listopad|prosinec|led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i;
 
     function plural(n) {
         return n > 1 && n < 5 && ~~(n / 10) !== 1;
@@ -19459,7 +19549,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'sekundami';
                 }
-                break;
             case 'm':
                 // a minute / in a minute / a minute ago
                 return withoutSuffix ? 'minuta' : isFuture ? 'minutu' : 'minutou';
@@ -19470,7 +19559,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'minutami';
                 }
-                break;
             case 'h':
                 // an hour / in an hour / an hour ago
                 return withoutSuffix ? 'hodina' : isFuture ? 'hodinu' : 'hodinou';
@@ -19481,7 +19569,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'hodinami';
                 }
-                break;
             case 'd':
                 // a day / in a day / a day ago
                 return withoutSuffix || isFuture ? 'den' : 'dnem';
@@ -19492,7 +19579,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'dny';
                 }
-                break;
             case 'M':
                 // a month / in a month / a month ago
                 return withoutSuffix || isFuture ? 'měsíc' : 'měsícem';
@@ -19503,7 +19589,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'měsíci';
                 }
-                break;
             case 'y':
                 // a year / in a year / a year ago
                 return withoutSuffix || isFuture ? 'rok' : 'rokem';
@@ -19514,7 +19599,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'lety';
                 }
-                break;
         }
     }
 
@@ -19619,6 +19703,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Chuvash [cv]
+//! author : Anatoly Mironov : https://github.com/mirontoli
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19627,6 +19713,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var cv = moment.defineLocale('cv', {
         months: 'кӑрлач_нарӑс_пуш_ака_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав'.split('_'),
@@ -19691,6 +19779,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Welsh [cy]
+//! author : Robert Allen : https://github.com/robgallen
+//! author : https://github.com/ryangreaves
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19699,6 +19790,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var cy = moment.defineLocale('cy', {
         months: 'Ionawr_Chwefror_Mawrth_Ebrill_Mai_Mehefin_Gorffennaf_Awst_Medi_Hydref_Tachwedd_Rhagfyr'.split('_'),
@@ -19746,8 +19839,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             var b = number,
                 output = '',
                 lookup = ['', 'af', 'il', 'ydd', 'ydd', 'ed', 'ed', 'ed', 'fed', 'fed', 'fed', // 1af to 10fed
-            'eg', 'fed', 'eg', 'eg', 'fed', 'eg', 'eg', 'fed', 'eg', 'fed' // 11eg to 20fed
-            ];
+            'eg', 'fed', 'eg', 'eg', 'fed', 'eg', 'eg', 'fed', 'eg', 'fed'];
             if (b > 20) {
                 if (b === 40 || b === 50 || b === 60 || b === 80 || b === 100) {
                     output = 'fed'; // not 30ain, 70ain or 90ain
@@ -19779,6 +19871,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Danish [da]
+//! author : Ulrik Nielsen : https://github.com/mrbase
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19787,6 +19881,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var da = moment.defineLocale('da', {
         months: 'januar_februar_marts_april_maj_juni_juli_august_september_oktober_november_december'.split('_'),
@@ -19848,6 +19944,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : German (Austria) [de-at]
+//! author : lluchs : https://github.com/lluchs
+//! author: Menelion Elensúle: https://github.com/Oire
+//! author : Martin Groller : https://github.com/MadMG
+//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19857,16 +19958,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            'm': ['eine Minute', 'einer Minute'],
-            'h': ['eine Stunde', 'einer Stunde'],
-            'd': ['ein Tag', 'einem Tag'],
-            'dd': [number + ' Tage', number + ' Tagen'],
-            'M': ['ein Monat', 'einem Monat'],
-            'MM': [number + ' Monate', number + ' Monaten'],
-            'y': ['ein Jahr', 'einem Jahr'],
-            'yy': [number + ' Jahre', number + ' Jahren']
+            m: ['eine Minute', 'einer Minute'],
+            h: ['eine Stunde', 'einer Stunde'],
+            d: ['ein Tag', 'einem Tag'],
+            dd: [number + ' Tage', number + ' Tagen'],
+            M: ['ein Monat', 'einem Monat'],
+            MM: [number + ' Monate', number + ' Monaten'],
+            y: ['ein Jahr', 'einem Jahr'],
+            yy: [number + ' Jahre', number + ' Jahren']
         };
         return withoutSuffix ? format[key][0] : format[key][1];
     }
@@ -19933,6 +20036,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : German (Switzerland) [de-ch]
+//! author : sschueller : https://github.com/sschueller
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -19942,16 +20047,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            'm': ['eine Minute', 'einer Minute'],
-            'h': ['eine Stunde', 'einer Stunde'],
-            'd': ['ein Tag', 'einem Tag'],
-            'dd': [number + ' Tage', number + ' Tagen'],
-            'M': ['ein Monat', 'einem Monat'],
-            'MM': [number + ' Monate', number + ' Monaten'],
-            'y': ['ein Jahr', 'einem Jahr'],
-            'yy': [number + ' Jahre', number + ' Jahren']
+            m: ['eine Minute', 'einer Minute'],
+            h: ['eine Stunde', 'einer Stunde'],
+            d: ['ein Tag', 'einem Tag'],
+            dd: [number + ' Tage', number + ' Tagen'],
+            M: ['ein Monat', 'einem Monat'],
+            MM: [number + ' Monate', number + ' Monaten'],
+            y: ['ein Jahr', 'einem Jahr'],
+            yy: [number + ' Jahre', number + ' Jahren']
         };
         return withoutSuffix ? format[key][0] : format[key][1];
     }
@@ -20018,6 +20125,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : German [de]
+//! author : lluchs : https://github.com/lluchs
+//! author: Menelion Elensúle: https://github.com/Oire
+//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20027,16 +20138,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            'm': ['eine Minute', 'einer Minute'],
-            'h': ['eine Stunde', 'einer Stunde'],
-            'd': ['ein Tag', 'einem Tag'],
-            'dd': [number + ' Tage', number + ' Tagen'],
-            'M': ['ein Monat', 'einem Monat'],
-            'MM': [number + ' Monate', number + ' Monaten'],
-            'y': ['ein Jahr', 'einem Jahr'],
-            'yy': [number + ' Jahre', number + ' Jahren']
+            m: ['eine Minute', 'einer Minute'],
+            h: ['eine Stunde', 'einer Stunde'],
+            d: ['ein Tag', 'einem Tag'],
+            dd: [number + ' Tage', number + ' Tagen'],
+            M: ['ein Monat', 'einem Monat'],
+            MM: [number + ' Monate', number + ' Monaten'],
+            y: ['ein Jahr', 'einem Jahr'],
+            yy: [number + ' Jahre', number + ' Jahren']
         };
         return withoutSuffix ? format[key][0] : format[key][1];
     }
@@ -20103,6 +20216,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Maldivian [dv]
+//! author : Jawish Hameed : https://github.com/jawish
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20111,6 +20226,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var months = ['ޖެނުއަރީ', 'ފެބްރުއަރީ', 'މާރިޗު', 'އޭޕްރީލު', 'މޭ', 'ޖޫން', 'ޖުލައި', 'އޯގަސްޓު', 'ސެޕްޓެމްބަރު', 'އޮކްޓޯބަރު', 'ނޮވެމްބަރު', 'ޑިސެމްބަރު'],
         weekdays = ['އާދިއްތަ', 'ހޯމަ', 'އަންގާރަ', 'ބުދަ', 'ބުރާސްފަތި', 'ހުކުރު', 'ހޮނިހިރު'];
@@ -20122,7 +20239,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         weekdaysShort: weekdays,
         weekdaysMin: 'އާދި_ހޯމަ_އަން_ބުދަ_ބުރާ_ހުކު_ހޮނި'.split('_'),
         longDateFormat: {
-
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'D/M/YYYY',
@@ -20191,6 +20307,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Greek [el]
+//! author : Aggelos Karalias : https://github.com/mehiel
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20200,8 +20318,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function isFunction(input) {
-        return input instanceof Function || Object.prototype.toString.call(input) === '[object Function]';
+        return typeof Function !== 'undefined' && input instanceof Function || Object.prototype.toString.call(input) === '[object Function]';
     }
 
     var el = moment.defineLocale('el', {
@@ -20292,79 +20412,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
-/***/ "./node_modules/moment/locale/en-SG.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-//! moment.js locale configuration
-
-;(function (global, factory) {
-    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
-})(undefined, function (moment) {
-    'use strict';
-
-    var enSG = moment.defineLocale('en-SG', {
-        months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-        monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
-        weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
-        weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
-        weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
-        longDateFormat: {
-            LT: 'HH:mm',
-            LTS: 'HH:mm:ss',
-            L: 'DD/MM/YYYY',
-            LL: 'D MMMM YYYY',
-            LLL: 'D MMMM YYYY HH:mm',
-            LLLL: 'dddd, D MMMM YYYY HH:mm'
-        },
-        calendar: {
-            sameDay: '[Today at] LT',
-            nextDay: '[Tomorrow at] LT',
-            nextWeek: 'dddd [at] LT',
-            lastDay: '[Yesterday at] LT',
-            lastWeek: '[Last] dddd [at] LT',
-            sameElse: 'L'
-        },
-        relativeTime: {
-            future: 'in %s',
-            past: '%s ago',
-            s: 'a few seconds',
-            ss: '%d seconds',
-            m: 'a minute',
-            mm: '%d minutes',
-            h: 'an hour',
-            hh: '%d hours',
-            d: 'a day',
-            dd: '%d days',
-            M: 'a month',
-            MM: '%d months',
-            y: 'a year',
-            yy: '%d years'
-        },
-        dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-        ordinal: function ordinal(number) {
-            var b = number % 10,
-                output = ~~(number % 100 / 10) === 1 ? 'th' : b === 1 ? 'st' : b === 2 ? 'nd' : b === 3 ? 'rd' : 'th';
-            return number + output;
-        },
-        week: {
-            dow: 1, // Monday is the first day of the week.
-            doy: 4 // The week that contains Jan 4th is the first week of the year.
-        }
-    });
-
-    return enSG;
-});
-
-/***/ }),
-
 /***/ "./node_modules/moment/locale/en-au.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20374,6 +20421,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (Australia) [en-au]
+//! author : Jared Morse : https://github.com/jarcoal
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20382,6 +20431,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enAu = moment.defineLocale('en-au', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20447,6 +20498,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (Canada) [en-ca]
+//! author : Jonathan Abourbih : https://github.com/jonbca
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20455,6 +20508,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enCa = moment.defineLocale('en-ca', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20516,6 +20571,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (United Kingdom) [en-gb]
+//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20524,6 +20581,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enGb = moment.defineLocale('en-gb', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20589,6 +20648,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (Ireland) [en-ie]
+//! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20597,6 +20658,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enIe = moment.defineLocale('en-ie', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20662,6 +20725,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (Israel) [en-il]
+//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20670,6 +20735,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enIl = moment.defineLocale('en-il', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20697,6 +20764,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             future: 'in %s',
             past: '%s ago',
             s: 'a few seconds',
+            ss: '%d seconds',
             m: 'a minute',
             mm: '%d minutes',
             h: 'an hour',
@@ -20721,6 +20789,83 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale/en-in.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : English (India) [en-in]
+//! author : Jatin Agrawal : https://github.com/jatinag22
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
+    var enIn = moment.defineLocale('en-in', {
+        months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
+        monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+        weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+        weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
+        weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
+        longDateFormat: {
+            LT: 'h:mm A',
+            LTS: 'h:mm:ss A',
+            L: 'DD/MM/YYYY',
+            LL: 'D MMMM YYYY',
+            LLL: 'D MMMM YYYY h:mm A',
+            LLLL: 'dddd, D MMMM YYYY h:mm A'
+        },
+        calendar: {
+            sameDay: '[Today at] LT',
+            nextDay: '[Tomorrow at] LT',
+            nextWeek: 'dddd [at] LT',
+            lastDay: '[Yesterday at] LT',
+            lastWeek: '[Last] dddd [at] LT',
+            sameElse: 'L'
+        },
+        relativeTime: {
+            future: 'in %s',
+            past: '%s ago',
+            s: 'a few seconds',
+            ss: '%d seconds',
+            m: 'a minute',
+            mm: '%d minutes',
+            h: 'an hour',
+            hh: '%d hours',
+            d: 'a day',
+            dd: '%d days',
+            M: 'a month',
+            MM: '%d months',
+            y: 'a year',
+            yy: '%d years'
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+        ordinal: function ordinal(number) {
+            var b = number % 10,
+                output = ~~(number % 100 / 10) === 1 ? 'th' : b === 1 ? 'st' : b === 2 ? 'nd' : b === 3 ? 'rd' : 'th';
+            return number + output;
+        },
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4 // The week that contains Jan 4th is the first week of the year.
+        }
+    });
+
+    return enIn;
+});
+
+/***/ }),
+
 /***/ "./node_modules/moment/locale/en-nz.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20730,6 +20875,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (New Zealand) [en-nz]
+//! author : Luke McGregor : https://github.com/lukemcgregor
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20738,6 +20885,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var enNz = moment.defineLocale('en-nz', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
@@ -20794,7 +20943,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
-/***/ "./node_modules/moment/locale/eo.js":
+/***/ "./node_modules/moment/locale/en-sg.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20803,6 +20952,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : English (Singapore) [en-sg]
+//! author : Matthew Castrillon-Madrigal : https://github.com/techdimension
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20812,9 +20963,91 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
+    var enSg = moment.defineLocale('en-sg', {
+        months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
+        monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+        weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+        weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
+        weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
+        longDateFormat: {
+            LT: 'HH:mm',
+            LTS: 'HH:mm:ss',
+            L: 'DD/MM/YYYY',
+            LL: 'D MMMM YYYY',
+            LLL: 'D MMMM YYYY HH:mm',
+            LLLL: 'dddd, D MMMM YYYY HH:mm'
+        },
+        calendar: {
+            sameDay: '[Today at] LT',
+            nextDay: '[Tomorrow at] LT',
+            nextWeek: 'dddd [at] LT',
+            lastDay: '[Yesterday at] LT',
+            lastWeek: '[Last] dddd [at] LT',
+            sameElse: 'L'
+        },
+        relativeTime: {
+            future: 'in %s',
+            past: '%s ago',
+            s: 'a few seconds',
+            ss: '%d seconds',
+            m: 'a minute',
+            mm: '%d minutes',
+            h: 'an hour',
+            hh: '%d hours',
+            d: 'a day',
+            dd: '%d days',
+            M: 'a month',
+            MM: '%d months',
+            y: 'a year',
+            yy: '%d years'
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+        ordinal: function ordinal(number) {
+            var b = number % 10,
+                output = ~~(number % 100 / 10) === 1 ? 'th' : b === 1 ? 'st' : b === 2 ? 'nd' : b === 3 ? 'rd' : 'th';
+            return number + output;
+        },
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4 // The week that contains Jan 4th is the first week of the year.
+        }
+    });
+
+    return enSg;
+});
+
+/***/ }),
+
+/***/ "./node_modules/moment/locale/eo.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : Esperanto [eo]
+//! author : Colin Dean : https://github.com/colindean
+//! author : Mia Nordentoft Imperatori : https://github.com/miestasmia
+//! comment : miestasmia corrected the translation by colindean
+//! comment : Vivakvo corrected the translation by colindean and miestasmia
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
     var eo = moment.defineLocale('eo', {
         months: 'januaro_februaro_marto_aprilo_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_decembro'.split('_'),
-        monthsShort: 'jan_feb_mar_apr_maj_jun_jul_aŭg_sep_okt_nov_dec'.split('_'),
+        monthsShort: 'jan_feb_mart_apr_maj_jun_jul_aŭg_sept_okt_nov_dec'.split('_'),
         weekdays: 'dimanĉo_lundo_mardo_merkredo_ĵaŭdo_vendredo_sabato'.split('_'),
         weekdaysShort: 'dim_lun_mard_merk_ĵaŭ_ven_sab'.split('_'),
         weekdaysMin: 'di_lu_ma_me_ĵa_ve_sa'.split('_'),
@@ -20822,9 +21055,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'YYYY-MM-DD',
-            LL: 'D[-a de] MMMM, YYYY',
-            LLL: 'D[-a de] MMMM, YYYY HH:mm',
-            LLLL: 'dddd, [la] D[-a de] MMMM, YYYY HH:mm'
+            LL: '[la] D[-an de] MMMM, YYYY',
+            LLL: '[la] D[-an de] MMMM, YYYY HH:mm',
+            LLLL: 'dddd[n], [la] D[-an de] MMMM, YYYY HH:mm',
+            llll: 'ddd, [la] D[-an de] MMM, YYYY HH:mm'
         },
         meridiemParse: /[ap]\.t\.m/i,
         isPM: function isPM(input) {
@@ -20840,25 +21074,25 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         calendar: {
             sameDay: '[Hodiaŭ je] LT',
             nextDay: '[Morgaŭ je] LT',
-            nextWeek: 'dddd [je] LT',
+            nextWeek: 'dddd[n je] LT',
             lastDay: '[Hieraŭ je] LT',
-            lastWeek: '[pasinta] dddd [je] LT',
+            lastWeek: '[pasintan] dddd[n je] LT',
             sameElse: 'L'
         },
         relativeTime: {
             future: 'post %s',
             past: 'antaŭ %s',
-            s: 'sekundoj',
+            s: 'kelkaj sekundoj',
             ss: '%d sekundoj',
-            m: 'minuto',
+            m: 'unu minuto',
             mm: '%d minutoj',
-            h: 'horo',
+            h: 'unu horo',
             hh: '%d horoj',
-            d: 'tago', //ne 'diurno', ĉar estas uzita por proksimumo
+            d: 'unu tago', //ne 'diurno', ĉar estas uzita por proksimumo
             dd: '%d tagoj',
-            M: 'monato',
+            M: 'unu monato',
             MM: '%d monatoj',
-            y: 'jaro',
+            y: 'unu jaro',
             yy: '%d jaroj'
         },
         dayOfMonthOrdinalParse: /\d{1,2}a/,
@@ -20883,6 +21117,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Spanish (Dominican Republic) [es-do]
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20892,11 +21127,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
-        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
-    var monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
+        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_'),
+        monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
+        monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
 
     var esDo = moment.defineLocale('es-do', {
         months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
@@ -20984,6 +21220,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Spanish (United States) [es-us]
+//! author : bustta : https://github.com/bustta
+//! author : chrisrodz : https://github.com/chrisrodz
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -20993,11 +21232,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
-        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
-    var monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
+        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_'),
+        monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
+        monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
 
     var esUs = moment.defineLocale('es-us', {
         months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
@@ -21085,6 +21325,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Spanish [es]
+//! author : Julio Napurí : https://github.com/julionc
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21094,11 +21336,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
-        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
-    var monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
+        _monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_'),
+        monthsParse = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
+        monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
 
     var es = moment.defineLocale('es', {
         months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
@@ -21169,7 +21412,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         week: {
             dow: 1, // Monday is the first day of the week.
             doy: 4 // The week that contains Jan 4th is the first week of the year.
-        }
+        },
+        invalidDate: 'Fecha invalida'
     });
 
     return es;
@@ -21186,6 +21430,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Estonian [et]
+//! author : Henry Kehlmann : https://github.com/madhenry
+//! improvements : Illimar Tambek : https://github.com/ragulka
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21195,19 +21442,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            's': ['mõne sekundi', 'mõni sekund', 'paar sekundit'],
-            'ss': [number + 'sekundi', number + 'sekundit'],
-            'm': ['ühe minuti', 'üks minut'],
-            'mm': [number + ' minuti', number + ' minutit'],
-            'h': ['ühe tunni', 'tund aega', 'üks tund'],
-            'hh': [number + ' tunni', number + ' tundi'],
-            'd': ['ühe päeva', 'üks päev'],
-            'M': ['kuu aja', 'kuu aega', 'üks kuu'],
-            'MM': [number + ' kuu', number + ' kuud'],
-            'y': ['ühe aasta', 'aasta', 'üks aasta'],
-            'yy': [number + ' aasta', number + ' aastat']
+            s: ['mõne sekundi', 'mõni sekund', 'paar sekundit'],
+            ss: [number + 'sekundi', number + 'sekundit'],
+            m: ['ühe minuti', 'üks minut'],
+            mm: [number + ' minuti', number + ' minutit'],
+            h: ['ühe tunni', 'tund aega', 'üks tund'],
+            hh: [number + ' tunni', number + ' tundi'],
+            d: ['ühe päeva', 'üks päev'],
+            M: ['kuu aja', 'kuu aega', 'üks kuu'],
+            MM: [number + ' kuu', number + ' kuud'],
+            y: ['ühe aasta', 'aasta', 'üks aasta'],
+            yy: [number + ' aasta', number + ' aastat']
         };
         if (withoutSuffix) {
             return format[key][2] ? format[key][2] : format[key][1];
@@ -21275,6 +21524,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Basque [eu]
+//! author : Eneko Illarramendi : https://github.com/eillarra
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21283,6 +21534,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var eu = moment.defineLocale('eu', {
         months: 'urtarrila_otsaila_martxoa_apirila_maiatza_ekaina_uztaila_abuztua_iraila_urria_azaroa_abendua'.split('_'),
@@ -21350,6 +21603,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Persian [fa]
+//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21358,6 +21613,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '۱',
@@ -21423,7 +21680,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             future: 'در %s',
             past: '%s پیش',
             s: 'چند ثانیه',
-            ss: 'ثانیه d%',
+            ss: '%d ثانیه',
             m: 'یک دقیقه',
             mm: '%d دقیقه',
             h: 'یک ساعت',
@@ -21467,6 +21724,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Finnish [fi]
+//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21475,6 +21734,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var numbersPast = 'nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän'.split(' '),
         numbersFuture = ['nolla', 'yhden', 'kahden', 'kolmen', 'neljän', 'viiden', 'kuuden', numbersPast[7], numbersPast[8], numbersPast[9]];
@@ -21573,6 +21834,82 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale/fil.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : Filipino [fil]
+//! author : Dan Hagman : https://github.com/hagmandan
+//! author : Matthew Co : https://github.com/matthewdeeco
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
+    var fil = moment.defineLocale('fil', {
+        months: 'Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre'.split('_'),
+        monthsShort: 'Ene_Peb_Mar_Abr_May_Hun_Hul_Ago_Set_Okt_Nob_Dis'.split('_'),
+        weekdays: 'Linggo_Lunes_Martes_Miyerkules_Huwebes_Biyernes_Sabado'.split('_'),
+        weekdaysShort: 'Lin_Lun_Mar_Miy_Huw_Biy_Sab'.split('_'),
+        weekdaysMin: 'Li_Lu_Ma_Mi_Hu_Bi_Sab'.split('_'),
+        longDateFormat: {
+            LT: 'HH:mm',
+            LTS: 'HH:mm:ss',
+            L: 'MM/D/YYYY',
+            LL: 'MMMM D, YYYY',
+            LLL: 'MMMM D, YYYY HH:mm',
+            LLLL: 'dddd, MMMM DD, YYYY HH:mm'
+        },
+        calendar: {
+            sameDay: 'LT [ngayong araw]',
+            nextDay: '[Bukas ng] LT',
+            nextWeek: 'LT [sa susunod na] dddd',
+            lastDay: 'LT [kahapon]',
+            lastWeek: 'LT [noong nakaraang] dddd',
+            sameElse: 'L'
+        },
+        relativeTime: {
+            future: 'sa loob ng %s',
+            past: '%s ang nakalipas',
+            s: 'ilang segundo',
+            ss: '%d segundo',
+            m: 'isang minuto',
+            mm: '%d minuto',
+            h: 'isang oras',
+            hh: '%d oras',
+            d: 'isang araw',
+            dd: '%d araw',
+            M: 'isang buwan',
+            MM: '%d buwan',
+            y: 'isang taon',
+            yy: '%d taon'
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}/,
+        ordinal: function ordinal(number) {
+            return number;
+        },
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4 // The week that contains Jan 4th is the first week of the year.
+        }
+    });
+
+    return fil;
+});
+
+/***/ }),
+
 /***/ "./node_modules/moment/locale/fo.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21582,6 +21919,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Faroese [fo]
+//! author : Ragnar Johannesen : https://github.com/ragnar123
+//! author : Kristian Sakarisson : https://github.com/sakarisson
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21590,6 +21930,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var fo = moment.defineLocale('fo', {
         months: 'januar_februar_mars_apríl_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
@@ -21651,6 +21993,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : French (Canada) [fr-ca]
+//! author : Jonathan Abourbih : https://github.com/jonbca
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21659,6 +22003,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var frCa = moment.defineLocale('fr-ca', {
         months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
@@ -21734,6 +22080,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : French (Switzerland) [fr-ch]
+//! author : Gaspard Bucher : https://github.com/gaspard
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21742,6 +22090,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var frCh = moment.defineLocale('fr-ch', {
         months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
@@ -21821,6 +22171,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : French [fr]
+//! author : John Fischer : https://github.com/jfroffice
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21829,6 +22181,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var fr = moment.defineLocale('fr', {
         months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
@@ -21913,6 +22267,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Frisian [fy]
+//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -21921,6 +22277,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var monthsShortWithDots = 'jan._feb._mrt._apr._mai_jun._jul._aug._sep._okt._nov._des.'.split('_'),
         monthsShortWithoutDots = 'jan_feb_mrt_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_');
@@ -21997,6 +22355,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Irish or Irish Gaelic [ga]
+//! author : André Silva : https://github.com/askpt
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22006,15 +22366,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var months = ['Eanáir', 'Feabhra', 'Márta', 'Aibreán', 'Bealtaine', 'Méitheamh', 'Iúil', 'Lúnasa', 'Meán Fómhair', 'Deaireadh Fómhair', 'Samhain', 'Nollaig'];
+    //! moment.js locale configuration
 
-    var monthsShort = ['Eaná', 'Feab', 'Márt', 'Aibr', 'Beal', 'Méit', 'Iúil', 'Lúna', 'Meán', 'Deai', 'Samh', 'Noll'];
-
-    var weekdays = ['Dé Domhnaigh', 'Dé Luain', 'Dé Máirt', 'Dé Céadaoin', 'Déardaoin', 'Dé hAoine', 'Dé Satharn'];
-
-    var weekdaysShort = ['Dom', 'Lua', 'Mái', 'Céa', 'Déa', 'hAo', 'Sat'];
-
-    var weekdaysMin = ['Do', 'Lu', 'Má', 'Ce', 'Dé', 'hA', 'Sa'];
+    var months = ['Eanáir', 'Feabhra', 'Márta', 'Aibreán', 'Bealtaine', 'Meitheamh', 'Iúil', 'Lúnasa', 'Meán Fómhair', 'Deireadh Fómhair', 'Samhain', 'Nollaig'],
+        monthsShort = ['Ean', 'Feabh', 'Márt', 'Aib', 'Beal', 'Meith', 'Iúil', 'Lún', 'M.F.', 'D.F.', 'Samh', 'Noll'],
+        weekdays = ['Dé Domhnaigh', 'Dé Luain', 'Dé Máirt', 'Dé Céadaoin', 'Déardaoin', 'Dé hAoine', 'Dé Sathairn'],
+        weekdaysShort = ['Domh', 'Luan', 'Máirt', 'Céad', 'Déar', 'Aoine', 'Sath'],
+        weekdaysMin = ['Do', 'Lu', 'Má', 'Cé', 'Dé', 'A', 'Sa'];
 
     var ga = moment.defineLocale('ga', {
         months: months,
@@ -22035,7 +22393,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             sameDay: '[Inniu ag] LT',
             nextDay: '[Amárach ag] LT',
             nextWeek: 'dddd [ag] LT',
-            lastDay: '[Inné aig] LT',
+            lastDay: '[Inné ag] LT',
             lastWeek: 'dddd [seo caite] [ag] LT',
             sameElse: 'L'
         },
@@ -22051,7 +22409,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             d: 'lá',
             dd: '%d lá',
             M: 'mí',
-            MM: '%d mí',
+            MM: '%d míonna',
             y: 'bliain',
             yy: '%d bliain'
         },
@@ -22080,6 +22438,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Scottish Gaelic [gd]
+//! author : Jon Ashdown : https://github.com/jonashdown
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22089,15 +22449,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var months = ['Am Faoilleach', 'An Gearran', 'Am Màrt', 'An Giblean', 'An Cèitean', 'An t-Ògmhios', 'An t-Iuchar', 'An Lùnastal', 'An t-Sultain', 'An Dàmhair', 'An t-Samhain', 'An Dùbhlachd'];
+    //! moment.js locale configuration
 
-    var monthsShort = ['Faoi', 'Gear', 'Màrt', 'Gibl', 'Cèit', 'Ògmh', 'Iuch', 'Lùn', 'Sult', 'Dàmh', 'Samh', 'Dùbh'];
-
-    var weekdays = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Diciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'];
-
-    var weekdaysShort = ['Did', 'Dil', 'Dim', 'Dic', 'Dia', 'Dih', 'Dis'];
-
-    var weekdaysMin = ['Dò', 'Lu', 'Mà', 'Ci', 'Ar', 'Ha', 'Sa'];
+    var months = ['Am Faoilleach', 'An Gearran', 'Am Màrt', 'An Giblean', 'An Cèitean', 'An t-Ògmhios', 'An t-Iuchar', 'An Lùnastal', 'An t-Sultain', 'An Dàmhair', 'An t-Samhain', 'An Dùbhlachd'],
+        monthsShort = ['Faoi', 'Gear', 'Màrt', 'Gibl', 'Cèit', 'Ògmh', 'Iuch', 'Lùn', 'Sult', 'Dàmh', 'Samh', 'Dùbh'],
+        weekdays = ['Didòmhnaich', 'Diluain', 'Dimàirt', 'Diciadain', 'Diardaoin', 'Dihaoine', 'Disathairne'],
+        weekdaysShort = ['Did', 'Dil', 'Dim', 'Dic', 'Dia', 'Dih', 'Dis'],
+        weekdaysMin = ['Dò', 'Lu', 'Mà', 'Ci', 'Ar', 'Ha', 'Sa'];
 
     var gd = moment.defineLocale('gd', {
         months: months,
@@ -22163,6 +22521,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Galician [gl]
+//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22171,6 +22531,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var gl = moment.defineLocale('gl', {
         months: 'xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_decembro'.split('_'),
@@ -22240,7 +22602,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
-/***/ "./node_modules/moment/locale/gom-latn.js":
+/***/ "./node_modules/moment/locale/gom-deva.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22249,6 +22611,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Konkani Devanagari script [gom-deva]
+//! author : The Discoverer : https://github.com/WikiDiscoverer
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22258,29 +22622,175 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            's': ['thodde secondanim', 'thodde second'],
-            'ss': [number + ' secondanim', number + ' second'],
-            'm': ['eka mintan', 'ek minute'],
-            'mm': [number + ' mintanim', number + ' mintam'],
-            'h': ['eka voran', 'ek vor'],
-            'hh': [number + ' voranim', number + ' voram'],
-            'd': ['eka disan', 'ek dis'],
-            'dd': [number + ' disanim', number + ' dis'],
-            'M': ['eka mhoinean', 'ek mhoino'],
-            'MM': [number + ' mhoineanim', number + ' mhoine'],
-            'y': ['eka vorsan', 'ek voros'],
-            'yy': [number + ' vorsanim', number + ' vorsam']
+            s: ['थोडया सॅकंडांनी', 'थोडे सॅकंड'],
+            ss: [number + ' सॅकंडांनी', number + ' सॅकंड'],
+            m: ['एका मिणटान', 'एक मिनूट'],
+            mm: [number + ' मिणटांनी', number + ' मिणटां'],
+            h: ['एका वरान', 'एक वर'],
+            hh: [number + ' वरांनी', number + ' वरां'],
+            d: ['एका दिसान', 'एक दीस'],
+            dd: [number + ' दिसांनी', number + ' दीस'],
+            M: ['एका म्हयन्यान', 'एक म्हयनो'],
+            MM: [number + ' म्हयन्यानी', number + ' म्हयने'],
+            y: ['एका वर्सान', 'एक वर्स'],
+            yy: [number + ' वर्सांनी', number + ' वर्सां']
         };
-        return withoutSuffix ? format[key][0] : format[key][1];
+        return isFuture ? format[key][0] : format[key][1];
+    }
+
+    var gomDeva = moment.defineLocale('gom-deva', {
+        months: {
+            standalone: 'जानेवारी_फेब्रुवारी_मार्च_एप्रील_मे_जून_जुलय_ऑगस्ट_सप्टेंबर_ऑक्टोबर_नोव्हेंबर_डिसेंबर'.split('_'),
+            format: 'जानेवारीच्या_फेब्रुवारीच्या_मार्चाच्या_एप्रीलाच्या_मेयाच्या_जूनाच्या_जुलयाच्या_ऑगस्टाच्या_सप्टेंबराच्या_ऑक्टोबराच्या_नोव्हेंबराच्या_डिसेंबराच्या'.split('_'),
+            isFormat: /MMMM(\s)+D[oD]?/
+        },
+        monthsShort: 'जाने._फेब्रु._मार्च_एप्री._मे_जून_जुल._ऑग._सप्टें._ऑक्टो._नोव्हें._डिसें.'.split('_'),
+        monthsParseExact: true,
+        weekdays: 'आयतार_सोमार_मंगळार_बुधवार_बिरेस्तार_सुक्रार_शेनवार'.split('_'),
+        weekdaysShort: 'आयत._सोम._मंगळ._बुध._ब्रेस्त._सुक्र._शेन.'.split('_'),
+        weekdaysMin: 'आ_सो_मं_बु_ब्रे_सु_शे'.split('_'),
+        weekdaysParseExact: true,
+        longDateFormat: {
+            LT: 'A h:mm [वाजतां]',
+            LTS: 'A h:mm:ss [वाजतां]',
+            L: 'DD-MM-YYYY',
+            LL: 'D MMMM YYYY',
+            LLL: 'D MMMM YYYY A h:mm [वाजतां]',
+            LLLL: 'dddd, MMMM Do, YYYY, A h:mm [वाजतां]',
+            llll: 'ddd, D MMM YYYY, A h:mm [वाजतां]'
+        },
+        calendar: {
+            sameDay: '[आयज] LT',
+            nextDay: '[फाल्यां] LT',
+            nextWeek: '[फुडलो] dddd[,] LT',
+            lastDay: '[काल] LT',
+            lastWeek: '[फाटलो] dddd[,] LT',
+            sameElse: 'L'
+        },
+        relativeTime: {
+            future: '%s',
+            past: '%s आदीं',
+            s: processRelativeTime,
+            ss: processRelativeTime,
+            m: processRelativeTime,
+            mm: processRelativeTime,
+            h: processRelativeTime,
+            hh: processRelativeTime,
+            d: processRelativeTime,
+            dd: processRelativeTime,
+            M: processRelativeTime,
+            MM: processRelativeTime,
+            y: processRelativeTime,
+            yy: processRelativeTime
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}(वेर)/,
+        ordinal: function ordinal(number, period) {
+            switch (period) {
+                // the ordinal 'वेर' only applies to day of the month
+                case 'D':
+                    return number + 'वेर';
+                default:
+                case 'M':
+                case 'Q':
+                case 'DDD':
+                case 'd':
+                case 'w':
+                case 'W':
+                    return number;
+            }
+        },
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4 // The week that contains Jan 4th is the first week of the year.
+        },
+        meridiemParse: /राती|सकाळीं|दनपारां|सांजे/,
+        meridiemHour: function meridiemHour(hour, meridiem) {
+            if (hour === 12) {
+                hour = 0;
+            }
+            if (meridiem === 'राती') {
+                return hour < 4 ? hour : hour + 12;
+            } else if (meridiem === 'सकाळीं') {
+                return hour;
+            } else if (meridiem === 'दनपारां') {
+                return hour > 12 ? hour : hour + 12;
+            } else if (meridiem === 'सांजे') {
+                return hour + 12;
+            }
+        },
+        meridiem: function meridiem(hour, minute, isLower) {
+            if (hour < 4) {
+                return 'राती';
+            } else if (hour < 12) {
+                return 'सकाळीं';
+            } else if (hour < 16) {
+                return 'दनपारां';
+            } else if (hour < 20) {
+                return 'सांजे';
+            } else {
+                return 'राती';
+            }
+        }
+    });
+
+    return gomDeva;
+});
+
+/***/ }),
+
+/***/ "./node_modules/moment/locale/gom-latn.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : Konkani Latin script [gom-latn]
+//! author : The Discoverer : https://github.com/WikiDiscoverer
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
+    function processRelativeTime(number, withoutSuffix, key, isFuture) {
+        var format = {
+            s: ['thoddea sekondamni', 'thodde sekond'],
+            ss: [number + ' sekondamni', number + ' sekond'],
+            m: ['eka mintan', 'ek minut'],
+            mm: [number + ' mintamni', number + ' mintam'],
+            h: ['eka voran', 'ek vor'],
+            hh: [number + ' voramni', number + ' voram'],
+            d: ['eka disan', 'ek dis'],
+            dd: [number + ' disamni', number + ' dis'],
+            M: ['eka mhoinean', 'ek mhoino'],
+            MM: [number + ' mhoineamni', number + ' mhoine'],
+            y: ['eka vorsan', 'ek voros'],
+            yy: [number + ' vorsamni', number + ' vorsam']
+        };
+        return isFuture ? format[key][0] : format[key][1];
     }
 
     var gomLatn = moment.defineLocale('gom-latn', {
-        months: 'Janer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
+        months: {
+            standalone: 'Janer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr'.split('_'),
+            format: 'Janerachea_Febrerachea_Marsachea_Abrilachea_Maiachea_Junachea_Julaiachea_Agostachea_Setembrachea_Otubrachea_Novembrachea_Dezembrachea'.split('_'),
+            isFormat: /MMMM(\s)+D[oD]?/
+        },
         monthsShort: 'Jan._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.'.split('_'),
         monthsParseExact: true,
-        weekdays: 'Aitar_Somar_Mongllar_Budvar_Brestar_Sukrar_Son\'var'.split('_'),
+        weekdays: "Aitar_Somar_Mongllar_Budhvar_Birestar_Sukrar_Son'var".split('_'),
         weekdaysShort: 'Ait._Som._Mon._Bud._Bre._Suk._Son.'.split('_'),
         weekdaysMin: 'Ai_Sm_Mo_Bu_Br_Su_Sn'.split('_'),
         weekdaysParseExact: true,
@@ -22290,15 +22800,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             L: 'DD-MM-YYYY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY A h:mm [vazta]',
-            LLLL: 'dddd, MMMM[achea] Do, YYYY, A h:mm [vazta]',
+            LLLL: 'dddd, MMMM Do, YYYY, A h:mm [vazta]',
             llll: 'ddd, D MMM YYYY, A h:mm [vazta]'
         },
         calendar: {
             sameDay: '[Aiz] LT',
             nextDay: '[Faleam] LT',
-            nextWeek: '[Ieta to] dddd[,] LT',
+            nextWeek: '[Fuddlo] dddd[,] LT',
             lastDay: '[Kal] LT',
-            lastWeek: '[Fatlo] dddd[,] LT',
+            lastWeek: '[Fattlo] dddd[,] LT',
             sameElse: 'L'
         },
         relativeTime: {
@@ -22337,14 +22847,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             dow: 1, // Monday is the first day of the week.
             doy: 4 // The week that contains Jan 4th is the first week of the year.
         },
-        meridiemParse: /rati|sokalli|donparam|sanje/,
+        meridiemParse: /rati|sokallim|donparam|sanje/,
         meridiemHour: function meridiemHour(hour, meridiem) {
             if (hour === 12) {
                 hour = 0;
             }
             if (meridiem === 'rati') {
                 return hour < 4 ? hour : hour + 12;
-            } else if (meridiem === 'sokalli') {
+            } else if (meridiem === 'sokallim') {
                 return hour;
             } else if (meridiem === 'donparam') {
                 return hour > 12 ? hour : hour + 12;
@@ -22356,7 +22866,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             if (hour < 4) {
                 return 'rati';
             } else if (hour < 12) {
-                return 'sokalli';
+                return 'sokallim';
             } else if (hour < 16) {
                 return 'donparam';
             } else if (hour < 20) {
@@ -22381,6 +22891,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Gujarati [gu]
+//! author : Kaushik Thanki : https://github.com/Kaushik1987
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22389,6 +22901,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '૧',
@@ -22514,6 +23028,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Hebrew [he]
+//! author : Tomer Cohen : https://github.com/tomer
+//! author : Moshe Simantov : https://github.com/DevelopmentIL
+//! author : Tal Ater : https://github.com/TalAter
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22522,6 +23040,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var he = moment.defineLocale('he', {
         months: 'ינואר_פברואר_מרץ_אפריל_מאי_יוני_יולי_אוגוסט_ספטמבר_אוקטובר_נובמבר_דצמבר'.split('_'),
@@ -22621,6 +23141,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Hindi [hi]
+//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22629,6 +23151,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '१',
@@ -22754,6 +23278,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Croatian [hr]
+//! author : Bojan Marković : https://github.com/bmarkovic
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22762,6 +23288,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     function translate(number, withoutSuffix, key) {
         var result = number + ' ';
@@ -22840,9 +23368,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             LT: 'H:mm',
             LTS: 'H:mm:ss',
             L: 'DD.MM.YYYY',
-            LL: 'D. MMMM YYYY',
-            LLL: 'D. MMMM YYYY H:mm',
-            LLLL: 'dddd, D. MMMM YYYY H:mm'
+            LL: 'Do MMMM YYYY',
+            LLL: 'Do MMMM YYYY H:mm',
+            LLLL: 'dddd, Do MMMM YYYY H:mm'
         },
         calendar: {
             sameDay: '[danas u] LT',
@@ -22866,8 +23394,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             lastWeek: function lastWeek() {
                 switch (this.day()) {
                     case 0:
+                        return '[prošlu] [nedjelju] [u] LT';
                     case 3:
-                        return '[prošlu] dddd [u] LT';
+                        return '[prošlu] [srijedu] [u] LT';
                     case 6:
                         return '[prošle] [subote] [u] LT';
                     case 1:
@@ -22917,6 +23446,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Hungarian [hu]
+//! author : Adam Brunner : https://github.com/adambrunner
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -22925,6 +23456,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var weekEndings = 'vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton'.split(' ');
     function translate(number, withoutSuffix, key, isFuture) {
@@ -23036,6 +23569,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Armenian [hy-am]
+//! author : Armendarabyan : https://github.com/armendarabyan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23044,6 +23579,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var hyAm = moment.defineLocale('hy-am', {
         months: {
@@ -23141,6 +23678,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Indonesian [id]
+//! author : Mohammad Satrio Utomo : https://github.com/tyok
+//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23149,6 +23689,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var id = moment.defineLocale('id', {
         months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember'.split('_'),
@@ -23232,6 +23774,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Icelandic [is]
+//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23240,6 +23784,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     function plural(n) {
         if (n % 100 === 11) {
@@ -23373,6 +23919,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Italian (Switzerland) [it-ch]
+//! author : xfh : https://github.com/xfh
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23381,6 +23929,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var itCh = moment.defineLocale('it-ch', {
         months: 'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),
@@ -23420,7 +23970,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             ss: '%d secondi',
             m: 'un minuto',
             mm: '%d minuti',
-            h: 'un\'ora',
+            h: "un'ora",
             hh: '%d ore',
             d: 'un giorno',
             dd: '%d giorni',
@@ -23451,6 +24001,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Italian [it]
+//! author : Lorenzo : https://github.com/aliem
+//! author: Mattia Larentis: https://github.com/nostalgiaz
+//! author: Marco : https://github.com/Manfre98
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23459,6 +24013,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var it = moment.defineLocale('it', {
         months: 'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),
@@ -23475,16 +24031,24 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             LLLL: 'dddd D MMMM YYYY HH:mm'
         },
         calendar: {
-            sameDay: '[Oggi alle] LT',
-            nextDay: '[Domani alle] LT',
-            nextWeek: 'dddd [alle] LT',
-            lastDay: '[Ieri alle] LT',
+            sameDay: function sameDay() {
+                return '[Oggi a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
+            },
+            nextDay: function nextDay() {
+                return '[Domani a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
+            },
+            nextWeek: function nextWeek() {
+                return 'dddd [a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
+            },
+            lastDay: function lastDay() {
+                return '[Ieri a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
+            },
             lastWeek: function lastWeek() {
                 switch (this.day()) {
                     case 0:
-                        return '[la scorsa] dddd [alle] LT';
+                        return '[La scorsa] dddd [a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
                     default:
-                        return '[lo scorso] dddd [alle] LT';
+                        return '[Lo scorso] dddd [a' + (this.hours() > 1 ? 'lle ' : this.hours() === 0 ? ' ' : "ll'") + ']LT';
                 }
             },
             sameElse: 'L'
@@ -23498,7 +24062,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             ss: '%d secondi',
             m: 'un minuto',
             mm: '%d minuti',
-            h: 'un\'ora',
+            h: "un'ora",
             hh: '%d ore',
             d: 'un giorno',
             dd: '%d giorni',
@@ -23529,6 +24093,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Japanese [ja]
+//! author : LI Long : https://github.com/baryon
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23538,8 +24104,63 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var ja = moment.defineLocale('ja', {
-        months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
+        eras: [{
+            since: '2019-05-01',
+            offset: 1,
+            name: '令和',
+            narrow: '㋿',
+            abbr: 'R'
+        }, {
+            since: '1989-01-08',
+            until: '2019-04-30',
+            offset: 1,
+            name: '平成',
+            narrow: '㍻',
+            abbr: 'H'
+        }, {
+            since: '1926-12-25',
+            until: '1989-01-07',
+            offset: 1,
+            name: '昭和',
+            narrow: '㍼',
+            abbr: 'S'
+        }, {
+            since: '1912-07-30',
+            until: '1926-12-24',
+            offset: 1,
+            name: '大正',
+            narrow: '㍽',
+            abbr: 'T'
+        }, {
+            since: '1873-01-01',
+            until: '1912-07-29',
+            offset: 6,
+            name: '明治',
+            narrow: '㍾',
+            abbr: 'M'
+        }, {
+            since: '0001-01-01',
+            until: '1873-12-31',
+            offset: 1,
+            name: '西暦',
+            narrow: 'AD',
+            abbr: 'AD'
+        }, {
+            since: '0000-12-31',
+            until: -Infinity,
+            offset: 1,
+            name: '紀元前',
+            narrow: 'BC',
+            abbr: 'BC'
+        }],
+        eraYearOrdinalRegex: /(元|\d+)年/,
+        eraYearOrdinalParse: function eraYearOrdinalParse(input, match) {
+            return match[1] === '元' ? 1 : parseInt(match[1] || input, 10);
+        },
+        months: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
         monthsShort: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
         weekdays: '日曜日_月曜日_火曜日_水曜日_木曜日_金曜日_土曜日'.split('_'),
         weekdaysShort: '日_月_火_水_木_金_土'.split('_'),
@@ -23571,7 +24192,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             sameDay: '[今日] LT',
             nextDay: '[明日] LT',
             nextWeek: function nextWeek(now) {
-                if (now.week() < this.week()) {
+                if (now.week() !== this.week()) {
                     return '[来週]dddd LT';
                 } else {
                     return 'dddd LT';
@@ -23579,7 +24200,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             },
             lastDay: '[昨日] LT',
             lastWeek: function lastWeek(now) {
-                if (this.week() < now.week()) {
+                if (this.week() !== now.week()) {
                     return '[先週]dddd LT';
                 } else {
                     return 'dddd LT';
@@ -23590,6 +24211,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         dayOfMonthOrdinalParse: /\d{1,2}日/,
         ordinal: function ordinal(number, period) {
             switch (period) {
+                case 'y':
+                    return number === 1 ? '元年' : number + '年';
                 case 'd':
                 case 'D':
                 case 'DDD':
@@ -23630,6 +24253,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Javanese [jv]
+//! author : Rony Lantip : https://github.com/lantip
+//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23638,6 +24264,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var jv = moment.defineLocale('jv', {
         months: 'Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_Nopember_Desember'.split('_'),
@@ -23721,6 +24349,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Georgian [ka]
+//! author : Irakli Janiashvili : https://github.com/IrakliJani
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23730,11 +24360,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var ka = moment.defineLocale('ka', {
-        months: {
-            standalone: 'იანვარი_თებერვალი_მარტი_აპრილი_მაისი_ივნისი_ივლისი_აგვისტო_სექტემბერი_ოქტომბერი_ნოემბერი_დეკემბერი'.split('_'),
-            format: 'იანვარს_თებერვალს_მარტს_აპრილის_მაისს_ივნისს_ივლისს_აგვისტს_სექტემბერს_ოქტომბერს_ნოემბერს_დეკემბერს'.split('_')
-        },
+        months: 'იანვარი_თებერვალი_მარტი_აპრილი_მაისი_ივნისი_ივლისი_აგვისტო_სექტემბერი_ოქტომბერი_ნოემბერი_დეკემბერი'.split('_'),
         monthsShort: 'იან_თებ_მარ_აპრ_მაი_ივნ_ივლ_აგვ_სექ_ოქტ_ნოე_დეკ'.split('_'),
         weekdays: {
             standalone: 'კვირა_ორშაბათი_სამშაბათი_ოთხშაბათი_ხუთშაბათი_პარასკევი_შაბათი'.split('_'),
@@ -23744,12 +24373,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         weekdaysShort: 'კვი_ორშ_სამ_ოთხ_ხუთ_პარ_შაბ'.split('_'),
         weekdaysMin: 'კვ_ორ_სა_ოთ_ხუ_პა_შა'.split('_'),
         longDateFormat: {
-            LT: 'h:mm A',
-            LTS: 'h:mm:ss A',
+            LT: 'HH:mm',
+            LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
             LL: 'D MMMM YYYY',
-            LLL: 'D MMMM YYYY h:mm A',
-            LLLL: 'dddd, D MMMM YYYY h:mm A'
+            LLL: 'D MMMM YYYY HH:mm',
+            LLLL: 'dddd, D MMMM YYYY HH:mm'
         },
         calendar: {
             sameDay: '[დღეს] LT[-ზე]',
@@ -23761,8 +24390,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         },
         relativeTime: {
             future: function future(s) {
-                return (/(წამი|წუთი|საათი|წელი)/.test(s) ? s.replace(/ი$/, 'ში') : s + 'ში'
-                );
+                return s.replace(/(წამ|წუთ|საათ|წელ|დღ|თვ)(ი|ე)/, function ($0, $1, $2) {
+                    return $2 === 'ი' ? $1 + 'ში' : $1 + $2 + 'ში';
+                });
             },
             past: function past(s) {
                 if (/(წამი|წუთი|საათი|დღე|თვე)/.test(s)) {
@@ -23771,6 +24401,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 if (/წელი/.test(s)) {
                     return s.replace(/წელი$/, 'წლის წინ');
                 }
+                return s;
             },
             s: 'რამდენიმე წამი',
             ss: '%d წამი',
@@ -23818,6 +24449,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Kazakh [kk]
+//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23826,6 +24459,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var suffixes = {
         0: '-ші',
@@ -23914,6 +24549,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Cambodian [km]
+//! author : Kruy Vanna : https://github.com/kruyvanna
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -23922,6 +24559,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '១',
@@ -24030,6 +24669,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Kannada [kn]
+//! author : Rajeev Naik : https://github.com/rajeevnaikte
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24038,6 +24679,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '೧',
@@ -24165,6 +24808,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Korean [ko]
+//! author : Kyungwook, Park : https://github.com/kyungw00k
+//! author : Jeeeyul Lee <jeeeyul@gmail.com>
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24173,6 +24819,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var ko = moment.defineLocale('ko', {
         months: '1월_2월_3월_4월_5월_6월_7월_8월_9월_10월_11월_12월'.split('_'),
@@ -24255,6 +24903,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Kurdish [ku]
+//! author : Shahram Mebashar : https://github.com/ShahramMebashar
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24263,6 +24913,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '١',
@@ -24371,6 +25023,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Kyrgyz [ky]
+//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24379,6 +25033,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var suffixes = {
         0: '-чү',
@@ -24467,6 +25123,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Luxembourgish [lb]
+//! author : mweimerskirch : https://github.com/mweimerskirch
+//! author : David Raison : https://github.com/kwisatz
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24476,13 +25135,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            'm': ['eng Minutt', 'enger Minutt'],
-            'h': ['eng Stonn', 'enger Stonn'],
-            'd': ['een Dag', 'engem Dag'],
-            'M': ['ee Mount', 'engem Mount'],
-            'y': ['ee Joer', 'engem Joer']
+            m: ['eng Minutt', 'enger Minutt'],
+            h: ['eng Stonn', 'enger Stonn'],
+            d: ['een Dag', 'engem Dag'],
+            M: ['ee Mount', 'engem Mount'],
+            y: ['ee Joer', 'engem Joer']
         };
         return withoutSuffix ? format[key][0] : format[key][1];
     }
@@ -24613,6 +25274,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Lao [lo]
+//! author : Ryan Hart : https://github.com/ryanhart2
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24621,6 +25284,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var lo = moment.defineLocale('lo', {
         months: 'ມັງກອນ_ກຸມພາ_ມີນາ_ເມສາ_ພຶດສະພາ_ມິຖຸນາ_ກໍລະກົດ_ສິງຫາ_ກັນຍາ_ຕຸລາ_ພະຈິກ_ທັນວາ'.split('_'),
@@ -24692,6 +25357,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Lithuanian [lt]
+//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24701,18 +25368,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var units = {
-        'ss': 'sekundė_sekundžių_sekundes',
-        'm': 'minutė_minutės_minutę',
-        'mm': 'minutės_minučių_minutes',
-        'h': 'valanda_valandos_valandą',
-        'hh': 'valandos_valandų_valandas',
-        'd': 'diena_dienos_dieną',
-        'dd': 'dienos_dienų_dienas',
-        'M': 'mėnuo_mėnesio_mėnesį',
-        'MM': 'mėnesiai_mėnesių_mėnesius',
-        'y': 'metai_metų_metus',
-        'yy': 'metai_metų_metus'
+        ss: 'sekundė_sekundžių_sekundes',
+        m: 'minutė_minutės_minutę',
+        mm: 'minutės_minučių_minutes',
+        h: 'valanda_valandos_valandą',
+        hh: 'valandos_valandų_valandas',
+        d: 'diena_dienos_dieną',
+        dd: 'dienos_dienų_dienas',
+        M: 'mėnuo_mėnesio_mėnesį',
+        MM: 'mėnesiai_mėnesių_mėnesius',
+        y: 'metai_metų_metus',
+        yy: 'metai_metų_metus'
     };
     function translateSeconds(number, withoutSuffix, key, isFuture) {
         if (withoutSuffix) {
@@ -24819,6 +25488,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Latvian [lv]
+//! author : Kristaps Karlsons : https://github.com/skakri
+//! author : Jānis Elmeris : https://github.com/JanisE
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24828,18 +25500,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var units = {
-        'ss': 'sekundes_sekundēm_sekunde_sekundes'.split('_'),
-        'm': 'minūtes_minūtēm_minūte_minūtes'.split('_'),
-        'mm': 'minūtes_minūtēm_minūte_minūtes'.split('_'),
-        'h': 'stundas_stundām_stunda_stundas'.split('_'),
-        'hh': 'stundas_stundām_stunda_stundas'.split('_'),
-        'd': 'dienas_dienām_diena_dienas'.split('_'),
-        'dd': 'dienas_dienām_diena_dienas'.split('_'),
-        'M': 'mēneša_mēnešiem_mēnesis_mēneši'.split('_'),
-        'MM': 'mēneša_mēnešiem_mēnesis_mēneši'.split('_'),
-        'y': 'gada_gadiem_gads_gadi'.split('_'),
-        'yy': 'gada_gadiem_gads_gadi'.split('_')
+        ss: 'sekundes_sekundēm_sekunde_sekundes'.split('_'),
+        m: 'minūtes_minūtēm_minūte_minūtes'.split('_'),
+        mm: 'minūtes_minūtēm_minūte_minūtes'.split('_'),
+        h: 'stundas_stundām_stunda_stundas'.split('_'),
+        hh: 'stundas_stundām_stunda_stundas'.split('_'),
+        d: 'dienas_dienām_diena_dienas'.split('_'),
+        dd: 'dienas_dienām_diena_dienas'.split('_'),
+        M: 'mēneša_mēnešiem_mēnesis_mēneši'.split('_'),
+        MM: 'mēneša_mēnešiem_mēnesis_mēneši'.split('_'),
+        y: 'gada_gadiem_gads_gadi'.split('_'),
+        yy: 'gada_gadiem_gads_gadi'.split('_')
     };
     /**
      * @param withoutSuffix boolean true = a length of time; false = before/after a period of time.
@@ -24925,6 +25599,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Montenegrin [me]
+//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -24934,8 +25610,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var translator = {
-        words: { //Different grammatical cases
+        words: {
+            //Different grammatical cases
             ss: ['sekund', 'sekunda', 'sekundi'],
             m: ['jedan minut', 'jednog minuta'],
             mm: ['minut', 'minuta', 'minuta'],
@@ -25038,6 +25717,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Maori [mi]
+//! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25046,6 +25727,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var mi = moment.defineLocale('mi', {
         months: 'Kohi-tāte_Hui-tanguru_Poutū-te-rangi_Paenga-whāwhā_Haratua_Pipiri_Hōngoingoi_Here-turi-kōkā_Mahuru_Whiringa-ā-nuku_Whiringa-ā-rangi_Hakihea'.split('_'),
@@ -25111,6 +25794,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Macedonian [mk]
+//! author : Borislav Mickov : https://github.com/B0k0
+//! author : Sashko Todorov : https://github.com/bkyceh
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25119,6 +25805,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var mk = moment.defineLocale('mk', {
         months: 'јануари_февруари_март_април_мај_јуни_јули_август_септември_октомври_ноември_декември'.split('_'),
@@ -25155,19 +25843,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             sameElse: 'L'
         },
         relativeTime: {
-            future: 'после %s',
+            future: 'за %s',
             past: 'пред %s',
             s: 'неколку секунди',
             ss: '%d секунди',
-            m: 'минута',
+            m: 'една минута',
             mm: '%d минути',
-            h: 'час',
+            h: 'еден час',
             hh: '%d часа',
-            d: 'ден',
+            d: 'еден ден',
             dd: '%d дена',
-            M: 'месец',
+            M: 'еден месец',
             MM: '%d месеци',
-            y: 'година',
+            y: 'една година',
             yy: '%d години'
         },
         dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
@@ -25210,6 +25898,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Malayalam [ml]
+//! author : Floyd Pink : https://github.com/floydpink
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25218,6 +25908,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var ml = moment.defineLocale('ml', {
         months: 'ജനുവരി_ഫെബ്രുവരി_മാർച്ച്_ഏപ്രിൽ_മേയ്_ജൂൺ_ജൂലൈ_ഓഗസ്റ്റ്_സെപ്റ്റംബർ_ഒക്ടോബർ_നവംബർ_ഡിസംബർ'.split('_'),
@@ -25298,6 +25990,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Mongolian [mn]
+//! author : Javkhlantugs Nyamdorj : https://github.com/javkhaanj7
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25306,6 +26000,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     function translate(number, withoutSuffix, key, isFuture) {
         switch (key) {
@@ -25411,6 +26107,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Marathi [mr]
+//! author : Harshad Kale : https://github.com/kalehv
+//! author : Vivek Athalye : https://github.com/vnathalye
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25419,6 +26118,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '१',
@@ -25450,56 +26151,80 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         if (withoutSuffix) {
             switch (string) {
                 case 's':
-                    output = 'काही सेकंद';break;
+                    output = 'काही सेकंद';
+                    break;
                 case 'ss':
-                    output = '%d सेकंद';break;
+                    output = '%d सेकंद';
+                    break;
                 case 'm':
-                    output = 'एक मिनिट';break;
+                    output = 'एक मिनिट';
+                    break;
                 case 'mm':
-                    output = '%d मिनिटे';break;
+                    output = '%d मिनिटे';
+                    break;
                 case 'h':
-                    output = 'एक तास';break;
+                    output = 'एक तास';
+                    break;
                 case 'hh':
-                    output = '%d तास';break;
+                    output = '%d तास';
+                    break;
                 case 'd':
-                    output = 'एक दिवस';break;
+                    output = 'एक दिवस';
+                    break;
                 case 'dd':
-                    output = '%d दिवस';break;
+                    output = '%d दिवस';
+                    break;
                 case 'M':
-                    output = 'एक महिना';break;
+                    output = 'एक महिना';
+                    break;
                 case 'MM':
-                    output = '%d महिने';break;
+                    output = '%d महिने';
+                    break;
                 case 'y':
-                    output = 'एक वर्ष';break;
+                    output = 'एक वर्ष';
+                    break;
                 case 'yy':
-                    output = '%d वर्षे';break;
+                    output = '%d वर्षे';
+                    break;
             }
         } else {
             switch (string) {
                 case 's':
-                    output = 'काही सेकंदां';break;
+                    output = 'काही सेकंदां';
+                    break;
                 case 'ss':
-                    output = '%d सेकंदां';break;
+                    output = '%d सेकंदां';
+                    break;
                 case 'm':
-                    output = 'एका मिनिटा';break;
+                    output = 'एका मिनिटा';
+                    break;
                 case 'mm':
-                    output = '%d मिनिटां';break;
+                    output = '%d मिनिटां';
+                    break;
                 case 'h':
-                    output = 'एका तासा';break;
+                    output = 'एका तासा';
+                    break;
                 case 'hh':
-                    output = '%d तासां';break;
+                    output = '%d तासां';
+                    break;
                 case 'd':
-                    output = 'एका दिवसा';break;
+                    output = 'एका दिवसा';
+                    break;
                 case 'dd':
-                    output = '%d दिवसां';break;
+                    output = '%d दिवसां';
+                    break;
                 case 'M':
-                    output = 'एका महिन्या';break;
+                    output = 'एका महिन्या';
+                    break;
                 case 'MM':
-                    output = '%d महिन्यां';break;
+                    output = '%d महिन्यां';
+                    break;
                 case 'y':
-                    output = 'एका वर्षा';break;
+                    output = 'एका वर्षा';
+                    break;
                 case 'yy':
-                    output = '%d वर्षां';break;
+                    output = '%d वर्षां';
+                    break;
             }
         }
         return output.replace(/%d/i, number);
@@ -25554,25 +26279,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 return symbolMap[match];
             });
         },
-        meridiemParse: /रात्री|सकाळी|दुपारी|सायंकाळी/,
+        meridiemParse: /पहाटे|सकाळी|दुपारी|सायंकाळी|रात्री/,
         meridiemHour: function meridiemHour(hour, meridiem) {
             if (hour === 12) {
                 hour = 0;
             }
-            if (meridiem === 'रात्री') {
-                return hour < 4 ? hour : hour + 12;
-            } else if (meridiem === 'सकाळी') {
+            if (meridiem === 'पहाटे' || meridiem === 'सकाळी') {
                 return hour;
-            } else if (meridiem === 'दुपारी') {
-                return hour >= 10 ? hour : hour + 12;
-            } else if (meridiem === 'सायंकाळी') {
-                return hour + 12;
+            } else if (meridiem === 'दुपारी' || meridiem === 'सायंकाळी' || meridiem === 'रात्री') {
+                return hour >= 12 ? hour : hour + 12;
             }
         },
         meridiem: function meridiem(hour, minute, isLower) {
-            if (hour < 4) {
-                return 'रात्री';
-            } else if (hour < 10) {
+            if (hour >= 0 && hour < 6) {
+                return 'पहाटे';
+            } else if (hour < 12) {
                 return 'सकाळी';
             } else if (hour < 17) {
                 return 'दुपारी';
@@ -25602,6 +26323,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Malay [ms-my]
+//! note : DEPRECATED, the correct one is [ms]
+//! author : Weldan Jamili : https://github.com/weldan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25610,6 +26334,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var msMy = moment.defineLocale('ms-my', {
         months: 'Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember'.split('_'),
@@ -25693,6 +26419,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Malay [ms]
+//! author : Weldan Jamili : https://github.com/weldan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25701,6 +26429,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var ms = moment.defineLocale('ms', {
         months: 'Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember'.split('_'),
@@ -25784,6 +26514,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Maltese (Malta) [mt]
+//! author : Alessandro Maruccia : https://github.com/alesma
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25792,6 +26524,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var mt = moment.defineLocale('mt', {
         months: 'Jannar_Frar_Marzu_April_Mejju_Ġunju_Lulju_Awwissu_Settembru_Ottubru_Novembru_Diċembru'.split('_'),
@@ -25853,6 +26587,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Burmese [my]
+//! author : Squar team, mysquar.com
+//! author : David Rossellat : https://github.com/gholadr
+//! author : Tin Aung Lin : https://github.com/thanyawzinmin
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25861,6 +26599,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '၁',
@@ -25956,6 +26696,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Norwegian Bokmål [nb]
+//! authors : Espen Hovlandsdal : https://github.com/rexxars
+//!           Sigurd Gartmann : https://github.com/sigurdga
+//!           Stephen Ramthun : https://github.com/stephenramthun
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -25965,9 +26709,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var nb = moment.defineLocale('nb', {
         months: 'januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-        monthsShort: 'jan._feb._mars_april_mai_juni_juli_aug._sep._okt._nov._des.'.split('_'),
+        monthsShort: 'jan._feb._mars_apr._mai_juni_juli_aug._sep._okt._nov._des.'.split('_'),
         monthsParseExact: true,
         weekdays: 'søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag'.split('_'),
         weekdaysShort: 'sø._ma._ti._on._to._fr._lø.'.split('_'),
@@ -26027,6 +26773,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Nepalese [ne]
+//! author : suvash : https://github.com/suvash
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26035,6 +26783,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '१',
@@ -26159,6 +26909,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Dutch (Belgium) [nl-be]
+//! author : Joris Röling : https://github.com/jorisroling
+//! author : Jacob Middag : https://github.com/middagj
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26168,11 +26921,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
-        monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-    var monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+    var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
+        monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+        monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i],
+        monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
 
     var nlBe = moment.defineLocale('nl-be', {
         months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
@@ -26255,6 +27009,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Dutch [nl]
+//! author : Joris Röling : https://github.com/jorisroling
+//! author : Jacob Middag : https://github.com/middagj
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26264,11 +27021,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
-        monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_');
+    //! moment.js locale configuration
 
-    var monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i];
-    var monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
+    var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_'),
+        monthsShortWithoutDots = 'jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+        monthsParse = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i],
+        monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
 
     var nl = moment.defineLocale('nl', {
         months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
@@ -26351,6 +27109,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Nynorsk [nn]
+//! authors : https://github.com/mechuwind
+//!           Stephen Ramthun : https://github.com/stephenramthun
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26360,12 +27121,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var nn = moment.defineLocale('nn', {
         months: 'januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember'.split('_'),
-        monthsShort: 'jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des'.split('_'),
+        monthsShort: 'jan._feb._mars_apr._mai_juni_juli_aug._sep._okt._nov._des.'.split('_'),
+        monthsParseExact: true,
         weekdays: 'sundag_måndag_tysdag_onsdag_torsdag_fredag_laurdag'.split('_'),
-        weekdaysShort: 'sun_mån_tys_ons_tor_fre_lau'.split('_'),
-        weekdaysMin: 'su_må_ty_on_to_fr_lø'.split('_'),
+        weekdaysShort: 'su._må._ty._on._to._fr._lau.'.split('_'),
+        weekdaysMin: 'su_må_ty_on_to_fr_la'.split('_'),
+        weekdaysParseExact: true,
         longDateFormat: {
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
@@ -26411,6 +27176,94 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale/oc-lnc.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : Occitan, lengadocian dialecte [oc-lnc]
+//! author : Quentin PAGÈS : https://github.com/Quenty31
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
+    var ocLnc = moment.defineLocale('oc-lnc', {
+        months: {
+            standalone: 'genièr_febrièr_març_abril_mai_junh_julhet_agost_setembre_octòbre_novembre_decembre'.split('_'),
+            format: "de genièr_de febrièr_de març_d'abril_de mai_de junh_de julhet_d'agost_de setembre_d'octòbre_de novembre_de decembre".split('_'),
+            isFormat: /D[oD]?(\s)+MMMM/
+        },
+        monthsShort: 'gen._febr._març_abr._mai_junh_julh._ago._set._oct._nov._dec.'.split('_'),
+        monthsParseExact: true,
+        weekdays: 'dimenge_diluns_dimars_dimècres_dijòus_divendres_dissabte'.split('_'),
+        weekdaysShort: 'dg._dl._dm._dc._dj._dv._ds.'.split('_'),
+        weekdaysMin: 'dg_dl_dm_dc_dj_dv_ds'.split('_'),
+        weekdaysParseExact: true,
+        longDateFormat: {
+            LT: 'H:mm',
+            LTS: 'H:mm:ss',
+            L: 'DD/MM/YYYY',
+            LL: 'D MMMM [de] YYYY',
+            ll: 'D MMM YYYY',
+            LLL: 'D MMMM [de] YYYY [a] H:mm',
+            lll: 'D MMM YYYY, H:mm',
+            LLLL: 'dddd D MMMM [de] YYYY [a] H:mm',
+            llll: 'ddd D MMM YYYY, H:mm'
+        },
+        calendar: {
+            sameDay: '[uèi a] LT',
+            nextDay: '[deman a] LT',
+            nextWeek: 'dddd [a] LT',
+            lastDay: '[ièr a] LT',
+            lastWeek: 'dddd [passat a] LT',
+            sameElse: 'L'
+        },
+        relativeTime: {
+            future: "d'aquí %s",
+            past: 'fa %s',
+            s: 'unas segondas',
+            ss: '%d segondas',
+            m: 'una minuta',
+            mm: '%d minutas',
+            h: 'una ora',
+            hh: '%d oras',
+            d: 'un jorn',
+            dd: '%d jorns',
+            M: 'un mes',
+            MM: '%d meses',
+            y: 'un an',
+            yy: '%d ans'
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}(r|n|t|è|a)/,
+        ordinal: function ordinal(number, period) {
+            var output = number === 1 ? 'r' : number === 2 ? 'n' : number === 3 ? 'r' : number === 4 ? 't' : 'è';
+            if (period === 'w' || period === 'W') {
+                output = 'a';
+            }
+            return number + output;
+        },
+        week: {
+            dow: 1, // Monday is the first day of the week.
+            doy: 4
+        }
+    });
+
+    return ocLnc;
+});
+
+/***/ }),
+
 /***/ "./node_modules/moment/locale/pa-in.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26420,6 +27273,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Punjabi (India) [pa-in]
+//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26428,6 +27283,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '੧',
@@ -26553,6 +27410,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Polish [pl]
+//! author : Rafal Hirsz : https://github.com/evoL
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26561,6 +27420,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var monthsNominative = 'styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień'.split('_'),
         monthsSubjective = 'stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia'.split('_');
@@ -26688,6 +27549,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Portuguese (Brazil) [pt-br]
+//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26697,12 +27560,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var ptBr = moment.defineLocale('pt-br', {
-        months: 'Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
-        monthsShort: 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
-        weekdays: 'Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado'.split('_'),
-        weekdaysShort: 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb'.split('_'),
-        weekdaysMin: 'Do_2ª_3ª_4ª_5ª_6ª_Sá'.split('_'),
+        months: 'janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro'.split('_'),
+        monthsShort: 'jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez'.split('_'),
+        weekdays: 'domingo_segunda-feira_terça-feira_quarta-feira_quinta-feira_sexta-feira_sábado'.split('_'),
+        weekdaysShort: 'dom_seg_ter_qua_qui_sex_sáb'.split('_'),
+        weekdaysMin: 'do_2ª_3ª_4ª_5ª_6ª_sá'.split('_'),
         weekdaysParseExact: true,
         longDateFormat: {
             LT: 'HH:mm',
@@ -26718,8 +27583,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             nextWeek: 'dddd [às] LT',
             lastDay: '[Ontem às] LT',
             lastWeek: function lastWeek() {
-                return this.day() === 0 || this.day() === 6 ? '[Último] dddd [às] LT' : // Saturday + Sunday
-                '[Última] dddd [às] LT'; // Monday - Friday
+                return this.day() === 0 || this.day() === 6 ? '[Último] dddd [às] LT' // Saturday + Sunday
+                : '[Última] dddd [às] LT'; // Monday - Friday
             },
             sameElse: 'L'
         },
@@ -26757,6 +27622,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Portuguese [pt]
+//! author : Jefferson : https://github.com/jalex79
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26766,9 +27633,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var pt = moment.defineLocale('pt', {
-        months: 'Janeiro_Fevereiro_Março_Abril_Maio_Junho_Julho_Agosto_Setembro_Outubro_Novembro_Dezembro'.split('_'),
-        monthsShort: 'Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez'.split('_'),
+        months: 'janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro'.split('_'),
+        monthsShort: 'jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez'.split('_'),
         weekdays: 'Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado'.split('_'),
         weekdaysShort: 'Dom_Seg_Ter_Qua_Qui_Sex_Sáb'.split('_'),
         weekdaysMin: 'Do_2ª_3ª_4ª_5ª_6ª_Sá'.split('_'),
@@ -26787,8 +27656,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             nextWeek: 'dddd [às] LT',
             lastDay: '[Ontem às] LT',
             lastWeek: function lastWeek() {
-                return this.day() === 0 || this.day() === 6 ? '[Último] dddd [às] LT' : // Saturday + Sunday
-                '[Última] dddd [às] LT'; // Monday - Friday
+                return this.day() === 0 || this.day() === 6 ? '[Último] dddd [às] LT' // Saturday + Sunday
+                : '[Última] dddd [às] LT'; // Monday - Friday
             },
             sameElse: 'L'
         },
@@ -26830,6 +27699,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Romanian [ro]
+//! author : Vlad Gurdiga : https://github.com/gurdiga
+//! author : Valentin Agachi : https://github.com/avaly
+//! author : Emanuel Cepoi : https://github.com/cepem
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26839,14 +27712,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function relativeTimeWithPlural(number, withoutSuffix, key) {
         var format = {
-            'ss': 'secunde',
-            'mm': 'minute',
-            'hh': 'ore',
-            'dd': 'zile',
-            'MM': 'luni',
-            'yy': 'ani'
+            ss: 'secunde',
+            mm: 'minute',
+            hh: 'ore',
+            dd: 'zile',
+            MM: 'luni',
+            yy: 'ani'
         },
             separator = ' ';
         if (number % 100 >= 20 || number >= 100 && number % 100 === 0) {
@@ -26857,7 +27732,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     var ro = moment.defineLocale('ro', {
         months: 'ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie'.split('_'),
-        monthsShort: 'ian._febr._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.'.split('_'),
+        monthsShort: 'ian._feb._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.'.split('_'),
         monthsParseExact: true,
         weekdays: 'duminică_luni_marți_miercuri_joi_vineri_sâmbătă'.split('_'),
         weekdaysShort: 'Dum_Lun_Mar_Mie_Joi_Vin_Sâm'.split('_'),
@@ -26914,6 +27789,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Russian [ru]
+//! author : Viktorminator : https://github.com/Viktorminator
+//! Author : Menelion Elensúle : https://github.com/Oire
+//! author : Коренберг Марк : https://github.com/socketpair
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -26923,18 +27802,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function plural(word, num) {
         var forms = word.split('_');
         return num % 10 === 1 && num % 100 !== 11 ? forms[0] : num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2];
     }
     function relativeTimeWithPlural(number, withoutSuffix, key) {
         var format = {
-            'ss': withoutSuffix ? 'секунда_секунды_секунд' : 'секунду_секунды_секунд',
-            'mm': withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
-            'hh': 'час_часа_часов',
-            'dd': 'день_дня_дней',
-            'MM': 'месяц_месяца_месяцев',
-            'yy': 'год_года_лет'
+            ss: withoutSuffix ? 'секунда_секунды_секунд' : 'секунду_секунды_секунд',
+            mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
+            hh: 'час_часа_часов',
+            dd: 'день_дня_дней',
+            MM: 'месяц_месяца_месяцев',
+            yy: 'год_года_лет'
         };
         if (key === 'm') {
             return withoutSuffix ? 'минута' : 'минуту';
@@ -27105,6 +27986,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Sindhi [sd]
+//! author : Narain Sagar : https://github.com/narainsagar
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27114,8 +27997,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var months = ['جنوري', 'فيبروري', 'مارچ', 'اپريل', 'مئي', 'جون', 'جولاءِ', 'آگسٽ', 'سيپٽمبر', 'آڪٽوبر', 'نومبر', 'ڊسمبر'];
-    var days = ['آچر', 'سومر', 'اڱارو', 'اربع', 'خميس', 'جمع', 'ڇنڇر'];
+    //! moment.js locale configuration
+
+    var months = ['جنوري', 'فيبروري', 'مارچ', 'اپريل', 'مئي', 'جون', 'جولاءِ', 'آگسٽ', 'سيپٽمبر', 'آڪٽوبر', 'نومبر', 'ڊسمبر'],
+        days = ['آچر', 'سومر', 'اڱارو', 'اربع', 'خميس', 'جمع', 'ڇنڇر'];
 
     var sd = moment.defineLocale('sd', {
         months: months,
@@ -27191,6 +28076,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Northern Sami [se]
+//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27199,6 +28086,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var se = moment.defineLocale('se', {
         months: 'ođđajagemánnu_guovvamánnu_njukčamánnu_cuoŋománnu_miessemánnu_geassemánnu_suoidnemánnu_borgemánnu_čakčamánnu_golggotmánnu_skábmamánnu_juovlamánnu'.split('_'),
@@ -27260,6 +28149,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Sinhalese [si]
+//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27268,6 +28159,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     /*jshint -W100*/
 
@@ -27341,6 +28234,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Slovak [sk]
+//! author : Martin Minka : https://github.com/k2s
+//! based on work of petrbela : https://github.com/petrbela
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27349,6 +28245,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var months = 'január_február_marec_apríl_máj_jún_júl_august_september_október_november_december'.split('_'),
         monthsShort = 'jan_feb_mar_apr_máj_jún_júl_aug_sep_okt_nov_dec'.split('_');
@@ -27368,7 +28266,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'sekundami';
                 }
-                break;
             case 'm':
                 // a minute / in a minute / a minute ago
                 return withoutSuffix ? 'minúta' : isFuture ? 'minútu' : 'minútou';
@@ -27379,7 +28276,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'minútami';
                 }
-                break;
             case 'h':
                 // an hour / in an hour / an hour ago
                 return withoutSuffix ? 'hodina' : isFuture ? 'hodinu' : 'hodinou';
@@ -27390,7 +28286,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'hodinami';
                 }
-                break;
             case 'd':
                 // a day / in a day / a day ago
                 return withoutSuffix || isFuture ? 'deň' : 'dňom';
@@ -27401,7 +28296,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'dňami';
                 }
-                break;
             case 'M':
                 // a month / in a month / a month ago
                 return withoutSuffix || isFuture ? 'mesiac' : 'mesiacom';
@@ -27412,7 +28306,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'mesiacmi';
                 }
-                break;
             case 'y':
                 // a year / in a year / a year ago
                 return withoutSuffix || isFuture ? 'rok' : 'rokom';
@@ -27423,7 +28316,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 } else {
                     return result + 'rokmi';
                 }
-                break;
         }
     }
 
@@ -27518,6 +28410,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Slovenian [sl]
+//! author : Robert Sedovšek : https://github.com/sedovsek
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27526,6 +28420,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var result = number + ' ';
@@ -27620,7 +28516,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         longDateFormat: {
             LT: 'H:mm',
             LTS: 'H:mm:ss',
-            L: 'DD.MM.YYYY',
+            L: 'DD. MM. YYYY',
             LL: 'D. MMMM YYYY',
             LLL: 'D. MMMM YYYY H:mm',
             LLLL: 'dddd, D. MMMM YYYY H:mm'
@@ -27700,6 +28596,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Albanian [sq]
+//! author : Flakërim Ismani : https://github.com/flakerimi
+//! author : Menelion Elensúle : https://github.com/Oire
+//! author : Oerd Cukalla : https://github.com/oerd
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27708,6 +28608,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var sq = moment.defineLocale('sq', {
         months: 'Janar_Shkurt_Mars_Prill_Maj_Qershor_Korrik_Gusht_Shtator_Tetor_Nëntor_Dhjetor'.split('_'),
@@ -27777,6 +28679,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Serbian Cyrillic [sr-cyrl]
+//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27786,8 +28690,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var translator = {
-        words: { //Different grammatical cases
+        words: {
+            //Different grammatical cases
             ss: ['секунда', 'секунде', 'секунди'],
             m: ['један минут', 'једне минуте'],
             mm: ['минут', 'минуте', 'минута'],
@@ -27889,6 +28796,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Serbian [sr]
+//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -27898,8 +28807,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var translator = {
-        words: { //Different grammatical cases
+        words: {
+            //Different grammatical cases
             ss: ['sekunda', 'sekunde', 'sekundi'],
             m: ['jedan minut', 'jedne minute'],
             mm: ['minut', 'minute', 'minuta'],
@@ -28001,6 +28913,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : siSwati [ss]
+//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28009,6 +28923,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var ss = moment.defineLocale('ss', {
         months: "Bhimbidvwane_Indlovana_Indlov'lenkhulu_Mabasa_Inkhwekhweti_Inhlaba_Kholwane_Ingci_Inyoni_Imphala_Lweti_Ingongoni".split('_'),
@@ -28098,6 +29014,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Swedish [sv]
+//! author : Jens Alm : https://github.com/ulmus
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28106,6 +29024,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var sv = moment.defineLocale('sv', {
         months: 'januari_februari_mars_april_maj_juni_juli_augusti_september_oktober_november_december'.split('_'),
@@ -28147,10 +29067,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             y: 'ett år',
             yy: '%d år'
         },
-        dayOfMonthOrdinalParse: /\d{1,2}(e|a)/,
+        dayOfMonthOrdinalParse: /\d{1,2}(\:e|\:a)/,
         ordinal: function ordinal(number) {
             var b = number % 10,
-                output = ~~(number % 100 / 10) === 1 ? 'e' : b === 1 ? 'a' : b === 2 ? 'a' : b === 3 ? 'e' : 'e';
+                output = ~~(number % 100 / 10) === 1 ? ':e' : b === 1 ? ':a' : b === 2 ? ':a' : b === 3 ? ':e' : ':e';
             return number + output;
         },
         week: {
@@ -28173,6 +29093,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Swahili [sw]
+//! author : Fahad Kassim : https://github.com/fadsel
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28181,6 +29103,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var sw = moment.defineLocale('sw', {
         months: 'Januari_Februari_Machi_Aprili_Mei_Juni_Julai_Agosti_Septemba_Oktoba_Novemba_Desemba'.split('_'),
@@ -28241,6 +29165,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Tamil [ta]
+//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28249,6 +29175,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var symbolMap = {
         '1': '௧',
@@ -28380,6 +29308,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Telugu [te]
+//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28388,6 +29318,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var te = moment.defineLocale('te', {
         months: 'జనవరి_ఫిబ్రవరి_మార్చి_ఏప్రిల్_మే_జూన్_జులై_ఆగస్టు_సెప్టెంబర్_అక్టోబర్_నవంబర్_డిసెంబర్'.split('_'),
@@ -28478,6 +29410,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Tetun Dili (East Timor) [tet]
+//! author : Joshua Brooks : https://github.com/joshbrooks
+//! author : Onorio De J. Afonso : https://github.com/marobo
+//! author : Sonia Simoes : https://github.com/soniasimoes
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28486,6 +29422,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var tet = moment.defineLocale('tet', {
         months: 'Janeiru_Fevereiru_Marsu_Abril_Maiu_Juñu_Jullu_Agustu_Setembru_Outubru_Novembru_Dezembru'.split('_'),
@@ -28512,8 +29450,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         relativeTime: {
             future: 'iha %s',
             past: '%s liuba',
-            s: 'minutu balun',
-            ss: 'minutu %d',
+            s: 'segundu balun',
+            ss: 'segundu %d',
             m: 'minutu ida',
             mm: 'minutu %d',
             h: 'oras ida',
@@ -28551,6 +29489,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Tajik [tg]
+//! author : Orif N. Jr. : https://github.com/orif-jr
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28559,6 +29499,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var suffixes = {
         0: '-ум',
@@ -28676,6 +29618,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Thai [th]
+//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28684,6 +29628,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var th = moment.defineLocale('th', {
         months: 'มกราคม_กุมภาพันธ์_มีนาคม_เมษายน_พฤษภาคม_มิถุนายน_กรกฎาคม_สิงหาคม_กันยายน_ตุลาคม_พฤศจิกายน_ธันวาคม'.split('_'),
@@ -28752,6 +29698,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Tagalog (Philippines) [tl-ph]
+//! author : Dan Hagman : https://github.com/hagmandan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28760,6 +29708,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var tlPh = moment.defineLocale('tl-ph', {
         months: 'Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre'.split('_'),
@@ -28823,6 +29773,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Klingon [tlh]
+//! author : Dominika Kruk : https://github.com/amaranthrose
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -28831,6 +29783,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var numbersNouns = 'pagh_wa’_cha’_wej_loS_vagh_jav_Soch_chorgh_Hut'.split('_');
 
@@ -28941,6 +29895,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+//! moment.js locale configuration
+//! locale : Turkish [tr]
+//! authors : Erhan Gundogan : https://github.com/erhangundogan,
+//!           Burak Yiğit Kaya: https://github.com/BYK
+
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
@@ -28949,25 +29908,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     var suffixes = {
-        1: '\'inci',
-        5: '\'inci',
-        8: '\'inci',
-        70: '\'inci',
-        80: '\'inci',
-        2: '\'nci',
-        7: '\'nci',
-        20: '\'nci',
-        50: '\'nci',
-        3: '\'üncü',
-        4: '\'üncü',
-        100: '\'üncü',
-        6: '\'ncı',
-        9: '\'uncu',
-        10: '\'uncu',
-        30: '\'uncu',
-        60: '\'ıncı',
-        90: '\'ıncı'
+        1: "'inci",
+        5: "'inci",
+        8: "'inci",
+        70: "'inci",
+        80: "'inci",
+        2: "'nci",
+        7: "'nci",
+        20: "'nci",
+        50: "'nci",
+        3: "'üncü",
+        4: "'üncü",
+        100: "'üncü",
+        6: "'ncı",
+        9: "'uncu",
+        10: "'uncu",
+        30: "'uncu",
+        60: "'ıncı",
+        90: "'ıncı"
     };
 
     var tr = moment.defineLocale('tr', {
@@ -29018,7 +29979,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 default:
                     if (number === 0) {
                         // special case for zero
-                        return number + '\'ıncı';
+                        return number + "'ıncı";
                     }
                     var a = number % 10,
                         b = number % 100 - a,
@@ -29046,6 +30007,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Talossan [tzl]
+//! author : Robin van der Vliet : https://github.com/robin0van0der0v
+//! author : Iustì Canun
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29054,6 +30018,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     // After the year there should be a slash and the amount of years since December 26, 1979 in Roman numerals.
     // This is currently too difficult (maybe even impossible) to add.
@@ -29074,13 +30040,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         },
         meridiemParse: /d\'o|d\'a/i,
         isPM: function isPM(input) {
-            return 'd\'o' === input.toLowerCase();
+            return "d'o" === input.toLowerCase();
         },
         meridiem: function meridiem(hours, minutes, isLower) {
             if (hours > 11) {
-                return isLower ? 'd\'o' : 'D\'O';
+                return isLower ? "d'o" : "D'O";
             } else {
-                return isLower ? 'd\'a' : 'D\'A';
+                return isLower ? "d'a" : "D'A";
             }
         },
         calendar: {
@@ -29117,18 +30083,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
         var format = {
-            's': ['viensas secunds', '\'iensas secunds'],
-            'ss': [number + ' secunds', '' + number + ' secunds'],
-            'm': ['\'n míut', '\'iens míut'],
-            'mm': [number + ' míuts', '' + number + ' míuts'],
-            'h': ['\'n þora', '\'iensa þora'],
-            'hh': [number + ' þoras', '' + number + ' þoras'],
-            'd': ['\'n ziua', '\'iensa ziua'],
-            'dd': [number + ' ziuas', '' + number + ' ziuas'],
-            'M': ['\'n mes', '\'iens mes'],
-            'MM': [number + ' mesen', '' + number + ' mesen'],
-            'y': ['\'n ar', '\'iens ar'],
-            'yy': [number + ' ars', '' + number + ' ars']
+            s: ['viensas secunds', "'iensas secunds"],
+            ss: [number + ' secunds', '' + number + ' secunds'],
+            m: ["'n míut", "'iens míut"],
+            mm: [number + ' míuts', '' + number + ' míuts'],
+            h: ["'n þora", "'iensa þora"],
+            hh: [number + ' þoras', '' + number + ' þoras'],
+            d: ["'n ziua", "'iensa ziua"],
+            dd: [number + ' ziuas', '' + number + ' ziuas'],
+            M: ["'n mes", "'iens mes"],
+            MM: [number + ' mesen', '' + number + ' mesen'],
+            y: ["'n ar", "'iens ar"],
+            yy: [number + ' ars', '' + number + ' ars']
         };
         return isFuture ? format[key][0] : withoutSuffix ? format[key][0] : format[key][1];
     }
@@ -29147,6 +30113,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Central Atlas Tamazight Latin [tzm-latn]
+//! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29155,6 +30123,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var tzmLatn = moment.defineLocale('tzm-latn', {
         months: 'innayr_brˤayrˤ_marˤsˤ_ibrir_mayyw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir'.split('_'),
@@ -29214,6 +30184,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Central Atlas Tamazight [tzm]
+//! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29222,6 +30194,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var tzm = moment.defineLocale('tzm', {
         months: 'ⵉⵏⵏⴰⵢⵔ_ⴱⵕⴰⵢⵕ_ⵎⴰⵕⵚ_ⵉⴱⵔⵉⵔ_ⵎⴰⵢⵢⵓ_ⵢⵓⵏⵢⵓ_ⵢⵓⵍⵢⵓⵣ_ⵖⵓⵛⵜ_ⵛⵓⵜⴰⵏⴱⵉⵔ_ⴽⵟⵓⴱⵕ_ⵏⵓⵡⴰⵏⴱⵉⵔ_ⴷⵓⵊⵏⴱⵉⵔ'.split('_'),
@@ -29281,6 +30255,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js language configuration
+//! locale : Uyghur (China) [ug-cn]
+//! author: boyaq : https://github.com/boyaq
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29289,6 +30265,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js language configuration
 
     var ugCn = moment.defineLocale('ug-cn', {
         months: 'يانۋار_فېۋرال_مارت_ئاپرېل_ماي_ئىيۇن_ئىيۇل_ئاۋغۇست_سېنتەبىر_ئۆكتەبىر_نويابىر_دېكابىر'.split('_'),
@@ -29399,6 +30377,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Ukrainian [uk]
+//! author : zemlanin : https://github.com/zemlanin
+//! Author : Menelion Elensúle : https://github.com/Oire
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29408,18 +30389,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
+    //! moment.js locale configuration
+
     function plural(word, num) {
         var forms = word.split('_');
         return num % 10 === 1 && num % 100 !== 11 ? forms[0] : num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20) ? forms[1] : forms[2];
     }
     function relativeTimeWithPlural(number, withoutSuffix, key) {
         var format = {
-            'ss': withoutSuffix ? 'секунда_секунди_секунд' : 'секунду_секунди_секунд',
-            'mm': withoutSuffix ? 'хвилина_хвилини_хвилин' : 'хвилину_хвилини_хвилин',
-            'hh': withoutSuffix ? 'година_години_годин' : 'годину_години_годин',
-            'dd': 'день_дні_днів',
-            'MM': 'місяць_місяці_місяців',
-            'yy': 'рік_роки_років'
+            ss: withoutSuffix ? 'секунда_секунди_секунд' : 'секунду_секунди_секунд',
+            mm: withoutSuffix ? 'хвилина_хвилини_хвилин' : 'хвилину_хвилини_хвилин',
+            hh: withoutSuffix ? 'година_години_годин' : 'годину_години_годин',
+            dd: 'день_дні_днів',
+            MM: 'місяць_місяці_місяців',
+            yy: 'рік_роки_років'
         };
         if (key === 'm') {
             return withoutSuffix ? 'хвилина' : 'хвилину';
@@ -29431,10 +30414,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
     function weekdaysCaseReplace(m, format) {
         var weekdays = {
-            'nominative': 'неділя_понеділок_вівторок_середа_четвер_п’ятниця_субота'.split('_'),
-            'accusative': 'неділю_понеділок_вівторок_середу_четвер_п’ятницю_суботу'.split('_'),
-            'genitive': 'неділі_понеділка_вівторка_середи_четверга_п’ятниці_суботи'.split('_')
-        };
+            nominative: 'неділя_понеділок_вівторок_середа_четвер_п’ятниця_субота'.split('_'),
+            accusative: 'неділю_понеділок_вівторок_середу_четвер_п’ятницю_суботу'.split('_'),
+            genitive: 'неділі_понеділка_вівторка_середи_четверга_п’ятниці_суботи'.split('_')
+        },
+            nounCase;
 
         if (m === true) {
             return weekdays['nominative'].slice(1, 7).concat(weekdays['nominative'].slice(0, 1));
@@ -29443,7 +30427,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return weekdays['nominative'];
         }
 
-        var nounCase = /(\[[ВвУу]\]) ?dddd/.test(format) ? 'accusative' : /\[?(?:минулої|наступної)? ?\] ?dddd/.test(format) ? 'genitive' : 'nominative';
+        nounCase = /(\[[ВвУу]\]) ?dddd/.test(format) ? 'accusative' : /\[?(?:минулої|наступної)? ?\] ?dddd/.test(format) ? 'genitive' : 'nominative';
         return weekdays[nounCase][m.day()];
     }
     function processHoursFunction(str) {
@@ -29454,8 +30438,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     var uk = moment.defineLocale('uk', {
         months: {
-            'format': 'січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня'.split('_'),
-            'standalone': 'січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень'.split('_')
+            format: 'січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня'.split('_'),
+            standalone: 'січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень'.split('_')
         },
         monthsShort: 'січ_лют_бер_квіт_трав_черв_лип_серп_вер_жовт_лист_груд'.split('_'),
         weekdays: weekdaysCaseReplace,
@@ -29557,6 +30541,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Urdu [ur]
+//! author : Sawood Alam : https://github.com/ibnesayeed
+//! author : Zack : https://github.com/ZackVision
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29566,8 +30553,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var months = ['جنوری', 'فروری', 'مارچ', 'اپریل', 'مئی', 'جون', 'جولائی', 'اگست', 'ستمبر', 'اکتوبر', 'نومبر', 'دسمبر'];
-    var days = ['اتوار', 'پیر', 'منگل', 'بدھ', 'جمعرات', 'جمعہ', 'ہفتہ'];
+    //! moment.js locale configuration
+
+    var months = ['جنوری', 'فروری', 'مارچ', 'اپریل', 'مئی', 'جون', 'جولائی', 'اگست', 'ستمبر', 'اکتوبر', 'نومبر', 'دسمبر'],
+        days = ['اتوار', 'پیر', 'منگل', 'بدھ', 'جمعرات', 'جمعہ', 'ہفتہ'];
 
     var ur = moment.defineLocale('ur', {
         months: months,
@@ -29643,6 +30632,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Uzbek Latin [uz-latn]
+//! author : Rasulbek Mirzayev : github.com/Rasulbeeek
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29651,6 +30642,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var uzLatn = moment.defineLocale('uz-latn', {
         months: 'Yanvar_Fevral_Mart_Aprel_May_Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr'.split('_'),
@@ -29671,7 +30664,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             nextDay: '[Ertaga] LT [da]',
             nextWeek: 'dddd [kuni soat] LT [da]',
             lastDay: '[Kecha soat] LT [da]',
-            lastWeek: '[O\'tgan] dddd [kuni soat] LT [da]',
+            lastWeek: "[O'tgan] dddd [kuni soat] LT [da]",
             sameElse: 'L'
         },
         relativeTime: {
@@ -29710,6 +30703,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Uzbek [uz]
+//! author : Sardor Muminov : https://github.com/muminoff
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29718,6 +30713,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var uz = moment.defineLocale('uz', {
         months: 'январ_феврал_март_апрел_май_июн_июл_август_сентябр_октябр_ноябр_декабр'.split('_'),
@@ -29777,6 +30774,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Vietnamese [vi]
+//! author : Bang Nguyen : https://github.com/bangnk
+//! author : Chien Kira : https://github.com/chienkira
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29785,6 +30785,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var vi = moment.defineLocale('vi', {
         months: 'tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12'.split('_'),
@@ -29823,7 +30825,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             nextDay: '[Ngày mai lúc] LT',
             nextWeek: 'dddd [tuần tới lúc] LT',
             lastDay: '[Hôm qua lúc] LT',
-            lastWeek: 'dddd [tuần rồi lúc] LT',
+            lastWeek: 'dddd [tuần trước lúc] LT',
             sameElse: 'L'
         },
         relativeTime: {
@@ -29866,6 +30868,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Pseudo [x-pseudo]
+//! author : Andrew Hood : https://github.com/andrewhood125
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29874,6 +30878,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var xPseudo = moment.defineLocale('x-pseudo', {
         months: 'J~áñúá~rý_F~ébrú~árý_~Márc~h_Áp~ríl_~Máý_~Júñé~_Júl~ý_Áú~gúst~_Sép~témb~ér_Ó~ctób~ér_Ñ~óvém~bér_~Décé~mbér'.split('_'),
@@ -29940,6 +30946,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Yoruba Nigeria [yo]
+//! author : Atolagbe Abisoye : https://github.com/andela-batolagbe
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -29948,6 +30956,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var yo = moment.defineLocale('yo', {
         months: 'Sẹ́rẹ́_Èrèlè_Ẹrẹ̀nà_Ìgbé_Èbibi_Òkùdu_Agẹmo_Ògún_Owewe_Ọ̀wàrà_Bélú_Ọ̀pẹ̀̀'.split('_'),
@@ -29966,7 +30976,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         calendar: {
             sameDay: '[Ònì ni] LT',
             nextDay: '[Ọ̀la ni] LT',
-            nextWeek: 'dddd [Ọsẹ̀ tón\'bọ] [ni] LT',
+            nextWeek: "dddd [Ọsẹ̀ tón'bọ] [ni] LT",
             lastDay: '[Àna ni] LT',
             lastWeek: 'dddd [Ọsẹ̀ tólọ́] [ni] LT',
             sameElse: 'L'
@@ -30009,6 +31019,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Chinese (China) [zh-cn]
+//! author : suupic : https://github.com/suupic
+//! author : Zeno Zeng : https://github.com/zenozeng
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -30017,6 +31030,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var zhCn = moment.defineLocale('zh-cn', {
         months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
@@ -30091,7 +31106,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             }
         },
         relativeTime: {
-            future: '%s内',
+            future: '%s后',
             past: '%s前',
             s: '几秒',
             ss: '%d 秒',
@@ -30127,6 +31142,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Chinese (Hong Kong) [zh-hk]
+//! author : Ben : https://github.com/ben-lin
+//! author : Chris Lam : https://github.com/hehachris
+//! author : Konstantin : https://github.com/skfd
+//! author : Anthony : https://github.com/anthonylau
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -30135,6 +31155,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
 })(undefined, function (moment) {
     'use strict';
+
+    //! moment.js locale configuration
 
     var zhHk = moment.defineLocale('zh-hk', {
         months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
@@ -30173,9 +31195,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 return '凌晨';
             } else if (hm < 900) {
                 return '早上';
-            } else if (hm < 1130) {
+            } else if (hm < 1200) {
                 return '上午';
-            } else if (hm < 1230) {
+            } else if (hm === 1200) {
                 return '中午';
             } else if (hm < 1800) {
                 return '下午';
@@ -30208,7 +31230,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             }
         },
         relativeTime: {
-            future: '%s內',
+            future: '%s後',
             past: '%s前',
             s: '幾秒',
             ss: '%d 秒',
@@ -30230,7 +31252,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 
-/***/ "./node_modules/moment/locale/zh-tw.js":
+/***/ "./node_modules/moment/locale/zh-mo.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30239,6 +31261,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js locale configuration
+//! locale : Chinese (Macau) [zh-mo]
+//! author : Ben : https://github.com/ben-lin
+//! author : Chris Lam : https://github.com/hehachris
+//! author : Tan Yuanhong : https://github.com/le0tan
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -30248,7 +31274,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(undefined, function (moment) {
     'use strict';
 
-    var zhTw = moment.defineLocale('zh-tw', {
+    //! moment.js locale configuration
+
+    var zhMo = moment.defineLocale('zh-mo', {
         months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
         monthsShort: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
         weekdays: '星期日_星期一_星期二_星期三_星期四_星期五_星期六'.split('_'),
@@ -30257,11 +31285,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         longDateFormat: {
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
-            L: 'YYYY/MM/DD',
+            L: 'DD/MM/YYYY',
             LL: 'YYYY年M月D日',
             LLL: 'YYYY年M月D日 HH:mm',
             LLLL: 'YYYY年M月D日dddd HH:mm',
-            l: 'YYYY/M/D',
+            l: 'D/M/YYYY',
             ll: 'YYYY年M月D日',
             lll: 'YYYY年M月D日 HH:mm',
             llll: 'YYYY年M月D日dddd HH:mm'
@@ -30337,6 +31365,123 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     });
 
+    return zhMo;
+});
+
+/***/ }),
+
+/***/ "./node_modules/moment/locale/zh-tw.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+//! moment.js locale configuration
+//! locale : Chinese (Taiwan) [zh-tw]
+//! author : Ben : https://github.com/ben-lin
+//! author : Chris Lam : https://github.com/hehachris
+
+;(function (global, factory) {
+    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' && "function" === 'function' ? factory(__webpack_require__("./node_modules/moment/moment.js")) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__("./node_modules/moment/moment.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : factory(global.moment);
+})(undefined, function (moment) {
+    'use strict';
+
+    //! moment.js locale configuration
+
+    var zhTw = moment.defineLocale('zh-tw', {
+        months: '一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月'.split('_'),
+        monthsShort: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
+        weekdays: '星期日_星期一_星期二_星期三_星期四_星期五_星期六'.split('_'),
+        weekdaysShort: '週日_週一_週二_週三_週四_週五_週六'.split('_'),
+        weekdaysMin: '日_一_二_三_四_五_六'.split('_'),
+        longDateFormat: {
+            LT: 'HH:mm',
+            LTS: 'HH:mm:ss',
+            L: 'YYYY/MM/DD',
+            LL: 'YYYY年M月D日',
+            LLL: 'YYYY年M月D日 HH:mm',
+            LLLL: 'YYYY年M月D日dddd HH:mm',
+            l: 'YYYY/M/D',
+            ll: 'YYYY年M月D日',
+            lll: 'YYYY年M月D日 HH:mm',
+            llll: 'YYYY年M月D日dddd HH:mm'
+        },
+        meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
+        meridiemHour: function meridiemHour(hour, meridiem) {
+            if (hour === 12) {
+                hour = 0;
+            }
+            if (meridiem === '凌晨' || meridiem === '早上' || meridiem === '上午') {
+                return hour;
+            } else if (meridiem === '中午') {
+                return hour >= 11 ? hour : hour + 12;
+            } else if (meridiem === '下午' || meridiem === '晚上') {
+                return hour + 12;
+            }
+        },
+        meridiem: function meridiem(hour, minute, isLower) {
+            var hm = hour * 100 + minute;
+            if (hm < 600) {
+                return '凌晨';
+            } else if (hm < 900) {
+                return '早上';
+            } else if (hm < 1130) {
+                return '上午';
+            } else if (hm < 1230) {
+                return '中午';
+            } else if (hm < 1800) {
+                return '下午';
+            } else {
+                return '晚上';
+            }
+        },
+        calendar: {
+            sameDay: '[今天] LT',
+            nextDay: '[明天] LT',
+            nextWeek: '[下]dddd LT',
+            lastDay: '[昨天] LT',
+            lastWeek: '[上]dddd LT',
+            sameElse: 'L'
+        },
+        dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/,
+        ordinal: function ordinal(number, period) {
+            switch (period) {
+                case 'd':
+                case 'D':
+                case 'DDD':
+                    return number + '日';
+                case 'M':
+                    return number + '月';
+                case 'w':
+                case 'W':
+                    return number + '週';
+                default:
+                    return number;
+            }
+        },
+        relativeTime: {
+            future: '%s後',
+            past: '%s前',
+            s: '幾秒',
+            ss: '%d 秒',
+            m: '1 分鐘',
+            mm: '%d 分鐘',
+            h: '1 小時',
+            hh: '%d 小時',
+            d: '1 天',
+            dd: '%d 天',
+            M: '1 個月',
+            MM: '%d 個月',
+            y: '1 年',
+            yy: '%d 年'
+        }
+    });
+
     return zhTw;
 });
 
@@ -30351,6 +31496,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 //! moment.js
+//! version : 2.25.3
+//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
+//! license : MIT
+//! momentjs.com
 
 ;(function (global, factory) {
     ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -30383,13 +31532,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return input != null && Object.prototype.toString.call(input) === '[object Object]';
     }
 
+    function hasOwnProp(a, b) {
+        return Object.prototype.hasOwnProperty.call(a, b);
+    }
+
     function isObjectEmpty(obj) {
         if (Object.getOwnPropertyNames) {
             return Object.getOwnPropertyNames(obj).length === 0;
         } else {
             var k;
             for (k in obj) {
-                if (obj.hasOwnProperty(k)) {
+                if (hasOwnProp(obj, k)) {
                     return false;
                 }
             }
@@ -30416,10 +31569,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             res.push(fn(arr[i], i));
         }
         return res;
-    }
-
-    function hasOwnProp(a, b) {
-        return Object.prototype.hasOwnProperty.call(a, b);
     }
 
     function extend(a, b) {
@@ -30453,11 +31602,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             overflow: -2,
             charsLeftOver: 0,
             nullInput: false,
+            invalidEra: null,
             invalidMonth: null,
             invalidFormat: false,
             userInvalidated: false,
             iso: false,
             parsedDateParts: [],
+            era: null,
             meridiem: null,
             rfc2822: false,
             weekdayMismatch: false
@@ -30476,10 +31627,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         some = Array.prototype.some;
     } else {
         some = function some(fun) {
-            var t = Object(this);
-            var len = t.length >>> 0;
+            var t = Object(this),
+                len = t.length >>> 0,
+                i;
 
-            for (var i = 0; i < len; i++) {
+            for (i = 0; i < len; i++) {
                 if (i in t && fun.call(this, t[i], i, t)) {
                     return true;
                 }
@@ -30491,11 +31643,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     function isValid(m) {
         if (m._isValid == null) {
-            var flags = getParsingFlags(m);
-            var parsedParts = some.call(flags.parsedDateParts, function (i) {
+            var flags = getParsingFlags(m),
+                parsedParts = some.call(flags.parsedDateParts, function (i) {
                 return i != null;
-            });
-            var isNowValid = !isNaN(m._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidMonth && !flags.invalidWeekday && !flags.weekdayMismatch && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || flags.meridiem && parsedParts);
+            }),
+                isNowValid = !isNaN(m._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidEra && !flags.invalidMonth && !flags.invalidWeekday && !flags.weekdayMismatch && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || flags.meridiem && parsedParts);
 
             if (m._strict) {
                 isNowValid = isNowValid && flags.charsLeftOver === 0 && flags.unusedTokens.length === 0 && flags.bigHour === undefined;
@@ -30523,7 +31675,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     // Plugins that add properties should also add the key here (null value),
     // so we can properly clone ourselves.
-    var momentProperties = hooks.momentProperties = [];
+    var momentProperties = hooks.momentProperties = [],
+        updateInProgress = false;
 
     function copyConfig(to, from) {
         var i, prop, val;
@@ -30572,8 +31725,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return to;
     }
 
-    var updateInProgress = false;
-
     // Moment prototype object
     function Moment(config) {
         copyConfig(this, config);
@@ -30594,40 +31745,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return obj instanceof Moment || obj != null && obj._isAMomentObject != null;
     }
 
-    function absFloor(number) {
-        if (number < 0) {
-            // -0 -> 0
-            return Math.ceil(number) || 0;
-        } else {
-            return Math.floor(number);
-        }
-    }
-
-    function toInt(argumentForCoercion) {
-        var coercedNumber = +argumentForCoercion,
-            value = 0;
-
-        if (coercedNumber !== 0 && isFinite(coercedNumber)) {
-            value = absFloor(coercedNumber);
-        }
-
-        return value;
-    }
-
-    // compare two arrays, return the number of differences
-    function compareArrays(array1, array2, dontConvert) {
-        var len = Math.min(array1.length, array2.length),
-            lengthDiff = Math.abs(array1.length - array2.length),
-            diffs = 0,
-            i;
-        for (i = 0; i < len; i++) {
-            if (dontConvert && array1[i] !== array2[i] || !dontConvert && toInt(array1[i]) !== toInt(array2[i])) {
-                diffs++;
-            }
-        }
-        return diffs + lengthDiff;
-    }
-
     function warn(msg) {
         if (hooks.suppressDeprecationWarnings === false && typeof console !== 'undefined' && console.warn) {
             console.warn('Deprecation warning: ' + msg);
@@ -30642,14 +31759,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 hooks.deprecationHandler(null, msg);
             }
             if (firstTime) {
-                var args = [];
-                var arg;
-                for (var i = 0; i < arguments.length; i++) {
+                var args = [],
+                    arg,
+                    i,
+                    key;
+                for (i = 0; i < arguments.length; i++) {
                     arg = '';
                     if (_typeof(arguments[i]) === 'object') {
                         arg += '\n[' + i + '] ';
-                        for (var key in arguments[0]) {
-                            arg += key + ': ' + arguments[0][key] + ', ';
+                        for (key in arguments[0]) {
+                            if (hasOwnProp(arguments[0], key)) {
+                                arg += key + ': ' + arguments[0][key] + ', ';
+                            }
                         }
                         arg = arg.slice(0, -2); // Remove trailing comma and space
                     } else {
@@ -30680,17 +31801,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     hooks.deprecationHandler = null;
 
     function isFunction(input) {
-        return input instanceof Function || Object.prototype.toString.call(input) === '[object Function]';
+        return typeof Function !== 'undefined' && input instanceof Function || Object.prototype.toString.call(input) === '[object Function]';
     }
 
     function set(config) {
         var prop, i;
         for (i in config) {
-            prop = config[i];
-            if (isFunction(prop)) {
-                this[i] = prop;
-            } else {
-                this['_' + i] = prop;
+            if (hasOwnProp(config, i)) {
+                prop = config[i];
+                if (isFunction(prop)) {
+                    this[i] = prop;
+                } else {
+                    this['_' + i] = prop;
+                }
             }
         }
         this._config = config;
@@ -30762,115 +31885,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return isFunction(output) ? output.call(mom, now) : output;
     }
 
-    var defaultLongDateFormat = {
-        LTS: 'h:mm:ss A',
-        LT: 'h:mm A',
-        L: 'MM/DD/YYYY',
-        LL: 'MMMM D, YYYY',
-        LLL: 'MMMM D, YYYY h:mm A',
-        LLLL: 'dddd, MMMM D, YYYY h:mm A'
-    };
-
-    function longDateFormat(key) {
-        var format = this._longDateFormat[key],
-            formatUpper = this._longDateFormat[key.toUpperCase()];
-
-        if (format || !formatUpper) {
-            return format;
-        }
-
-        this._longDateFormat[key] = formatUpper.replace(/MMMM|MM|DD|dddd/g, function (val) {
-            return val.slice(1);
-        });
-
-        return this._longDateFormat[key];
-    }
-
-    var defaultInvalidDate = 'Invalid date';
-
-    function invalidDate() {
-        return this._invalidDate;
-    }
-
-    var defaultOrdinal = '%d';
-    var defaultDayOfMonthOrdinalParse = /\d{1,2}/;
-
-    function ordinal(number) {
-        return this._ordinal.replace('%d', number);
-    }
-
-    var defaultRelativeTime = {
-        future: 'in %s',
-        past: '%s ago',
-        s: 'a few seconds',
-        ss: '%d seconds',
-        m: 'a minute',
-        mm: '%d minutes',
-        h: 'an hour',
-        hh: '%d hours',
-        d: 'a day',
-        dd: '%d days',
-        M: 'a month',
-        MM: '%d months',
-        y: 'a year',
-        yy: '%d years'
-    };
-
-    function relativeTime(number, withoutSuffix, string, isFuture) {
-        var output = this._relativeTime[string];
-        return isFunction(output) ? output(number, withoutSuffix, string, isFuture) : output.replace(/%d/i, number);
-    }
-
-    function pastFuture(diff, output) {
-        var format = this._relativeTime[diff > 0 ? 'future' : 'past'];
-        return isFunction(format) ? format(output) : format.replace(/%s/i, output);
-    }
-
-    var aliases = {};
-
-    function addUnitAlias(unit, shorthand) {
-        var lowerCase = unit.toLowerCase();
-        aliases[lowerCase] = aliases[lowerCase + 's'] = aliases[shorthand] = unit;
-    }
-
-    function normalizeUnits(units) {
-        return typeof units === 'string' ? aliases[units] || aliases[units.toLowerCase()] : undefined;
-    }
-
-    function normalizeObjectUnits(inputObject) {
-        var normalizedInput = {},
-            normalizedProp,
-            prop;
-
-        for (prop in inputObject) {
-            if (hasOwnProp(inputObject, prop)) {
-                normalizedProp = normalizeUnits(prop);
-                if (normalizedProp) {
-                    normalizedInput[normalizedProp] = inputObject[prop];
-                }
-            }
-        }
-
-        return normalizedInput;
-    }
-
-    var priorities = {};
-
-    function addUnitPriority(unit, priority) {
-        priorities[unit] = priority;
-    }
-
-    function getPrioritizedUnits(unitsObj) {
-        var units = [];
-        for (var u in unitsObj) {
-            units.push({ unit: u, priority: priorities[u] });
-        }
-        units.sort(function (a, b) {
-            return a.priority - b.priority;
-        });
-        return units;
-    }
-
     function zeroFill(number, targetLength, forceSign) {
         var absNumber = '' + Math.abs(number),
             zerosToFill = targetLength - absNumber.length,
@@ -30878,13 +31892,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return (sign ? forceSign ? '+' : '' : '-') + Math.pow(10, Math.max(0, zerosToFill)).toString().substr(1) + absNumber;
     }
 
-    var formattingTokens = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
-
-    var localFormattingTokens = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g;
-
-    var formatFunctions = {};
-
-    var formatTokenFunctions = {};
+    var formattingTokens = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|N{1,5}|YYYYYY|YYYYY|YYYY|YY|y{2,4}|yo?|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g,
+        localFormattingTokens = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,
+        formatFunctions = {},
+        formatTokenFunctions = {};
 
     // token:    'M'
     // padded:   ['MM', 2]
@@ -30971,31 +31982,239 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return format;
     }
 
-    var match1 = /\d/; //       0 - 9
-    var match2 = /\d\d/; //      00 - 99
-    var match3 = /\d{3}/; //     000 - 999
-    var match4 = /\d{4}/; //    0000 - 9999
-    var match6 = /[+-]?\d{6}/; // -999999 - 999999
-    var match1to2 = /\d\d?/; //       0 - 99
-    var match3to4 = /\d\d\d\d?/; //     999 - 9999
-    var match5to6 = /\d\d\d\d\d\d?/; //   99999 - 999999
-    var match1to3 = /\d{1,3}/; //       0 - 999
-    var match1to4 = /\d{1,4}/; //       0 - 9999
-    var match1to6 = /[+-]?\d{1,6}/; // -999999 - 999999
+    var defaultLongDateFormat = {
+        LTS: 'h:mm:ss A',
+        LT: 'h:mm A',
+        L: 'MM/DD/YYYY',
+        LL: 'MMMM D, YYYY',
+        LLL: 'MMMM D, YYYY h:mm A',
+        LLLL: 'dddd, MMMM D, YYYY h:mm A'
+    };
 
-    var matchUnsigned = /\d+/; //       0 - inf
-    var matchSigned = /[+-]?\d+/; //    -inf - inf
+    function longDateFormat(key) {
+        var format = this._longDateFormat[key],
+            formatUpper = this._longDateFormat[key.toUpperCase()];
 
-    var matchOffset = /Z|[+-]\d\d:?\d\d/gi; // +00:00 -00:00 +0000 -0000 or Z
-    var matchShortOffset = /Z|[+-]\d\d(?::?\d\d)?/gi; // +00 -00 +00:00 -00:00 +0000 -0000 or Z
+        if (format || !formatUpper) {
+            return format;
+        }
 
-    var matchTimestamp = /[+-]?\d+(\.\d{1,3})?/; // 123456789 123456789.123
+        this._longDateFormat[key] = formatUpper.match(formattingTokens).map(function (tok) {
+            if (tok === 'MMMM' || tok === 'MM' || tok === 'DD' || tok === 'dddd') {
+                return tok.slice(1);
+            }
+            return tok;
+        }).join('');
 
+        return this._longDateFormat[key];
+    }
+
+    var defaultInvalidDate = 'Invalid date';
+
+    function invalidDate() {
+        return this._invalidDate;
+    }
+
+    var defaultOrdinal = '%d',
+        defaultDayOfMonthOrdinalParse = /\d{1,2}/;
+
+    function ordinal(number) {
+        return this._ordinal.replace('%d', number);
+    }
+
+    var defaultRelativeTime = {
+        future: 'in %s',
+        past: '%s ago',
+        s: 'a few seconds',
+        ss: '%d seconds',
+        m: 'a minute',
+        mm: '%d minutes',
+        h: 'an hour',
+        hh: '%d hours',
+        d: 'a day',
+        dd: '%d days',
+        w: 'a week',
+        ww: '%d weeks',
+        M: 'a month',
+        MM: '%d months',
+        y: 'a year',
+        yy: '%d years'
+    };
+
+    function relativeTime(number, withoutSuffix, string, isFuture) {
+        var output = this._relativeTime[string];
+        return isFunction(output) ? output(number, withoutSuffix, string, isFuture) : output.replace(/%d/i, number);
+    }
+
+    function pastFuture(diff, output) {
+        var format = this._relativeTime[diff > 0 ? 'future' : 'past'];
+        return isFunction(format) ? format(output) : format.replace(/%s/i, output);
+    }
+
+    var aliases = {};
+
+    function addUnitAlias(unit, shorthand) {
+        var lowerCase = unit.toLowerCase();
+        aliases[lowerCase] = aliases[lowerCase + 's'] = aliases[shorthand] = unit;
+    }
+
+    function normalizeUnits(units) {
+        return typeof units === 'string' ? aliases[units] || aliases[units.toLowerCase()] : undefined;
+    }
+
+    function normalizeObjectUnits(inputObject) {
+        var normalizedInput = {},
+            normalizedProp,
+            prop;
+
+        for (prop in inputObject) {
+            if (hasOwnProp(inputObject, prop)) {
+                normalizedProp = normalizeUnits(prop);
+                if (normalizedProp) {
+                    normalizedInput[normalizedProp] = inputObject[prop];
+                }
+            }
+        }
+
+        return normalizedInput;
+    }
+
+    var priorities = {};
+
+    function addUnitPriority(unit, priority) {
+        priorities[unit] = priority;
+    }
+
+    function getPrioritizedUnits(unitsObj) {
+        var units = [],
+            u;
+        for (u in unitsObj) {
+            if (hasOwnProp(unitsObj, u)) {
+                units.push({ unit: u, priority: priorities[u] });
+            }
+        }
+        units.sort(function (a, b) {
+            return a.priority - b.priority;
+        });
+        return units;
+    }
+
+    function isLeapYear(year) {
+        return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
+    }
+
+    function absFloor(number) {
+        if (number < 0) {
+            // -0 -> 0
+            return Math.ceil(number) || 0;
+        } else {
+            return Math.floor(number);
+        }
+    }
+
+    function toInt(argumentForCoercion) {
+        var coercedNumber = +argumentForCoercion,
+            value = 0;
+
+        if (coercedNumber !== 0 && isFinite(coercedNumber)) {
+            value = absFloor(coercedNumber);
+        }
+
+        return value;
+    }
+
+    function makeGetSet(unit, keepTime) {
+        return function (value) {
+            if (value != null) {
+                set$1(this, unit, value);
+                hooks.updateOffset(this, keepTime);
+                return this;
+            } else {
+                return get(this, unit);
+            }
+        };
+    }
+
+    function get(mom, unit) {
+        return mom.isValid() ? mom._d['get' + (mom._isUTC ? 'UTC' : '') + unit]() : NaN;
+    }
+
+    function set$1(mom, unit, value) {
+        if (mom.isValid() && !isNaN(value)) {
+            if (unit === 'FullYear' && isLeapYear(mom.year()) && mom.month() === 1 && mom.date() === 29) {
+                value = toInt(value);
+                mom._d['set' + (mom._isUTC ? 'UTC' : '') + unit](value, mom.month(), daysInMonth(value, mom.month()));
+            } else {
+                mom._d['set' + (mom._isUTC ? 'UTC' : '') + unit](value);
+            }
+        }
+    }
+
+    // MOMENTS
+
+    function stringGet(units) {
+        units = normalizeUnits(units);
+        if (isFunction(this[units])) {
+            return this[units]();
+        }
+        return this;
+    }
+
+    function stringSet(units, value) {
+        if ((typeof units === 'undefined' ? 'undefined' : _typeof(units)) === 'object') {
+            units = normalizeObjectUnits(units);
+            var prioritized = getPrioritizedUnits(units),
+                i;
+            for (i = 0; i < prioritized.length; i++) {
+                this[prioritized[i].unit](units[prioritized[i].unit]);
+            }
+        } else {
+            units = normalizeUnits(units);
+            if (isFunction(this[units])) {
+                return this[units](value);
+            }
+        }
+        return this;
+    }
+
+    var match1 = /\d/,
+        //       0 - 9
+    match2 = /\d\d/,
+        //      00 - 99
+    match3 = /\d{3}/,
+        //     000 - 999
+    match4 = /\d{4}/,
+        //    0000 - 9999
+    match6 = /[+-]?\d{6}/,
+        // -999999 - 999999
+    match1to2 = /\d\d?/,
+        //       0 - 99
+    match3to4 = /\d\d\d\d?/,
+        //     999 - 9999
+    match5to6 = /\d\d\d\d\d\d?/,
+        //   99999 - 999999
+    match1to3 = /\d{1,3}/,
+        //       0 - 999
+    match1to4 = /\d{1,4}/,
+        //       0 - 9999
+    match1to6 = /[+-]?\d{1,6}/,
+        // -999999 - 999999
+    matchUnsigned = /\d+/,
+        //       0 - inf
+    matchSigned = /[+-]?\d+/,
+        //    -inf - inf
+    matchOffset = /Z|[+-]\d\d:?\d\d/gi,
+        // +00:00 -00:00 +0000 -0000 or Z
+    matchShortOffset = /Z|[+-]\d\d(?::?\d\d)?/gi,
+        // +00 -00 +00:00 -00:00 +0000 -0000 or Z
+    matchTimestamp = /[+-]?\d+(\.\d{1,3})?/,
+        // 123456789 123456789.123
     // any word (or two) characters or numbers including two/three word month in arabic.
     // includes scottish gaelic two word and hyphenated months
-    var matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
+    matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i,
+        regexes;
 
-    var regexes = {};
+    regexes = {};
 
     function addRegexToken(token, regex, strictRegex) {
         regexes[token] = isFunction(regex) ? regex : function (isStrict, localeData) {
@@ -31053,133 +32272,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var YEAR = 0;
-    var MONTH = 1;
-    var DATE = 2;
-    var HOUR = 3;
-    var MINUTE = 4;
-    var SECOND = 5;
-    var MILLISECOND = 6;
-    var WEEK = 7;
-    var WEEKDAY = 8;
-
-    // FORMATTING
-
-    addFormatToken('Y', 0, 0, function () {
-        var y = this.year();
-        return y <= 9999 ? '' + y : '+' + y;
-    });
-
-    addFormatToken(0, ['YY', 2], 0, function () {
-        return this.year() % 100;
-    });
-
-    addFormatToken(0, ['YYYY', 4], 0, 'year');
-    addFormatToken(0, ['YYYYY', 5], 0, 'year');
-    addFormatToken(0, ['YYYYYY', 6, true], 0, 'year');
-
-    // ALIASES
-
-    addUnitAlias('year', 'y');
-
-    // PRIORITIES
-
-    addUnitPriority('year', 1);
-
-    // PARSING
-
-    addRegexToken('Y', matchSigned);
-    addRegexToken('YY', match1to2, match2);
-    addRegexToken('YYYY', match1to4, match4);
-    addRegexToken('YYYYY', match1to6, match6);
-    addRegexToken('YYYYYY', match1to6, match6);
-
-    addParseToken(['YYYYY', 'YYYYYY'], YEAR);
-    addParseToken('YYYY', function (input, array) {
-        array[YEAR] = input.length === 2 ? hooks.parseTwoDigitYear(input) : toInt(input);
-    });
-    addParseToken('YY', function (input, array) {
-        array[YEAR] = hooks.parseTwoDigitYear(input);
-    });
-    addParseToken('Y', function (input, array) {
-        array[YEAR] = parseInt(input, 10);
-    });
-
-    // HELPERS
-
-    function daysInYear(year) {
-        return isLeapYear(year) ? 366 : 365;
-    }
-
-    function isLeapYear(year) {
-        return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
-    }
-
-    // HOOKS
-
-    hooks.parseTwoDigitYear = function (input) {
-        return toInt(input) + (toInt(input) > 68 ? 1900 : 2000);
-    };
-
-    // MOMENTS
-
-    var getSetYear = makeGetSet('FullYear', true);
-
-    function getIsLeapYear() {
-        return isLeapYear(this.year());
-    }
-
-    function makeGetSet(unit, keepTime) {
-        return function (value) {
-            if (value != null) {
-                set$1(this, unit, value);
-                hooks.updateOffset(this, keepTime);
-                return this;
-            } else {
-                return get(this, unit);
-            }
-        };
-    }
-
-    function get(mom, unit) {
-        return mom.isValid() ? mom._d['get' + (mom._isUTC ? 'UTC' : '') + unit]() : NaN;
-    }
-
-    function set$1(mom, unit, value) {
-        if (mom.isValid() && !isNaN(value)) {
-            if (unit === 'FullYear' && isLeapYear(mom.year()) && mom.month() === 1 && mom.date() === 29) {
-                mom._d['set' + (mom._isUTC ? 'UTC' : '') + unit](value, mom.month(), daysInMonth(value, mom.month()));
-            } else {
-                mom._d['set' + (mom._isUTC ? 'UTC' : '') + unit](value);
-            }
-        }
-    }
-
-    // MOMENTS
-
-    function stringGet(units) {
-        units = normalizeUnits(units);
-        if (isFunction(this[units])) {
-            return this[units]();
-        }
-        return this;
-    }
-
-    function stringSet(units, value) {
-        if ((typeof units === 'undefined' ? 'undefined' : _typeof(units)) === 'object') {
-            units = normalizeObjectUnits(units);
-            var prioritized = getPrioritizedUnits(units);
-            for (var i = 0; i < prioritized.length; i++) {
-                this[prioritized[i].unit](units[prioritized[i].unit]);
-            }
-        } else {
-            units = normalizeUnits(units);
-            if (isFunction(this[units])) {
-                return this[units](value);
-            }
-        }
-        return this;
-    }
+    var YEAR = 0,
+        MONTH = 1,
+        DATE = 2,
+        HOUR = 3,
+        MINUTE = 4,
+        SECOND = 5,
+        MILLISECOND = 6,
+        WEEK = 7,
+        WEEKDAY = 8;
 
     function mod(n, x) {
         return (n % x + x) % x;
@@ -31260,8 +32361,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     // LOCALES
 
-    var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;
-    var defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_');
+    var defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
+        defaultLocaleMonthsShort = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+        MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,
+        defaultMonthsShortRegex = matchWord,
+        defaultMonthsRegex = matchWord;
+
     function localeMonths(m, format) {
         if (!m) {
             return isArray(this._months) ? this._months : this._months['standalone'];
@@ -31269,7 +32374,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return isArray(this._months) ? this._months[m.month()] : this._months[(this._months.isFormat || MONTHS_IN_FORMAT).test(format) ? 'format' : 'standalone'][m.month()];
     }
 
-    var defaultLocaleMonthsShort = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_');
     function localeMonthsShort(m, format) {
         if (!m) {
             return isArray(this._monthsShort) ? this._monthsShort : this._monthsShort['standalone'];
@@ -31400,7 +32504,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return daysInMonth(this.year(), this.month());
     }
 
-    var defaultMonthsShortRegex = matchWord;
     function monthsShortRegex(isStrict) {
         if (this._monthsParseExact) {
             if (!hasOwnProp(this, '_monthsRegex')) {
@@ -31419,7 +32522,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var defaultMonthsRegex = matchWord;
     function monthsRegex(isStrict) {
         if (this._monthsParseExact) {
             if (!hasOwnProp(this, '_monthsRegex')) {
@@ -31475,6 +32577,68 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         this._monthsShortStrictRegex = new RegExp('^(' + shortPieces.join('|') + ')', 'i');
     }
 
+    // FORMATTING
+
+    addFormatToken('Y', 0, 0, function () {
+        var y = this.year();
+        return y <= 9999 ? zeroFill(y, 4) : '+' + y;
+    });
+
+    addFormatToken(0, ['YY', 2], 0, function () {
+        return this.year() % 100;
+    });
+
+    addFormatToken(0, ['YYYY', 4], 0, 'year');
+    addFormatToken(0, ['YYYYY', 5], 0, 'year');
+    addFormatToken(0, ['YYYYYY', 6, true], 0, 'year');
+
+    // ALIASES
+
+    addUnitAlias('year', 'y');
+
+    // PRIORITIES
+
+    addUnitPriority('year', 1);
+
+    // PARSING
+
+    addRegexToken('Y', matchSigned);
+    addRegexToken('YY', match1to2, match2);
+    addRegexToken('YYYY', match1to4, match4);
+    addRegexToken('YYYYY', match1to6, match6);
+    addRegexToken('YYYYYY', match1to6, match6);
+
+    addParseToken(['YYYYY', 'YYYYYY'], YEAR);
+    addParseToken('YYYY', function (input, array) {
+        array[YEAR] = input.length === 2 ? hooks.parseTwoDigitYear(input) : toInt(input);
+    });
+    addParseToken('YY', function (input, array) {
+        array[YEAR] = hooks.parseTwoDigitYear(input);
+    });
+    addParseToken('Y', function (input, array) {
+        array[YEAR] = parseInt(input, 10);
+    });
+
+    // HELPERS
+
+    function daysInYear(year) {
+        return isLeapYear(year) ? 366 : 365;
+    }
+
+    // HOOKS
+
+    hooks.parseTwoDigitYear = function (input) {
+        return toInt(input) + (toInt(input) > 68 ? 1900 : 2000);
+    };
+
+    // MOMENTS
+
+    var getSetYear = makeGetSet('FullYear', true);
+
+    function getIsLeapYear() {
+        return isLeapYear(this.year());
+    }
+
     function createDate(y, m, d, h, M, s, ms) {
         // can't just apply() to create a date:
         // https://stackoverflow.com/q/181348
@@ -31494,10 +32658,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function createUTCDate(y) {
-        var date;
+        var date, args;
         // the Date.UTC function remaps years 0-99 to 1900-1999
         if (y < 100 && y >= 0) {
-            var args = Array.prototype.slice.call(arguments);
+            args = Array.prototype.slice.call(arguments);
             // preserve leap years using a full 400 year cycle, then reset
             args[0] = y + 400;
             date = new Date(Date.UTC.apply(null, args));
@@ -31725,18 +32889,22 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return ws.slice(n, 7).concat(ws.slice(0, n));
     }
 
-    var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
+    var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+        defaultLocaleWeekdaysShort = 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
+        defaultLocaleWeekdaysMin = 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
+        defaultWeekdaysRegex = matchWord,
+        defaultWeekdaysShortRegex = matchWord,
+        defaultWeekdaysMinRegex = matchWord;
+
     function localeWeekdays(m, format) {
         var weekdays = isArray(this._weekdays) ? this._weekdays : this._weekdays[m && m !== true && this._weekdays.isFormat.test(format) ? 'format' : 'standalone'];
         return m === true ? shiftWeekdays(weekdays, this._week.dow) : m ? weekdays[m.day()] : weekdays;
     }
 
-    var defaultLocaleWeekdaysShort = 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_');
     function localeWeekdaysShort(m) {
         return m === true ? shiftWeekdays(this._weekdaysShort, this._week.dow) : m ? this._weekdaysShort[m.day()] : this._weekdaysShort;
     }
 
-    var defaultLocaleWeekdaysMin = 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_');
     function localeWeekdaysMin(m) {
         return m === true ? shiftWeekdays(this._weekdaysMin, this._week.dow) : m ? this._weekdaysMin[m.day()] : this._weekdaysMin;
     }
@@ -31888,7 +33056,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var defaultWeekdaysRegex = matchWord;
     function weekdaysRegex(isStrict) {
         if (this._weekdaysParseExact) {
             if (!hasOwnProp(this, '_weekdaysRegex')) {
@@ -31907,7 +33074,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var defaultWeekdaysShortRegex = matchWord;
     function weekdaysShortRegex(isStrict) {
         if (this._weekdaysParseExact) {
             if (!hasOwnProp(this, '_weekdaysRegex')) {
@@ -31926,7 +33092,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var defaultWeekdaysMinRegex = matchWord;
     function weekdaysMinRegex(isStrict) {
         if (this._weekdaysParseExact) {
             if (!hasOwnProp(this, '_weekdaysRegex')) {
@@ -31962,9 +33127,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         for (i = 0; i < 7; i++) {
             // make the regex if we don't have it already
             mom = createUTC([2000, 1]).day(i);
-            minp = this.weekdaysMin(mom, '');
-            shortp = this.weekdaysShort(mom, '');
-            longp = this.weekdays(mom, '');
+            minp = regexEscape(this.weekdaysMin(mom, ''));
+            shortp = regexEscape(this.weekdaysShort(mom, ''));
+            longp = regexEscape(this.weekdays(mom, ''));
             minPieces.push(minp);
             shortPieces.push(shortp);
             longPieces.push(longp);
@@ -31978,11 +33143,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         shortPieces.sort(cmpLenRev);
         longPieces.sort(cmpLenRev);
         mixedPieces.sort(cmpLenRev);
-        for (i = 0; i < 7; i++) {
-            shortPieces[i] = regexEscape(shortPieces[i]);
-            longPieces[i] = regexEscape(longPieces[i]);
-            mixedPieces[i] = regexEscape(mixedPieces[i]);
-        }
 
         this._weekdaysRegex = new RegExp('^(' + mixedPieces.join('|') + ')', 'i');
         this._weekdaysShortRegex = this._weekdaysRegex;
@@ -32079,8 +33239,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         getParsingFlags(config).bigHour = true;
     });
     addParseToken('hmmss', function (input, array, config) {
-        var pos1 = input.length - 4;
-        var pos2 = input.length - 2;
+        var pos1 = input.length - 4,
+            pos2 = input.length - 2;
         array[HOUR] = toInt(input.substr(0, pos1));
         array[MINUTE] = toInt(input.substr(pos1, 2));
         array[SECOND] = toInt(input.substr(pos2));
@@ -32092,8 +33252,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         array[MINUTE] = toInt(input.substr(pos));
     });
     addParseToken('Hmmss', function (input, array, config) {
-        var pos1 = input.length - 4;
-        var pos2 = input.length - 2;
+        var pos1 = input.length - 4,
+            pos2 = input.length - 2;
         array[HOUR] = toInt(input.substr(0, pos1));
         array[MINUTE] = toInt(input.substr(pos1, 2));
         array[SECOND] = toInt(input.substr(pos2));
@@ -32107,7 +33267,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return (input + '').toLowerCase().charAt(0) === 'p';
     }
 
-    var defaultLocaleMeridiemParse = /[ap]\.?m?\.?/i;
+    var defaultLocaleMeridiemParse = /[ap]\.?m?\.?/i,
+
+    // Setting the hour should keep the time, because the user explicitly
+    // specified which hour they want. So trying to maintain the same hour (in
+    // a new timezone) makes sense. Adding/subtracting hours does not follow
+    // this rule.
+    getSetHour = makeGetSet('Hours', true);
+
     function localeMeridiem(hours, minutes, isLower) {
         if (hours > 11) {
             return isLower ? 'pm' : 'PM';
@@ -32115,14 +33282,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return isLower ? 'am' : 'AM';
         }
     }
-
-    // MOMENTS
-
-    // Setting the hour should keep the time, because the user explicitly
-    // specified which hour they want. So trying to maintain the same hour (in
-    // a new timezone) makes sense. Adding/subtracting hours does not follow
-    // this rule.
-    var getSetHour = makeGetSet('Hours', true);
 
     var baseConfig = {
         calendar: defaultCalendar,
@@ -32145,9 +33304,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     };
 
     // internal storage for locale config files
-    var locales = {};
-    var localeFamilies = {};
-    var globalLocale;
+    var locales = {},
+        localeFamilies = {},
+        globalLocale;
+
+    function commonPrefix(arr1, arr2) {
+        var i,
+            minl = Math.min(arr1.length, arr2.length);
+        for (i = 0; i < minl; i += 1) {
+            if (arr1[i] !== arr2[i]) {
+                return i;
+            }
+        }
+        return minl;
+    }
 
     function normalizeLocale(key) {
         return key ? key.toLowerCase().replace('_', '-') : key;
@@ -32173,7 +33343,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 if (locale) {
                     return locale;
                 }
-                if (next && next.length >= j && compareArrays(split, next, true) >= j - 1) {
+                if (next && next.length >= j && commonPrefix(split, next) >= j - 1) {
                     //the next array item is better than a shallower substring of this one
                     break;
                 }
@@ -32185,15 +33355,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function loadLocale(name) {
-        var oldLocale = null;
+        var oldLocale = null,
+            aliasedRequire;
         // TODO: Find a better way to register and load all the locales in Node
-        if (!locales[name] && typeof module !== 'undefined' && module && module.exports) {
+        if (locales[name] === undefined && typeof module !== 'undefined' && module && module.exports) {
             try {
                 oldLocale = globalLocale._abbr;
-                var aliasedRequire = require;
+                aliasedRequire = require;
                 __webpack_require__("./node_modules/moment/locale recursive ^\\.\\/.*$")("./" + name);
                 getSetGlobalLocale(oldLocale);
-            } catch (e) {}
+            } catch (e) {
+                // mark as not found to avoid repeating expensive file require call causing high CPU
+                // when trying to find en-US, en_US, en-us for every format call
+                locales[name] = null; // null means not found
+            }
         }
         return locales[name];
     }
@@ -32277,15 +33452,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             var locale,
                 tmpLocale,
                 parentConfig = baseConfig;
-            // MERGE
-            tmpLocale = loadLocale(name);
-            if (tmpLocale != null) {
-                parentConfig = tmpLocale._config;
+
+            if (locales[name] != null && locales[name].parentLocale != null) {
+                // Update existing child locale in-place to avoid memory-leaks
+                locales[name].set(mergeConfigs(locales[name]._config, config));
+            } else {
+                // MERGE
+                tmpLocale = loadLocale(name);
+                if (tmpLocale != null) {
+                    parentConfig = tmpLocale._config;
+                }
+                config = mergeConfigs(parentConfig, config);
+                if (tmpLocale == null) {
+                    // updateLocale is called for creating a new locale
+                    // Set abbr so it will have a name (getters return
+                    // undefined otherwise).
+                    config.abbr = name;
+                }
+                locale = new Locale(config);
+                locale.parentLocale = locales[name];
+                locales[name] = locale;
             }
-            config = mergeConfigs(parentConfig, config);
-            locale = new Locale(config);
-            locale.parentLocale = locales[name];
-            locales[name] = locale;
 
             // backwards compat for now: also set the locale
             getSetGlobalLocale(name);
@@ -32294,6 +33481,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             if (locales[name] != null) {
                 if (locales[name].parentLocale != null) {
                     locales[name] = locales[name].parentLocale;
+                    if (name === getSetGlobalLocale()) {
+                        getSetGlobalLocale(name);
+                    }
                 } else if (locales[name] != null) {
                     delete locales[name];
                 }
@@ -32331,8 +33521,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function checkOverflow(m) {
-        var overflow;
-        var a = m._a;
+        var overflow,
+            a = m._a;
 
         if (a && getParsingFlags(m).overflow === -2) {
             overflow = a[MONTH] < 0 || a[MONTH] > 11 ? MONTH : a[DATE] < 1 || a[DATE] > daysInMonth(a[YEAR], a[MONTH]) ? DATE : a[HOUR] < 0 || a[HOUR] > 24 || a[HOUR] === 24 && (a[MINUTE] !== 0 || a[SECOND] !== 0 || a[MILLISECOND] !== 0) ? HOUR : a[MINUTE] < 0 || a[MINUTE] > 59 ? MINUTE : a[SECOND] < 0 || a[SECOND] > 59 ? SECOND : a[MILLISECOND] < 0 || a[MILLISECOND] > 999 ? MILLISECOND : -1;
@@ -32352,6 +33542,198 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         return m;
     }
+
+    // iso 8601 regex
+    // 0000-00-00 0000-W00 or 0000-W00-0 + T + 00 or 00:00 or 00:00:00 or 00:00:00.000 + +00:00 or +0000 or +00)
+    var extendedIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,
+        basicIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d|))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,
+        tzRegex = /Z|[+-]\d\d(?::?\d\d)?/,
+        isoDates = [['YYYYYY-MM-DD', /[+-]\d{6}-\d\d-\d\d/], ['YYYY-MM-DD', /\d{4}-\d\d-\d\d/], ['GGGG-[W]WW-E', /\d{4}-W\d\d-\d/], ['GGGG-[W]WW', /\d{4}-W\d\d/, false], ['YYYY-DDD', /\d{4}-\d{3}/], ['YYYY-MM', /\d{4}-\d\d/, false], ['YYYYYYMMDD', /[+-]\d{10}/], ['YYYYMMDD', /\d{8}/], ['GGGG[W]WWE', /\d{4}W\d{3}/], ['GGGG[W]WW', /\d{4}W\d{2}/, false], ['YYYYDDD', /\d{7}/], ['YYYYMM', /\d{6}/, false], ['YYYY', /\d{4}/, false]],
+
+    // iso time formats and regexes
+    isoTimes = [['HH:mm:ss.SSSS', /\d\d:\d\d:\d\d\.\d+/], ['HH:mm:ss,SSSS', /\d\d:\d\d:\d\d,\d+/], ['HH:mm:ss', /\d\d:\d\d:\d\d/], ['HH:mm', /\d\d:\d\d/], ['HHmmss.SSSS', /\d\d\d\d\d\d\.\d+/], ['HHmmss,SSSS', /\d\d\d\d\d\d,\d+/], ['HHmmss', /\d\d\d\d\d\d/], ['HHmm', /\d\d\d\d/], ['HH', /\d\d/]],
+        aspNetJsonRegex = /^\/?Date\((-?\d+)/i,
+
+    // RFC 2822 regex: For details see https://tools.ietf.org/html/rfc2822#section-3.3
+    rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/,
+        obsOffsets = {
+        UT: 0,
+        GMT: 0,
+        EDT: -4 * 60,
+        EST: -5 * 60,
+        CDT: -5 * 60,
+        CST: -6 * 60,
+        MDT: -6 * 60,
+        MST: -7 * 60,
+        PDT: -7 * 60,
+        PST: -8 * 60
+    };
+
+    // date from iso format
+    function configFromISO(config) {
+        var i,
+            l,
+            string = config._i,
+            match = extendedIsoRegex.exec(string) || basicIsoRegex.exec(string),
+            allowTime,
+            dateFormat,
+            timeFormat,
+            tzFormat;
+
+        if (match) {
+            getParsingFlags(config).iso = true;
+
+            for (i = 0, l = isoDates.length; i < l; i++) {
+                if (isoDates[i][1].exec(match[1])) {
+                    dateFormat = isoDates[i][0];
+                    allowTime = isoDates[i][2] !== false;
+                    break;
+                }
+            }
+            if (dateFormat == null) {
+                config._isValid = false;
+                return;
+            }
+            if (match[3]) {
+                for (i = 0, l = isoTimes.length; i < l; i++) {
+                    if (isoTimes[i][1].exec(match[3])) {
+                        // match[2] should be 'T' or space
+                        timeFormat = (match[2] || ' ') + isoTimes[i][0];
+                        break;
+                    }
+                }
+                if (timeFormat == null) {
+                    config._isValid = false;
+                    return;
+                }
+            }
+            if (!allowTime && timeFormat != null) {
+                config._isValid = false;
+                return;
+            }
+            if (match[4]) {
+                if (tzRegex.exec(match[4])) {
+                    tzFormat = 'Z';
+                } else {
+                    config._isValid = false;
+                    return;
+                }
+            }
+            config._f = dateFormat + (timeFormat || '') + (tzFormat || '');
+            configFromStringAndFormat(config);
+        } else {
+            config._isValid = false;
+        }
+    }
+
+    function extractFromRFC2822Strings(yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
+        var result = [untruncateYear(yearStr), defaultLocaleMonthsShort.indexOf(monthStr), parseInt(dayStr, 10), parseInt(hourStr, 10), parseInt(minuteStr, 10)];
+
+        if (secondStr) {
+            result.push(parseInt(secondStr, 10));
+        }
+
+        return result;
+    }
+
+    function untruncateYear(yearStr) {
+        var year = parseInt(yearStr, 10);
+        if (year <= 49) {
+            return 2000 + year;
+        } else if (year <= 999) {
+            return 1900 + year;
+        }
+        return year;
+    }
+
+    function preprocessRFC2822(s) {
+        // Remove comments and folding whitespace and replace multiple-spaces with a single space
+        return s.replace(/\([^)]*\)|[\n\t]/g, ' ').replace(/(\s\s+)/g, ' ').replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+    function checkWeekday(weekdayStr, parsedInput, config) {
+        if (weekdayStr) {
+            // TODO: Replace the vanilla JS Date object with an independent day-of-week check.
+            var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr),
+                weekdayActual = new Date(parsedInput[0], parsedInput[1], parsedInput[2]).getDay();
+            if (weekdayProvided !== weekdayActual) {
+                getParsingFlags(config).weekdayMismatch = true;
+                config._isValid = false;
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function calculateOffset(obsOffset, militaryOffset, numOffset) {
+        if (obsOffset) {
+            return obsOffsets[obsOffset];
+        } else if (militaryOffset) {
+            // the only allowed military tz is Z
+            return 0;
+        } else {
+            var hm = parseInt(numOffset, 10),
+                m = hm % 100,
+                h = (hm - m) / 100;
+            return h * 60 + m;
+        }
+    }
+
+    // date and time from ref 2822 format
+    function configFromRFC2822(config) {
+        var match = rfc2822.exec(preprocessRFC2822(config._i)),
+            parsedArray;
+        if (match) {
+            parsedArray = extractFromRFC2822Strings(match[4], match[3], match[2], match[5], match[6], match[7]);
+            if (!checkWeekday(match[1], parsedArray, config)) {
+                return;
+            }
+
+            config._a = parsedArray;
+            config._tzm = calculateOffset(match[8], match[9], match[10]);
+
+            config._d = createUTCDate.apply(null, config._a);
+            config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
+
+            getParsingFlags(config).rfc2822 = true;
+        } else {
+            config._isValid = false;
+        }
+    }
+
+    // date from 1) ASP.NET, 2) ISO, 3) RFC 2822 formats, or 4) optional fallback if parsing isn't strict
+    function configFromString(config) {
+        var matched = aspNetJsonRegex.exec(config._i);
+        if (matched !== null) {
+            config._d = new Date(+matched[1]);
+            return;
+        }
+
+        configFromISO(config);
+        if (config._isValid === false) {
+            delete config._isValid;
+        } else {
+            return;
+        }
+
+        configFromRFC2822(config);
+        if (config._isValid === false) {
+            delete config._isValid;
+        } else {
+            return;
+        }
+
+        if (config._strict) {
+            config._isValid = false;
+        } else {
+            // Final attempt, use Input Fallback
+            hooks.createFromInputFallback(config);
+        }
+    }
+
+    hooks.createFromInputFallback = deprecate('value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), ' + 'which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are ' + 'discouraged and will be removed in an upcoming major release. Please refer to ' + 'http://momentjs.com/guides/#/warnings/js-date/ for more info.', function (config) {
+        config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
+    });
 
     // Pick the first defined of two or three arguments.
     function defaults(a, b, c) {
@@ -32449,7 +33831,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function dayOfYearFromWeekInfo(config) {
-        var w, weekYear, week, weekday, dow, doy, temp, weekdayOverflow;
+        var w, weekYear, week, weekday, dow, doy, temp, weekdayOverflow, curWeek;
 
         w = config._w;
         if (w.GG != null || w.W != null || w.E != null) {
@@ -32470,7 +33852,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             dow = config._locale._week.dow;
             doy = config._locale._week.doy;
 
-            var curWeek = weekOfYear(createLocal(), dow, doy);
+            curWeek = weekOfYear(createLocal(), dow, doy);
 
             weekYear = defaults(w.gg, config._a[YEAR], curWeek.year);
 
@@ -32505,200 +33887,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    // iso 8601 regex
-    // 0000-00-00 0000-W00 or 0000-W00-0 + T + 00 or 00:00 or 00:00:00 or 00:00:00.000 + +00:00 or +0000 or +00)
-    var extendedIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
-    var basicIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([\+\-]\d\d(?::?\d\d)?|\s*Z)?)?$/;
-
-    var tzRegex = /Z|[+-]\d\d(?::?\d\d)?/;
-
-    var isoDates = [['YYYYYY-MM-DD', /[+-]\d{6}-\d\d-\d\d/], ['YYYY-MM-DD', /\d{4}-\d\d-\d\d/], ['GGGG-[W]WW-E', /\d{4}-W\d\d-\d/], ['GGGG-[W]WW', /\d{4}-W\d\d/, false], ['YYYY-DDD', /\d{4}-\d{3}/], ['YYYY-MM', /\d{4}-\d\d/, false], ['YYYYYYMMDD', /[+-]\d{10}/], ['YYYYMMDD', /\d{8}/],
-    // YYYYMM is NOT allowed by the standard
-    ['GGGG[W]WWE', /\d{4}W\d{3}/], ['GGGG[W]WW', /\d{4}W\d{2}/, false], ['YYYYDDD', /\d{7}/]];
-
-    // iso time formats and regexes
-    var isoTimes = [['HH:mm:ss.SSSS', /\d\d:\d\d:\d\d\.\d+/], ['HH:mm:ss,SSSS', /\d\d:\d\d:\d\d,\d+/], ['HH:mm:ss', /\d\d:\d\d:\d\d/], ['HH:mm', /\d\d:\d\d/], ['HHmmss.SSSS', /\d\d\d\d\d\d\.\d+/], ['HHmmss,SSSS', /\d\d\d\d\d\d,\d+/], ['HHmmss', /\d\d\d\d\d\d/], ['HHmm', /\d\d\d\d/], ['HH', /\d\d/]];
-
-    var aspNetJsonRegex = /^\/?Date\((\-?\d+)/i;
-
-    // date from iso format
-    function configFromISO(config) {
-        var i,
-            l,
-            string = config._i,
-            match = extendedIsoRegex.exec(string) || basicIsoRegex.exec(string),
-            allowTime,
-            dateFormat,
-            timeFormat,
-            tzFormat;
-
-        if (match) {
-            getParsingFlags(config).iso = true;
-
-            for (i = 0, l = isoDates.length; i < l; i++) {
-                if (isoDates[i][1].exec(match[1])) {
-                    dateFormat = isoDates[i][0];
-                    allowTime = isoDates[i][2] !== false;
-                    break;
-                }
-            }
-            if (dateFormat == null) {
-                config._isValid = false;
-                return;
-            }
-            if (match[3]) {
-                for (i = 0, l = isoTimes.length; i < l; i++) {
-                    if (isoTimes[i][1].exec(match[3])) {
-                        // match[2] should be 'T' or space
-                        timeFormat = (match[2] || ' ') + isoTimes[i][0];
-                        break;
-                    }
-                }
-                if (timeFormat == null) {
-                    config._isValid = false;
-                    return;
-                }
-            }
-            if (!allowTime && timeFormat != null) {
-                config._isValid = false;
-                return;
-            }
-            if (match[4]) {
-                if (tzRegex.exec(match[4])) {
-                    tzFormat = 'Z';
-                } else {
-                    config._isValid = false;
-                    return;
-                }
-            }
-            config._f = dateFormat + (timeFormat || '') + (tzFormat || '');
-            configFromStringAndFormat(config);
-        } else {
-            config._isValid = false;
-        }
-    }
-
-    // RFC 2822 regex: For details see https://tools.ietf.org/html/rfc2822#section-3.3
-    var rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
-
-    function extractFromRFC2822Strings(yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
-        var result = [untruncateYear(yearStr), defaultLocaleMonthsShort.indexOf(monthStr), parseInt(dayStr, 10), parseInt(hourStr, 10), parseInt(minuteStr, 10)];
-
-        if (secondStr) {
-            result.push(parseInt(secondStr, 10));
-        }
-
-        return result;
-    }
-
-    function untruncateYear(yearStr) {
-        var year = parseInt(yearStr, 10);
-        if (year <= 49) {
-            return 2000 + year;
-        } else if (year <= 999) {
-            return 1900 + year;
-        }
-        return year;
-    }
-
-    function preprocessRFC2822(s) {
-        // Remove comments and folding whitespace and replace multiple-spaces with a single space
-        return s.replace(/\([^)]*\)|[\n\t]/g, ' ').replace(/(\s\s+)/g, ' ').replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-    }
-
-    function checkWeekday(weekdayStr, parsedInput, config) {
-        if (weekdayStr) {
-            // TODO: Replace the vanilla JS Date object with an indepentent day-of-week check.
-            var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr),
-                weekdayActual = new Date(parsedInput[0], parsedInput[1], parsedInput[2]).getDay();
-            if (weekdayProvided !== weekdayActual) {
-                getParsingFlags(config).weekdayMismatch = true;
-                config._isValid = false;
-                return false;
-            }
-        }
-        return true;
-    }
-
-    var obsOffsets = {
-        UT: 0,
-        GMT: 0,
-        EDT: -4 * 60,
-        EST: -5 * 60,
-        CDT: -5 * 60,
-        CST: -6 * 60,
-        MDT: -6 * 60,
-        MST: -7 * 60,
-        PDT: -7 * 60,
-        PST: -8 * 60
-    };
-
-    function calculateOffset(obsOffset, militaryOffset, numOffset) {
-        if (obsOffset) {
-            return obsOffsets[obsOffset];
-        } else if (militaryOffset) {
-            // the only allowed military tz is Z
-            return 0;
-        } else {
-            var hm = parseInt(numOffset, 10);
-            var m = hm % 100,
-                h = (hm - m) / 100;
-            return h * 60 + m;
-        }
-    }
-
-    // date and time from ref 2822 format
-    function configFromRFC2822(config) {
-        var match = rfc2822.exec(preprocessRFC2822(config._i));
-        if (match) {
-            var parsedArray = extractFromRFC2822Strings(match[4], match[3], match[2], match[5], match[6], match[7]);
-            if (!checkWeekday(match[1], parsedArray, config)) {
-                return;
-            }
-
-            config._a = parsedArray;
-            config._tzm = calculateOffset(match[8], match[9], match[10]);
-
-            config._d = createUTCDate.apply(null, config._a);
-            config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
-
-            getParsingFlags(config).rfc2822 = true;
-        } else {
-            config._isValid = false;
-        }
-    }
-
-    // date from iso format or fallback
-    function configFromString(config) {
-        var matched = aspNetJsonRegex.exec(config._i);
-
-        if (matched !== null) {
-            config._d = new Date(+matched[1]);
-            return;
-        }
-
-        configFromISO(config);
-        if (config._isValid === false) {
-            delete config._isValid;
-        } else {
-            return;
-        }
-
-        configFromRFC2822(config);
-        if (config._isValid === false) {
-            delete config._isValid;
-        } else {
-            return;
-        }
-
-        // Final attempt, use Input Fallback
-        hooks.createFromInputFallback(config);
-    }
-
-    hooks.createFromInputFallback = deprecate('value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), ' + 'which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are ' + 'discouraged and will be removed in an upcoming major release. Please refer to ' + 'http://momentjs.com/guides/#/warnings/js-date/ for more info.', function (config) {
-        config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
-    });
-
     // constant that refers to the ISO standard
     hooks.ISO_8601 = function () {};
 
@@ -32727,7 +33915,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             token,
             skipped,
             stringLength = string.length,
-            totalParsedInputLength = 0;
+            totalParsedInputLength = 0,
+            era;
 
         tokens = expandFormat(config._f, config._locale).match(formattingTokens) || [];
 
@@ -32773,6 +33962,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         // handle meridiem
         config._a[HOUR] = meridiemFixWrap(config._locale, config._a[HOUR], config._meridiem);
 
+        // handle era
+        era = getParsingFlags(config).era;
+        if (era !== null) {
+            config._a[YEAR] = config._locale.erasConvertYear(era, config._a[YEAR]);
+        }
+
         configFromArray(config);
         checkOverflow(config);
     }
@@ -32804,7 +33999,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     // date from string and array of format strings
     function configFromStringAndArray(config) {
-        var tempConfig, bestMoment, scoreToBeat, i, currentScore;
+        var tempConfig,
+            bestMoment,
+            scoreToBeat,
+            i,
+            currentScore,
+            validFormatFound,
+            bestFormatIsValid = false;
 
         if (config._f.length === 0) {
             getParsingFlags(config).invalidFormat = true;
@@ -32814,6 +34015,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         for (i = 0; i < config._f.length; i++) {
             currentScore = 0;
+            validFormatFound = false;
             tempConfig = copyConfig({}, config);
             if (config._useUTC != null) {
                 tempConfig._useUTC = config._useUTC;
@@ -32821,8 +34023,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             tempConfig._f = config._f[i];
             configFromStringAndFormat(tempConfig);
 
-            if (!isValid(tempConfig)) {
-                continue;
+            if (isValid(tempConfig)) {
+                validFormatFound = true;
             }
 
             // if there is any input that was not parsed add a penalty for that format
@@ -32833,9 +34035,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
             getParsingFlags(tempConfig).score = currentScore;
 
-            if (scoreToBeat == null || currentScore < scoreToBeat) {
-                scoreToBeat = currentScore;
-                bestMoment = tempConfig;
+            if (!bestFormatIsValid) {
+                if (scoreToBeat == null || currentScore < scoreToBeat || validFormatFound) {
+                    scoreToBeat = currentScore;
+                    bestMoment = tempConfig;
+                    if (validFormatFound) {
+                        bestFormatIsValid = true;
+                    }
+                }
+            } else {
+                if (currentScore < scoreToBeat) {
+                    scoreToBeat = currentScore;
+                    bestMoment = tempConfig;
+                }
             }
         }
 
@@ -32847,8 +34059,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return;
         }
 
-        var i = normalizeObjectUnits(config._i);
-        config._a = map([i.year, i.month, i.day || i.date, i.hour, i.minute, i.second, i.millisecond], function (obj) {
+        var i = normalizeObjectUnits(config._i),
+            dayOrDate = i.day === undefined ? i.date : i.day;
+        config._a = map([i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond], function (obj) {
             return obj && parseInt(obj, 10);
         });
 
@@ -32925,6 +34138,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     function createLocalOrUTC(input, format, locale, strict, isUTC) {
         var c = {};
 
+        if (format === true || format === false) {
+            strict = format;
+            format = undefined;
+        }
+
         if (locale === true || locale === false) {
             strict = locale;
             locale = undefined;
@@ -32956,9 +34174,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         } else {
             return createInvalid();
         }
-    });
-
-    var prototypeMax = deprecate('moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/', function () {
+    }),
+        prototypeMax = deprecate('moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/', function () {
         var other = createLocal.apply(null, arguments);
         if (this.isValid() && other.isValid()) {
             return other > this ? this : other;
@@ -33009,14 +34226,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var ordering = ['year', 'quarter', 'month', 'week', 'day', 'hour', 'minute', 'second', 'millisecond'];
 
     function isDurationValid(m) {
-        for (var key in m) {
-            if (!(indexOf.call(ordering, key) !== -1 && (m[key] == null || !isNaN(m[key])))) {
+        var key,
+            unitHasDecimal = false,
+            i;
+        for (key in m) {
+            if (hasOwnProp(m, key) && !(indexOf.call(ordering, key) !== -1 && (m[key] == null || !isNaN(m[key])))) {
                 return false;
             }
         }
 
-        var unitHasDecimal = false;
-        for (var i = 0; i < ordering.length; ++i) {
+        for (i = 0; i < ordering.length; ++i) {
             if (m[ordering[i]]) {
                 if (unitHasDecimal) {
                     return false; // only allow non-integers for smallest unit
@@ -33083,12 +34302,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
+    // compare two arrays, return the number of differences
+    function compareArrays(array1, array2, dontConvert) {
+        var len = Math.min(array1.length, array2.length),
+            lengthDiff = Math.abs(array1.length - array2.length),
+            diffs = 0,
+            i;
+        for (i = 0; i < len; i++) {
+            if (dontConvert && array1[i] !== array2[i] || !dontConvert && toInt(array1[i]) !== toInt(array2[i])) {
+                diffs++;
+            }
+        }
+        return diffs + lengthDiff;
+    }
+
     // FORMATTING
 
     function offset(token, separator) {
         addFormatToken(token, 0, 0, function () {
-            var offset = this.utcOffset();
-            var sign = '+';
+            var offset = this.utcOffset(),
+                sign = '+';
             if (offset < 0) {
                 offset = -offset;
                 sign = '-';
@@ -33117,15 +34350,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     var chunkOffset = /([\+\-]|\d\d)/gi;
 
     function offsetFromString(matcher, string) {
-        var matches = (string || '').match(matcher);
+        var matches = (string || '').match(matcher),
+            chunk,
+            parts,
+            minutes;
 
         if (matches === null) {
             return null;
         }
 
-        var chunk = matches[matches.length - 1] || [];
-        var parts = (chunk + '').match(chunkOffset) || ['-', 0, 0];
-        var minutes = +(parts[1] * 60) + toInt(parts[2]);
+        chunk = matches[matches.length - 1] || [];
+        parts = (chunk + '').match(chunkOffset) || ['-', 0, 0];
+        minutes = +(parts[1] * 60) + toInt(parts[2]);
 
         return minutes === 0 ? 0 : parts[0] === '+' ? minutes : -minutes;
     }
@@ -33148,7 +34384,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     function getDateOffset(m) {
         // On Firefox.24 Date#getTimezoneOffset returns a floating point.
         // https://github.com/moment/moment/pull/1871
-        return -Math.round(m._d.getTimezoneOffset() / 15) * 15;
+        return -Math.round(m._d.getTimezoneOffset());
     }
 
     // HOOKS
@@ -33269,13 +34505,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return this._isDSTShifted;
         }
 
-        var c = {};
+        var c = {},
+            other;
 
         copyConfig(c, this);
         c = prepareConfig(c);
 
         if (c._a) {
-            var other = c._isUTC ? createUTC(c._a) : createLocal(c._a);
+            other = c._isUTC ? createUTC(c._a) : createLocal(c._a);
             this._isDSTShifted = this.isValid() && compareArrays(c._a, other.toArray()) > 0;
         } else {
             this._isDSTShifted = false;
@@ -33297,12 +34534,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     // ASP.NET json date format regex
-    var aspNetRegex = /^(\-|\+)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
+    var aspNetRegex = /^(-|\+)?(?:(\d*)[. ])?(\d+):(\d+)(?::(\d+)(\.\d*)?)?$/,
 
     // from http://docs.closure-library.googlecode.com/git/closure_goog_date_date.js.source.html
     // somewhat more in line with 4.4.3.2 2004 spec, but allows decimal anywhere
     // and further modified to allow for strings containing both week and day
-    var isoRegex = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
+    isoRegex = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
 
     function createDuration(input, key) {
         var duration = input,
@@ -33319,14 +34556,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 d: input._days,
                 M: input._months
             };
-        } else if (isNumber(input)) {
+        } else if (isNumber(input) || !isNaN(+input)) {
             duration = {};
             if (key) {
-                duration[key] = input;
+                duration[key] = +input;
             } else {
-                duration.milliseconds = input;
+                duration.milliseconds = +input;
             }
-        } else if (!!(match = aspNetRegex.exec(input))) {
+        } else if (match = aspNetRegex.exec(input)) {
             sign = match[1] === '-' ? -1 : 1;
             duration = {
                 y: 0,
@@ -33336,7 +34573,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 s: toInt(match[SECOND]) * sign,
                 ms: toInt(absRound(match[MILLISECOND] * 1000)) * sign // the millisecond decimal point is included in the match
             };
-        } else if (!!(match = isoRegex.exec(input))) {
+        } else if (match = isoRegex.exec(input)) {
             sign = match[1] === '-' ? -1 : 1;
             duration = {
                 y: parseIso(match[2], sign),
@@ -33362,6 +34599,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         if (isDuration(input) && hasOwnProp(input, '_locale')) {
             ret._locale = input._locale;
+        }
+
+        if (isDuration(input) && hasOwnProp(input, '_isValid')) {
+            ret._isValid = input._isValid;
         }
 
         return ret;
@@ -33417,10 +34658,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             //invert the arguments, but complain about it
             if (period !== null && !isNaN(+period)) {
                 deprecateSimple(name, 'moment().' + name + '(period, number) is deprecated. Please use moment().' + name + '(number, period). ' + 'See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.');
-                tmp = val;val = period;period = tmp;
+                tmp = val;
+                val = period;
+                period = tmp;
             }
 
-            val = typeof val === 'string' ? +val : val;
             dur = createDuration(val, period);
             addSubtract(this, dur, direction);
             return this;
@@ -33453,8 +34695,58 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     }
 
-    var add = createAdder(1, 'add');
-    var subtract = createAdder(-1, 'subtract');
+    var add = createAdder(1, 'add'),
+        subtract = createAdder(-1, 'subtract');
+
+    function isString(input) {
+        return typeof input === 'string' || input instanceof String;
+    }
+
+    // type MomentInput = Moment | Date | string | number | (number | string)[] | MomentInputObject | void; // null | undefined
+    function isMomentInput(input) {
+        return isMoment(input) || isDate(input) || isString(input) || isNumber(input) || isNumberOrStringArray(input) || isMomentInputObject(input) || input === null || input === undefined;
+    }
+
+    function isMomentInputObject(input) {
+        var objectTest = isObject(input) && !isObjectEmpty(input),
+            propertyTest = false,
+            properties = ['years', 'year', 'y', 'months', 'month', 'M', 'days', 'day', 'd', 'dates', 'date', 'D', 'hours', 'hour', 'h', 'minutes', 'minute', 'm', 'seconds', 'second', 's', 'milliseconds', 'millisecond', 'ms'],
+            i,
+            property;
+
+        for (i = 0; i < properties.length; i += 1) {
+            property = properties[i];
+            propertyTest = propertyTest || hasOwnProp(input, property);
+        }
+
+        return objectTest && propertyTest;
+    }
+
+    function isNumberOrStringArray(input) {
+        var arrayTest = isArray(input),
+            dataTypeTest = false;
+        if (arrayTest) {
+            dataTypeTest = input.filter(function (item) {
+                return !isNumber(item) && isString(input);
+            }).length === 0;
+        }
+        return arrayTest && dataTypeTest;
+    }
+
+    function isCalendarSpec(input) {
+        var objectTest = isObject(input) && !isObjectEmpty(input),
+            propertyTest = false,
+            properties = ['sameDay', 'nextDay', 'lastDay', 'nextWeek', 'lastWeek', 'sameElse'],
+            i,
+            property;
+
+        for (i = 0; i < properties.length; i += 1) {
+            property = properties[i];
+            propertyTest = propertyTest || hasOwnProp(input, property);
+        }
+
+        return objectTest && propertyTest;
+    }
 
     function getCalendarFormat(myMoment, now) {
         var diff = myMoment.diff(now, 'days', true);
@@ -33462,13 +34754,22 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function calendar$1(time, formats) {
+        // Support for single parameter, formats only overload to the calendar function
+        if (arguments.length === 1) {
+            if (isMomentInput(arguments[0])) {
+                time = arguments[0];
+                formats = undefined;
+            } else if (isCalendarSpec(arguments[0])) {
+                formats = arguments[0];
+                time = undefined;
+            }
+        }
         // We want to compare the start of today, vs this.
         // Getting start-of-today depends on whether we're local/utc/offset or not.
         var now = time || createLocal(),
             sod = cloneWithOffset(now, this).startOf('day'),
-            format = hooks.calendarFormat(this, sod) || 'sameElse';
-
-        var output = formats && (isFunction(formats[format]) ? formats[format].call(this, now) : formats[format]);
+            format = hooks.calendarFormat(this, sod) || 'sameElse',
+            output = formats && (isFunction(formats[format]) ? formats[format].call(this, now) : formats[format]);
 
         return this.format(output || this.localeData().calendar(format, this, createLocal(now)));
     }
@@ -33555,21 +34856,29 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         switch (units) {
             case 'year':
-                output = monthDiff(this, that) / 12;break;
+                output = monthDiff(this, that) / 12;
+                break;
             case 'month':
-                output = monthDiff(this, that);break;
+                output = monthDiff(this, that);
+                break;
             case 'quarter':
-                output = monthDiff(this, that) / 3;break;
+                output = monthDiff(this, that) / 3;
+                break;
             case 'second':
-                output = (this - that) / 1e3;break; // 1000
+                output = (this - that) / 1e3;
+                break; // 1000
             case 'minute':
-                output = (this - that) / 6e4;break; // 1000 * 60
+                output = (this - that) / 6e4;
+                break; // 1000 * 60
             case 'hour':
-                output = (this - that) / 36e5;break; // 1000 * 60 * 60
+                output = (this - that) / 36e5;
+                break; // 1000 * 60 * 60
             case 'day':
-                output = (this - that - zoneDelta) / 864e5;break; // 1000 * 60 * 60 * 24, negate dst
+                output = (this - that - zoneDelta) / 864e5;
+                break; // 1000 * 60 * 60 * 24, negate dst
             case 'week':
-                output = (this - that - zoneDelta) / 6048e5;break; // 1000 * 60 * 60 * 24 * 7, negate dst
+                output = (this - that - zoneDelta) / 6048e5;
+                break; // 1000 * 60 * 60 * 24 * 7, negate dst
             default:
                 output = this - that;
         }
@@ -33578,6 +34887,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function monthDiff(a, b) {
+        if (a.date() < b.date()) {
+            // end-of-month calculations work correct when the start month has more
+            // days than the end month.
+            return -monthDiff(b, a);
+        }
         // difference in months
         var wholeMonthDiff = (b.year() - a.year()) * 12 + (b.month() - a.month()),
 
@@ -33611,8 +34925,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         if (!this.isValid()) {
             return null;
         }
-        var utc = keepOffset !== true;
-        var m = utc ? this.clone().utc() : this;
+        var utc = keepOffset !== true,
+            m = utc ? this.clone().utc() : this;
         if (m.year() < 0 || m.year() > 9999) {
             return formatMoment(m, utc ? 'YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]' : 'YYYYYY-MM-DD[T]HH:mm:ss.SSSZ');
         }
@@ -33637,16 +34951,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         if (!this.isValid()) {
             return 'moment.invalid(/* ' + this._i + ' */)';
         }
-        var func = 'moment';
-        var zone = '';
+        var func = 'moment',
+            zone = '',
+            prefix,
+            year,
+            datetime,
+            suffix;
         if (!this.isLocal()) {
             func = this.utcOffset() === 0 ? 'moment.utc' : 'moment.parseZone';
             zone = 'Z';
         }
-        var prefix = '[' + func + '("]';
-        var year = 0 <= this.year() && this.year() <= 9999 ? 'YYYY' : 'YYYYYY';
-        var datetime = '-MM-DD[T]HH:mm:ss.SSS';
-        var suffix = zone + '[")]';
+        prefix = '[' + func + '("]';
+        year = 0 <= this.year() && this.year() <= 9999 ? 'YYYY' : 'YYYYYY';
+        datetime = '-MM-DD[T]HH:mm:ss.SSS';
+        suffix = zone + '[")]';
 
         return this.format(prefix + year + datetime + suffix);
     }
@@ -33712,10 +35030,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return this._locale;
     }
 
-    var MS_PER_SECOND = 1000;
-    var MS_PER_MINUTE = 60 * MS_PER_SECOND;
-    var MS_PER_HOUR = 60 * MS_PER_MINUTE;
-    var MS_PER_400_YEARS = (365 * 400 + 97) * 24 * MS_PER_HOUR;
+    var MS_PER_SECOND = 1000,
+        MS_PER_MINUTE = 60 * MS_PER_SECOND,
+        MS_PER_HOUR = 60 * MS_PER_MINUTE,
+        MS_PER_400_YEARS = (365 * 400 + 97) * 24 * MS_PER_HOUR;
 
     // actual modulo - handles negative numbers (for dates before 1970):
     function mod$1(dividend, divisor) {
@@ -33743,13 +35061,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function startOf(units) {
-        var time;
+        var time, startOfDate;
         units = normalizeUnits(units);
         if (units === undefined || units === 'millisecond' || !this.isValid()) {
             return this;
         }
 
-        var startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
+        startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
 
         switch (units) {
             case 'year':
@@ -33791,13 +35109,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function endOf(units) {
-        var time;
+        var time, startOfDate;
         units = normalizeUnits(units);
         if (units === undefined || units === 'millisecond' || !this.isValid()) {
             return this;
         }
 
-        var startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
+        startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
 
         switch (units) {
             case 'year':
@@ -33895,6 +35213,273 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         };
     }
 
+    addFormatToken('N', 0, 0, 'eraAbbr');
+    addFormatToken('NN', 0, 0, 'eraAbbr');
+    addFormatToken('NNN', 0, 0, 'eraAbbr');
+    addFormatToken('NNNN', 0, 0, 'eraName');
+    addFormatToken('NNNNN', 0, 0, 'eraNarrow');
+
+    addFormatToken('y', ['y', 1], 'yo', 'eraYear');
+    addFormatToken('y', ['yy', 2], 0, 'eraYear');
+    addFormatToken('y', ['yyy', 3], 0, 'eraYear');
+    addFormatToken('y', ['yyyy', 4], 0, 'eraYear');
+
+    addRegexToken('N', matchEraAbbr);
+    addRegexToken('NN', matchEraAbbr);
+    addRegexToken('NNN', matchEraAbbr);
+    addRegexToken('NNNN', matchEraName);
+    addRegexToken('NNNNN', matchEraNarrow);
+
+    addParseToken(['N', 'NN', 'NNN', 'NNNN', 'NNNNN'], function (input, array, config, token) {
+        var era = config._locale.erasParse(input, token, config._strict);
+        if (era) {
+            getParsingFlags(config).era = era;
+        } else {
+            getParsingFlags(config).invalidEra = input;
+        }
+    });
+
+    addRegexToken('y', matchUnsigned);
+    addRegexToken('yy', matchUnsigned);
+    addRegexToken('yyy', matchUnsigned);
+    addRegexToken('yyyy', matchUnsigned);
+    addRegexToken('yo', matchEraYearOrdinal);
+
+    addParseToken(['y', 'yy', 'yyy', 'yyyy'], YEAR);
+    addParseToken(['yo'], function (input, array, config, token) {
+        var match;
+        if (config._locale._eraYearOrdinalRegex) {
+            match = input.match(config._locale._eraYearOrdinalRegex);
+        }
+
+        if (config._locale.eraYearOrdinalParse) {
+            array[YEAR] = config._locale.eraYearOrdinalParse(input, match);
+        } else {
+            array[YEAR] = parseInt(input, 10);
+        }
+    });
+
+    function localeEras(m, format) {
+        var i,
+            l,
+            date,
+            eras = this._eras || getLocale('en')._eras;
+        for (i = 0, l = eras.length; i < l; ++i) {
+            switch (_typeof(eras[i].since)) {
+                case 'string':
+                    // truncate time
+                    date = hooks(eras[i].since).startOf('day');
+                    eras[i].since = date.valueOf();
+                    break;
+            }
+
+            switch (_typeof(eras[i].until)) {
+                case 'undefined':
+                    eras[i].until = +Infinity;
+                    break;
+                case 'string':
+                    // truncate time
+                    date = hooks(eras[i].until).startOf('day').valueOf();
+                    eras[i].until = date.valueOf();
+                    break;
+            }
+        }
+        return eras;
+    }
+
+    function localeErasParse(eraName, format, strict) {
+        var i,
+            l,
+            eras = this.eras(),
+            name,
+            abbr,
+            narrow;
+        eraName = eraName.toUpperCase();
+
+        for (i = 0, l = eras.length; i < l; ++i) {
+            name = eras[i].name.toUpperCase();
+            abbr = eras[i].abbr.toUpperCase();
+            narrow = eras[i].narrow.toUpperCase();
+
+            if (strict) {
+                switch (format) {
+                    case 'N':
+                    case 'NN':
+                    case 'NNN':
+                        if (abbr === eraName) {
+                            return eras[i];
+                        }
+                        break;
+
+                    case 'NNNN':
+                        if (name === eraName) {
+                            return eras[i];
+                        }
+                        break;
+
+                    case 'NNNNN':
+                        if (narrow === eraName) {
+                            return eras[i];
+                        }
+                        break;
+                }
+            } else if ([name, abbr, narrow].indexOf(eraName) >= 0) {
+                return eras[i];
+            }
+        }
+    }
+
+    function localeErasConvertYear(era, year) {
+        var dir = era.since <= era.until ? +1 : -1;
+        if (year === undefined) {
+            return hooks(era.since).year();
+        } else {
+            return hooks(era.since).year() + (year - era.offset) * dir;
+        }
+    }
+
+    function getEraName() {
+        var i,
+            l,
+            val,
+            eras = this.localeData().eras();
+        for (i = 0, l = eras.length; i < l; ++i) {
+            // truncate time
+            val = this.startOf('day').valueOf();
+
+            if (eras[i].since <= val && val <= eras[i].until) {
+                return eras[i].name;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+                return eras[i].name;
+            }
+        }
+
+        return '';
+    }
+
+    function getEraNarrow() {
+        var i,
+            l,
+            val,
+            eras = this.localeData().eras();
+        for (i = 0, l = eras.length; i < l; ++i) {
+            // truncate time
+            val = this.startOf('day').valueOf();
+
+            if (eras[i].since <= val && val <= eras[i].until) {
+                return eras[i].narrow;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+                return eras[i].narrow;
+            }
+        }
+
+        return '';
+    }
+
+    function getEraAbbr() {
+        var i,
+            l,
+            val,
+            eras = this.localeData().eras();
+        for (i = 0, l = eras.length; i < l; ++i) {
+            // truncate time
+            val = this.startOf('day').valueOf();
+
+            if (eras[i].since <= val && val <= eras[i].until) {
+                return eras[i].abbr;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+                return eras[i].abbr;
+            }
+        }
+
+        return '';
+    }
+
+    function getEraYear() {
+        var i,
+            l,
+            dir,
+            val,
+            eras = this.localeData().eras();
+        for (i = 0, l = eras.length; i < l; ++i) {
+            dir = eras[i].since <= eras[i].until ? +1 : -1;
+
+            // truncate time
+            val = this.startOf('day').valueOf();
+
+            if (eras[i].since <= val && val <= eras[i].until || eras[i].until <= val && val <= eras[i].since) {
+                return (this.year() - hooks(eras[i].since).year()) * dir + eras[i].offset;
+            }
+        }
+
+        return this.year();
+    }
+
+    function erasNameRegex(isStrict) {
+        if (!hasOwnProp(this, '_erasNameRegex')) {
+            computeErasParse.call(this);
+        }
+        return isStrict ? this._erasNameRegex : this._erasRegex;
+    }
+
+    function erasAbbrRegex(isStrict) {
+        if (!hasOwnProp(this, '_erasAbbrRegex')) {
+            computeErasParse.call(this);
+        }
+        return isStrict ? this._erasAbbrRegex : this._erasRegex;
+    }
+
+    function erasNarrowRegex(isStrict) {
+        if (!hasOwnProp(this, '_erasNarrowRegex')) {
+            computeErasParse.call(this);
+        }
+        return isStrict ? this._erasNarrowRegex : this._erasRegex;
+    }
+
+    function matchEraAbbr(isStrict, locale) {
+        return locale.erasAbbrRegex(isStrict);
+    }
+
+    function matchEraName(isStrict, locale) {
+        return locale.erasNameRegex(isStrict);
+    }
+
+    function matchEraNarrow(isStrict, locale) {
+        return locale.erasNarrowRegex(isStrict);
+    }
+
+    function matchEraYearOrdinal(isStrict, locale) {
+        return locale._eraYearOrdinalRegex || matchUnsigned;
+    }
+
+    function computeErasParse() {
+        var abbrPieces = [],
+            namePieces = [],
+            narrowPieces = [],
+            mixedPieces = [],
+            i,
+            l,
+            eras = this.eras();
+
+        for (i = 0, l = eras.length; i < l; ++i) {
+            namePieces.push(regexEscape(eras[i].name));
+            abbrPieces.push(regexEscape(eras[i].abbr));
+            narrowPieces.push(regexEscape(eras[i].narrow));
+
+            mixedPieces.push(regexEscape(eras[i].name));
+            mixedPieces.push(regexEscape(eras[i].abbr));
+            mixedPieces.push(regexEscape(eras[i].narrow));
+        }
+
+        this._erasRegex = new RegExp('^(' + mixedPieces.join('|') + ')', 'i');
+        this._erasNameRegex = new RegExp('^(' + namePieces.join('|') + ')', 'i');
+        this._erasAbbrRegex = new RegExp('^(' + abbrPieces.join('|') + ')', 'i');
+        this._erasNarrowRegex = new RegExp('^(' + narrowPieces.join('|') + ')', 'i');
+    }
+
     // FORMATTING
 
     addFormatToken(0, ['gg', 2], 0, function () {
@@ -33957,9 +35542,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return weeksInYear(this.year(), 1, 4);
     }
 
+    function getISOWeeksInISOWeekYear() {
+        return weeksInYear(this.isoWeekYear(), 1, 4);
+    }
+
     function getWeeksInYear() {
         var weekInfo = this.localeData()._week;
         return weeksInYear(this.year(), weekInfo.dow, weekInfo.doy);
+    }
+
+    function getWeeksInWeekYear() {
+        var weekInfo = this.localeData()._week;
+        return weeksInYear(this.weekYear(), weekInfo.dow, weekInfo.doy);
     }
 
     function getSetWeekYearHelper(input, week, weekday, dow, doy) {
@@ -34155,7 +35749,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     addRegexToken('SS', match1to3, match2);
     addRegexToken('SSS', match1to3, match3);
 
-    var token;
+    var token, getSetMillisecond;
     for (token = 'SSSS'; token.length <= 9; token += 'S') {
         addRegexToken(token, matchUnsigned);
     }
@@ -34167,9 +35761,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     for (token = 'S'; token.length <= 9; token += 'S') {
         addParseToken(token, parseMs);
     }
-    // MOMENTS
 
-    var getSetMillisecond = makeGetSet('Milliseconds', false);
+    getSetMillisecond = makeGetSet('Milliseconds', false);
 
     // FORMATTING
 
@@ -34221,11 +35814,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     proto.toDate = toDate;
     proto.toISOString = toISOString;
     proto.inspect = inspect;
+    if (typeof Symbol !== 'undefined' && Symbol.for != null) {
+        proto[Symbol.for('nodejs.util.inspect.custom')] = function () {
+            return 'Moment<' + this.format() + '>';
+        };
+    }
     proto.toJSON = toJSON;
     proto.toString = toString;
     proto.unix = unix;
     proto.valueOf = valueOf;
     proto.creationData = creationData;
+    proto.eraName = getEraName;
+    proto.eraNarrow = getEraNarrow;
+    proto.eraAbbr = getEraAbbr;
+    proto.eraYear = getEraYear;
     proto.year = getSetYear;
     proto.isLeapYear = getIsLeapYear;
     proto.weekYear = getSetWeekYear;
@@ -34236,7 +35838,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     proto.week = proto.weeks = getSetWeek;
     proto.isoWeek = proto.isoWeeks = getSetISOWeek;
     proto.weeksInYear = getWeeksInYear;
+    proto.weeksInWeekYear = getWeeksInWeekYear;
     proto.isoWeeksInYear = getISOWeeksInYear;
+    proto.isoWeeksInISOWeekYear = getISOWeeksInISOWeekYear;
     proto.date = getSetDayOfMonth;
     proto.day = proto.days = getSetDayOfWeek;
     proto.weekday = getSetLocaleDayOfWeek;
@@ -34287,6 +35891,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     proto$1.relativeTime = relativeTime;
     proto$1.pastFuture = pastFuture;
     proto$1.set = set;
+    proto$1.eras = localeEras;
+    proto$1.erasParse = localeErasParse;
+    proto$1.erasConvertYear = localeErasConvertYear;
+    proto$1.erasAbbrRegex = erasAbbrRegex;
+    proto$1.erasNameRegex = erasNameRegex;
+    proto$1.erasNarrowRegex = erasNarrowRegex;
 
     proto$1.months = localeMonths;
     proto$1.monthsShort = localeMonthsShort;
@@ -34310,8 +35920,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     proto$1.meridiem = localeMeridiem;
 
     function get$1(format, index, field, setter) {
-        var locale = getLocale();
-        var utc = createUTC().set(setter, index);
+        var locale = getLocale(),
+            utc = createUTC().set(setter, index);
         return locale[field](utc, format);
     }
 
@@ -34327,8 +35937,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return get$1(format, index, field, 'month');
         }
 
-        var i;
-        var out = [];
+        var i,
+            out = [];
         for (i = 0; i < 12; i++) {
             out[i] = get$1(format, i, field, 'month');
         }
@@ -34365,14 +35975,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
 
         var locale = getLocale(),
-            shift = localeSorted ? locale._week.dow : 0;
+            shift = localeSorted ? locale._week.dow : 0,
+            i,
+            out = [];
 
         if (index != null) {
             return get$1(format, (index + shift) % 7, field, 'day');
         }
 
-        var i;
-        var out = [];
         for (i = 0; i < 7; i++) {
             out[i] = get$1(format, (i + shift) % 7, field, 'day');
         }
@@ -34400,6 +36010,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     getSetGlobalLocale('en', {
+        eras: [{
+            since: '0001-01-01',
+            until: +Infinity,
+            offset: 1,
+            name: 'Anno Domini',
+            narrow: 'AD',
+            abbr: 'AD'
+        }, {
+            since: '0000-12-31',
+            until: -Infinity,
+            offset: 1,
+            name: 'Before Christ',
+            narrow: 'BC',
+            abbr: 'BC'
+        }],
         dayOfMonthOrdinalParse: /\d{1,2}(th|st|nd|rd)/,
         ordinal: function ordinal(number) {
             var b = number % 10,
@@ -34461,11 +36086,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     function bubble() {
-        var milliseconds = this._milliseconds;
-        var days = this._days;
-        var months = this._months;
-        var data = this._data;
-        var seconds, minutes, hours, years, monthsFromDays;
+        var milliseconds = this._milliseconds,
+            days = this._days,
+            months = this._months,
+            data = this._data,
+            seconds,
+            minutes,
+            hours,
+            years,
+            monthsFromDays;
 
         // if we have a mix of positive and negative values, bubble down first
         // check: https://github.com/moment/moment/issues/2166
@@ -34521,9 +36150,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         if (!this.isValid()) {
             return NaN;
         }
-        var days;
-        var months;
-        var milliseconds = this._milliseconds;
+        var days,
+            months,
+            milliseconds = this._milliseconds;
 
         units = normalizeUnits(units);
 
@@ -34575,15 +36204,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         };
     }
 
-    var asMilliseconds = makeAs('ms');
-    var asSeconds = makeAs('s');
-    var asMinutes = makeAs('m');
-    var asHours = makeAs('h');
-    var asDays = makeAs('d');
-    var asWeeks = makeAs('w');
-    var asMonths = makeAs('M');
-    var asQuarters = makeAs('Q');
-    var asYears = makeAs('y');
+    var asMilliseconds = makeAs('ms'),
+        asSeconds = makeAs('s'),
+        asMinutes = makeAs('m'),
+        asHours = makeAs('h'),
+        asDays = makeAs('d'),
+        asWeeks = makeAs('w'),
+        asMonths = makeAs('M'),
+        asQuarters = makeAs('Q'),
+        asYears = makeAs('y');
 
     function clone$1() {
         return createDuration(this);
@@ -34600,25 +36229,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         };
     }
 
-    var milliseconds = makeGetter('milliseconds');
-    var seconds = makeGetter('seconds');
-    var minutes = makeGetter('minutes');
-    var hours = makeGetter('hours');
-    var days = makeGetter('days');
-    var months = makeGetter('months');
-    var years = makeGetter('years');
+    var milliseconds = makeGetter('milliseconds'),
+        seconds = makeGetter('seconds'),
+        minutes = makeGetter('minutes'),
+        hours = makeGetter('hours'),
+        days = makeGetter('days'),
+        months = makeGetter('months'),
+        years = makeGetter('years');
 
     function weeks() {
         return absFloor(this.days() / 7);
     }
 
-    var round = Math.round;
-    var thresholds = {
+    var round = Math.round,
+        thresholds = {
         ss: 44, // a few seconds to seconds
         s: 45, // seconds to minute
         m: 45, // minutes to hour
         h: 22, // hours to day
-        d: 26, // days to month
+        d: 26, // days to month/week
+        w: null, // weeks to month
         M: 11 // months to year
     };
 
@@ -34627,16 +36257,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return locale.relativeTime(number || 1, !!withoutSuffix, string, isFuture);
     }
 
-    function relativeTime$1(posNegDuration, withoutSuffix, locale) {
-        var duration = createDuration(posNegDuration).abs();
-        var seconds = round(duration.as('s'));
-        var minutes = round(duration.as('m'));
-        var hours = round(duration.as('h'));
-        var days = round(duration.as('d'));
-        var months = round(duration.as('M'));
-        var years = round(duration.as('y'));
+    function relativeTime$1(posNegDuration, withoutSuffix, thresholds, locale) {
+        var duration = createDuration(posNegDuration).abs(),
+            seconds = round(duration.as('s')),
+            minutes = round(duration.as('m')),
+            hours = round(duration.as('h')),
+            days = round(duration.as('d')),
+            months = round(duration.as('M')),
+            weeks = round(duration.as('w')),
+            years = round(duration.as('y')),
+            a = seconds <= thresholds.ss && ['s', seconds] || seconds < thresholds.s && ['ss', seconds] || minutes <= 1 && ['m'] || minutes < thresholds.m && ['mm', minutes] || hours <= 1 && ['h'] || hours < thresholds.h && ['hh', hours] || days <= 1 && ['d'] || days < thresholds.d && ['dd', days];
 
-        var a = seconds <= thresholds.ss && ['s', seconds] || seconds < thresholds.s && ['ss', seconds] || minutes <= 1 && ['m'] || minutes < thresholds.m && ['mm', minutes] || hours <= 1 && ['h'] || hours < thresholds.h && ['hh', hours] || days <= 1 && ['d'] || days < thresholds.d && ['dd', days] || months <= 1 && ['M'] || months < thresholds.M && ['MM', months] || years <= 1 && ['y'] || ['yy', years];
+        if (thresholds.w != null) {
+            a = a || weeks <= 1 && ['w'] || weeks < thresholds.w && ['ww', weeks];
+        }
+        a = a || months <= 1 && ['M'] || months < thresholds.M && ['MM', months] || years <= 1 && ['y'] || ['yy', years];
 
         a[2] = withoutSuffix;
         a[3] = +posNegDuration > 0;
@@ -34671,13 +36306,32 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return true;
     }
 
-    function humanize(withSuffix) {
+    function humanize(argWithSuffix, argThresholds) {
         if (!this.isValid()) {
             return this.localeData().invalidDate();
         }
 
-        var locale = this.localeData();
-        var output = relativeTime$1(this, !withSuffix, locale);
+        var withSuffix = false,
+            th = thresholds,
+            locale,
+            output;
+
+        if ((typeof argWithSuffix === 'undefined' ? 'undefined' : _typeof(argWithSuffix)) === 'object') {
+            argThresholds = argWithSuffix;
+            argWithSuffix = false;
+        }
+        if (typeof argWithSuffix === 'boolean') {
+            withSuffix = argWithSuffix;
+        }
+        if ((typeof argThresholds === 'undefined' ? 'undefined' : _typeof(argThresholds)) === 'object') {
+            th = Object.assign({}, thresholds, argThresholds);
+            if (argThresholds.s != null && argThresholds.ss == null) {
+                th.ss = argThresholds.s - 1;
+            }
+        }
+
+        locale = this.localeData();
+        output = relativeTime$1(this, !withSuffix, th, locale);
 
         if (withSuffix) {
             output = locale.pastFuture(+this, output);
@@ -34704,10 +36358,24 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return this.localeData().invalidDate();
         }
 
-        var seconds = abs$1(this._milliseconds) / 1000;
-        var days = abs$1(this._days);
-        var months = abs$1(this._months);
-        var minutes, hours, years;
+        var seconds = abs$1(this._milliseconds) / 1000,
+            days = abs$1(this._days),
+            months = abs$1(this._months),
+            minutes,
+            hours,
+            years,
+            s,
+            total = this.asSeconds(),
+            totalSign,
+            ymSign,
+            daysSign,
+            hmsSign;
+
+        if (!total) {
+            // this is the same as C#'s (Noda) and python (isodate)...
+            // but not other JS (goog.date)
+            return 'P0D';
+        }
 
         // 3600 seconds -> 60 minutes -> 1 hour
         minutes = absFloor(seconds / 60);
@@ -34720,26 +36388,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         months %= 12;
 
         // inspired by https://github.com/dordille/moment-isoduration/blob/master/moment.isoduration.js
-        var Y = years;
-        var M = months;
-        var D = days;
-        var h = hours;
-        var m = minutes;
-        var s = seconds ? seconds.toFixed(3).replace(/\.?0+$/, '') : '';
-        var total = this.asSeconds();
+        s = seconds ? seconds.toFixed(3).replace(/\.?0+$/, '') : '';
 
-        if (!total) {
-            // this is the same as C#'s (Noda) and python (isodate)...
-            // but not other JS (goog.date)
-            return 'P0D';
-        }
+        totalSign = total < 0 ? '-' : '';
+        ymSign = sign(this._months) !== sign(total) ? '-' : '';
+        daysSign = sign(this._days) !== sign(total) ? '-' : '';
+        hmsSign = sign(this._milliseconds) !== sign(total) ? '-' : '';
 
-        var totalSign = total < 0 ? '-' : '';
-        var ymSign = sign(this._months) !== sign(total) ? '-' : '';
-        var daysSign = sign(this._days) !== sign(total) ? '-' : '';
-        var hmsSign = sign(this._milliseconds) !== sign(total) ? '-' : '';
-
-        return totalSign + 'P' + (Y ? ymSign + Y + 'Y' : '') + (M ? ymSign + M + 'M' : '') + (D ? daysSign + D + 'D' : '') + (h || m || s ? 'T' : '') + (h ? hmsSign + h + 'H' : '') + (m ? hmsSign + m + 'M' : '') + (s ? hmsSign + s + 'S' : '');
+        return totalSign + 'P' + (years ? ymSign + years + 'Y' : '') + (months ? ymSign + months + 'M' : '') + (days ? daysSign + days + 'D' : '') + (hours || minutes || seconds ? 'T' : '') + (hours ? hmsSign + hours + 'H' : '') + (minutes ? hmsSign + minutes + 'M' : '') + (seconds ? hmsSign + s + 'S' : '');
     }
 
     var proto$2 = Duration.prototype;
@@ -34780,8 +36436,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     proto$2.toIsoString = deprecate('toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)', toISOString$1);
     proto$2.lang = lang;
 
-    // Side effect imports
-
     // FORMATTING
 
     addFormatToken('X', 0, 0, 'unix');
@@ -34792,16 +36446,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     addRegexToken('x', matchSigned);
     addRegexToken('X', matchTimestamp);
     addParseToken('X', function (input, array, config) {
-        config._d = new Date(parseFloat(input, 10) * 1000);
+        config._d = new Date(parseFloat(input) * 1000);
     });
     addParseToken('x', function (input, array, config) {
         config._d = new Date(toInt(input));
     });
 
-    // Side effect imports
+    //! moment.js
 
-
-    hooks.version = '2.24.0';
+    hooks.version = '2.25.3';
 
     setHookCallback(createLocal);
 
